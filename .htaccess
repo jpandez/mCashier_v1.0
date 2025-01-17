@@ -16,7 +16,5 @@
 
     #X-XSS-Protection Header 
     Header set X-XSS-Protection "1; mode=block"
-
-    #php_value max_execution_time 300
     
 </IfModule>
