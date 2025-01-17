@@ -103,6 +103,7 @@ $.ajaxSetup({
 	        var params = {Method:'userRolesList',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
 	           url:service_url,
+			   type: "POST",
 	           success:function(result,status){
 	               var listitem = "";
 	                $('#userlevel').find('option').remove();
@@ -192,20 +193,21 @@ $(document).ready(function(){
 	    var module_value = $(".modulename:eq("+ index +")").val();
         var params = {Method:'updateModule',module:module_value,action:action_value,FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
-	           url:service_url,
-	           complete:function(result,status){
-	                   
-	                   $("tbody .row:eq(" + index + ") td:eq(2)").text("NO");
-	                   $(".actionstatus:eq(" + index + ")").val("NO");
-	                   
-	                   if(action_value == "NO"){
-	                        $("tbody .row:eq(" + index + ") td:eq(2)").text("YES");
-	                        $(".actionstatus:eq("+ index +")").val("YES");
-	                   }
-	                   //$("<p>"+result.responseText+"</p>").dialog({modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
-	           },
-	           data: params,
-	           Type:"POST", error: function(e){
+				type: "POST",
+				url:service_url,
+				complete:function(result,status){
+						
+						$("tbody .row:eq(" + index + ") td:eq(2)").text("NO");
+						$(".actionstatus:eq(" + index + ")").val("NO");
+						
+						if(action_value == "NO"){
+								$("tbody .row:eq(" + index + ") td:eq(2)").text("YES");
+								$(".actionstatus:eq("+ index +")").val("YES");
+						}
+						//$("<p>"+result.responseText+"</p>").dialog({modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
+				},
+				data: params,
+			error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 		}
 	        });

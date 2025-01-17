@@ -64,6 +64,7 @@ var audit_trail_url = "<?php echo str_replace(' ','%20',$GLOBALS['CONTROLLER_PAT
 		function loadUsers(){
 	        var params = {Method:'getAllUsers',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
+				type: "POST",
 	           url:service_url,
 	           success:function(result,status){
 	               var listitem = ""

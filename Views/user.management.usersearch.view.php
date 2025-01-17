@@ -241,6 +241,7 @@
 		var service_url = "<?php echo $GLOBALS['CONTROLLER_PATH'];?>WebServices/SubscriberWebServices.php";
 	        var params = {Method:'userRolesList',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
+				type: "POST",
 	           url:service_url,
 	           success:function(result,status){
 	               var listitem = "";

@@ -473,6 +473,7 @@ if (doPrevent) {
 	function loadAccountType(){
 		var params = {Method:'getAccountType',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 		$.ajax({
+			type: "POST",
 			url:service_url,
 			success:function(result,status){
 				var listitem = ""

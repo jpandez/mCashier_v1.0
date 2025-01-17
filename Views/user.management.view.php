@@ -86,6 +86,7 @@
 	function loadUserRoles(){
 	        var params = {Method:'userRolesList',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
+				type: "POST",
 	           url:service_url,
 	           success:function(result,status){
 	               var listitem = "";
@@ -131,6 +132,7 @@
 	    var module_value = $(".modulename:eq("+ index +")").val();
         var params = {Method:'updateModule',module:module_value,action:action_value,FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
+				type: "POST",
 	           url:service_url,
 	           complete:function(result,status){
 	                   
@@ -144,7 +146,7 @@
 	                   $("<p>"+result.responseText+"</p>").dialog({modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 	           },
 	           data: params,
-	           Type:"POST" , error: function(e){
+			    error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 		}
 	        });
@@ -156,6 +158,7 @@
 			var userlevel_value = $(".edituserlevel").val();
 			var params = {Method:'getUserlevelDetails',userlevel_value:userlevel_value,FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 		        $.ajax({
+					type: "POST",
 		           url:service_url,
 		           success:function(result,status){
 		                for(var i = 0; i < result.value.length; i++)
