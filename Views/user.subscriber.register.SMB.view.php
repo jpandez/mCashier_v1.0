@@ -2024,6 +2024,7 @@ loadAccountTypeREG();
 function loadAccountTypeREG(){
 	var params = {Method:'getAccountTypeRegister',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	$.ajax({
+		type: "POST",
 		url:service_url,
 		success:function(result,status){
 			var listitem = ""                                
@@ -2063,6 +2064,7 @@ function loadStoreTypeREG(){
 	var params = {Method:'getAccountTypeRegister',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	$.ajax({
 		url:service_url,
+		type: "POST",
 		success:function(result,status){
 			var listitem = ""                                
 			$('#regStoreType').find('option').remove();

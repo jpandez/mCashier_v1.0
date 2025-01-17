@@ -150,6 +150,7 @@ $(document).ready(function() {
 	function loadUserRoles(){
 	        var params = {Method:'userRolesList',FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 	        $.ajax({
+				type: "POST",
 	           url:service_url,
 	           success:function(result,status){
 	               var listitem = "";
@@ -192,6 +193,7 @@ $(document).ready(function() {
 			var userlevel_value = $(".edituserlevel").val();
 			var params = {Method:'getUserlevelDetails',userlevel_value:userlevel_value,FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')};
 		        $.ajax({
+					type: "POST",
 		           url:service_url,
 		           success:function(result,status){
 		                for(var i = 0; i < result.value.length; i++)
