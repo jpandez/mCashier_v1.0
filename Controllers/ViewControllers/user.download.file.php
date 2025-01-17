@@ -73,14 +73,63 @@
 						$ext = ".NOFILEFOUND";
 						break;
 				}
-				
-				header("Cache-Control: public");
-				header("Content-Description: File Transfer");
-				header("Content-Disposition: attachment; filename=ApplicationFile_" . $_REQUEST["msisdn"].$type. $ext);
-				//header("Content-Disposition: attachment; filename=ApplicationFile_" .date("YmdHis") . $ext);
+
+				// --------------------------- START ---------------------------
+
+				// Sanitize and validate user input
+				function sanitizeInput($input) {
+					return preg_replace('/[^A-Za-z0-9_\-]/', '', $input); // Allow only alphanumeric, underscore, and hyphen
+				}
+
+				// Whitelist allowed file extensions
+				$allowedExtensions = ['pdf', 'jpg'];
+				$mimeToExt = [
+						"image/jpeg" => "jpg",
+						"application/pdf" => "pdf",
+					];
+
+				// Get user input and sanitize it
+				$msisdn = isset($_REQUEST['msisdn']) ? sanitizeInput($_REQUEST['msisdn']) : '';
+				$type = isset($_REQUEST['type']) ? sanitizeInput($_REQUEST['type']) : '';
+
+				// Derive file extension from MIME type
+				$ext = isset($mimeToExt[$mime_type]) ? $mimeToExt[$mime_type] : 'NOFILEFOUND';
+
+				// Log the derived file extension to the console
+				echo "<script>console.log('Derived file extension: " . $ext . "');</script>";
+
+				// Check if file extension is NOFILEFOUND 
+				if ($ext === 'NOFILEFOUND') {
+						die('No File Found.');
+				}
+
+				// Validate file extension
+				if (!in_array($ext, $allowedExtensions)) {
+						die('Invalid file extension.');
+				}
+
+				// Encode the filename
+				$filename = rawurlencode("ApplicationFile_$msisdn$type.$ext");
+
+				// Set headers for file download
+				header("Cache-Control: public;");
+				header("Content-Description: File Transfer;");
+				header("Content-Disposition: attachment; filename=$filename");
 				header("Content-Type: application/octet-stream");
-				header("Content-Transfer-Encoding: binary");			
+				header("Content-Transfer-Encoding: binary");
+
 				echo $binary;
+
+				// --------------------------- END ---------------------------
+
+				
+				// header("Cache-Control: public");
+				// header("Content-Description: File Transfer");
+				// header("Content-Disposition: attachment; filename=ApplicationFile_" . $_REQUEST["msisdn"].$type. $ext);
+				// //header("Content-Disposition: attachment; filename=ApplicationFile_" .date("YmdHis") . $ext);
+				// header("Content-Type: application/octet-stream");
+				// header("Content-Transfer-Encoding: binary");			
+				// echo $binary;
 				
 				ob_end_flush();			
 				die();
