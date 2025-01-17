@@ -1,0 +1,4530 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobile Cash\n"
+"POT-Creation-Date: 2013-11-10 20:38+0800\n"
+"PO-Revision-Date: 2014-07-11 16:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: D:\\wamp\\www\\Projects\\_MobileCash v1.0b\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Controllers/ViewControllers/index.php:18
+msgid ""
+"Your account's password has expired. please contact your system administrator"
+msgstr ""
+"Le mot de passe de votre compte a expiré. s'il vous plaît contacter votre "
+"administrateur système."
+
+#: Controllers/ViewControllers/index.php:23
+#: Controllers/ViewControllers/index.php:90
+msgid "Please Change your PASSWORD."
+msgstr "S'il vous plaît changer votre mot."
+
+#: Controllers/ViewControllers/user.management.php:12
+msgid "User Management"
+msgstr "de User Management"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:23
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please select User Level."
+msgstr "Ajouter un nouveau niveau utilisateur"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:27
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid Email format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:31
+msgid "Invalid Username format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:35
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid Firstname/Lastname format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:40
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid department format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:46
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:37
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:61
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:37
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:61
+#: Controllers/ViewControllers/user.reports.summary.php:40
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:38
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:38
+#: Controllers/ViewControllers/user.reports.transactionreports.php:38
+#: Controllers/ViewControllers/user.subscriber.globalsearch.php:13
+#: Controllers/ViewControllers/user.subscriber.register.php:20
+#: Controllers/ViewControllers/user.subscriber.transactions.php:10
+#: Controllers/ViewControllers/user.systemsettings.audittrail - Copy.php:15
+#: Controllers/ViewControllers/user.systemsettings.audittrail.php:21
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input all required fields."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:63
+msgid " has been successfully registered."
+msgstr " a été enregistré avec succès."
+
+#: Controllers/ViewControllers/user.management.usersearch.php:31
+#: Controllers/ViewControllers/user.management.usersearch.php:52
+msgid "Please input valid character"
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:32
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:33
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:56
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:57
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:32
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:33
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:56
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:57
+#: Controllers/ViewControllers/user.reports.summary.php:34
+#: Controllers/ViewControllers/user.reports.summary.php:35
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:32
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:33
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:32
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:33
+#: Controllers/ViewControllers/user.reports.transactionreports.php:32
+#: Controllers/ViewControllers/user.reports.transactionreports.php:33
+#: Controllers/ViewControllers/user.subscriber.transactions.php:44
+#: Controllers/ViewControllers/user.subscriber.transactions.php:45
+msgid "Invalid Date Range your allowed date range is within : "
+msgstr "Date non valide Range votre gamme autorisée de date se trouve dans : "
+
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:32
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:33
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:56
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:57
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:32
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:33
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:56
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:57
+#: Controllers/ViewControllers/user.reports.summary.php:34
+#: Controllers/ViewControllers/user.reports.summary.php:35
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:32
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:33
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:32
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:33
+#: Controllers/ViewControllers/user.reports.transactionreports.php:32
+#: Controllers/ViewControllers/user.reports.transactionreports.php:33
+#: Controllers/ViewControllers/user.subscriber.transactions.php:44
+#: Controllers/ViewControllers/user.subscriber.transactions.php:45
+msgid " Days"
+msgstr " jours"
+
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:90
+#: Controllers/ViewControllers/user.pendings.dealercommission.php:117
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:90
+#: Controllers/ViewControllers/user.pendings.dealercommission1.php:117
+#: Controllers/ViewControllers/user.reports.accountsummary.php:41
+#: Controllers/ViewControllers/user.reports.subscribers.php:73
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:56
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:56
+#: Controllers/ViewControllers/user.reports.transactionreports.php:55
+msgid ""
+"Export in CSV is more than 10000 records. Please contact system "
+"administrator for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.pendings.php:11
+msgid "Pendings Management"
+msgstr "Gestion des pendings"
+
+#: Controllers/ViewControllers/user.reports.accountsummary.php:63
+#: Controllers/ViewControllers/user.reports.subscribers.php:95
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:78
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:78
+#: Controllers/ViewControllers/user.reports.transactionreports.php:77
+msgid ""
+"Export in EXCEL is more than 1500 records. Please contact system "
+"administrator for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.reports.accountsummary.php:81
+#: Controllers/ViewControllers/user.reports.subscribers.php:112
+#: Controllers/ViewControllers/user.reports.transactionfailed.php:95
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:95
+#: Controllers/ViewControllers/user.reports.transactionreports.php:95
+msgid ""
+"Export in PDF is more than 1500 records. Please contact system administrator "
+"for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.reports.php:14
+msgid "System Report"
+msgstr "Rapport du Système"
+
+#: Controllers/ViewControllers/user.subscriber.globalsearchrefid.php:11
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:14
+msgid "Please input reference id."
+msgstr ""
+
+#: Controllers/ViewControllers/user.subscriber.php:11
+msgid "Account Management"
+msgstr "Gestion de compte"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:23
+#, fuzzy
+msgid "Please input valid format.."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:43
+msgid "You have successfully registered your account"
+msgstr "Vous avez enregistré avec succès votre compte"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:53
+msgid "Account already exist"
+msgstr "Compte existent déjà"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:56
+#, fuzzy
+msgid "Nickname Account already exist"
+msgstr "Compte existent déjà"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:59
+msgid "Invalid Mobile Number!"
+msgstr "Invalide numéro de mobile!"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:40
+msgid " Transaction Type not valid for reversal."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/ViewControllers/user.subscriber.search.php:59
+msgid "Please input valid characters"
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/ViewControllers/user.systemsettings.php:11
+msgid "System Configuration"
+msgstr "Configuration de système"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully activated."
+msgstr " a été activé avec success. "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for Activation!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully deactivated."
+msgstr " a été désactivé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for Deactivation!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully locked."
+msgstr " a été verrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input lock description"
+msgstr "verrouiller la description"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for lock!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully unlocked."
+msgstr " a été déverrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for unlock!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Reset Password"
+msgstr "Réinitialiser le mot de success"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for reset password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully deleted mobile IMSI"
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "IMSI does not exist"
+msgstr "Compte n'existe pas"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully saved your account type"
+msgstr "Vous avez enregistré avec succès votre compte"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Account does not exist"
+msgstr "Compte n'existe pas"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully saved your account"
+msgstr "Vous avez enregistré avec succès votre compte"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Changed KYC Status"
+msgstr "Réussir changé de statut KYC"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for update KYC!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input your correct PASSWORD!"
+msgstr "S'il vous plaît entrer votre mot de passe corrects!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input your PASSWORD!"
+msgstr "S'il vous plaît entrer votre mot de passe!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input REMARKS!"
+msgstr "S'il vous plaît REMARQUES d'entrée!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input AMOUNT!"
+msgstr "S'il vous plaît MONTANT d'entrée!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for allocation/deallocation."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Success, please wait for the approval"
+msgstr "Success, veuillez attendre l'approbation"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s module has been successfully set to "
+msgstr " : Module a été fixée avec succès : "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for update user module!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for User Level."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for session timeout / password change."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for password expiry / minimum password."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for password history / max allocation."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for search range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "User level has been successfully added."
+msgstr "Niveau de l'utilisateur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully locked."
+msgstr " Le compte Web de 'a été verrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully unlocked."
+msgstr " Le compte Web de 'a été déverrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for user lock."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for user reset password."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request user level updates has been successfully sent."
+msgstr ""
+"Demande de mise à jour de niveau utilisateur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please SELECT USER LEVEL."
+msgstr "NOUVEAU NIVEAU DE L'UTILISATEUR"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully updated."
+msgstr " Le compte Web de 'a été mis à jour avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s password has been successfully changed."
+msgstr " 'mot de passe de a été changé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Passwords do not match! Please confirm your password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input and confirm your password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max amount / max current amount."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max amount day / max amount month."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max trans day / max trans month."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocation / Deallocation not valid for approval!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Deallocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please enter you password."
+msgstr "réinitialiser mot de passe"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully allocated an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully approved deallocation an amount of "
+msgstr "Vous avez approuvé success deallocation un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Disapprove"
+msgstr "Désapprouver succès"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Deallocation have successfully Disapproved! Amount of "
+msgstr "Deallocation désapprouver avec success! montant de l' "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for default password."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid ""
+"Please input valid format for failed transfer count / invalid password count."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for RPRE day count / minimum alias."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max alias / msisdn to alias."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for minimum alloc / max alloc."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request system info has been successfully sent."
+msgstr "Demande d'informations du système a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "System Info not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "User Level not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request message has been successfully sent."
+msgstr "Demande message a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Message not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request AML Type has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid id."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid key."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid type."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid account."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid fixed amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid percent amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid priority."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid status."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid amount from."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid amount to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid account from."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid account to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Key Cost Type has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "KeyCost Type not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for systemid / password."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip / port."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ton / npi."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for origton / orignpi."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for destton / destnpi."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for status."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for hostip / shortcode."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for keepaliveinterval / responsetimeout."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Transceiver has been successfully sent."
+msgstr "Demande émetteur-récepteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Transceiver not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Transmitter has been successfully sent."
+msgstr "Demande émetteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Transmitter not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for secured."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Receiver has been successfully sent."
+msgstr "Demande récepteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Receiver not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for function."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip / status."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Server Config has been successfully sent."
+msgstr "Demande Config serveur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Server Config not valid for approval."
+msgstr "Sender KYC n'a pas permis de retournement"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Transceiver has been successfully added."
+msgstr "Émetteur-récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Transmitter has been successfully added."
+msgstr "Émetteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Receiver has been successfully added."
+msgstr "Récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Server Config has been successfully added."
+msgstr "Config serveur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for remarks."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Cash reversal already exists"
+msgstr "Inversion de trésorerie existe déjà"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully reverse an amount of "
+msgstr "Vous avez réussi à renverser un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Pending reversal has been rejected."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Reversal is not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Unauthorized Access!"
+msgstr "Accès non autorisé!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocate EVD an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Deallocate EVD an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocation / Deallocation EVD not valid for approval!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully allocated EVD an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully approved deallocation EVD an amount of "
+msgstr "Vous avez approuvé success deallocation un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Deallocation EVD have successfully Disapproved! Amount of "
+msgstr "Deallocation désapprouver avec success! montant de l' "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request air bonus topup has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid product id."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid service class."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid dedicated account id."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max. range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid min. range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid cell id min. range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid cell id max. range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid fixed amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid percent amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid expiry days."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid expiry date."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid name."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Air Bonus Topup has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid account."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid key."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid type."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid percent priority."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid amount from."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid amount to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid account from."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid account to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Bonus by Type has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid msisdn."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Bonus by MSISDN has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Commission by Type has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Commission by MSISDN has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid id."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid status."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Bonus by Type has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Bonus by MSISDN has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Commissions by Type has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Commissions by MSISDN has been successfully sent."
+msgstr "Demande message a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid remarks."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Air Bonus Topup not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request air configuration has been successfully sent."
+msgstr "Demande Config serveur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Air configuration has been successfully added."
+msgstr "Config serveur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Air Configuration not valid for approval."
+msgstr "Sender KYC n'a pas permis de retournement"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid send."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid receive."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid priority."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid description."
+msgstr "verrouiller la description"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Key Allowed Type has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Key Allowed Type has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Key Allowed MSISDN has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Key Allowed MSISDN has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid pending id."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid msisdn."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request Key Cost MSISDN has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid min.amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.amount / day."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.amount / month."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.transaction / day."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.transaction / month."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "AML MSISDN-Send has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input a valid max.current amount."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request AML MSISDN-Send has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "AML MSISDN-Receive has been successfully added."
+msgstr "Récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "AML Type-Send has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "AML Type-Receive has been successfully added."
+msgstr "Récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Request AML Type-Send has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for allocation B2W."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input BANKREFERENCE!"
+msgstr "S'il vous plaît REMARQUES d'entrée!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid ""
+"Success Bank to Wallet request, please wait for the confirmation and approval"
+msgstr "Success, veuillez attendre l'approbation"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Bank to Wallet Allocation not valid for confirmation!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Confirm Bank to Wallet Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Reject? Please enter your password."
+msgstr "réinitialiser mot de passe"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully confirmed bank to wallet allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully rejected bank to wallet allocate! Amount of "
+msgstr "Vous avez réussi à renverser un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Wallet to Bank Allocation not valid for confirmation!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Confirm Wallet to Bank Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully confirmed wallet to bank allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully rejected wallet to bank allocate! Amount of "
+msgstr "Vous avez réussi à renverser un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Bank to Wallet Allocation not valid for approval!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Approve Bank to Wallet Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully approved bank to wallet allocate an amount of "
+msgstr "Vous avez approuvé success deallocation un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Wallet to Bank Allocation not valid for approval!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Approve Wallet to Bank Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "You have successfully approved wallet to bank allocate an amount of "
+msgstr "Vous avez approuvé success deallocation un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Dealer Commission not valid for approval."
+msgstr "Sender KYC n'a pas permis de retournement"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Dealer Commission not valid for confirmation."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Dealer Commission not valid for confirmation request."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "ID Image not valid for update."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Views/index.master.php:63
+#: Views/user.management.userregistration.view.php:14
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Views/index.master.php:65
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Views/subscriber.globalsearch.view.php:22
+#: Views/subscriber.globalsearch.view.php:52
+#: Views/subscriber.globalsearch.view.php:105
+#: Views/subscriber.globalsearchrefid.view.php:10
+#: Views/user.pendings.accounts.view.php:30
+#: Views/user.pendings.airbonustopup.view.php:10
+#: Views/user.pendings.amlsettings.view.php:18
+#: Views/user.pendings.amlsettings.view.php:54
+#: Views/user.pendings.bonus.view.php:16 Views/user.pendings.bonus.view.php:50
+#: Views/user.pendings.bonus.view.php:84
+#: Views/user.pendings.bonus.view.php:136
+#: Views/user.pendings.commissions.view.php:16
+#: Views/user.pendings.commissions.view.php:50
+#: Views/user.pendings.commissions.view.php:84
+#: Views/user.pendings.commissions.view.php:137
+#: Views/user.pendings.dealercommission.view.php:53
+#: Views/user.pendings.dealercommission.view.php:191
+#: Views/user.pendings.keyallowed.view.php:16
+#: Views/user.pendings.keyallowed.view.php:50
+#: Views/user.pendings.keycosttypes.view.php:17
+#: Views/user.pendings.keycosttypes.view.php:71
+#: Views/user.pendings.keycosttypes.view.php:122
+#: Views/user.pendings.messages.view.php:9
+#: Views/user.pendings.systeminfo.view.php:9
+#: Views/user.pendings.userlevels.view.php:10 Views/user.pendings.view.php:342
+#: Views/user.pendings.view.php:391 Views/user.pendings.view.php:441
+#: Views/user.pendings.view.php:491
+#: Views/user.reports.transactionhistory.view.php:54
+#: Views/user.reports.transactionreports.view.php:58
+#: Views/user.reports.transactionreports.view.php:65
+#: Views/user.systemsettings.airbonustopup.view.php:12
+#: Views/user.systemsettings.airbonustopup.view.php:42
+#: Views/user.systemsettings.airconfig.view.php:12
+#: Views/user.systemsettings.amlsettings.view.php:26
+#: Views/user.systemsettings.amlsettings.view.php:76
+#: Views/user.systemsettings.amlsettings.view.php:134
+#: Views/user.systemsettings.amlsettings.view.php:184
+#: Views/user.systemsettings.bonus.view.php:18
+#: Views/user.systemsettings.bonus.view.php:53
+#: Views/user.systemsettings.bonus.view.php:85
+#: Views/user.systemsettings.bonus.view.php:128
+#: Views/user.systemsettings.commissions.view.php:18
+#: Views/user.systemsettings.commissions.view.php:52
+#: Views/user.systemsettings.commissions.view.php:85
+#: Views/user.systemsettings.commissions.view.php:128
+#: Views/user.systemsettings.keyallowed.view.php:20
+#: Views/user.systemsettings.keyallowed.view.php:66
+#: Views/user.systemsettings.keyallowed.view.php:109
+#: Views/user.systemsettings.keyallowed.view.php:178
+#: Views/user.systemsettings.keycosttype.view.php:18
+#: Views/user.systemsettings.keycosttype.view.php:74
+#: Views/user.systemsettings.keycosttype.view.php:126
+#: Views/user.systemsettings.keycosttype.view.php:262
+#: Views/user.systemsettings.messages.view.php:11
+#: Views/user.systemsettings.messages.view.php:45
+#: Views/user.systemsettings.receiver.view.php:11
+#: Views/user.systemsettings.receiver.view.php:54
+#: Views/user.systemsettings.serverconfig.view.php:12
+#: Views/user.systemsettings.serverconfig.view.php:41
+#: Views/user.systemsettings.transceiver.view.php:12
+#: Views/user.systemsettings.transceiver.view.php:92
+#: Views/user.systemsettings.transmitter.view.php:11
+#: Views/user.systemsettings.transmitter.view.php:54
+msgid "ID"
+msgstr "ID"
+
+#: Views/subscriber.globalsearch.view.php:23
+#: Views/subscriber.globalsearch.view.php:53
+#: Views/subscriber.globalsearch.view.php:106
+#: Views/subscriber.globalsearchrefid.view.php:11
+#: Views/user.pendings.b2wallocations.view.php:152
+#: Views/user.pendings.b2wallocations.view.php:233
+#: Views/user.pendings.b2wallocations.view.php:309
+#: Views/user.pendings.b2wallocations.view.php:383
+#: Views/user.pendings.view.php:136 Views/user.pendings.view.php:207
+#: Views/user.pendings.view.php:274
+#: Views/user.reports.transactionfailed.view.php:54
+#: Views/user.reports.transactionhistory.view.php:55
+#: Views/user.reports.transactionreports.view.php:59
+#: Views/user.reports.transactionreports.view.php:66
+#: Views/user.subscriber.reversalresult.view.php:11
+msgid "REFERENCE ID"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/subscriber.globalsearch.view.php:24
+#: Views/subscriber.globalsearch.view.php:54
+#: Views/subscriber.globalsearch.view.php:107
+#: Views/subscriber.globalsearchrefid.view.php:12
+#: Views/subscriber.transactions.view.php:21
+#: Views/user.pendings.b2wallocations.view.php:161
+#: Views/user.pendings.b2wallocations.view.php:242
+#: Views/user.pendings.b2wallocations.view.php:318
+#: Views/user.pendings.b2wallocations.view.php:392
+#: Views/user.pendings.bonus.view.php:96
+#: Views/user.pendings.commissions.view.php:97
+#: Views/user.pendings.dealercommission.view.php:56
+#: Views/user.pendings.dealercommission.view.php:194
+#: Views/user.pendings.keyallowed.view.php:86 Views/user.pendings.view.php:142
+#: Views/user.pendings.view.php:213 Views/user.pendings.view.php:346
+#: Views/user.pendings.view.php:395 Views/user.pendings.view.php:445
+#: Views/user.pendings.view.php:495 Views/user.reports.subscribers.view.php:65
+#: Views/user.reports.transactionhistory.view.php:56
+#: Views/user.reports.transactionreports.view.php:60
+#: Views/user.reports.transactionreports.view.php:67
+#: Views/user.subscriber.reversalresult.view.php:12
+#: Views/user.systemsettings.bonus.view.php:93
+#: Views/user.systemsettings.bonus.view.php:181
+#: Views/user.systemsettings.commissions.view.php:94
+#: Views/user.systemsettings.commissions.view.php:180
+#: Views/user.systemsettings.keyallowed.view.php:21
+#: Views/user.systemsettings.keyallowed.view.php:110
+#: Views/user.systemsettings.keyallowed.view.php:144
+#: Views/user.systemsettings.keycosttype.view.php:20
+#: Views/user.systemsettings.messages.view.php:14
+#: Views/user.systemsettings.messages.view.php:54
+msgid "TYPE"
+msgstr "TYPE"
+
+#: Views/subscriber.globalsearch.view.php:25
+#: Views/subscriber.globalsearch.view.php:108
+#: Views/user.management.usersearch.view.php:69
+#: Views/user.pendings.accounts.view.php:32
+#: Views/user.pendings.amlsettings.view.php:89
+#: Views/user.pendings.bonus.view.php:148
+#: Views/user.pendings.commissions.view.php:150
+#: Views/user.pendings.keyallowed.view.php:122
+#: Views/user.pendings.keycosttypes.view.php:73
+#: Views/user.pendings.keycosttypes.view.php:126
+#: Views/user.reports.accountsummary.view.php:37
+#: Views/user.reports.subscribers.view.php:70
+#: Views/user.reports.transactionreports.view.php:61
+#: Views/user.subscriber.search.accounttab.view.php:176
+#: Views/user.subscriber.search.view.php:48
+#: Views/user.subscriber.search.view.php:59
+#: Views/user.systemsettings.amlsettings.view.php:135
+#: Views/user.systemsettings.amlsettings.view.php:185
+#: Views/user.systemsettings.amlsettings.view.php:396
+#: Views/user.systemsettings.amlsettings.view.php:436
+#: Views/user.systemsettings.amlsettings.view.php:477
+#: Views/user.systemsettings.amlsettings.view.php:518
+#: Views/user.systemsettings.bonus.view.php:136
+#: Views/user.systemsettings.bonus.view.php:222
+#: Views/user.systemsettings.commissions.view.php:137
+#: Views/user.systemsettings.commissions.view.php:225
+#: Views/user.systemsettings.keyallowed.view.php:67
+#: Views/user.systemsettings.keyallowed.view.php:179
+#: Views/user.systemsettings.keyallowed.view.php:213
+#: Views/user.systemsettings.keycosttype.view.php:76
+#: Views/user.systemsettings.keycosttype.view.php:222
+#: Views/user.systemsettings.keycosttype.view.php:268
+msgid "MSISDN"
+msgstr "numéro MSISDN"
+
+#: Views/subscriber.globalsearch.view.php:26
+#: Views/subscriber.globalsearch.view.php:109
+#: Views/subscriber.globalsearchrefid.view.php:15
+#: Views/user.pendings.messages.view.php:11
+#: Views/user.reports.transactionreports.view.php:62
+#: Views/user.systemsettings.messages.view.php:13
+#: Views/user.systemsettings.messages.view.php:51
+msgid "MESSAGE"
+msgstr "MESSAGE"
+
+#: Views/subscriber.globalsearch.view.php:27
+#: Views/subscriber.globalsearch.view.php:62
+#: Views/subscriber.globalsearch.view.php:110
+#: Views/subscriber.globalsearchrefid.view.php:17
+#: Views/user.reports.transactionfailed.view.php:55
+#: Views/user.reports.transactionhistory.view.php:65
+#: Views/user.reports.transactionreports.view.php:63
+#: Views/user.reports.transactionreports.view.php:76
+#: Views/user.subscriber.reversalresult.view.php:10
+#: Views/user.systemsettings.audittrail.view.php:15
+msgid "TRANSACTION DATE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/subscriber.globalsearch.view.php:28
+#: Views/subscriber.globalsearch.view.php:111
+#: Views/subscriber.globalsearchrefid.view.php:18
+msgid "SMS Resend"
+msgstr ""
+
+#: Views/subscriber.globalsearch.view.php:55
+#: Views/subscriber.globalsearchrefid.view.php:13
+#: Views/user.reports.transactionhistory.view.php:58
+#: Views/user.reports.transactionreports.view.php:69
+#: Views/user.subscriber.reversalresult.view.php:15
+msgid "SOURCE"
+msgstr "SOURCE"
+
+#: Views/subscriber.globalsearch.view.php:56
+#: Views/subscriber.globalsearchrefid.view.php:14
+#: Views/user.reports.transactionhistory.view.php:59
+#: Views/user.reports.transactionreports.view.php:70
+#: Views/user.subscriber.reversalresult.view.php:16
+msgid "DESTINATION"
+msgstr "DESTINATION"
+
+#: Views/subscriber.globalsearch.view.php:57
+#: Views/subscriber.globalsearchrefid.view.php:16
+#: Views/user.pendings.allocations.view.php:12
+#: Views/user.pendings.b2wallocations.view.php:24
+#: Views/user.pendings.b2wallocations.view.php:88
+#: Views/user.pendings.b2wallocations.view.php:158
+#: Views/user.pendings.b2wallocations.view.php:239
+#: Views/user.pendings.b2wallocations.view.php:315
+#: Views/user.pendings.b2wallocations.view.php:389
+#: Views/user.pendings.dealercommission.view.php:60
+#: Views/user.pendings.dealercommission.view.php:198
+#: Views/user.pendings.dealercommission1sum.view.php:11
+#: Views/user.pendings.evdallocations.view.php:12
+#: Views/user.pendings.reversal.view.php:13 Views/user.pendings.view.php:139
+#: Views/user.pendings.view.php:210 Views/user.pendings.view.php:283
+#: Views/user.reports.transactionhistory.view.php:60
+#: Views/user.reports.transactionreports.view.php:71
+#: Views/user.subscriber.reversalresult.view.php:17
+msgid "AMOUNT"
+msgstr "MONTANT"
+
+#: Views/subscriber.globalsearch.view.php:58
+#: Views/user.reports.transactionhistory.view.php:61
+#: Views/user.reports.transactionreports.view.php:72
+#: Views/user.subscriber.reversalresult.view.php:20
+msgid "SOURCE BALANCE BEFORE"
+msgstr "SOURCE SOLDE AVANT"
+
+#: Views/subscriber.globalsearch.view.php:59
+#: Views/user.reports.transactionhistory.view.php:62
+#: Views/user.reports.transactionreports.view.php:73
+#: Views/user.subscriber.reversalresult.view.php:21
+msgid "SOURCE BALANCE AFTER"
+msgstr "SOURCE SOLDE APRÈS"
+
+#: Views/subscriber.globalsearch.view.php:60
+#: Views/user.reports.transactionhistory.view.php:63
+#: Views/user.reports.transactionreports.view.php:74
+#: Views/user.subscriber.reversalresult.view.php:24
+msgid "DEST BALANCE BEFORE"
+msgstr "DEST SOLDE AVANT"
+
+#: Views/subscriber.globalsearch.view.php:61
+#: Views/user.reports.transactionhistory.view.php:64
+#: Views/user.reports.transactionreports.view.php:75
+#: Views/user.subscriber.reversalresult.view.php:25
+msgid "DEST BALANCE AFTER"
+msgstr "DEST SOLDE APRÈS"
+
+#: Views/subscriber.transactions.view.php:12
+msgid "Email"
+msgstr "Email"
+
+#: Views/subscriber.transactions.view.php:18
+msgid "S.NO"
+msgstr "S.NO"
+
+#: Views/subscriber.transactions.view.php:19
+msgid "Tran/RefID"
+msgstr "Tran/RefID"
+
+#: Views/subscriber.transactions.view.php:20
+msgid "DATE TIMESTAMP"
+msgstr "TIMESTAMP DATE"
+
+#: Views/subscriber.transactions.view.php:22
+msgid "SENDER/DESTINATION"
+msgstr "EMETTEUR / DESTINATION"
+
+#: Views/subscriber.transactions.view.php:23
+msgid "CR"
+msgstr "CR"
+
+#: Views/subscriber.transactions.view.php:24
+msgid "DR"
+msgstr "DR"
+
+#: Views/subscriber.transactions.view.php:25
+msgid "BALANCE BEFORE"
+msgstr "SOLDE AVANT"
+
+#: Views/subscriber.transactions.view.php:26
+msgid "AVAILABLE BALANCE"
+msgstr "SOLDE DISPONIBLE"
+
+#: Views/subscriber.transactions.view.php:27
+#: Views/user.reports.transactionreports.view.php:77
+msgid "REF1"
+msgstr "REF1"
+
+#: Views/subscriber.transactions.view.php:28
+#: Views/user.reports.transactionreports.view.php:78
+msgid "REF2"
+msgstr "REF2"
+
+#: Views/subscriber.transactions.view.php:29
+msgid "CURRENCY"
+msgstr "DEVISE"
+
+#: Views/subscriber.transactions.view.php:59
+msgid "Email Statement"
+msgstr "Énoncé de courriel"
+
+#: Views/subscriber.transactions.view.php:67
+#: Views/user.management.userregistration.view.php:50
+#: Views/user.management.usersearch.view.php:185
+msgid "Email Address"
+msgstr "Adresse Email"
+
+#: Views/subscriber.transactions.view.php:78
+#: Views/user.management.usersearch.view.php:105
+#: Views/user.pendings.accounts.view.php:76
+#: Views/user.subscriber.reversalresult.view.php:66
+#: Views/user.subscriber.search.personaltab.view.php:12
+#: Views/user.systemsettings.airbonustopup.view.php:81
+#: Views/user.systemsettings.airconfig.view.php:74
+#: Views/user.systemsettings.bonus.view.php:117
+#: Views/user.systemsettings.bonus.view.php:160
+#: Views/user.systemsettings.bonus.view.php:243
+#: Views/user.systemsettings.commissions.view.php:249
+#: Views/user.systemsettings.keycosttype.view.php:167
+#: Views/user.systemsettings.keycosttype.view.php:211
+#: Views/user.systemsettings.messages.view.php:65
+#: Views/user.systemsettings.receiver.view.php:90
+#: Views/user.systemsettings.receiver.view.php:127
+#: Views/user.systemsettings.serverconfig.view.php:59
+#: Views/user.systemsettings.serverconfig.view.php:80
+#: Views/user.systemsettings.systeminfo.view.php:79
+#: Views/user.systemsettings.transceiver.view.php:82
+#: Views/user.systemsettings.transceiver.view.php:137
+#: Views/user.systemsettings.transmitter.view.php:99
+#: Views/user.systemsettings.transmitter.view.php:136
+msgid "cancel"
+msgstr "résilier"
+
+#: Views/subscriber.transactions.view.php:79
+#: Views/user.systemsettings.amlsettings.view.php:11
+#: Views/user.systemsettings.amlsettings.view.php:119
+msgid "Send"
+msgstr "Envoyer"
+
+#: Views/subscriber.transactions.view.php:156
+msgid "Email Address is required"
+msgstr "Adresse Email est requis"
+
+#: Views/user.management.changepassword.view.php:3
+#: Views/user.management.view.php:55
+msgid "Change Password"
+msgstr "changer mot de passe"
+
+#: Views/user.management.changepassword.view.php:7
+msgid ""
+"New Password should be minimum 6 characters long with at least 1 numeric and "
+"mixed case characters"
+msgstr ""
+"Nouveau mot de passe doit être au minimum de 6 caractères avec au moins 1 "
+"caractères minuscules numériques et mixtes"
+
+#: Views/user.management.changepassword.view.php:10
+msgid "Current Password"
+msgstr "Mot de passe actuel"
+
+#: Views/user.management.changepassword.view.php:14
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: Views/user.management.changepassword.view.php:18
+msgid "Confirm Password"
+msgstr "Confirmez mot de passe"
+
+#: Views/user.management.changepassword.view.php:24
+#: Views/user.management.userregistration.view.php:81
+#: Views/user.management.usersearch.view.php:104
+#: Views/user.subscriber.reversalresult.view.php:65
+msgid "Save"
+msgstr "sauver"
+
+#: Views/user.management.changepassword.view.php:25
+msgid "reset"
+msgstr "réinitialiser"
+
+#: Views/user.management.rolesconfiguration.view.php:14
+msgid "Get Roles"
+msgstr "Obtenez des rôles"
+
+#: Views/user.management.rolesconfiguration.view.php:49
+msgid "Change Access"
+msgstr "modifier l'accès"
+
+#: Views/user.management.userlevel.view.php:9
+msgid "Edit User Level"
+msgstr "Modifier le niveau de l'utilisateur"
+
+#: Views/user.management.userlevel.view.php:12
+#: Views/user.pendings.userlevels.view.php:12
+msgid "USER LEVEL"
+msgstr "NIVEAU DE L'UTILISATEUR"
+
+#: Views/user.management.userlevel.view.php:19
+#: Views/user.management.userlevel.view.php:72
+msgid "SESSION TIMEOUT"
+msgstr "EXPIRATION DE LA SESSION"
+
+#: Views/user.management.userlevel.view.php:21
+#: Views/user.management.userlevel.view.php:73
+msgid "(second/s)"
+msgstr ""
+
+#: Views/user.management.userlevel.view.php:25
+#: Views/user.management.userlevel.view.php:76
+msgid "PASSWORD CHANGE"
+msgstr "CHANGEMENT DE MOT DE PASSE"
+
+#: Views/user.management.userlevel.view.php:29
+#: Views/user.management.userlevel.view.php:80
+msgid "PASSWORD EXPIRY"
+msgstr "EXPIRATION DU MOT"
+
+#: Views/user.management.userlevel.view.php:30
+#: Views/user.management.userlevel.view.php:46
+#: Views/user.management.userlevel.view.php:50
+#: Views/user.management.userlevel.view.php:81
+#: Views/user.management.userlevel.view.php:97
+msgid "(day/s)"
+msgstr ""
+
+#: Views/user.management.userlevel.view.php:33
+#: Views/user.management.userlevel.view.php:84
+msgid "MINIMUM PASSWORD"
+msgstr "MOT DE PASSE MINIMUM"
+
+#: Views/user.management.userlevel.view.php:37
+#: Views/user.management.userlevel.view.php:88
+msgid "PASSWORD HISTORY"
+msgstr "HISTOIRE DE PASSE"
+
+#: Views/user.management.userlevel.view.php:41
+#: Views/user.management.userlevel.view.php:92
+msgid "MAX ALLOCATION"
+msgstr "MAX ALLOCATION"
+
+#: Views/user.management.userlevel.view.php:45
+#: Views/user.management.userlevel.view.php:96
+msgid "SEARCH RANGE"
+msgstr "GAMME DE RECHERCHE"
+
+#: Views/user.management.userlevel.view.php:49
+msgid "NEW USER PASSWORD EXPIRY"
+msgstr "NOUVEAU MOT DE PASSE EXPIRATION"
+
+#: Views/user.management.userlevel.view.php:56
+#: Views/user.systemsettings.airbonustopup.view.php:24
+#: Views/user.systemsettings.airconfig.view.php:25
+#: Views/user.systemsettings.amlsettings.view.php:52
+#: Views/user.systemsettings.amlsettings.view.php:102
+#: Views/user.systemsettings.amlsettings.view.php:160
+#: Views/user.systemsettings.amlsettings.view.php:210
+#: Views/user.systemsettings.bonus.view.php:30
+#: Views/user.systemsettings.bonus.view.php:65
+#: Views/user.systemsettings.commissions.view.php:30
+#: Views/user.systemsettings.commissions.view.php:64
+#: Views/user.systemsettings.keyallowed.view.php:42
+#: Views/user.systemsettings.keyallowed.view.php:88
+#: Views/user.systemsettings.keycosttype.view.php:51
+#: Views/user.systemsettings.keycosttype.view.php:107
+#: Views/user.systemsettings.messages.view.php:28
+#: Views/user.systemsettings.receiver.view.php:39
+#: Views/user.systemsettings.serverconfig.view.php:26
+#: Views/user.systemsettings.systeminfo.view.php:34
+#: Views/user.systemsettings.transceiver.view.php:40
+#: Views/user.systemsettings.transmitter.view.php:39
+msgid "Request"
+msgstr "demander des"
+
+#: Views/user.management.userlevel.view.php:65
+msgid "Add New User Level"
+msgstr "Ajouter un nouveau niveau utilisateur"
+
+#: Views/user.management.userlevel.view.php:68
+msgid "NEW USER LEVEL"
+msgstr "NOUVEAU NIVEAU DE L'UTILISATEUR"
+
+#: Views/user.management.userlevel.view.php:103
+#: Views/user.systemsettings.airbonustopup.view.php:3
+#: Views/user.systemsettings.airbonustopup.view.php:121
+#: Views/user.systemsettings.airconfig.view.php:3
+#: Views/user.systemsettings.airconfig.view.php:122
+#: Views/user.systemsettings.amlsettings.view.php:16
+#: Views/user.systemsettings.amlsettings.view.php:66
+#: Views/user.systemsettings.amlsettings.view.php:124
+#: Views/user.systemsettings.amlsettings.view.php:174
+#: Views/user.systemsettings.amlsettings.view.php:265
+#: Views/user.systemsettings.amlsettings.view.php:304
+#: Views/user.systemsettings.bonus.view.php:9
+#: Views/user.systemsettings.bonus.view.php:44
+#: Views/user.systemsettings.bonus.view.php:199
+#: Views/user.systemsettings.commissions.view.php:9
+#: Views/user.systemsettings.commissions.view.php:43
+#: Views/user.systemsettings.commissions.view.php:201
+#: Views/user.systemsettings.keyallowed.view.php:10
+#: Views/user.systemsettings.keyallowed.view.php:56
+#: Views/user.systemsettings.keyallowed.view.php:162
+#: Views/user.systemsettings.keyallowed.view.php:231
+#: Views/user.systemsettings.keycosttype.view.php:208
+#: Views/user.systemsettings.keycosttype.view.php:251
+#: Views/user.systemsettings.receiver.view.php:124
+#: Views/user.systemsettings.serverconfig.view.php:77
+#: Views/user.systemsettings.transceiver.view.php:79
+#: Views/user.systemsettings.transmitter.view.php:133
+msgid "Add"
+msgstr "Ajouter"
+
+#: Views/user.management.userregistration.view.php:11
+msgid "Registration Details"
+msgstr "Détails sur l'inscription"
+
+#: Views/user.management.userregistration.view.php:18
+#: Views/user.management.userregistration.view.php:27
+#: Views/user.management.userregistration.view.php:36
+#: Views/user.management.userregistration.view.php:45
+#: Views/user.management.userregistration.view.php:54
+#: Views/user.subscriber.register.view.php:31
+#: Views/user.subscriber.register.view.php:61
+#: Views/user.subscriber.register.view.php:68
+#: Views/user.subscriber.register.view.php:79
+#: Views/user.subscriber.register.view.php:92
+#: Views/user.subscriber.register.view.php:120
+#: Views/user.subscriber.register.view.php:127
+#: Views/user.subscriber.register.view.php:160
+#: Views/user.subscriber.register.view.php:176
+#: Views/user.subscriber.register.view.php:204
+#: Views/user.subscriber.register.view.php:211
+#: Views/user.subscriber.register.view.php:218
+#: Views/user.subscriber.register.view.php:227
+#: Views/user.subscriber.register.view.php:234
+#: Views/user.subscriber.register.view.php:246
+#: Views/user.subscriber.register.view.php:260
+#: Views/user.subscriber.register.view.php:267
+#: Views/user.subscriber.register.view.php:274
+#: Views/user.subscriber.register.view.php:283
+#: Views/user.subscriber.register.view.php:290
+msgid "Field required"
+msgstr "champ obligatoire"
+
+#: Views/user.management.userregistration.view.php:23
+#: Views/user.management.usersearch.view.php:134
+msgid "First Name"
+msgstr "Prénom"
+
+#: Views/user.management.userregistration.view.php:32
+#: Views/user.management.usersearch.view.php:138
+msgid "Last Name"
+msgstr "à Nom"
+
+#: Views/user.management.userregistration.view.php:41
+#: Views/user.management.usersearch.view.php:181
+msgid "Mobile Number"
+msgstr "numéro de mobile"
+
+#: Views/user.management.userregistration.view.php:59
+#: Views/user.management.usersearch.view.php:142
+msgid "Department"
+msgstr "Département"
+
+#: Views/user.management.userregistration.view.php:63
+#: Views/user.management.usersearch.view.php:146
+#: Views/user.management.view.php:51
+msgid "User Level"
+msgstr "Niveau de l'utilisateur"
+
+#: Views/user.management.userregistration.view.php:71
+#: Views/user.management.usersearch.view.php:159
+#: Views/user.pendings.keycosttypes.view.php:29
+#: Views/user.pendings.keycosttypes.view.php:83
+#: Views/user.systemsettings.keycosttype.view.php:147
+#: Views/user.systemsettings.keycosttype.view.php:283
+msgid "Status"
+msgstr "statut"
+
+#: Views/user.management.usersearch.view.php:42
+#: Views/user.management.usersearch.view.php:50
+#: Views/user.systemsettings.audittrail.view.php:11
+msgid "USER NAME"
+msgstr "NOM UTIL"
+
+#: Views/user.management.usersearch.view.php:45
+#: Views/user.subscriber.globalsearchview.view.php:45
+#: Views/user.subscriber.globalsearchview.view.php:58
+#: Views/user.subscriber.reversalsearch.view.php:8
+#: Views/user.subscriber.search.historytab.view.php:15
+#: Views/user.subscriber.search.view.php:64
+msgid "search"
+msgstr "rechercher"
+
+#: Views/user.management.usersearch.view.php:67
+#: Views/user.pendings.accounts.view.php:37
+msgid "USER ID"
+msgstr "ID UTILISATEUR"
+
+#: Views/user.management.usersearch.view.php:68
+#, fuzzy
+msgid "USERNAME"
+msgstr "NOM UTIL"
+
+#: Views/user.management.usersearch.view.php:70
+#: Views/user.pendings.accounts.view.php:33
+#: Views/user.reports.accountsummary.view.php:35
+#: Views/user.reports.subscribers.view.php:67
+#: Views/user.reports.transactionfailed.view.php:58
+msgid "FIRST NAME"
+msgstr "PRÉNOM"
+
+#: Views/user.management.usersearch.view.php:71
+#: Views/user.pendings.accounts.view.php:34
+#: Views/user.reports.accountsummary.view.php:36
+#: Views/user.reports.subscribers.view.php:69
+#: Views/user.reports.transactionfailed.view.php:59
+msgid "LAST NAME"
+msgstr "NOM"
+
+#: Views/user.management.usersearch.view.php:72
+#, fuzzy
+msgid "USERS LEVEL"
+msgstr "NIVEAU DE L'UTILISATEUR"
+
+#: Views/user.management.usersearch.view.php:73
+#: Views/user.pendings.accounts.view.php:36
+#: Views/user.pendings.b2wallocations.view.php:164
+#: Views/user.pendings.b2wallocations.view.php:245
+#: Views/user.pendings.b2wallocations.view.php:321
+#: Views/user.pendings.b2wallocations.view.php:395
+#: Views/user.pendings.bonus.view.php:112
+#: Views/user.pendings.bonus.view.php:164
+#: Views/user.pendings.commissions.view.php:115
+#: Views/user.pendings.commissions.view.php:168
+#: Views/user.pendings.keyallowed.view.php:95
+#: Views/user.pendings.keyallowed.view.php:131
+#: Views/user.pendings.keycosttypes.view.php:138
+#: Views/user.pendings.serverconfig.view.php:13
+#: Views/user.pendings.view.php:145 Views/user.pendings.view.php:216
+#: Views/user.pendings.view.php:286 Views/user.pendings.view.php:457
+#: Views/user.pendings.view.php:507
+#: Views/user.reports.accountsummary.view.php:39
+#: Views/user.reports.subscribers.view.php:71
+#: Views/user.systemsettings.airbonustopup.view.php:14
+#: Views/user.systemsettings.airbonustopup.view.php:48
+#: Views/user.systemsettings.airbonustopup.view.php:97
+#: Views/user.systemsettings.airconfig.view.php:14
+#: Views/user.systemsettings.airconfig.view.php:57
+#: Views/user.systemsettings.bonus.view.php:20
+#: Views/user.systemsettings.bonus.view.php:55
+#: Views/user.systemsettings.bonus.view.php:98
+#: Views/user.systemsettings.bonus.view.php:141
+#: Views/user.systemsettings.bonus.view.php:186
+#: Views/user.systemsettings.bonus.view.php:227
+#: Views/user.systemsettings.commissions.view.php:20
+#: Views/user.systemsettings.commissions.view.php:54
+#: Views/user.systemsettings.commissions.view.php:99
+#: Views/user.systemsettings.commissions.view.php:142
+#: Views/user.systemsettings.commissions.view.php:173
+#: Views/user.systemsettings.commissions.view.php:218
+#: Views/user.systemsettings.keyallowed.view.php:27
+#: Views/user.systemsettings.keyallowed.view.php:73
+#: Views/user.systemsettings.keyallowed.view.php:122
+#: Views/user.systemsettings.keyallowed.view.php:156
+#: Views/user.systemsettings.keyallowed.view.php:191
+#: Views/user.systemsettings.keyallowed.view.php:225
+#: Views/user.systemsettings.keycosttype.view.php:25
+#: Views/user.systemsettings.keycosttype.view.php:81
+#: Views/user.systemsettings.receiver.view.php:70
+#: Views/user.systemsettings.serverconfig.view.php:15
+#: Views/user.systemsettings.serverconfig.view.php:50
+#: Views/user.systemsettings.transceiver.view.php:116
+#: Views/user.systemsettings.transmitter.view.php:78
+msgid "STATUS"
+msgstr "STATUT"
+
+#: Views/user.management.usersearch.view.php:74
+#, fuzzy
+msgid "View User Details"
+msgstr "Détails Personnels"
+
+#: Views/user.management.usersearch.view.php:103
+msgid "Edit"
+msgstr "Editer"
+
+#: Views/user.management.usersearch.view.php:108
+msgid "Lock"
+msgstr "Verrouiller"
+
+#: Views/user.management.usersearch.view.php:111
+msgid "Unlock"
+msgstr "Déverrouillez"
+
+#: Views/user.management.usersearch.view.php:114
+msgid "Reset Password"
+msgstr "réinitialiser mot de passe"
+
+#: Views/user.management.usersearch.view.php:126
+msgid "User ID"
+msgstr "ID de l'utilisateur"
+
+#: Views/user.management.usersearch.view.php:130
+msgid "User Name"
+msgstr "Nom d'utilisateur"
+
+#: Views/user.management.usersearch.view.php:169
+msgid "Locked"
+msgstr "Verrouillée"
+
+#: Views/user.management.usersearch.view.php:173
+msgid "Date Created"
+msgstr "jour Date de création"
+
+#: Views/user.management.usersearch.view.php:177
+msgid "Date Modified"
+msgstr "Date de modification"
+
+#: Views/user.management.view.php:39
+msgid "User Search"
+msgstr "Recherche d'utilisateur"
+
+#: Views/user.management.view.php:43
+msgid "User Registration"
+msgstr "enregistrement de l'utilisateur"
+
+#: Views/user.management.view.php:47
+msgid "Roles Configuration"
+msgstr "Configuration des rôles"
+
+#: Views/user.master.php:104
+msgid "Welcome Back"
+msgstr "نرحب العودة"
+
+#: Views/user.master.php:105
+msgid "Last Login"
+msgstr "Dernier Login"
+
+#: Views/user.master.php:106
+msgid "Profile"
+msgstr "Profil"
+
+#: Views/user.master.php:120 Views/user.master.php:165
+#: Views/user.reports.view.php:42
+msgid "Subscribers"
+msgstr "Abonnés"
+
+#: Views/user.master.php:126 Views/user.master.php:168
+msgid "Pendings"
+msgstr "En attendant"
+
+#: Views/user.master.php:132 Views/user.master.php:171
+msgid "Web Users"
+msgstr "Compte Web"
+
+#: Views/user.master.php:138 Views/user.master.php:174
+msgid "Reports"
+msgstr "Rapports"
+
+#: Views/user.master.php:144 Views/user.master.php:177
+msgid "Settings"
+msgstr "Réglages"
+
+#: Views/user.pendings.accounts.view.php:29
+msgid "DATE REGISTERED"
+msgstr "DATE AINSI ENREGISTRÉE"
+
+#: Views/user.pendings.accounts.view.php:31
+#: Views/user.reports.accountsummary.view.php:38
+#: Views/user.reports.subscribers.view.php:66
+#: Views/user.subscriber.search.view.php:60
+msgid "NICKNAME"
+msgstr "PSEUDO"
+
+#: Views/user.pendings.accounts.view.php:35
+#: Views/user.reports.transactionfailed.view.php:60
+msgid "ACCOUNT TYPE"
+msgstr "TYPE DE COMPTE"
+
+#: Views/user.pendings.accounts.view.php:38
+#: Views/user.pendings.airconfig.view.php:13
+#: Views/user.pendings.allocations.view.php:16
+#: Views/user.pendings.amlsettings.view.php:22
+#: Views/user.pendings.amlsettings.view.php:58
+#: Views/user.pendings.b2wallocations.view.php:28
+#: Views/user.pendings.b2wallocations.view.php:92
+#: Views/user.pendings.dealercommission.view.php:61
+#: Views/user.pendings.dealercommission.view.php:199
+#: Views/user.pendings.evdallocations.view.php:16
+#: Views/user.pendings.messages.view.php:13
+#: Views/user.pendings.receiver.view.php:13
+#: Views/user.pendings.reversal.view.php:17
+#: Views/user.pendings.serverconfig.view.php:15
+#: Views/user.pendings.systeminfo.view.php:13
+#: Views/user.pendings.transceiver.view.php:13
+#: Views/user.pendings.transmitter.view.php:13
+#: Views/user.pendings.userlevels.view.php:14
+msgid "Approve/Reject"
+msgstr "Approuver / Rejeter"
+
+#: Views/user.pendings.accounts.view.php:72
+msgid "approve"
+msgstr "d'approuver"
+
+#: Views/user.pendings.accounts.view.php:73
+msgid "reject"
+msgstr "rejeter"
+
+#: Views/user.pendings.accounts.view.php:74
+#: Views/user.subscriber.search.personaltab.view.php:10
+msgid "edit"
+msgstr "éditer"
+
+#: Views/user.pendings.accounts.view.php:75
+#: Views/user.subscriber.search.personaltab.view.php:11
+msgid "save"
+msgstr "sauver"
+
+#: Views/user.pendings.accounts.view.php:81
+#: Views/user.subscriber.search.personaltab.view.php:24
+msgid "Check ID Image"
+msgstr ""
+
+#: Views/user.pendings.accounts.view.php:85
+#: Views/user.subscriber.search.accounttab.view.php:53
+msgid "account id"
+msgstr "compte Identifiant du"
+
+#: Views/user.pendings.accounts.view.php:86
+#: Views/user.subscriber.register.view.php:39
+#: Views/user.subscriber.search.accounttab.view.php:60
+#: Views/user.subscriber.search.view.php:49
+msgid "account type"
+msgstr "type de compte"
+
+#: Views/user.pendings.accounts.view.php:87
+#: Views/user.subscriber.search.accounttab.view.php:68
+msgid "kyc"
+msgstr "kyc"
+
+#: Views/user.pendings.accounts.view.php:90
+#: Views/user.subscriber.register.view.php:19
+#: Views/user.subscriber.search.accounttab.view.php:54
+msgid "nickname"
+msgstr "Pseudo"
+
+#: Views/user.pendings.accounts.view.php:91
+#: Views/user.subscriber.register.view.php:27
+#: Views/user.subscriber.search.accounttab.view.php:55
+msgid "authorized mobile number"
+msgstr "numéro de mobile autorisé"
+
+#: Views/user.pendings.accounts.view.php:92
+#: Views/user.subscriber.search.accounttab.view.php:69
+msgid "reference account"
+msgstr "compte de référence"
+
+#: Views/user.pendings.accounts.view.php:95
+#: Views/user.subscriber.register.view.php:47
+#: Views/user.subscriber.search.accounttab.view.php:76
+msgid "account status"
+msgstr "l'état du compte"
+
+#: Views/user.pendings.accounts.view.php:96
+#: Views/user.subscriber.search.accounttab.view.php:81
+msgid "locked"
+msgstr "verrouillée"
+
+#: Views/user.pendings.accounts.view.php:105
+#: Views/user.subscriber.search.personaltab.view.php:27
+msgid "Personal information"
+msgstr "Les renseignements personnels"
+
+#: Views/user.pendings.accounts.view.php:107
+#: Views/user.subscriber.register.view.php:57
+#: Views/user.subscriber.register.view.php:279
+#: Views/user.subscriber.search.personaltab.view.php:33
+msgid "last name"
+msgstr "nom de famille"
+
+#: Views/user.pendings.accounts.view.php:108
+#: Views/user.subscriber.register.view.php:64
+#: Views/user.subscriber.register.view.php:286
+#: Views/user.subscriber.search.personaltab.view.php:34
+msgid "first name"
+msgstr "prénom"
+
+#: Views/user.pendings.accounts.view.php:109
+#: Views/user.subscriber.register.view.php:71
+#: Views/user.subscriber.search.personaltab.view.php:35
+msgid "second name"
+msgstr "deuxième nom"
+
+#: Views/user.pendings.accounts.view.php:110
+#: Views/user.subscriber.register.view.php:75
+#: Views/user.subscriber.register.view.php:263
+#: Views/user.subscriber.search.personaltab.view.php:36
+msgid "id number"
+msgstr "numéro d'identifiant"
+
+#: Views/user.pendings.accounts.view.php:111
+#: Views/user.subscriber.register.view.php:82
+#: Views/user.subscriber.register.view.php:270
+#: Views/user.subscriber.search.personaltab.view.php:37
+msgid "id description"
+msgstr "Description identifiant"
+
+#: Views/user.pendings.accounts.view.php:112
+#: Views/user.subscriber.register.view.php:88
+#: Views/user.subscriber.search.personaltab.view.php:41
+msgid "id expiry date"
+msgstr "Identifiant du date de péremption"
+
+#: Views/user.pendings.accounts.view.php:117
+#: Views/user.subscriber.register.view.php:108
+#: Views/user.subscriber.search.personaltab.view.php:46
+msgid "nationality"
+msgstr "nationalité"
+
+#: Views/user.pendings.accounts.view.php:119
+#: Views/user.subscriber.register.view.php:101
+#: Views/user.subscriber.search.personaltab.view.php:51
+msgid "gender"
+msgstr "sexe"
+
+#: Views/user.pendings.accounts.view.php:128
+#: Views/user.subscriber.register.view.php:116
+#: Views/user.subscriber.search.personaltab.view.php:59
+msgid "date of birth"
+msgstr "date de naissance"
+
+#: Views/user.pendings.accounts.view.php:129
+#: Views/user.subscriber.register.view.php:123
+#: Views/user.subscriber.search.personaltab.view.php:60
+msgid "place of birth"
+msgstr "lieu de naissance"
+
+#: Views/user.pendings.accounts.view.php:130
+#: Views/user.subscriber.register.view.php:143
+#: Views/user.subscriber.search.personaltab.view.php:61
+msgid "company"
+msgstr "société"
+
+#: Views/user.pendings.accounts.view.php:131
+#: Views/user.subscriber.register.view.php:145
+#: Views/user.subscriber.search.personaltab.view.php:62
+msgid "profession"
+msgstr "profession"
+
+#: Views/user.pendings.accounts.view.php:132
+#: Views/user.subscriber.register.view.php:97
+#: Views/user.subscriber.search.personaltab.view.php:66
+#, fuzzy
+msgid "tin number"
+msgstr "numéro d'identifiant"
+
+#: Views/user.pendings.accounts.view.php:137
+#: Views/user.subscriber.register.view.php:154
+msgid "building name / location"
+msgstr "nom / emplacement bâtiment"
+
+#: Views/user.pendings.accounts.view.php:138
+#: Views/user.subscriber.register.view.php:156
+#: Views/user.subscriber.search.personaltab.view.php:72
+msgid "city / village"
+msgstr "ville / village"
+
+#: Views/user.pendings.accounts.view.php:139
+#: Views/user.subscriber.register.view.php:163
+#: Views/user.subscriber.search.personaltab.view.php:73
+msgid "street name"
+msgstr "nom de la rue"
+
+#: Views/user.pendings.accounts.view.php:140
+#: Views/user.subscriber.register.view.php:169
+#: Views/user.subscriber.search.personaltab.view.php:74
+msgid "region"
+msgstr "région"
+
+#: Views/user.pendings.accounts.view.php:141
+#: Views/user.subscriber.register.view.php:179
+#: Views/user.subscriber.search.personaltab.view.php:77
+msgid "country"
+msgstr "pays"
+
+#: Views/user.pendings.accounts.view.php:142
+#: Views/user.subscriber.register.view.php:187
+#: Views/user.subscriber.search.personaltab.view.php:81
+msgid "email address"
+msgstr "adresse e-mail"
+
+#: Views/user.pendings.accounts.view.php:143
+#: Views/user.subscriber.register.view.php:189
+#: Views/user.subscriber.search.personaltab.view.php:82
+msgid "alternate number"
+msgstr "autre numéro"
+
+#: Views/user.pendings.accounts.view.php:150
+#: Views/user.subscriber.register.view.php:200
+#: Views/user.subscriber.search.corptab.view.php:10
+msgid "business name"
+msgstr "Nom de l'entreprise"
+
+#: Views/user.pendings.accounts.view.php:151
+#: Views/user.subscriber.register.view.php:207
+#: Views/user.subscriber.search.corptab.view.php:11
+msgid "trade license number"
+msgstr "Numéro de licence commerciale"
+
+#: Views/user.pendings.accounts.view.php:152
+#: Views/user.subscriber.register.view.php:214
+#: Views/user.subscriber.search.corptab.view.php:12
+msgid "date of incorporation"
+msgstr "date de constitution"
+
+#: Views/user.pendings.accounts.view.php:155
+#: Views/user.subscriber.register.view.php:223
+#: Views/user.subscriber.search.corptab.view.php:13
+msgid "registered address"
+msgstr "adresse du siège social"
+
+#: Views/user.pendings.accounts.view.php:156
+#: Views/user.subscriber.register.view.php:230
+#: Views/user.subscriber.search.corptab.view.php:14
+msgid "type of business"
+msgstr "type d'entreprise"
+
+#: Views/user.pendings.accounts.view.php:157
+#: Views/user.subscriber.register.view.php:242
+#: Views/user.subscriber.search.corptab.view.php:18
+msgid "ownership information"
+msgstr "les informations de propriété"
+
+#: Views/user.pendings.airbonustopup.view.php:11
+#: Views/user.pendings.airconfig.view.php:10
+#: Views/user.pendings.allocations.view.php:9
+#: Views/user.pendings.amlsettings.view.php:19
+#: Views/user.pendings.amlsettings.view.php:55
+#: Views/user.pendings.b2wallocations.view.php:20
+#: Views/user.pendings.b2wallocations.view.php:84
+#: Views/user.pendings.bonus.view.php:17 Views/user.pendings.bonus.view.php:51
+#: Views/user.pendings.commissions.view.php:17
+#: Views/user.pendings.commissions.view.php:51
+#: Views/user.pendings.dealercommission.view.php:55
+#: Views/user.pendings.dealercommission.view.php:193
+#: Views/user.pendings.evdallocations.view.php:9
+#: Views/user.pendings.keyallowed.view.php:17
+#: Views/user.pendings.keyallowed.view.php:51
+#: Views/user.pendings.keycosttypes.view.php:123
+#: Views/user.pendings.messages.view.php:10
+#: Views/user.pendings.receiver.view.php:10
+#: Views/user.pendings.reversal.view.php:9
+#: Views/user.pendings.serverconfig.view.php:10
+#: Views/user.pendings.systeminfo.view.php:10
+#: Views/user.pendings.transceiver.view.php:10
+#: Views/user.pendings.transmitter.view.php:10
+#: Views/user.pendings.userlevels.view.php:11 Views/user.pendings.view.php:343
+#: Views/user.pendings.view.php:392 Views/user.pendings.view.php:442
+#: Views/user.pendings.view.php:492
+msgid "CREATED TIMESTAMP"
+msgstr "TIMESTAMP CRÉÉ"
+
+#: Views/user.pendings.airbonustopup.view.php:12
+#: Views/user.pendings.airconfig.view.php:11
+#: Views/user.pendings.bonus.view.php:18 Views/user.pendings.bonus.view.php:52
+#: Views/user.pendings.commissions.view.php:18
+#: Views/user.pendings.commissions.view.php:52
+#: Views/user.pendings.keyallowed.view.php:18
+#: Views/user.pendings.keyallowed.view.php:52
+#: Views/user.systemsettings.airbonustopup.view.php:13
+#: Views/user.systemsettings.airconfig.view.php:13
+#: Views/user.systemsettings.bonus.view.php:19
+#: Views/user.systemsettings.bonus.view.php:54
+#: Views/user.systemsettings.commissions.view.php:19
+#: Views/user.systemsettings.commissions.view.php:53
+#: Views/user.systemsettings.receiver.view.php:12
+#: Views/user.systemsettings.transceiver.view.php:13
+#: Views/user.systemsettings.transmitter.view.php:12
+msgid "CONFIGURATIONS"
+msgstr "CONFIGURATIONS"
+
+#: Views/user.pendings.airbonustopup.view.php:13
+#: Views/user.pendings.airconfig.view.php:12
+#: Views/user.pendings.allocations.view.php:15
+#: Views/user.pendings.amlsettings.view.php:21
+#: Views/user.pendings.amlsettings.view.php:57
+#: Views/user.pendings.b2wallocations.view.php:27
+#: Views/user.pendings.b2wallocations.view.php:91
+#: Views/user.pendings.bonus.view.php:19 Views/user.pendings.bonus.view.php:53
+#: Views/user.pendings.commissions.view.php:19
+#: Views/user.pendings.commissions.view.php:53
+#: Views/user.pendings.evdallocations.view.php:15
+#: Views/user.pendings.keyallowed.view.php:19
+#: Views/user.pendings.keyallowed.view.php:53
+#: Views/user.pendings.messages.view.php:12
+#: Views/user.pendings.receiver.view.php:12
+#: Views/user.pendings.reversal.view.php:16
+#: Views/user.pendings.serverconfig.view.php:14
+#: Views/user.pendings.systeminfo.view.php:12
+#: Views/user.pendings.transceiver.view.php:12
+#: Views/user.pendings.transmitter.view.php:12
+#: Views/user.pendings.userlevels.view.php:13
+msgid "CREATED BY"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.airbonustopup.view.php:14
+#: Views/user.systemsettings.airbonustopup.view.php:15
+#: Views/user.systemsettings.airconfig.view.php:15
+#: Views/user.systemsettings.bonus.view.php:21
+#: Views/user.systemsettings.bonus.view.php:56
+#: Views/user.systemsettings.commissions.view.php:21
+#: Views/user.systemsettings.commissions.view.php:55
+#: Views/user.systemsettings.keyallowed.view.php:28
+#: Views/user.systemsettings.keyallowed.view.php:74
+#: Views/user.systemsettings.keycosttype.view.php:30
+#: Views/user.systemsettings.keycosttype.view.php:86
+#: Views/user.systemsettings.messages.view.php:16
+#: Views/user.systemsettings.receiver.view.php:13
+#: Views/user.systemsettings.serverconfig.view.php:16
+#: Views/user.systemsettings.transceiver.view.php:14
+#: Views/user.systemsettings.transmitter.view.php:13
+msgid "EDIT REQUEST"
+msgstr "DEMANDE DE MODIFICATION"
+
+#: Views/user.pendings.airbonustopup.view.php:25
+#: Views/user.pendings.bonus.view.php:30 Views/user.pendings.bonus.view.php:64
+#: Views/user.pendings.commissions.view.php:30
+#: Views/user.pendings.commissions.view.php:64
+#: Views/user.pendings.keyallowed.view.php:30
+#: Views/user.pendings.keyallowed.view.php:64
+#, fuzzy
+msgid "Approve"
+msgstr "d'approuver"
+
+#: Views/user.pendings.airbonustopup.view.php:26
+#: Views/user.pendings.bonus.view.php:31 Views/user.pendings.bonus.view.php:65
+#: Views/user.pendings.commissions.view.php:31
+#: Views/user.pendings.commissions.view.php:65
+#: Views/user.pendings.keyallowed.view.php:31
+#: Views/user.pendings.keyallowed.view.php:65
+#, fuzzy
+msgid "Reject"
+msgstr "rejeter"
+
+#: Views/user.pendings.airconfig.view.php:9
+#: Views/user.pendings.receiver.view.php:9
+#: Views/user.pendings.serverconfig.view.php:9
+#: Views/user.pendings.transceiver.view.php:9
+#: Views/user.pendings.transmitter.view.php:9
+msgid "PNDGID"
+msgstr "PNDGID"
+
+#: Views/user.pendings.allocations.view.php:10
+#: Views/user.pendings.b2wallocations.view.php:21
+#: Views/user.pendings.b2wallocations.view.php:85
+#: Views/user.pendings.evdallocations.view.php:10
+#: Views/user.pendings.reversal.view.php:10
+msgid "REFERENCEID ID"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/user.pendings.allocations.view.php:11
+#: Views/user.pendings.b2wallocations.view.php:22
+#: Views/user.pendings.b2wallocations.view.php:86
+#: Views/user.pendings.evdallocations.view.php:11
+msgid "AUTHORIZED MOBILE NUMBER"
+msgstr "NOMBRE MOBILES AUTORISÉS"
+
+#: Views/user.pendings.allocations.view.php:13
+#: Views/user.pendings.b2wallocations.view.php:25
+#: Views/user.pendings.b2wallocations.view.php:89
+#: Views/user.pendings.b2wallocations.view.php:167
+#: Views/user.pendings.b2wallocations.view.php:248
+#: Views/user.pendings.b2wallocations.view.php:324
+#: Views/user.pendings.b2wallocations.view.php:398
+#: Views/user.pendings.bonus.view.php:116
+#: Views/user.pendings.bonus.view.php:168
+#: Views/user.pendings.commissions.view.php:90
+#: Views/user.pendings.commissions.view.php:143
+#: Views/user.pendings.evdallocations.view.php:13
+#: Views/user.pendings.keyallowed.view.php:99
+#: Views/user.pendings.keyallowed.view.php:135
+#: Views/user.pendings.reversal.view.php:14 Views/user.pendings.view.php:148
+#: Views/user.pendings.view.php:219 Views/user.pendings.view.php:289
+msgid "REMARKS"
+msgstr "REMARQUES"
+
+#: Views/user.pendings.allocations.view.php:14
+#: Views/user.pendings.b2wallocations.view.php:26
+#: Views/user.pendings.b2wallocations.view.php:90
+#: Views/user.pendings.evdallocations.view.php:14
+#: Views/user.pendings.reversal.view.php:15
+msgid "STATUS TYPE"
+msgstr "STATUT TYPE"
+
+#: Views/user.pendings.amlsettings.view.php:6
+#, fuzzy
+msgid "AML Type"
+msgstr "Type"
+
+#: Views/user.pendings.amlsettings.view.php:7
+#, fuzzy
+msgid "AML MSISDN"
+msgstr "numéro MSISDN"
+
+#: Views/user.pendings.amlsettings.view.php:20
+#: Views/user.pendings.amlsettings.view.php:56
+msgid "AML CONFIG"
+msgstr "AML CONFIG"
+
+#: Views/user.pendings.amlsettings.view.php:84
+#, fuzzy
+msgid "Pending AML MSISDN"
+msgstr "En attendant"
+
+#: Views/user.pendings.amlsettings.view.php:90
+#: Views/user.pendings.keycosttypes.view.php:18
+#: Views/user.pendings.keycosttypes.view.php:72
+#: Views/user.systemsettings.amlsettings.view.php:28
+#: Views/user.systemsettings.amlsettings.view.php:78
+#: Views/user.systemsettings.amlsettings.view.php:136
+#: Views/user.systemsettings.amlsettings.view.php:186
+#: Views/user.systemsettings.amlsettings.view.php:239
+#: Views/user.systemsettings.amlsettings.view.php:278
+#: Views/user.systemsettings.amlsettings.view.php:318
+#: Views/user.systemsettings.amlsettings.view.php:359
+#: Views/user.systemsettings.amlsettings.view.php:399
+#: Views/user.systemsettings.amlsettings.view.php:439
+#: Views/user.systemsettings.amlsettings.view.php:480
+#: Views/user.systemsettings.amlsettings.view.php:521
+#: Views/user.systemsettings.keycosttype.view.php:129
+#: Views/user.systemsettings.keycosttype.view.php:176
+#: Views/user.systemsettings.keycosttype.view.php:219
+#: Views/user.systemsettings.keycosttype.view.php:265
+msgid "Key"
+msgstr "Key"
+
+#: Views/user.pendings.amlsettings.view.php:93
+#: Views/user.pendings.keycosttypes.view.php:23
+#: Views/user.pendings.keycosttypes.view.php:77
+#: Views/user.systemsettings.amlsettings.view.php:29
+#: Views/user.systemsettings.amlsettings.view.php:79
+#: Views/user.systemsettings.amlsettings.view.php:137
+#: Views/user.systemsettings.amlsettings.view.php:187
+#: Views/user.systemsettings.amlsettings.view.php:242
+#: Views/user.systemsettings.amlsettings.view.php:281
+#: Views/user.systemsettings.amlsettings.view.php:321
+#: Views/user.systemsettings.amlsettings.view.php:362
+#: Views/user.systemsettings.amlsettings.view.php:402
+#: Views/user.systemsettings.amlsettings.view.php:442
+#: Views/user.systemsettings.amlsettings.view.php:483
+#: Views/user.systemsettings.amlsettings.view.php:524
+#: Views/user.systemsettings.keycosttype.view.php:144
+#: Views/user.systemsettings.keycosttype.view.php:191
+#: Views/user.systemsettings.keycosttype.view.php:234
+#: Views/user.systemsettings.keycosttype.view.php:280
+msgid "Priority"
+msgstr "Priorité"
+
+#: Views/user.pendings.amlsettings.view.php:94
+#, fuzzy
+msgid "Transaction type"
+msgstr "Historique des transactions"
+
+#: Views/user.pendings.amlsettings.view.php:97
+#: Views/user.systemsettings.amlsettings.view.php:30
+#: Views/user.systemsettings.amlsettings.view.php:138
+#, fuzzy
+msgid "Min.Amount"
+msgstr "montant"
+
+#: Views/user.pendings.amlsettings.view.php:98
+#, fuzzy
+msgid "Max.Amount/Day"
+msgstr "Montant / jour max"
+
+#: Views/user.pendings.amlsettings.view.php:101
+#: Views/user.systemsettings.amlsettings.view.php:31
+#: Views/user.systemsettings.amlsettings.view.php:80
+#: Views/user.systemsettings.amlsettings.view.php:139
+#: Views/user.systemsettings.amlsettings.view.php:188
+#, fuzzy
+msgid "Max.Amount"
+msgstr "montant"
+
+#: Views/user.pendings.amlsettings.view.php:102
+#, fuzzy
+msgid "Max.Amount/Month"
+msgstr "Montant / Mois Max"
+
+#: Views/user.pendings.amlsettings.view.php:105
+#, fuzzy
+msgid "Max.Transaction/Day"
+msgstr "Max Transaction / Jour"
+
+#: Views/user.pendings.amlsettings.view.php:106
+#: Views/user.systemsettings.amlsettings.view.php:85
+#: Views/user.systemsettings.amlsettings.view.php:193
+#, fuzzy
+msgid "Max.Current Amount"
+msgstr "Max Montant Actuel"
+
+#: Views/user.pendings.amlsettings.view.php:109
+#, fuzzy
+msgid "Max.Transaction/Month"
+msgstr "Max Transaction / Mois"
+
+#: Views/user.pendings.amlsettings.view.php:110
+#: Views/user.pendings.keycosttypes.view.php:28
+#: Views/user.pendings.keycosttypes.view.php:82
+#, fuzzy
+msgid "Created By"
+msgstr "jour Date de création"
+
+#: Views/user.pendings.amlsettings.view.php:113
+msgid "Created Date"
+msgstr ""
+
+#: Views/user.pendings.amlsettings.view.php:114
+#: Views/user.subscriber.reversalresult.view.php:58
+#: Views/user.subscriber.search.accounttab.view.php:106
+#: Views/user.subscriber.search.accounttab.view.php:143
+#: Views/user.subscriber.search.accounttab.view.php:199
+msgid "Remarks"
+msgstr "Remarques"
+
+#: Views/user.pendings.amlsettings.view.php:119
+#: Views/user.pendings.bonus.view.php:121
+#: Views/user.pendings.bonus.view.php:173
+#: Views/user.pendings.commissions.view.php:122
+#: Views/user.pendings.commissions.view.php:175
+#: Views/user.pendings.keyallowed.view.php:105
+#: Views/user.pendings.keyallowed.view.php:141
+#: Views/user.pendings.keycosttypes.view.php:151
+msgid "Submit"
+msgstr ""
+
+#: Views/user.pendings.amlsettings.view.php:122
+#: Views/user.pendings.b2wallocations.view.php:365
+#: Views/user.pendings.bonus.view.php:124
+#: Views/user.pendings.bonus.view.php:176
+#: Views/user.pendings.commissions.view.php:125
+#: Views/user.pendings.commissions.view.php:178
+#: Views/user.pendings.keyallowed.view.php:108
+#: Views/user.pendings.keyallowed.view.php:144
+#: Views/user.pendings.keycosttypes.view.php:154
+#: Views/user.systemsettings.airbonustopup.view.php:124
+#: Views/user.systemsettings.airconfig.view.php:125
+#: Views/user.systemsettings.amlsettings.view.php:268
+#: Views/user.systemsettings.amlsettings.view.php:307
+#: Views/user.systemsettings.amlsettings.view.php:347
+#: Views/user.systemsettings.amlsettings.view.php:388
+#: Views/user.systemsettings.amlsettings.view.php:428
+#: Views/user.systemsettings.amlsettings.view.php:468
+#: Views/user.systemsettings.amlsettings.view.php:509
+#: Views/user.systemsettings.amlsettings.view.php:550
+#: Views/user.systemsettings.bonus.view.php:202
+#: Views/user.systemsettings.commissions.view.php:116
+#: Views/user.systemsettings.commissions.view.php:159
+#: Views/user.systemsettings.commissions.view.php:204
+#: Views/user.systemsettings.keyallowed.view.php:131
+#: Views/user.systemsettings.keyallowed.view.php:165
+#: Views/user.systemsettings.keyallowed.view.php:200
+#: Views/user.systemsettings.keyallowed.view.php:234
+#: Views/user.systemsettings.keycosttype.view.php:254
+#: Views/user.systemsettings.keycosttype.view.php:303
+#, fuzzy
+msgid "Cancel"
+msgstr "résilier"
+
+#: Views/user.pendings.b2wallocations.view.php:6
+msgid "Bank Allocation Confirmation"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:8
+msgid "Bank Allocation Approval"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:23
+#: Views/user.pendings.b2wallocations.view.php:87
+#: Views/user.pendings.b2wallocations.view.php:155
+#: Views/user.pendings.b2wallocations.view.php:236
+#: Views/user.pendings.b2wallocations.view.php:312
+#: Views/user.pendings.b2wallocations.view.php:386
+#, fuzzy
+msgid "BANK REFERENCE"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/user.pendings.b2wallocations.view.php:141
+#: Views/user.pendings.b2wallocations.view.php:192
+msgid "Pending BANK to Wallet Allocation for Confirmation"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:149
+#: Views/user.pendings.b2wallocations.view.php:230
+#: Views/user.pendings.b2wallocations.view.php:306
+#: Views/user.pendings.b2wallocations.view.php:380
+#: Views/user.pendings.view.php:133 Views/user.pendings.view.php:204
+msgid "MOBILE NUMBER"
+msgstr "NUMÉRO DE PORTABLE"
+
+#: Views/user.pendings.b2wallocations.view.php:170
+#: Views/user.pendings.b2wallocations.view.php:327
+msgid "Check Image"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:200
+#: Views/user.pendings.b2wallocations.view.php:275
+#: Views/user.pendings.b2wallocations.view.php:353
+#: Views/user.pendings.b2wallocations.view.php:425
+#: Views/user.pendings.view.php:175 Views/user.pendings.view.php:246
+#: Views/user.pendings.view.php:292 Views/user.pendings.view.php:317
+#: Views/user.subscriber.search.accounttab.view.php:112
+#: Views/user.subscriber.search.accounttab.view.php:149
+#: Views/user.subscriber.search.accounttab.view.php:205
+msgid "Your Password"
+msgstr "votre mot de passe"
+
+#: Views/user.pendings.b2wallocations.view.php:222
+#: Views/user.pendings.b2wallocations.view.php:267
+msgid "Pending Wallet to Bank Allocation for Confirmation"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:298
+msgid "Pending BANK to Wallet Allocation for Approval"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:346
+msgid "Pending BANK to Wallet Allocation for approval"
+msgstr ""
+
+#: Views/user.pendings.b2wallocations.view.php:372
+#: Views/user.pendings.b2wallocations.view.php:417
+msgid "Pending Wallet to Bank Allocation for Approval"
+msgstr ""
+
+#: Views/user.pendings.bonus.view.php:5
+msgid "Bonus By Type"
+msgstr ""
+
+#: Views/user.pendings.bonus.view.php:6
+msgid "Bonus By MSISDN"
+msgstr ""
+
+#: Views/user.pendings.bonus.view.php:20 Views/user.pendings.bonus.view.php:54
+#: Views/user.pendings.commissions.view.php:20
+#: Views/user.pendings.commissions.view.php:54
+#: Views/user.pendings.keyallowed.view.php:20
+#: Views/user.pendings.keyallowed.view.php:54
+#: Views/user.pendings.keycosttypes.view.php:30
+#: Views/user.pendings.keycosttypes.view.php:84
+#: Views/user.systemsettings.amlsettings.view.php:36
+#: Views/user.systemsettings.amlsettings.view.php:86
+#: Views/user.systemsettings.amlsettings.view.php:144
+#: Views/user.systemsettings.amlsettings.view.php:194
+#, fuzzy
+msgid "Action"
+msgstr "Allocations"
+
+#: Views/user.pendings.bonus.view.php:79
+#, fuzzy
+msgid "Pending Bonus by Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.bonus.view.php:85
+#: Views/user.pendings.bonus.view.php:137
+#: Views/user.pendings.commissions.view.php:85
+#: Views/user.pendings.commissions.view.php:138
+msgid "PENDING ID"
+msgstr ""
+
+#: Views/user.pendings.bonus.view.php:88
+#: Views/user.pendings.bonus.view.php:140
+#: Views/user.pendings.keycosttypes.view.php:130
+#: Views/user.pendings.view.php:449 Views/user.pendings.view.php:499
+#: Views/user.systemsettings.bonus.view.php:86
+#: Views/user.systemsettings.bonus.view.php:129
+#: Views/user.systemsettings.bonus.view.php:173
+#: Views/user.systemsettings.bonus.view.php:214
+#: Views/user.systemsettings.keycosttype.view.php:21
+#: Views/user.systemsettings.keycosttype.view.php:77
+msgid "ACCOUNT"
+msgstr "COMPTE"
+
+#: Views/user.pendings.bonus.view.php:89
+#: Views/user.pendings.bonus.view.php:141
+#: Views/user.pendings.commissions.view.php:89
+#: Views/user.pendings.commissions.view.php:142
+#: Views/user.pendings.dealercommission.view.php:59
+#: Views/user.pendings.dealercommission.view.php:197
+#: Views/user.systemsettings.airbonustopup.view.php:49
+#: Views/user.systemsettings.airbonustopup.view.php:116
+#: Views/user.systemsettings.bonus.view.php:109
+#: Views/user.systemsettings.bonus.view.php:152
+#: Views/user.systemsettings.bonus.view.php:174
+#: Views/user.systemsettings.bonus.view.php:215
+#: Views/user.systemsettings.commissions.view.php:87
+#: Views/user.systemsettings.commissions.view.php:130
+#: Views/user.systemsettings.commissions.view.php:172
+#: Views/user.systemsettings.commissions.view.php:217
+#, fuzzy
+msgid "NAME"
+msgstr "PSEUDO"
+
+#: Views/user.pendings.bonus.view.php:92
+#: Views/user.pendings.bonus.view.php:144
+#: Views/user.pendings.commissions.view.php:93
+#: Views/user.pendings.commissions.view.php:146
+#: Views/user.pendings.keyallowed.view.php:87
+#: Views/user.pendings.keyallowed.view.php:123
+#: Views/user.pendings.keycosttypes.view.php:127
+#: Views/user.pendings.view.php:347 Views/user.pendings.view.php:396
+#: Views/user.pendings.view.php:446 Views/user.pendings.view.php:496
+#: Views/user.systemsettings.bonus.view.php:89
+#: Views/user.systemsettings.bonus.view.php:132
+#: Views/user.systemsettings.bonus.view.php:177
+#: Views/user.systemsettings.bonus.view.php:218
+#: Views/user.systemsettings.commissions.view.php:90
+#: Views/user.systemsettings.commissions.view.php:133
+#: Views/user.systemsettings.commissions.view.php:176
+#: Views/user.systemsettings.commissions.view.php:221
+#: Views/user.systemsettings.keyallowed.view.php:22
+#: Views/user.systemsettings.keyallowed.view.php:68
+#: Views/user.systemsettings.keyallowed.view.php:113
+#: Views/user.systemsettings.keyallowed.view.php:145
+#: Views/user.systemsettings.keyallowed.view.php:182
+#: Views/user.systemsettings.keyallowed.view.php:214
+#: Views/user.systemsettings.keycosttype.view.php:19
+#: Views/user.systemsettings.keycosttype.view.php:75
+msgid "KEY"
+msgstr "KEY"
+
+#: Views/user.pendings.bonus.view.php:93
+#: Views/user.pendings.bonus.view.php:145
+#: Views/user.pendings.commissions.view.php:94
+#: Views/user.pendings.commissions.view.php:147
+#: Views/user.pendings.keycosttypes.view.php:131
+#: Views/user.pendings.view.php:450 Views/user.pendings.view.php:500
+#: Views/user.systemsettings.bonus.view.php:90
+#: Views/user.systemsettings.bonus.view.php:133
+#: Views/user.systemsettings.bonus.view.php:178
+#: Views/user.systemsettings.bonus.view.php:219
+#: Views/user.systemsettings.commissions.view.php:91
+#: Views/user.systemsettings.commissions.view.php:134
+#: Views/user.systemsettings.commissions.view.php:177
+#: Views/user.systemsettings.commissions.view.php:222
+#: Views/user.systemsettings.keycosttype.view.php:22
+#: Views/user.systemsettings.keycosttype.view.php:78
+msgid "FIXED"
+msgstr "FIXE"
+
+#: Views/user.pendings.bonus.view.php:97
+#: Views/user.pendings.bonus.view.php:149
+#: Views/user.pendings.commissions.view.php:98
+#: Views/user.pendings.commissions.view.php:151
+#: Views/user.pendings.keycosttypes.view.php:134
+#: Views/user.pendings.view.php:453 Views/user.pendings.view.php:503
+#: Views/user.systemsettings.bonus.view.php:94
+#: Views/user.systemsettings.bonus.view.php:137
+#: Views/user.systemsettings.bonus.view.php:182
+#: Views/user.systemsettings.bonus.view.php:223
+#: Views/user.systemsettings.commissions.view.php:95
+#: Views/user.systemsettings.commissions.view.php:138
+#: Views/user.systemsettings.commissions.view.php:181
+#: Views/user.systemsettings.commissions.view.php:226
+#: Views/user.systemsettings.keycosttype.view.php:23
+#: Views/user.systemsettings.keycosttype.view.php:79
+msgid "PERCENT"
+msgstr "CENT DE"
+
+#: Views/user.pendings.bonus.view.php:100
+#: Views/user.pendings.bonus.view.php:152
+#: Views/user.pendings.commissions.view.php:101
+#: Views/user.pendings.commissions.view.php:154
+#: Views/user.pendings.keyallowed.view.php:94
+#: Views/user.pendings.keyallowed.view.php:130
+#: Views/user.pendings.keycosttypes.view.php:135
+#: Views/user.pendings.view.php:350 Views/user.pendings.view.php:399
+#: Views/user.pendings.view.php:454 Views/user.pendings.view.php:504
+#: Views/user.systemsettings.bonus.view.php:97
+#: Views/user.systemsettings.bonus.view.php:140
+#: Views/user.systemsettings.bonus.view.php:185
+#: Views/user.systemsettings.bonus.view.php:226
+#: Views/user.systemsettings.commissions.view.php:98
+#: Views/user.systemsettings.commissions.view.php:141
+#: Views/user.systemsettings.commissions.view.php:184
+#: Views/user.systemsettings.commissions.view.php:229
+#: Views/user.systemsettings.keyallowed.view.php:26
+#: Views/user.systemsettings.keyallowed.view.php:72
+#: Views/user.systemsettings.keyallowed.view.php:114
+#: Views/user.systemsettings.keyallowed.view.php:149
+#: Views/user.systemsettings.keyallowed.view.php:183
+#: Views/user.systemsettings.keyallowed.view.php:218
+#: Views/user.systemsettings.keycosttype.view.php:24
+#: Views/user.systemsettings.keycosttype.view.php:80
+msgid "PRIORITY"
+msgstr "PRIORITÉ"
+
+#: Views/user.pendings.bonus.view.php:101
+#: Views/user.pendings.bonus.view.php:153
+#: Views/user.pendings.commissions.view.php:102
+#: Views/user.pendings.commissions.view.php:155
+#: Views/user.systemsettings.bonus.view.php:101
+#: Views/user.systemsettings.bonus.view.php:144
+#: Views/user.systemsettings.bonus.view.php:189
+#: Views/user.systemsettings.bonus.view.php:230
+#: Views/user.systemsettings.commissions.view.php:102
+#: Views/user.systemsettings.commissions.view.php:145
+#: Views/user.systemsettings.commissions.view.php:188
+#: Views/user.systemsettings.commissions.view.php:233
+#: Views/user.systemsettings.keycosttype.view.php:26
+#: Views/user.systemsettings.keycosttype.view.php:82
+msgid "AMOUNT FROM"
+msgstr "MONTANT DE"
+
+#: Views/user.pendings.bonus.view.php:104
+#: Views/user.pendings.bonus.view.php:156
+#: Views/user.pendings.commissions.view.php:105
+#: Views/user.pendings.commissions.view.php:158
+#: Views/user.systemsettings.bonus.view.php:102
+#: Views/user.systemsettings.bonus.view.php:145
+#: Views/user.systemsettings.bonus.view.php:190
+#: Views/user.systemsettings.bonus.view.php:231
+#: Views/user.systemsettings.commissions.view.php:103
+#: Views/user.systemsettings.commissions.view.php:146
+#: Views/user.systemsettings.commissions.view.php:192
+#: Views/user.systemsettings.commissions.view.php:237
+#: Views/user.systemsettings.keycosttype.view.php:28
+#: Views/user.systemsettings.keycosttype.view.php:84
+msgid "ACCOUNT FROM"
+msgstr "COMPTE DE"
+
+#: Views/user.pendings.bonus.view.php:105
+#: Views/user.pendings.bonus.view.php:157
+#: Views/user.pendings.commissions.view.php:106
+#: Views/user.pendings.commissions.view.php:159
+#: Views/user.systemsettings.bonus.view.php:105
+#: Views/user.systemsettings.bonus.view.php:148
+#: Views/user.systemsettings.bonus.view.php:193
+#: Views/user.systemsettings.bonus.view.php:234
+#: Views/user.systemsettings.commissions.view.php:106
+#: Views/user.systemsettings.commissions.view.php:149
+#: Views/user.systemsettings.commissions.view.php:193
+#: Views/user.systemsettings.commissions.view.php:238
+#: Views/user.systemsettings.keycosttype.view.php:27
+#: Views/user.systemsettings.keycosttype.view.php:83
+msgid "AMOUNT TO"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.bonus.view.php:108
+#: Views/user.pendings.bonus.view.php:160
+#: Views/user.pendings.commissions.view.php:109
+#: Views/user.pendings.commissions.view.php:162
+#: Views/user.systemsettings.bonus.view.php:106
+#: Views/user.systemsettings.bonus.view.php:149
+#: Views/user.systemsettings.bonus.view.php:194
+#: Views/user.systemsettings.bonus.view.php:235
+#: Views/user.systemsettings.commissions.view.php:107
+#: Views/user.systemsettings.commissions.view.php:150
+#: Views/user.systemsettings.commissions.view.php:196
+#: Views/user.systemsettings.commissions.view.php:241
+#: Views/user.systemsettings.keycosttype.view.php:29
+#: Views/user.systemsettings.keycosttype.view.php:85
+msgid "ACCOUNT TO"
+msgstr "COMPTE A"
+
+#: Views/user.pendings.bonus.view.php:109
+#: Views/user.pendings.bonus.view.php:161
+#: Views/user.pendings.commissions.view.php:111
+#: Views/user.pendings.commissions.view.php:164
+#: Views/user.systemsettings.airbonustopup.view.php:67
+#, fuzzy
+msgid "CREATED USER"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.bonus.view.php:113
+#: Views/user.pendings.bonus.view.php:165
+#: Views/user.pendings.commissions.view.php:116
+#: Views/user.pendings.commissions.view.php:169
+#: Views/user.systemsettings.airbonustopup.view.php:62
+#, fuzzy
+msgid "CREATED DATE"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.bonus.view.php:131
+msgid "Pending Bonus by MSISDN"
+msgstr ""
+
+#: Views/user.pendings.commissions.view.php:5
+#: Views/user.systemsettings.commissions.view.php:5
+msgid "Commissions by Type"
+msgstr ""
+
+#: Views/user.pendings.commissions.view.php:6
+#: Views/user.systemsettings.commissions.view.php:6
+msgid "Commissions by MSISDN"
+msgstr ""
+
+#: Views/user.pendings.commissions.view.php:79
+#, fuzzy
+msgid "Pending Commissions by Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.commissions.view.php:132
+msgid "Pending Commissions by MSISDN"
+msgstr ""
+
+#: Views/user.pendings.dealercommission.view.php:8
+#: Views/user.pendings.dealercommission1.view.php:8
+#, fuzzy
+msgid "Dealer Commission Confirmation"
+msgstr "Configuration des rôles"
+
+#: Views/user.pendings.dealercommission.view.php:10
+#: Views/user.pendings.dealercommission1.view.php:10
+msgid "Dealer Commission Approval"
+msgstr ""
+
+#: Views/user.pendings.dealercommission.view.php:22
+#: Views/user.pendings.dealercommission.view.php:160
+#: Views/user.pendings.dealercommission1.view.php:22
+#: Views/user.pendings.dealercommission1.view.php:91
+#: Views/user.reports.graphicalreports.view.php:9
+#: Views/user.reports.summary.view.php:11
+#: Views/user.reports.transactionfailed.view.php:16
+#: Views/user.reports.transactionhistory.view.php:16
+#: Views/user.reports.transactionreports.view.php:20
+#: Views/user.subscriber.globalsearchview.view.php:40
+#: Views/user.subscriber.search.historytab.view.php:10
+#: Views/user.systemsettings.audittrailtab.view.php:11
+msgid "From"
+msgstr "à partir de"
+
+#: Views/user.pendings.dealercommission.view.php:24
+#: Views/user.pendings.dealercommission.view.php:162
+#: Views/user.pendings.dealercommission1.view.php:24
+#: Views/user.pendings.dealercommission1.view.php:93
+#: Views/user.reports.graphicalreports.view.php:11
+#: Views/user.reports.summary.view.php:13
+#: Views/user.reports.transactionfailed.view.php:18
+#: Views/user.reports.transactionhistory.view.php:18
+#: Views/user.reports.transactionreports.view.php:22
+#: Views/user.subscriber.globalsearchview.view.php:42
+#: Views/user.subscriber.search.historytab.view.php:12
+#: Views/user.systemsettings.audittrailtab.view.php:13
+msgid "To"
+msgstr "à"
+
+#: Views/user.pendings.dealercommission.view.php:27
+#: Views/user.pendings.dealercommission.view.php:165
+#: Views/user.pendings.dealercommission1.view.php:27
+#: Views/user.pendings.dealercommission1.view.php:96
+#: Views/user.reports.graphicalreports.view.php:14
+#: Views/user.reports.subscribers.view.php:32
+#: Views/user.reports.summary.view.php:16
+#: Views/user.reports.transactionfailed.view.php:21
+#: Views/user.reports.transactionhistory.view.php:21
+#: Views/user.reports.transactionreports.view.php:25
+#: Views/user.systemsettings.audittrailtab.view.php:16
+msgid "View"
+msgstr "Voir"
+
+#: Views/user.pendings.dealercommission.view.php:54
+#: Views/user.pendings.dealercommission.view.php:192
+#, fuzzy
+msgid "REFERENCEID"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/user.pendings.dealercommission.view.php:57
+#: Views/user.pendings.dealercommission.view.php:195
+#, fuzzy
+msgid "COMMISSION ACCOUNT"
+msgstr "MONTANT"
+
+#: Views/user.pendings.dealercommission.view.php:58
+#: Views/user.pendings.dealercommission.view.php:196
+#, fuzzy
+msgid "DEALER ACCOUNT"
+msgstr "ID de compte"
+
+#: Views/user.pendings.dealercommission1.view.php:42
+#: Views/user.pendings.dealercommission1.view.php:111
+msgid "RUN ID"
+msgstr ""
+
+#: Views/user.pendings.dealercommission1.view.php:43
+#: Views/user.pendings.dealercommission1.view.php:112
+#, fuzzy
+msgid "RUN DATE"
+msgstr "DATE D'ENREGISTREMENT"
+
+#: Views/user.pendings.dealercommission1.view.php:44
+#: Views/user.pendings.dealercommission1.view.php:113
+#, fuzzy
+msgid "FILE NAME"
+msgstr "PRÉNOM"
+
+#: Views/user.pendings.dealercommission1.view.php:45
+#: Views/user.pendings.dealercommission1.view.php:114
+#, fuzzy
+msgid "FILE SUMMARY"
+msgstr "SOMMAIRE"
+
+#: Views/user.pendings.dealercommission1.view.php:46
+#, fuzzy
+msgid "Request confirmation"
+msgstr "Configuration des rôles"
+
+#: Views/user.pendings.dealercommission1.view.php:115
+#, fuzzy
+msgid "CONFIRMED BY"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.dealercommission1.view.php:116
+#, fuzzy
+msgid "CONFIRMED DATE"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.dealercommission1.view.php:117
+#, fuzzy
+msgid "For approval"
+msgstr "Demande d'approbation"
+
+#: Views/user.pendings.dealercommission1.view.php:155
+msgid "Commission File Summary"
+msgstr ""
+
+#: Views/user.pendings.dealercommission1sum.view.php:10
+#, fuzzy
+msgid "COMMISSION TYPE"
+msgstr "MONTANT"
+
+#: Views/user.pendings.keyallowed.view.php:5
+#, fuzzy
+msgid "Key Allowed Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keyallowed.view.php:6
+msgid "Key Allowed MSISDN"
+msgstr ""
+
+#: Views/user.pendings.keyallowed.view.php:80
+#, fuzzy
+msgid "Pending Key Allowed Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keyallowed.view.php:90
+#: Views/user.pendings.keyallowed.view.php:126
+#: Views/user.systemsettings.keyallowed.view.php:23
+#: Views/user.systemsettings.keyallowed.view.php:69
+#: Views/user.systemsettings.keyallowed.view.php:117
+#: Views/user.systemsettings.keyallowed.view.php:148
+#: Views/user.systemsettings.keyallowed.view.php:186
+#: Views/user.systemsettings.keyallowed.view.php:217
+msgid "SEND"
+msgstr ""
+
+#: Views/user.pendings.keyallowed.view.php:91
+#: Views/user.pendings.keyallowed.view.php:127
+#: Views/user.systemsettings.keyallowed.view.php:24
+#: Views/user.systemsettings.keyallowed.view.php:70
+#: Views/user.systemsettings.keyallowed.view.php:118
+#: Views/user.systemsettings.keyallowed.view.php:152
+#: Views/user.systemsettings.keyallowed.view.php:187
+#: Views/user.systemsettings.keyallowed.view.php:221
+#, fuzzy
+msgid "RECEIVE"
+msgstr "CONFIG RÉCEPTEUR"
+
+#: Views/user.pendings.keyallowed.view.php:98
+#: Views/user.pendings.keyallowed.view.php:134
+#: Views/user.systemsettings.keyallowed.view.php:25
+#: Views/user.systemsettings.keyallowed.view.php:71
+#: Views/user.systemsettings.keyallowed.view.php:121
+#: Views/user.systemsettings.keyallowed.view.php:153
+#: Views/user.systemsettings.keyallowed.view.php:190
+#: Views/user.systemsettings.keyallowed.view.php:222
+#: Views/user.systemsettings.messages.view.php:15
+#: Views/user.systemsettings.messages.view.php:57
+msgid "DESCRIPTION"
+msgstr "DESCRIPTION"
+
+#: Views/user.pendings.keyallowed.view.php:116
+#, fuzzy
+msgid "Pending Key Allowed Msisdn"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keycosttypes.view.php:5
+#: Views/user.systemsettings.keycosttype.view.php:5
+#, fuzzy
+msgid "Key Cost Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keycosttypes.view.php:6
+#: Views/user.systemsettings.keycosttype.view.php:6
+#, fuzzy
+msgid "Key Cost MSISDN"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keycosttypes.view.php:19
+#: Views/user.systemsettings.amlsettings.view.php:27
+#: Views/user.systemsettings.amlsettings.view.php:77
+#: Views/user.systemsettings.amlsettings.view.php:315
+#: Views/user.systemsettings.amlsettings.view.php:356
+#: Views/user.systemsettings.keycosttype.view.php:132
+#: Views/user.systemsettings.keycosttype.view.php:179
+msgid "Type"
+msgstr "Type"
+
+#: Views/user.pendings.keycosttypes.view.php:20
+#: Views/user.pendings.keycosttypes.view.php:74
+#: Views/user.systemsettings.keycosttype.view.php:135
+#: Views/user.systemsettings.keycosttype.view.php:182
+#: Views/user.systemsettings.keycosttype.view.php:225
+#: Views/user.systemsettings.keycosttype.view.php:271
+msgid "Account"
+msgstr "Compte"
+
+#: Views/user.pendings.keycosttypes.view.php:21
+#: Views/user.pendings.keycosttypes.view.php:75
+#: Views/user.systemsettings.keycosttype.view.php:138
+#: Views/user.systemsettings.keycosttype.view.php:185
+#: Views/user.systemsettings.keycosttype.view.php:228
+#: Views/user.systemsettings.keycosttype.view.php:274
+msgid "Fixed"
+msgstr "Fixe"
+
+#: Views/user.pendings.keycosttypes.view.php:22
+#: Views/user.pendings.keycosttypes.view.php:76
+#: Views/user.systemsettings.keycosttype.view.php:141
+#: Views/user.systemsettings.keycosttype.view.php:188
+#: Views/user.systemsettings.keycosttype.view.php:231
+#: Views/user.systemsettings.keycosttype.view.php:277
+msgid "Percent"
+msgstr "pour cent"
+
+#: Views/user.pendings.keycosttypes.view.php:24
+#: Views/user.pendings.keycosttypes.view.php:78
+#: Views/user.systemsettings.keycosttype.view.php:150
+#: Views/user.systemsettings.keycosttype.view.php:194
+#: Views/user.systemsettings.keycosttype.view.php:237
+#: Views/user.systemsettings.keycosttype.view.php:286
+msgid "Amount From"
+msgstr "Montant de la"
+
+#: Views/user.pendings.keycosttypes.view.php:25
+#: Views/user.pendings.keycosttypes.view.php:79
+#: Views/user.systemsettings.keycosttype.view.php:153
+#: Views/user.systemsettings.keycosttype.view.php:197
+#: Views/user.systemsettings.keycosttype.view.php:240
+#: Views/user.systemsettings.keycosttype.view.php:289
+msgid "Amount To"
+msgstr "Montant à"
+
+#: Views/user.pendings.keycosttypes.view.php:26
+#: Views/user.pendings.keycosttypes.view.php:80
+#: Views/user.systemsettings.keycosttype.view.php:156
+#: Views/user.systemsettings.keycosttype.view.php:200
+#: Views/user.systemsettings.keycosttype.view.php:243
+#: Views/user.systemsettings.keycosttype.view.php:292
+msgid "Account From"
+msgstr "Compte à partir"
+
+#: Views/user.pendings.keycosttypes.view.php:27
+#: Views/user.pendings.keycosttypes.view.php:81
+msgid "Timestamp"
+msgstr ""
+
+#: Views/user.pendings.keycosttypes.view.php:118
+#, fuzzy
+msgid "Pending Key Cost MSISDN"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.keycosttypes.view.php:139
+#: Views/user.pendings.view.php:458 Views/user.pendings.view.php:508
+#, fuzzy
+msgid "AMOUNTFR"
+msgstr "MONTANT"
+
+#: Views/user.pendings.keycosttypes.view.php:142
+#: Views/user.pendings.view.php:461 Views/user.pendings.view.php:511
+#, fuzzy
+msgid "AMOUNTTO"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.keycosttypes.view.php:143
+#: Views/user.pendings.view.php:462 Views/user.pendings.view.php:512
+#, fuzzy
+msgid "ACCOUNTFR"
+msgstr "COMPTE"
+
+#: Views/user.pendings.keycosttypes.view.php:146
+#: Views/user.pendings.view.php:368 Views/user.pendings.view.php:417
+#: Views/user.pendings.view.php:466 Views/user.pendings.view.php:516
+#, fuzzy
+msgid "ACTION"
+msgstr "FONCTION"
+
+#: Views/user.pendings.receiver.view.php:11
+msgid "RECEIVER CONFIG"
+msgstr "CONFIG RÉCEPTEUR"
+
+#: Views/user.pendings.reversal.view.php:11
+msgid "SOURCE MOBILE"
+msgstr "SOURCE MOBILE"
+
+#: Views/user.pendings.reversal.view.php:12
+msgid "DEST NUMBER"
+msgstr "DEST NUMBER"
+
+#: Views/user.pendings.serverconfig.view.php:11
+#: Views/user.systemsettings.airconfig.view.php:52
+#: Views/user.systemsettings.airconfig.view.php:98
+#: Views/user.systemsettings.audittrail.view.php:14
+#: Views/user.systemsettings.receiver.view.php:61
+#: Views/user.systemsettings.receiver.view.php:106
+#: Views/user.systemsettings.serverconfig.view.php:13
+#: Views/user.systemsettings.serverconfig.view.php:44
+#: Views/user.systemsettings.serverconfig.view.php:70
+#: Views/user.systemsettings.transceiver.view.php:61
+#: Views/user.systemsettings.transceiver.view.php:99
+#: Views/user.systemsettings.transmitter.view.php:61
+#: Views/user.systemsettings.transmitter.view.php:115
+msgid "IP"
+msgstr "IP"
+
+#: Views/user.pendings.serverconfig.view.php:12
+#: Views/user.systemsettings.serverconfig.view.php:14
+#: Views/user.systemsettings.serverconfig.view.php:47
+msgid "FUNCTION"
+msgstr "FONCTION"
+
+#: Views/user.pendings.systeminfo.view.php:11
+#: Views/user.systemsettings.systeminfo.view.php:5
+msgid "SYSTEM INFO"
+msgstr "SYSTEM INFO"
+
+#: Views/user.pendings.transceiver.view.php:11
+msgid "TRANSCEIVER CONFIG"
+msgstr "EMETTEUR CONFIG"
+
+#: Views/user.pendings.transmitter.view.php:11
+msgid "TRANSMITTER CONFIG"
+msgstr "CONFIG DE L'EMETTEUR"
+
+#: Views/user.pendings.view.php:37
+msgid "Accounts"
+msgstr "Comptes"
+
+#: Views/user.pendings.view.php:41
+msgid "Allocations"
+msgstr "Allocations"
+
+#: Views/user.pendings.view.php:43
+#, fuzzy
+msgid "EVD Allocation"
+msgstr "Allocations"
+
+#: Views/user.pendings.view.php:47
+#, fuzzy
+msgid "Bank Allocation"
+msgstr "Allocations"
+
+#: Views/user.pendings.view.php:51
+msgid "Reversal"
+msgstr "retournement"
+
+#: Views/user.pendings.view.php:55
+msgid "Dealer Commission"
+msgstr ""
+
+#: Views/user.pendings.view.php:59 Views/user.systemsettings.view.php:41
+msgid "AML Settings"
+msgstr "Réglages AML"
+
+#: Views/user.pendings.view.php:63 Views/user.systemsettings.view.php:45
+msgid "Key Allowed"
+msgstr ""
+
+#: Views/user.pendings.view.php:67 Views/user.systemsettings.view.php:49
+#, fuzzy
+msgid "Air Bonus"
+msgstr "Air Config"
+
+#: Views/user.pendings.view.php:71 Views/user.systemsettings.view.php:53
+msgid "Bonus"
+msgstr ""
+
+#: Views/user.pendings.view.php:75 Views/user.systemsettings.view.php:57
+msgid "Commissions"
+msgstr ""
+
+#: Views/user.pendings.view.php:79 Views/user.systemsettings.view.php:63
+#, fuzzy
+msgid "Key Costs"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.view.php:83
+msgid "User levels"
+msgstr "Les niveaux d'utilisateurs"
+
+#: Views/user.pendings.view.php:87 Views/user.systemsettings.view.php:60
+msgid "Messages"
+msgstr "des messages"
+
+#: Views/user.pendings.view.php:91 Views/user.systemsettings.view.php:66
+msgid "Transceiver"
+msgstr "émetteur-récepteur"
+
+#: Views/user.pendings.view.php:92 Views/user.systemsettings.view.php:68
+msgid "Transmitter"
+msgstr "transmetteur"
+
+#: Views/user.pendings.view.php:93 Views/user.systemsettings.view.php:69
+msgid "Receiver"
+msgstr "récepteur"
+
+#: Views/user.pendings.view.php:94 Views/user.systemsettings.view.php:70
+msgid "Server Config"
+msgstr "Config Server"
+
+#: Views/user.pendings.view.php:95 Views/user.systemsettings.view.php:71
+msgid "Air Config"
+msgstr "Air Config"
+
+#: Views/user.pendings.view.php:96 Views/user.systemsettings.view.php:72
+msgid "System Info"
+msgstr "System Info"
+
+#: Views/user.pendings.view.php:125 Views/user.pendings.view.php:167
+msgid "Pending Allocation"
+msgstr "En attendant Allocation"
+
+#: Views/user.pendings.view.php:196 Views/user.pendings.view.php:238
+#, fuzzy
+msgid "Pending EVD Allocation"
+msgstr "En attendant Allocation"
+
+#: Views/user.pendings.view.php:267 Views/user.pendings.view.php:309
+msgid "Pending Reversal"
+msgstr "En attendant Reversal"
+
+#: Views/user.pendings.view.php:277
+#: Views/user.reports.transactionfailed.view.php:57
+msgid "SOURCE MSISDN"
+msgstr "SOURCE MSISDN"
+
+#: Views/user.pendings.view.php:280
+msgid "DEST MSISDN"
+msgstr "DEST MSISDN"
+
+#: Views/user.pendings.view.php:335 Views/user.pendings.view.php:385
+#, fuzzy
+msgid "Pending AML"
+msgstr "En attendant"
+
+#: Views/user.pendings.view.php:351 Views/user.pendings.view.php:400
+#, fuzzy
+msgid "MAX AMOUNT"
+msgstr "MONTANT"
+
+#: Views/user.pendings.view.php:354 Views/user.pendings.view.php:403
+#, fuzzy
+msgid "MIN AMOUNT"
+msgstr "MONTANT"
+
+#: Views/user.pendings.view.php:355 Views/user.pendings.view.php:404
+#, fuzzy
+msgid "MAX CURRENT AMOUNT"
+msgstr "MONTANT ACTUEL"
+
+#: Views/user.pendings.view.php:358 Views/user.pendings.view.php:407
+#, fuzzy
+msgid "MAX AMOUNT DAY"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.view.php:359 Views/user.pendings.view.php:408
+#, fuzzy
+msgid "MAX AMOUNT MONTH"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.view.php:362 Views/user.pendings.view.php:411
+msgid "MAX TRANS DAY"
+msgstr ""
+
+#: Views/user.pendings.view.php:363 Views/user.pendings.view.php:412
+#, fuzzy
+msgid "MAX TRANS MONTH"
+msgstr "FAILED COMPTE DE TRANSFERT"
+
+#: Views/user.pendings.view.php:367 Views/user.pendings.view.php:416
+#: Views/user.reports.transactionfailed.view.php:56
+#, fuzzy
+msgid "TRANSACTION TYPE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/user.pendings.view.php:434 Views/user.pendings.view.php:484
+#, fuzzy
+msgid "Pending Key Cost Types"
+msgstr "Types de coûts clés"
+
+#: Views/user.reports.accountsummary.view.php:34
+#: Views/user.reports.subscribers.view.php:64
+#: Views/user.subscriber.search.view.php:61
+msgid "ACCOUNT ID"
+msgstr "ID de compte"
+
+#: Views/user.reports.accountsummary.view.php:40
+msgid "CURRENT AMOUNT"
+msgstr "MONTANT ACTUEL"
+
+#: Views/user.reports.accountsummary.view.php:41
+#, fuzzy
+msgid "LAST TRANSACTION DATE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/user.reports.accountsummary.view.php:42
+msgid "LOCKED"
+msgstr ""
+
+#: Views/user.reports.accountsummary.view.php:43
+#, fuzzy
+msgid "LOCKED DESCRIPTION"
+msgstr "DESCRIPTION"
+
+#: Views/user.reports.subscribers.view.php:25
+#: Views/user.reports.transactionreports.view.php:15
+#: Views/user.subscriber.globalsearchview.view.php:28
+msgid "Lookup Table"
+msgstr "Table de recherche"
+
+#: Views/user.reports.subscribers.view.php:68
+msgid "SECOND NAME"
+msgstr "DEUXIÈME PRÉNOM"
+
+#: Views/user.reports.subscribers.view.php:72
+msgid "REGDATE"
+msgstr "DATE D'ENREGISTREMENT"
+
+#: Views/user.reports.subscribers.view.php:73
+msgid "KYC"
+msgstr "KYC"
+
+#: Views/user.reports.subscribers.view.php:74
+#, fuzzy
+msgid "BUSINESS TYPE"
+msgstr "SYSTYPE"
+
+#: Views/user.reports.summary.view.php:40
+msgid "DATE"
+msgstr "DATE"
+
+#: Views/user.reports.summary.view.php:41
+msgid "SUMMARY"
+msgstr "SOMMAIRE"
+
+#: Views/user.reports.transactionfailed.view.php:61
+#, fuzzy
+msgid "MESSAGE HITS"
+msgstr "MESSAGE"
+
+#: Views/user.reports.transactionfailed.view.php:62
+#, fuzzy
+msgid "MESSAGE PULL"
+msgstr "MESSAGE"
+
+#: Views/user.reports.transactionhistory.view.php:57
+#: Views/user.reports.transactionreports.view.php:68
+msgid "DETAIL TYPE"
+msgstr "DETAIL TYPE"
+
+#: Views/user.reports.transactionreports.view.php:79
+msgid "..."
+msgstr ""
+
+#: Views/user.reports.transactionreports.view.php:108
+msgid "more"
+msgstr ""
+
+#: Views/user.reports.view.php:38
+msgid "Summary"
+msgstr "Sommaire"
+
+#: Views/user.reports.view.php:46
+msgid "Account Summary"
+msgstr "Résumé du compte"
+
+#: Views/user.reports.view.php:50
+msgid "Transaction History"
+msgstr "Historique des transactions"
+
+#: Views/user.reports.view.php:54
+msgid "Transaction Reports"
+msgstr "Rapports de Transactions"
+
+#: Views/user.reports.view.php:58
+msgid "Graphical Reports"
+msgstr "Rapports graphiques"
+
+#: Views/user.reports.view.php:62
+#, fuzzy
+msgid "Transaction Failed"
+msgstr "Période Transaction"
+
+#: Views/user.subscriber.globalsearchview.view.php:5
+msgid "Global Search Options"
+msgstr "Options de recherche globales"
+
+#: Views/user.subscriber.globalsearchview.view.php:9
+msgid "Subscriber"
+msgstr "Abonnés"
+
+#: Views/user.subscriber.globalsearchview.view.php:18
+msgid "Search Type"
+msgstr "Recherche Type"
+
+#: Views/user.subscriber.globalsearchview.view.php:38
+#: Views/user.subscriber.search.historytab.view.php:9
+msgid "Transaction Period"
+msgstr "Période Transaction"
+
+#: Views/user.subscriber.globalsearchview.view.php:52
+msgid "Search by Reference ID"
+msgstr "Recherche par référence ID"
+
+#: Views/user.subscriber.globalsearchview.view.php:55
+#: Views/user.subscriber.reversalsearch.view.php:5
+msgid "Reference ID"
+msgstr "ID de référence"
+
+#: Views/user.subscriber.register.view.php:16
+#: Views/user.subscriber.search.view.php:73
+msgid "Account Information"
+msgstr "Informations sur le compte"
+
+#: Views/user.subscriber.register.view.php:35
+msgid "Validity"
+msgstr "validité"
+
+#: Views/user.subscriber.register.view.php:54
+msgid "Personal Information"
+msgstr "des renseignements personnels"
+
+#: Views/user.subscriber.register.view.php:140
+msgid "Contact Information"
+msgstr "communiquer avec Info"
+
+#: Views/user.subscriber.register.view.php:197
+#: Views/user.subscriber.search.view.php:76
+msgid "Corporate Information"
+msgstr "Informations sur l'entreprise"
+
+#: Views/user.subscriber.register.view.php:253
+msgid "Next of Kin Details"
+msgstr "Prochaine de détails Kin"
+
+#: Views/user.subscriber.register.view.php:256
+msgid "mobile number"
+msgstr "numéro de mobile"
+
+#: Views/user.subscriber.reversalresult.view.php:32
+msgid "Sender MSISDN"
+msgstr "Sender MSISDN"
+
+#: Views/user.subscriber.reversalresult.view.php:33
+msgid "Sender Current Amount"
+msgstr "Sender Montant Actuel"
+
+#: Views/user.subscriber.reversalresult.view.php:34
+msgid "Recepient MSISDN"
+msgstr "Destinataire MSISDN"
+
+#: Views/user.subscriber.reversalresult.view.php:35
+msgid "Recepient Current Amount"
+msgstr "Destinataire Montant Actuel"
+
+#: Views/user.subscriber.reversalresult.view.php:52
+msgid "Cash Reversal Request"
+msgstr "Espèces Reprise Requête"
+
+#: Views/user.subscriber.reversalresult.view.php:55
+#: Views/user.subscriber.search.accounttab.view.php:93
+#: Views/user.subscriber.search.accounttab.view.php:139
+#: Views/user.subscriber.search.accounttab.view.php:191
+msgid "Amount"
+msgstr "montant"
+
+#: Views/user.subscriber.reversalresult.view.php:64
+msgid "Reverse"
+msgstr "Renverser"
+
+#: Views/user.subscriber.search.accounttab.view.php:13
+#: Views/user.subscriber.search.accounttab.view.php:121
+msgid "allocate"
+msgstr "répartir"
+
+#: Views/user.subscriber.search.accounttab.view.php:17
+#: Views/user.subscriber.search.accounttab.view.php:158
+#, fuzzy
+msgid "allocate EVD"
+msgstr "répartir"
+
+#: Views/user.subscriber.search.accounttab.view.php:21
+#, fuzzy
+msgid "allocate B2W"
+msgstr "répartir"
+
+#: Views/user.subscriber.search.accounttab.view.php:25
+msgid "activate"
+msgstr "activer"
+
+#: Views/user.subscriber.search.accounttab.view.php:29
+msgid "deactivate"
+msgstr "désactiver"
+
+#: Views/user.subscriber.search.accounttab.view.php:33
+msgid "reset mobile pin"
+msgstr "réinitialiser axe mobile"
+
+#: Views/user.subscriber.search.accounttab.view.php:37
+msgid "lock"
+msgstr "verrouiller"
+
+#: Views/user.subscriber.search.accounttab.view.php:41
+msgid "unlock"
+msgstr "déverrouiller"
+
+#: Views/user.subscriber.search.accounttab.view.php:45
+msgid "release IMSI"
+msgstr ""
+
+#: Views/user.subscriber.search.accounttab.view.php:56
+#: Views/user.subscriber.search.view.php:50
+msgid "current amount"
+msgstr "quantité de courant"
+
+#: Views/user.subscriber.search.accounttab.view.php:57
+#, fuzzy
+msgid "current EVD amount"
+msgstr "quantité de courant"
+
+#: Views/user.subscriber.search.accounttab.view.php:67
+msgid "date registered"
+msgstr "Date d'enregistrement"
+
+#: Views/user.subscriber.search.accounttab.view.php:70
+#, fuzzy
+msgid "reference account EVD"
+msgstr "compte de référence"
+
+#: Views/user.subscriber.search.accounttab.view.php:79
+msgid "date modified"
+msgstr "date de modification"
+
+#: Views/user.subscriber.search.accounttab.view.php:80
+msgid "user id"
+msgstr "Identifiant du de l'utilisateur"
+
+#: Views/user.subscriber.search.accounttab.view.php:82
+#: Views/user.subscriber.search.accounttab.view.php:236
+msgid "lock description"
+msgstr "verrouiller la description"
+
+#: Views/user.subscriber.search.accounttab.view.php:89
+msgid "Allocate/De-Allocate"
+msgstr "Allouer / désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:98
+#: Views/user.subscriber.search.accounttab.view.php:195
+#, fuzzy
+msgid "Confirm Amount"
+msgstr "Confirmez mot de passe"
+
+#: Views/user.subscriber.search.accounttab.view.php:102
+#, fuzzy
+msgid "System Amount :"
+msgstr "Rapport du Système"
+
+#: Views/user.subscriber.search.accounttab.view.php:125
+msgid "de-allocate"
+msgstr "désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:135
+#, fuzzy
+msgid "Allocate/De-Allocate EVD"
+msgstr "Allouer / désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:162
+#, fuzzy
+msgid "de-allocate EVD"
+msgstr "désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:172
+msgid "Bank to Wallet Allocate"
+msgstr ""
+
+#: Views/user.subscriber.search.accounttab.view.php:179
+#, fuzzy
+msgid "Nickname"
+msgstr "Pseudo"
+
+#: Views/user.subscriber.search.accounttab.view.php:182
+#, fuzzy
+msgid "Company Name"
+msgstr "société"
+
+#: Views/user.subscriber.search.accounttab.view.php:185
+#, fuzzy
+msgid "Bank Reference"
+msgstr "ID de référence"
+
+#: Views/user.subscriber.search.accounttab.view.php:214
+msgid "Bank to Wallet allocate"
+msgstr ""
+
+#: Views/user.subscriber.search.accounttab.view.php:232
+#: Views/user.subscriber.search.accounttab.view.php:244
+msgid "Lock Subscriber"
+msgstr "verrouiller abonné"
+
+#: Views/user.subscriber.search.accounttab.view.php:451
+#: Views/user.subscriber.search.accounttab.view.php:495
+#: Views/user.subscriber.search.accounttab.view.php:613
+msgid "Amount did not match! Please confirm!"
+msgstr ""
+
+#: Views/user.subscriber.search.personaltab.view.php:14
+msgid "edit id image"
+msgstr ""
+
+#: Views/user.subscriber.search.personaltab.view.php:15
+msgid "save id image"
+msgstr ""
+
+#: Views/user.subscriber.search.personaltab.view.php:71
+msgid "electronic signature"
+msgstr ""
+
+#: Views/user.subscriber.search.view.php:79
+msgid "Personal Details"
+msgstr "Détails Personnels"
+
+#: Views/user.subscriber.search.view.php:82
+msgid "Statement"
+msgstr "Énoncé"
+
+#: Views/user.subscriber.view.php:9
+msgid "Search account"
+msgstr "Compte Recherche"
+
+#: Views/user.subscriber.view.php:12
+msgid "Register account"
+msgstr "Inscrivez-compte"
+
+#: Views/user.subscriber.view.php:15
+msgid "Global search"
+msgstr "la recherche globale"
+
+#: Views/user.subscriber.view.php:18
+msgid "Cash Reversal"
+msgstr "Reprise de trésorerie"
+
+#: Views/user.systemsettings.airbonustopup.view.php:36
+#, fuzzy
+msgid "Request Air Bonus Topup"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.airbonustopup.view.php:43
+#: Views/user.systemsettings.airbonustopup.view.php:92
+#, fuzzy
+msgid "PRODUCT ID"
+msgstr "ID de compte"
+
+#: Views/user.systemsettings.airbonustopup.view.php:44
+#: Views/user.systemsettings.airbonustopup.view.php:93
+msgid "SERVICE CLASS"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:47
+#: Views/user.systemsettings.airbonustopup.view.php:96
+#, fuzzy
+msgid "DEDICATED ACCOUNT ID"
+msgstr "ID de compte"
+
+#: Views/user.systemsettings.airbonustopup.view.php:52
+#: Views/user.systemsettings.airbonustopup.view.php:100
+#, fuzzy
+msgid "MIN RANGE"
+msgstr "MONTANT"
+
+#: Views/user.systemsettings.airbonustopup.view.php:53
+#: Views/user.systemsettings.airbonustopup.view.php:101
+msgid "CELL ID MIN RANGE"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:54
+#: Views/user.systemsettings.airbonustopup.view.php:108
+#, fuzzy
+msgid "FIXED AMOUNT"
+msgstr "MONTANT"
+
+#: Views/user.systemsettings.airbonustopup.view.php:57
+#: Views/user.systemsettings.airbonustopup.view.php:104
+#, fuzzy
+msgid "MAX RANGE"
+msgstr "GAMME DE RECHERCHE"
+
+#: Views/user.systemsettings.airbonustopup.view.php:58
+#: Views/user.systemsettings.airbonustopup.view.php:105
+msgid "CELL ID MAX RANGE"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:59
+#: Views/user.systemsettings.airbonustopup.view.php:109
+#, fuzzy
+msgid "PERCENT AMOUNT"
+msgstr "MONTANT ACTUEL"
+
+#: Views/user.systemsettings.airbonustopup.view.php:63
+msgid "MODIFY DATE"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:64
+msgid "DISABLE DATE"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:68
+msgid "MODIFY USER"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:69
+msgid "DISABLE USER"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:72
+#: Views/user.systemsettings.airbonustopup.view.php:112
+msgid "EXPIRY DAYS"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:73
+#: Views/user.systemsettings.airbonustopup.view.php:113
+msgid "EXPIRY DATE"
+msgstr ""
+
+#: Views/user.systemsettings.airbonustopup.view.php:78
+#: Views/user.systemsettings.airconfig.view.php:71
+#: Views/user.systemsettings.amlsettings.view.php:344
+#: Views/user.systemsettings.amlsettings.view.php:385
+#: Views/user.systemsettings.amlsettings.view.php:425
+#: Views/user.systemsettings.amlsettings.view.php:465
+#: Views/user.systemsettings.amlsettings.view.php:506
+#: Views/user.systemsettings.amlsettings.view.php:547
+#: Views/user.systemsettings.bonus.view.php:114
+#: Views/user.systemsettings.bonus.view.php:157
+#: Views/user.systemsettings.bonus.view.php:240
+#: Views/user.systemsettings.commissions.view.php:113
+#: Views/user.systemsettings.commissions.view.php:156
+#: Views/user.systemsettings.commissions.view.php:246
+#: Views/user.systemsettings.keyallowed.view.php:128
+#: Views/user.systemsettings.keyallowed.view.php:197
+#: Views/user.systemsettings.keycosttype.view.php:164
+#: Views/user.systemsettings.keycosttype.view.php:300
+#: Views/user.systemsettings.messages.view.php:62
+#: Views/user.systemsettings.receiver.view.php:87
+#: Views/user.systemsettings.serverconfig.view.php:56
+#: Views/user.systemsettings.systeminfo.view.php:76
+#: Views/user.systemsettings.transceiver.view.php:134
+#: Views/user.systemsettings.transmitter.view.php:96
+msgid "Request For Approval"
+msgstr "Demande d'approbation"
+
+#: Views/user.systemsettings.airbonustopup.view.php:87
+msgid "Add new Air Bonus Topup"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:36
+#, fuzzy
+msgid "Request Air Configuration"
+msgstr "Configuration des rôles"
+
+#: Views/user.systemsettings.airconfig.view.php:42
+msgid "AIRSERVERID"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:43
+#: Views/user.systemsettings.airconfig.view.php:87
+msgid "TIMEOFFSET"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:44
+#: Views/user.systemsettings.airconfig.view.php:88
+msgid "FACTOR"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:47
+#: Views/user.systemsettings.airconfig.view.php:92
+msgid "URL"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:48
+#: Views/user.systemsettings.airconfig.view.php:93
+#, fuzzy
+msgid "CTYPE"
+msgstr "TYPE"
+
+#: Views/user.systemsettings.airconfig.view.php:49
+#: Views/user.systemsettings.airconfig.view.php:97
+msgid "AGENT"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:53
+#: Views/user.systemsettings.airconfig.view.php:102
+#, fuzzy
+msgid "HOST"
+msgstr "HOSTIP"
+
+#: Views/user.systemsettings.airconfig.view.php:54
+#: Views/user.systemsettings.airconfig.view.php:103
+#: Views/user.systemsettings.receiver.view.php:62
+#: Views/user.systemsettings.receiver.view.php:109
+#: Views/user.systemsettings.transceiver.view.php:64
+#: Views/user.systemsettings.transceiver.view.php:100
+#: Views/user.systemsettings.transmitter.view.php:62
+#: Views/user.systemsettings.transmitter.view.php:118
+msgid "PORT"
+msgstr "PORT"
+
+#: Views/user.systemsettings.airconfig.view.php:58
+#: Views/user.systemsettings.airconfig.view.php:107
+#, fuzzy
+msgid "CURRENCYTYPE"
+msgstr "TYPE DE DEVISES"
+
+#: Views/user.systemsettings.airconfig.view.php:59
+#: Views/user.systemsettings.airconfig.view.php:108
+msgid "AUTHORIZATION"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:62
+#: Views/user.systemsettings.airconfig.view.php:111
+msgid "REFILLID"
+msgstr ""
+
+#: Views/user.systemsettings.airconfig.view.php:63
+#: Views/user.systemsettings.airconfig.view.php:112
+#, fuzzy
+msgid "ACCEPTDECIMAL"
+msgstr "ACCEPTER DECIMAL"
+
+#: Views/user.systemsettings.airconfig.view.php:64
+#: Views/user.systemsettings.airconfig.view.php:115
+#, fuzzy
+msgid "TIMEOUT"
+msgstr "EXPIRATION DE LA SESSION"
+
+#: Views/user.systemsettings.airconfig.view.php:81
+#, fuzzy
+msgid "Add new Air Configuration"
+msgstr "Configuration des rôles"
+
+#: Views/user.systemsettings.amlsettings.view.php:5
+msgid "AML by Type"
+msgstr ""
+
+#: Views/user.systemsettings.amlsettings.view.php:6
+#, fuzzy
+msgid "AML by MSISDN"
+msgstr "numéro MSISDN"
+
+#: Views/user.systemsettings.amlsettings.view.php:12
+#: Views/user.systemsettings.amlsettings.view.php:120
+msgid "Receive"
+msgstr "Recevoir"
+
+#: Views/user.systemsettings.amlsettings.view.php:32
+#: Views/user.systemsettings.amlsettings.view.php:81
+#: Views/user.systemsettings.amlsettings.view.php:140
+#: Views/user.systemsettings.amlsettings.view.php:189
+#, fuzzy
+msgid "Max.Amount/ Day"
+msgstr "Montant / jour max"
+
+#: Views/user.systemsettings.amlsettings.view.php:33
+#: Views/user.systemsettings.amlsettings.view.php:82
+#: Views/user.systemsettings.amlsettings.view.php:141
+#: Views/user.systemsettings.amlsettings.view.php:190
+#, fuzzy
+msgid "Max.Amount/ Month"
+msgstr "Montant / Mois Max"
+
+#: Views/user.systemsettings.amlsettings.view.php:34
+#: Views/user.systemsettings.amlsettings.view.php:83
+#: Views/user.systemsettings.amlsettings.view.php:142
+#: Views/user.systemsettings.amlsettings.view.php:191
+#, fuzzy
+msgid "Max.Trans./ Day"
+msgstr "Max Transaction / Jour"
+
+#: Views/user.systemsettings.amlsettings.view.php:35
+#: Views/user.systemsettings.amlsettings.view.php:84
+#: Views/user.systemsettings.amlsettings.view.php:143
+#: Views/user.systemsettings.amlsettings.view.php:192
+#, fuzzy
+msgid "Max.Trans./ Month"
+msgstr "Max Transaction / Mois"
+
+#: Views/user.systemsettings.amlsettings.view.php:233
+#, fuzzy
+msgid "Add Account Type Send"
+msgstr "Type de demande de compte Envoyer"
+
+#: Views/user.systemsettings.amlsettings.view.php:236
+#: Views/user.systemsettings.amlsettings.view.php:275
+msgid "Account Type"
+msgstr "Type de compte"
+
+#: Views/user.systemsettings.amlsettings.view.php:245
+#: Views/user.systemsettings.amlsettings.view.php:324
+#: Views/user.systemsettings.amlsettings.view.php:405
+#: Views/user.systemsettings.amlsettings.view.php:486
+msgid "Min Amount/Transaction"
+msgstr "Montant Minimum / Transaction"
+
+#: Views/user.systemsettings.amlsettings.view.php:248
+#: Views/user.systemsettings.amlsettings.view.php:327
+#: Views/user.systemsettings.amlsettings.view.php:365
+#: Views/user.systemsettings.amlsettings.view.php:408
+#: Views/user.systemsettings.amlsettings.view.php:445
+#: Views/user.systemsettings.amlsettings.view.php:489
+#: Views/user.systemsettings.amlsettings.view.php:527
+#, fuzzy
+msgid "Max Amount/Transaction"
+msgstr "Montant Minimum / Transaction"
+
+#: Views/user.systemsettings.amlsettings.view.php:251
+#: Views/user.systemsettings.amlsettings.view.php:287
+#: Views/user.systemsettings.amlsettings.view.php:330
+#: Views/user.systemsettings.amlsettings.view.php:368
+#: Views/user.systemsettings.amlsettings.view.php:411
+#: Views/user.systemsettings.amlsettings.view.php:448
+#: Views/user.systemsettings.amlsettings.view.php:492
+#: Views/user.systemsettings.amlsettings.view.php:530
+msgid "Max Amount/Day"
+msgstr "Montant / jour max"
+
+#: Views/user.systemsettings.amlsettings.view.php:254
+#: Views/user.systemsettings.amlsettings.view.php:290
+#: Views/user.systemsettings.amlsettings.view.php:333
+#: Views/user.systemsettings.amlsettings.view.php:371
+#: Views/user.systemsettings.amlsettings.view.php:414
+#: Views/user.systemsettings.amlsettings.view.php:451
+#: Views/user.systemsettings.amlsettings.view.php:495
+#: Views/user.systemsettings.amlsettings.view.php:533
+msgid "Max Amount/Month"
+msgstr "Montant / Mois Max"
+
+#: Views/user.systemsettings.amlsettings.view.php:257
+#: Views/user.systemsettings.amlsettings.view.php:293
+#: Views/user.systemsettings.amlsettings.view.php:336
+#: Views/user.systemsettings.amlsettings.view.php:374
+#: Views/user.systemsettings.amlsettings.view.php:417
+#: Views/user.systemsettings.amlsettings.view.php:454
+#: Views/user.systemsettings.amlsettings.view.php:498
+#: Views/user.systemsettings.amlsettings.view.php:536
+msgid "Max Transaction/Day"
+msgstr "Max Transaction / Jour"
+
+#: Views/user.systemsettings.amlsettings.view.php:260
+#: Views/user.systemsettings.amlsettings.view.php:296
+#: Views/user.systemsettings.amlsettings.view.php:339
+#: Views/user.systemsettings.amlsettings.view.php:377
+#: Views/user.systemsettings.amlsettings.view.php:420
+#: Views/user.systemsettings.amlsettings.view.php:457
+#: Views/user.systemsettings.amlsettings.view.php:501
+#: Views/user.systemsettings.amlsettings.view.php:539
+msgid "Max Transaction/Month"
+msgstr "Max Transaction / Mois"
+
+#: Views/user.systemsettings.amlsettings.view.php:272
+#, fuzzy
+msgid "Add Account Type Receive"
+msgstr "Type de demande de compte Recevez"
+
+#: Views/user.systemsettings.amlsettings.view.php:284
+msgid "Max Amount/Trans"
+msgstr "Montant / Transaction Max"
+
+#: Views/user.systemsettings.amlsettings.view.php:299
+#: Views/user.systemsettings.amlsettings.view.php:380
+#: Views/user.systemsettings.amlsettings.view.php:460
+#: Views/user.systemsettings.amlsettings.view.php:542
+msgid "Max Current Amount"
+msgstr "Max Montant Actuel"
+
+#: Views/user.systemsettings.amlsettings.view.php:311
+#, fuzzy
+msgid "Request AML by Type - Send"
+msgstr "Type de demande de compte Envoyer"
+
+#: Views/user.systemsettings.amlsettings.view.php:352
+#, fuzzy
+msgid "Request AML by Type - Receive"
+msgstr "Type de demande de compte Recevez"
+
+#: Views/user.systemsettings.amlsettings.view.php:393
+msgid "Add AML by MSISDN - Send"
+msgstr ""
+
+#: Views/user.systemsettings.amlsettings.view.php:433
+msgid "Add AML by MSISDN - Receive"
+msgstr ""
+
+#: Views/user.systemsettings.amlsettings.view.php:473
+#, fuzzy
+msgid "Request AML by MSISDN - Send"
+msgstr "Type de demande de compte Envoyer"
+
+#: Views/user.systemsettings.amlsettings.view.php:514
+#, fuzzy
+msgid "Request AML by MSISDN - Receive"
+msgstr "Type de demande de compte Recevez"
+
+#: Views/user.systemsettings.audittrail.view.php:12
+msgid "MODULE"
+msgstr ""
+
+#: Views/user.systemsettings.audittrail.view.php:13
+msgid "LOG"
+msgstr "LOG"
+
+#: Views/user.systemsettings.audittrailtab.view.php:5
+msgid "Select User"
+msgstr "Sélectionnez l'utilisateur"
+
+#: Views/user.systemsettings.bonus.view.php:5
+msgid "Bonus by Type"
+msgstr ""
+
+#: Views/user.systemsettings.bonus.view.php:6
+msgid "Bonus by MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.bonus.view.php:80
+#, fuzzy
+msgid "Request Bonus by Type"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.bonus.view.php:123
+#: Views/user.systemsettings.commissions.view.php:123
+msgid "Request Bonus by MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.bonus.view.php:168
+msgid "Add new Bonus by Type"
+msgstr ""
+
+#: Views/user.systemsettings.bonus.view.php:209
+msgid "Add new Bonus by MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.commissions.view.php:80
+#, fuzzy
+msgid "Request Commissions by Type"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.commissions.view.php:166
+msgid "Add new Commissions by Type"
+msgstr ""
+
+#: Views/user.systemsettings.commissions.view.php:211
+msgid "Add new Commissions by MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.keyallowed.view.php:5
+#, fuzzy
+msgid "Key allowed Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.systemsettings.keyallowed.view.php:6
+msgid "Key allowed MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.keyallowed.view.php:104
+#, fuzzy
+msgid "Request Key Allowed Type"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.keyallowed.view.php:139
+msgid "Add new Key Allowed Type"
+msgstr ""
+
+#: Views/user.systemsettings.keyallowed.view.php:173
+msgid "Request Key Allowed MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.keyallowed.view.php:208
+msgid "Add new Key Allowed MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.keycosttype.view.php:123
+msgid "Request Key Cost Type"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.keycosttype.view.php:159
+#: Views/user.systemsettings.keycosttype.view.php:203
+#: Views/user.systemsettings.keycosttype.view.php:246
+#: Views/user.systemsettings.keycosttype.view.php:295
+msgid "Account To"
+msgstr "compte Vers"
+
+#: Views/user.systemsettings.keycosttype.view.php:173
+#, fuzzy
+msgid "Add Key Cost Type"
+msgstr "Types de coûts clés"
+
+#: Views/user.systemsettings.keycosttype.view.php:216
+msgid "Add Key Cost MSISDN"
+msgstr ""
+
+#: Views/user.systemsettings.keycosttype.view.php:259
+#, fuzzy
+msgid "Request Key Cost MSISDN"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.messages.view.php:12
+#: Views/user.systemsettings.messages.view.php:48
+msgid "LANGUAGE"
+msgstr "LANGUE"
+
+#: Views/user.systemsettings.messages.view.php:38
+msgid "Request Message"
+msgstr "Message de demande"
+
+#: Views/user.systemsettings.receiver.view.php:51
+msgid "Request Receiver"
+msgstr "demande récepteur"
+
+#: Views/user.systemsettings.receiver.view.php:57
+#: Views/user.systemsettings.receiver.view.php:100
+#: Views/user.systemsettings.transceiver.view.php:55
+#: Views/user.systemsettings.transceiver.view.php:95
+#: Views/user.systemsettings.transmitter.view.php:57
+#: Views/user.systemsettings.transmitter.view.php:109
+msgid "SYSTEMID"
+msgstr "SYSTEMID"
+
+#: Views/user.systemsettings.receiver.view.php:58
+#: Views/user.systemsettings.receiver.view.php:103
+#: Views/user.systemsettings.transceiver.view.php:58
+#: Views/user.systemsettings.transceiver.view.php:96
+#: Views/user.systemsettings.transmitter.view.php:58
+#: Views/user.systemsettings.transmitter.view.php:112
+msgid "PASSWORD"
+msgstr "MOT DE PASSE"
+
+#: Views/user.systemsettings.receiver.view.php:65
+#: Views/user.systemsettings.transceiver.view.php:103
+#: Views/user.systemsettings.transmitter.view.php:65
+msgid "TON"
+msgstr "TON"
+
+#: Views/user.systemsettings.receiver.view.php:66
+#: Views/user.systemsettings.transceiver.view.php:104
+#: Views/user.systemsettings.transmitter.view.php:66
+msgid "NPI"
+msgstr "NPI"
+
+#: Views/user.systemsettings.receiver.view.php:69
+#: Views/user.systemsettings.receiver.view.php:112
+#: Views/user.systemsettings.transceiver.view.php:67
+#: Views/user.systemsettings.transceiver.view.php:115
+#: Views/user.systemsettings.transmitter.view.php:77
+#: Views/user.systemsettings.transmitter.view.php:121
+msgid "SYSTYPE"
+msgstr "SYSTYPE"
+
+#: Views/user.systemsettings.receiver.view.php:73
+#: Views/user.systemsettings.receiver.view.php:115
+#: Views/user.systemsettings.transceiver.view.php:70
+#: Views/user.systemsettings.transceiver.view.php:119
+#: Views/user.systemsettings.transmitter.view.php:81
+#: Views/user.systemsettings.transmitter.view.php:124
+msgid "HOSTIP"
+msgstr "HOSTIP"
+
+#: Views/user.systemsettings.receiver.view.php:74
+#: Views/user.systemsettings.receiver.view.php:118
+#: Views/user.systemsettings.transceiver.view.php:73
+#: Views/user.systemsettings.transceiver.view.php:120
+#: Views/user.systemsettings.transmitter.view.php:82
+#: Views/user.systemsettings.transmitter.view.php:127
+msgid "SHORTCODE"
+msgstr "SHORTCODE"
+
+#: Views/user.systemsettings.receiver.view.php:77
+#: Views/user.systemsettings.transceiver.view.php:123
+#: Views/user.systemsettings.transmitter.view.php:85
+msgid "KEEPALIVEINTERVAL"
+msgstr "KEEPALIVEINTERVAL"
+
+#: Views/user.systemsettings.receiver.view.php:78
+#: Views/user.systemsettings.transceiver.view.php:124
+#: Views/user.systemsettings.transmitter.view.php:86
+msgid "RESPONSETIMEOUT"
+msgstr "RESPONSETIMEOUT"
+
+#: Views/user.systemsettings.receiver.view.php:81
+msgid "SECURED"
+msgstr "SECURED"
+
+#: Views/user.systemsettings.receiver.view.php:97
+msgid "Add Receiver"
+msgstr "Ajouter récepteur"
+
+#: Views/user.systemsettings.serverconfig.view.php:38
+msgid "Request Server Config"
+msgstr "Demander Config Server"
+
+#: Views/user.systemsettings.serverconfig.view.php:66
+msgid "Add Server Config"
+msgstr "Ajouter Config Server"
+
+#: Views/user.systemsettings.systeminfo.view.php:8
+#: Views/user.systemsettings.systeminfo.view.php:47
+msgid "CURRENCY TYPE"
+msgstr "TYPE DE DEVISES"
+
+#: Views/user.systemsettings.systeminfo.view.php:9
+#: Views/user.systemsettings.systeminfo.view.php:48
+msgid "COUNTRY CODE"
+msgstr "CODE PAYS"
+
+#: Views/user.systemsettings.systeminfo.view.php:10
+#: Views/user.systemsettings.systeminfo.view.php:49
+msgid "SYSTEM ACCOUNT NUMBER"
+msgstr "SYSTÈME DE NUMERO DE COMPTE"
+
+#: Views/user.systemsettings.systeminfo.view.php:13
+#: Views/user.systemsettings.systeminfo.view.php:52
+msgid "SENDER NUMBER"
+msgstr "NUMÉRO DE L'EXPÉDITEUR"
+
+#: Views/user.systemsettings.systeminfo.view.php:14
+#: Views/user.systemsettings.systeminfo.view.php:53
+msgid "ACCEPT DECIMAL"
+msgstr "ACCEPTER DECIMAL"
+
+#: Views/user.systemsettings.systeminfo.view.php:15
+#: Views/user.systemsettings.systeminfo.view.php:54
+msgid "FLOUS DEFAULT PASSWORD"
+msgstr "PASSE PAR DÉFAUT FLOUS"
+
+#: Views/user.systemsettings.systeminfo.view.php:18
+#: Views/user.systemsettings.systeminfo.view.php:57
+msgid "FAILED TRANSFER COUNT"
+msgstr "FAILED COMPTE DE TRANSFERT"
+
+#: Views/user.systemsettings.systeminfo.view.php:19
+#: Views/user.systemsettings.systeminfo.view.php:58
+msgid "INVALID PASSWORD COUNT"
+msgstr "INVALID COUNT MOT DE PASSE"
+
+#: Views/user.systemsettings.systeminfo.view.php:20
+#: Views/user.systemsettings.systeminfo.view.php:59
+msgid "RPRE DAY COUNT"
+msgstr "JOUR COMPTÉ RPRE"
+
+#: Views/user.systemsettings.systeminfo.view.php:23
+#: Views/user.systemsettings.systeminfo.view.php:62
+msgid "MIN ALIAS"
+msgstr "MIN ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:24
+#: Views/user.systemsettings.systeminfo.view.php:63
+msgid "MAX ALIAS"
+msgstr "MAX ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:25
+#: Views/user.systemsettings.systeminfo.view.php:64
+msgid "MSISDN TO ALIAS"
+msgstr "MSISDN À ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:28
+#: Views/user.systemsettings.systeminfo.view.php:67
+msgid "MIN ALLOC"
+msgstr "MIN ALLOC"
+
+#: Views/user.systemsettings.systeminfo.view.php:29
+#: Views/user.systemsettings.systeminfo.view.php:68
+msgid "MAX ALLOC"
+msgstr "MAX ALLOC"
+
+#: Views/user.systemsettings.systeminfo.view.php:30
+#: Views/user.systemsettings.systeminfo.view.php:69
+msgid "CRYPT"
+msgstr "CRYPTE"
+
+#: Views/user.systemsettings.systeminfo.view.php:39
+msgid "Request System Info"
+msgstr "La demande Info du système"
+
+#: Views/user.systemsettings.transceiver.view.php:52
+msgid "Add Transceiver"
+msgstr "Ajouter Transceiver"
+
+#: Views/user.systemsettings.transceiver.view.php:89
+msgid "Request Transceiver"
+msgstr "demande Transceiver"
+
+#: Views/user.systemsettings.transceiver.view.php:107
+#: Views/user.systemsettings.transmitter.view.php:69
+msgid "ORIGTON"
+msgstr "ORIGTON"
+
+#: Views/user.systemsettings.transceiver.view.php:108
+#: Views/user.systemsettings.transmitter.view.php:70
+msgid "ORIGNPI"
+msgstr "ORIGNPI"
+
+#: Views/user.systemsettings.transceiver.view.php:111
+#: Views/user.systemsettings.transmitter.view.php:73
+msgid "DESTTON"
+msgstr "DESTTON"
+
+#: Views/user.systemsettings.transceiver.view.php:112
+#: Views/user.systemsettings.transmitter.view.php:74
+msgid "DESTNPI"
+msgstr "DESTNPI"
+
+#: Views/user.systemsettings.transmitter.view.php:51
+msgid "Request Transmitter"
+msgstr "demande émetteur"
+
+#: Views/user.systemsettings.transmitter.view.php:106
+msgid "Add Transmitter"
+msgstr "Ajouter émetteur"
+
+#: Views/user.systemsettings.view.php:37
+msgid "Audit Trails"
+msgstr "Pistes de vérification"
+
+#~ msgid "Sender KYC does not allowed for reversal"
+#~ msgstr "Sender KYC n'a pas permis de retournement"
+
+#~ msgid "Sender Account Type does not allowed for reversal"
+#~ msgstr "Sender Type de compte n'a pas permis de retournement"
+
+#~ msgid ""
+#~ " - Merchant / Biller Recepient Account Type does not allowed for reversal"
+#~ msgstr ""
+#~ " - Merchant / Biller Recepient Type de compte n'a pas permis de "
+#~ "retournement"
+
+#~ msgid "Recepient does not have enough balance for reversal"
+#~ msgstr "Destinataire n'a pas assez d'équilibre pour l'inversion"
+
+#, fuzzy
+#~ msgid "AML Type not valid for approval."
+#~ msgstr " Type non valide pour l'inversion de la transaction."
+
+#, fuzzy
+#~ msgid "Please input valid format for fixed / percent."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for priority / status."
+#~ msgstr "S'il vous plaît entrer les caractères valides"
+
+#, fuzzy
+#~ msgid "Please input valid format for amount fr / amount to."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for account fr."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for type / key."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for fixed / account."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for priority / percent."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "Please input valid format for account from."
+#~ msgstr "S'il vous plaît caractère d'entrée valide"
+
+#, fuzzy
+#~ msgid "ACCOUNTTO"
+#~ msgstr "COMPTE A"
+
+#~ msgid "Configurations"
+#~ msgstr "Configurations"
+
+#~ msgid "Successfully rejected"
+#~ msgstr "avec succès rejeté"
+
+#~ msgid "Username is not permitted to this IP:"
+#~ msgstr "Nom d'utilisateur n'est pas autorisé à cette IP:"
+
+#~ msgid "Sorry you're not allowed to VIEW ACCOUNT DETAILS"
+#~ msgstr "Désolé vous n'avez pas le droit de visualiser des détails COMPTE"
+
+#~ msgid "Sorry you're not allowed to APPROVE MCOM"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE MCOM"
+
+#~ msgid "Sorry you're not allowed to VIEW MCOM DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW MCOM DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE AGNT"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE AGNT"
+
+#~ msgid "Sorry you're not allowed to VIEW AGNT DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW AGNT DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE DLER"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE DLER"
+
+#~ msgid "Sorry you're not allowed to VIEW DLER DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW DLER DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE MERC / BILLER"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE MERC / BILLER"
+
+#~ msgid "Sorry you're not allowed to VIEW MERC / BILLER DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW MERC / BILLER DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE CORP"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE CORP"
+
+#~ msgid "Sorry you're not allowed to VIEW CORP DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW CORP DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE BANK"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE BANK"
+
+#~ msgid "Sorry you're not allowed to VIEW BANK DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW BANK DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE TEMP"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE TEMP"
+
+#~ msgid "Sorry you're not allowed to VIEW TEMP DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW TEMP DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE WAGE"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE WAGE"
+
+#~ msgid "Sorry you're not allowed to VIEW WAGE DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW WAGE DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE BLOC"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE BLOC"
+
+#~ msgid "Sorry you're not allowed to VIEW BLOC DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW BLOC DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE NICKNAME"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE NICKNAME"
+
+#~ msgid "Account does not Exist"
+#~ msgstr "Compte n'existe pas"
+
+#~ msgid "Sorry you're not allowed to REGISTER ACCOUNT!"
+#~ msgstr "Désolé vous n'êtes pas autorisé à REGISTER ACCOUNT!"
+
+#~ msgid "NVALID PASSWORD COUNT"
+#~ msgstr "INVALID COUNT MOT DE PASSE"
+
+#~ msgid "from"
+#~ msgstr "à partir de"
+
+#~ msgid "to"
+#~ msgstr "au"

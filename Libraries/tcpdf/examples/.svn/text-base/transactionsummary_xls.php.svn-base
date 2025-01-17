@@ -1,0 +1,42 @@
+<?php
+session_start();
+
+$str = '<table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+							<thead>
+							<tr class="ui-widget-header">
+								<th>DATE</th>
+								<th>CASHQTY</th>
+								<th>CASHSEND</th>
+								<th>ALLOCQTY</th>
+								<th>ALLOCSEND</th>
+								<th>DEALLOCQTY</th>
+								<th>DEALLOCSEND</th>
+							</tr>
+							</thead>
+							<tbody>';
+							 $ctr=0; 
+							 foreach($_SESSION['data']->Value as $t): 
+							 $ctr++;
+									
+							$str = $str . "<tr>
+										<td>" . date('Y-m-d', strtotime($t->TIMESTAMP)) . "</td>" .
+										"<td>$t->CASHQTY</td>
+										<td>$t->CASHSEND</td>
+										<td>$t->ALLOCQTY</td>
+										<td>$t->ALLOCSEND</td>
+										<td>$t->DEALLOCQTY</td>
+										<td>$t->DEALLOCSEND</td>
+									</tr>";
+							endforeach;
+					$str = $str . '</tbody>
+					</table>';
+
+//Change To Avoid the PDF Error 
+ob_end_clean();
+header("Content-type: application/octet-stream");
+# replace excelfile.xls with whatever you want the filename to default to
+header("Content-Disposition: attachment; filename=transactionsummary_" . date("YmdHis") . ".xls");
+header("Pragma: no-cache");
+header("Expires: 0");
+echo $str;
+?>

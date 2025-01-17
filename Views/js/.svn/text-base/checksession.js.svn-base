@@ -1,0 +1,67 @@
+/*window.onload = setupRefresh;
+function setupRefresh() {
+	setInterval("refreshBlock();", 5000);
+};
+
+function refreshBlock() {
+	$.ajax({
+      url: basePath,
+      success: function(data) {
+        //alert(data);
+        //alert(indexPath);
+        if($.trim(data) != "true"){
+        	$("<p>You Have Been Logged Out!</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { window.close(); $(this).dialog("close"); } } });
+        	//$("<p>You Have Been Logged Out!</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { window.location.href = indexPath; $(this).dialog("close"); } } });
+        	//alert("You Have Been Logged Out!");
+        	//window.location.href = indexPath;
+            //alert(indexPath);
+        }
+      }
+    });
+}
+
+function reload(){
+    window.location.href = indexPath;
+}*/
+
+/*================================================================================*/
+      window.previousDate = undefined;
+      window.dialogIsOpen = "false";
+      window.sessionCallback = function(res){if(res.ResponseCode != 0 && window.dialogIsOpen == "false"){window.dialogIsOpen = "true";$("<p>You have been logged out!</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { window.close();/* window.location.reload(); */$(this).dialog("close"); } } }).parent().find('a.ui-dialog-titlebar-close').remove();}};
+      
+      function dateDiff(date1,date2,interval) {
+        var second=1000, minute=second*60, hour=minute*60, day=hour*24, week=day*7;
+        var timediff = date2 - date1;
+        if (isNaN(timediff)) return NaN;
+        switch (interval) {
+          case "years": return date2.getFullYear() - date1.getFullYear();
+          case "months": return (
+            ( date2.getFullYear() * 12 + date2.getMonth() )
+            -
+            ( date1.getFullYear() * 12 + date1.getMonth() )
+          );
+          case "weeks"  : return Math.floor(timediff / week);
+          case "days"   : return Math.floor(timediff / day); 
+          case "hours"  : return Math.floor(timediff / hour); 
+          case "minutes": return Math.floor(timediff / minute);
+          case "seconds": return Math.floor(timediff / second);
+          default: return undefined;
+        }
+      };
+      $(document).ready(function(){
+        $(document).bind('mousemove',function(){
+          if(window.previousDate!=undefined){
+            var idle = dateDiff(window.previousDate,new Date(),'seconds');
+            if(idle>window.sessionInterval){
+              //call ajax function here
+                $.ajax({
+                  url: basePath,
+                  type: 'post',
+                  dataType: 'json',
+                  success: window.sessionCallback
+              });
+            }
+          }
+          window.previousDate = new Date();
+        });
+      });

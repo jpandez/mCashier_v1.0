@@ -1,0 +1,157 @@
+body{
+margin-left:0px;
+margin-top:0px;
+margin-right:0px;
+margin-bottom:0px;
+background: url(../images/home/header_bg2.jpg);
+background-repeat: repeat-x;
+background-color:black;	
+width:100%;
+}
+
+/******************** Header ********************/
+
+.wrapper{
+display:block;
+width:100%;
+overflow:auto;
+margin-top:23px;
+}
+
+.top
+{
+width:1365px;
+height:100px;
+margin:0px auto;
+text-align:center;
+}
+
+.header
+{
+width:1365;
+height:100px;
+}
+
+#logo
+{
+width:200px;
+margin-left:20px;
+padding-top:15px;
+}
+
+
+
+/***************** End of Header ****************/
+
+
+
+/************ Sidebar Accordion Menu ************/
+
+#sidebar #main-nav {
+                width: 206px;
+                padding: 0;
+                margin: 0 0 0 15px;
+                font-family: Helvetica, Arial, sans-serif;
+                }
+
+#sidebar #main-nav li {
+                list-style: none;
+                padding-bottom: 10px;
+                text-align: right;
+                }
+
+#sidebar #main-nav li a.nav-top-item {
+                background: transparent url('../images/home/bg-menu-item-green.gif') right center no-repeat; /* Background image for default color scheme - green */
+                padding: 10px 15px;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+                display: block;
+                text-decoration: none;
+                }
+
+#sidebar #main-nav li a.current {
+                background-image: url('../images/home/bg-menu-item-current.gif') !important;
+                color: #333;
+                font-weight: bold;
+                }
+                
+#sidebar #main-nav li a.current:hover {
+                color: #333;
+                }
+
+#sidebar #main-nav ul {
+                padding: 0;
+                font-size: 12px;
+                margin: 0;
+                }
+
+#sidebar #main-nav ul li {
+                list-style: none;
+                margin: 0;
+                text-align: right;
+				padding: 0;
+                }
+
+#sidebar #main-nav ul li a {
+                padding: 8px 15px;
+                display: block;
+                color: #aaa;
+                font-size: 13px;
+                line-height: 1.2em;
+                }
+
+#sidebar #main-nav ul li a:hover,
+#sidebar #main-nav ul li a.current,
+#sidebar #main-nav ul li a.current:hover {
+                color: #fff;
+                }
+
+#sidebar #main-nav ul li a.current {
+                background: transparent url('../images/home/menu-current-arrow.gif') right center no-repeat !important;
+                }
+				
+
+/************ End of Accordion Menu ************/
+
+.body
+{
+width:1365px;
+margin:0px auto;
+height:554px;
+
+position:relative;
+}
+
+#left
+{
+float:left;
+width:230px;
+height:854px;
+position:absolute;
+left:0;
+right:0;
+background-image:url('../images/home/left_bg.gif') ;
+}
+
+
+#sidebar
+{
+position:absolute;
+left:0;
+padding-top:50px;
+width:230px;
+}
+
+#right
+{
+float:right;
+width:1135px;
+height:854px;
+background-image:url('../images/home/content_bg.png');
+text-align:center;
+margin:auto 0px;
+}
+
+
+

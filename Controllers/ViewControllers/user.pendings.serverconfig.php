@@ -1,0 +1,27 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class SubscriberTransactionsController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			$serv = new SubscriberServices();
+			
+			/*pending server config*/
+			if($this->getRolesConfig('VIEW_PENDING_SYSTEM_INFO')){
+				$getServerConfigPndg = $serv->getServerConfigPndg($_SESSION["currentUser"]);
+				if(isset($getServerConfigPndg->Token)){
+					$_SESSION["token"] = $getServerConfigPndg->Token;
+				}
+				if($getServerConfigPndg->ResponseCode == 13 || $getServerConfigPndg->ResponseCode == 14){
+					session_destroy();
+				}
+				$this->setData("getServerConfigPndg",$getServerConfigPndg);
+				$this->setMaster("user.pendings.serverconfig.view.php");
+				$this->render();
+			}
+		}
+	}
+		$i = new SubscriberTransactionsController();
+?>

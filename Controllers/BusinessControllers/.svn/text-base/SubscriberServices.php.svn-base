@@ -1,0 +1,2773 @@
+<?php require_once("bc.config.properties.php"); ?>
+<?php require_once("ServiceResponse.php"); ?>
+<?php require_once($GLOBALS["LIB_PATH"]."/Wrappers/nusoap.php"); ?>
+<?php require_once($GLOBALS["LIB_PATH"]."/Utils/utils.Common.php"); ?>
+<?php
+	class SubscriberServices{
+		var $_GUISERVICE=null;
+		var $logger = null;
+		public function __construct(){
+			$this->_GUISERVICE = $GLOBALS["GUISERVICE"];
+			$this->logger = new Common();
+		}
+		
+		public function activate($MSISDN){
+		  
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('activate', array('MSISDN'=>$MSISDN));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function allocate($MSISDN,$Amount,$UserID,$Remarks){
+		  
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('allocate', array('MSISDN'=>$MSISDN,'Amount'=>$Amount,'UserID'=>$UserID,'Remarks'=>$Remarks));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);
+			return $ret;
+		}
+		
+		public function changePassword($MSISDN, $oldPassword,$newPassword){
+		  
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('changePassword', array('MSISDN'=>$MSISDN));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function deactivate($MSISDN){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('deactivate', array('MSISDN'=>$MSISDN));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function lock($MSISDN, $LockDescription){
+		    $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('lock', array('MSISDN'=>$MSISDN,'LockDescription'=>$LockDescription));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function registerAccount($MSISDN,$Alias,$Gender,$LastName,$MiddleName,
+										$FirstName,$EmailAddress,$DateOfBirth,$IDNumber,$IDDesc,$IDExpiry,
+										$Nationality,$BirthPlace,$CityID,$RegionID,$CountryID,
+										$Type,$KYC,$Status,$ReferenceAccount,$UserID,$BuildingName,
+										$StreetName,$CompanyName,$Profession,$Locked,$AltNumber,
+										$AuthorizingLastName,$AuthorizingFirstName,$AuthorizingIDNumber,
+										$AuthorizingIDDesc,$AuthorizingMsisdn,
+										$corpdateofincorporation,$corpbusinessname,$corptradelicensenumber,$corpregistredaddress,$corptypeofbusiness,$corpownershipinfo){
+
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('registerAccount', array('AuthorizingLastName'=>$AuthorizingLastName,'AuthorizingFirstName'=>$AuthorizingFirstName,'AuthorizingIDNumber'=>$AuthorizingIDNumber,
+																'AuthorizingIDDesc'=>$AuthorizingIDDesc,'AuthorizingMsisdn'=>$AuthorizingMsisdn,
+																'MSISDN'=>$MSISDN,'Alias'=>$Alias,'Gender'=>$Gender,'LastName'=>$LastName,'MiddleName'=>$MiddleName,
+																'FirstName'=>$FirstName,'EmailAddress'=>$EmailAddress,'DateOfBirth'=>$DateOfBirth,'IDNumber'=>$IDNumber,'IDDesc'=>$IDDesc,'IdExpiryDate'=>$IDExpiry,
+																'Nationality'=>$Nationality,'BirthPlace'=>$BirthPlace,'CityID'=>$CityID,'RegionID'=>$RegionID,'CountryID'=>$CountryID,
+																'Type'=>$Type,'KYC'=>$KYC,'Status'=>$Status,'ReferenceAccount'=>$ReferenceAccount,'UserID'=>$UserID,'BuildingName'=>$BuildingName,
+																'StreetName'=>$StreetName,'CompanyName'=>$CompanyName,'Profession'=>$Profession,'Locked'=>$Locked,'AltNumber'=>$AltNumber,
+																'corpdateofincorporation'=>$corpdateofincorporation,'corpbusinessname'=>$corpbusinessname,'corptradelicensenumber'=>$corptradelicensenumber,'corpregisteredaddress'=>$corpregistredaddress,'corptypeofbusiness'=>$corptypeofbusiness,'corpownershipinfo'=>$corpownershipinfo));
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function resetPassword($MSISDN){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('resetPassword', array('MSISDN'=>$MSISDN));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function search($inp, $option){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+            
+			$client = $client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('search', array('inp'=>$inp,'option'=>$option));
+					
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);
+			return $ret;
+		}
+		
+		public function unlock($MSISDN){
+		  
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('unlock', array('MSISDN'=>$MSISDN));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function updateAccount($MSISDN,$Alias,$Gender,$LastName,$MiddleName,
+										$FirstName,$EmailAddress,$DateOfBirth,$IDNumber,$IDDesc,$IDExpiry,
+										$Nationality,$BirthPlace,$CityID,$RegionID,$CountryID,
+										$Type,$KYC,$Status,$ReferenceAccount,$UserID,$BuildingName,
+										$StreetName,$CompanyName,$Profession,$Locked,$AltNumber,
+										$corpdateofincorporation,$corpbusinessname,$corptradelicensenumber,$corpregistredaddress,$corptypeofbusiness,$corpownershipinfo){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('updateAccount', array('MSISDN'=>$MSISDN,'Alias'=>$Alias,'Gender'=>$Gender,'LastName'=>$LastName,'MiddleName'=>$MiddleName,
+																'FirstName'=>$FirstName,'EmailAddress'=>$EmailAddress,'DateOfBirth'=>$DateOfBirth,'IDNumber'=>$IDNumber,'IDDesc'=>$IDDesc,'IdExpiryDate'=>$IDExpiry,
+																'Nationality'=>$Nationality,'BirthPlace'=>$BirthPlace,'CityID'=>$CityID,'RegionID'=>$RegionID,'CountryID'=>$CountryID,
+																'Type'=>$Type,'KYC'=>$KYC,'Status'=>$Status,'ReferenceAccount'=>$ReferenceAccount,'UserID'=>$UserID,'BuildingName'=>$BuildingName,
+																'StreetName'=>$StreetName,'CompanyName'=>$CompanyName,'Profession'=>$Profession,'Locked'=>$Locked, 'AltNumber'=>$AltNumber, 
+																'corpdateofincorporation'=>$corpdateofincorporation,'corpbusinessname'=>$corpbusinessname,'corptradelicensenumber'=>$corptradelicensenumber,'corpregisteredaddress'=>$corpregistredaddress,'corptypeofbusiness'=>$corptypeofbusiness,'corpownershipinfo'=>$corpownershipinfo));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function updateKYC($MSISDN,$kyc,$userID){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('updateKYC', array('MSISDN'=>$MSISDN,'kyc'=>$kyc,'userID'=>$userID));
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		
+	
+		public function getTransactions($MSISDN,$DateFrom,$DateTo){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('getStatement', array('MSISDN'=>$MSISDN,'DateFrom'=>$DateFrom,'DateTo'=>$DateTo));
+				
+						
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+        
+        /**
+         * Gui User Functions
+         * 
+         */
+         
+         public function userLogin($username = '', $password = '', $sessionid = '',$assoc = false){
+            $ret = array();
+            $ret['Message'] = "System is Busy. Please try again later";
+            $ret['ResponseCode'] = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userLogin', array('username' => $username, 'password' => $password, 'sessionid' => $sessionid)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result),$assoc);
+					}
+            }
+            //print_r($ret);
+			return $ret;
+			
+         }
+         
+          public function checkSession($sessionid = '', $username = ''){
+            $ret = array();
+            $ret['Message'] = "System is Busy. Please try again later";
+            $ret['ResponseCode'] = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('checkSession', array('sessionid' => $sessionid, 'username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+			
+         }
+		 public function checkSession2(){
+            $ret = array();
+            $ret['Message'] = "System is Busy. Please try again later";
+            $ret['ResponseCode'] = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('checkSession');
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = base64_decode($result);
+					}
+            }
+            
+			return $ret;
+			
+         }
+		 
+		 public function userSearch($skey = '', $option = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userSearch', array('skey' => $skey, 'option' => $option)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function userRegistration($username = '', $firstname = '', $lastname = '', $department = '', $userlevel = '', $status = '', $createdby = '', $email = '', $msisdn = '', $allowedip = '0'){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRegistration', array('username' => $username, 'firstname' => $firstname, 'lastname' => $lastname, 'department' => $department, 'userlevel' => $userlevel, 'status' => $status, 'created_by' => $createdby, 'email' => $email, 'msisdn' => $msisdn, 'allowedip'=> $allowedip)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+         
+         public function userRolesList($user_role = ''){
+            $ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRolesGetRoles', array('user_role' => $user_role)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+         }
+         
+         public function applicationRoles($userlevel = '', $assoc = false){
+            $ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('applicationRoles', array('userlevel' => $userlevel)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result), $assoc);
+					}
+            }
+            
+			return $ret;
+         }
+         
+         public function updateModule($userlevel = '', $module = '', $value = '' ,$assoc = false){
+            $ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRolesModifyRoles', array('userlevel' => $userlevel,'option' => $module, 'value' => $value)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result), $assoc);
+					}
+            }
+            
+			return $ret;
+         }
+         
+          public function userRolesAddnew($userlevel = '', $sessiontimeout = '', $passwordchange = '', $passwordexpiry = '', $minpassword = '', $passwordhistory = '', $maxallocation = '', $searchrange = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRolesAddnew', array('userlevel' => $userlevel, 'sessiontimeout' => $sessiontimeout, 'passwordchange' => $passwordchange, 'passwordexpiry' => $passwordexpiry, 'minpassword' => $minpassword, 'passwordhistory' => $passwordhistory, 'maxallocation' => $maxallocation, 'searchrange' => $searchrange)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 public function userLocked($user_id = '', $username = '', $locked = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userLocked', array('user_id' => $user_id, 'username' => $username, 'locked' => $locked)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function userResetPassword($user_id = '', $username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userResetPassword', array('user_id' => $user_id, 'username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		  public function getUserlevelDetails($userlevel, $assoc = false){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRolesGetRoles', array('user_role' => $userlevel)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		  
+		  public function userRolesUpdate($id = '', $userlevel = '' ,$sessiontimeout = '', $passwordchange = '', $passwordexpiry = '', $minpassword = '', $passwordhistory = '', $maxallocation = ''  , $username = '',$searchrange = '', $newpasswordexpiry ='', $assoc = false){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userRolesUpdate', array('id' => $id, 'userlevel' => $userlevel , 'sessiontimeout' => $sessiontimeout , 'passwordchange' => $passwordchange , 'passwordexpiry' => $passwordexpiry , 'minpassword' => $minpassword, 'passwordhistory' => $passwordhistory, 'maxallocation' => $maxallocation, 'username' => $username, 'searchrange' => $searchrange, 'newpasswordexpiry' => $newpasswordexpiry)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function userUpdate($userid = '', $username = '' ,$firstname = '', $lastname = '', $department = '', $userlevel = '', $status = '', $modified_by = '', $email='', $msisdn='', $allowedip='0'){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userUpdate', array('userid' => $userid, 'username' => $username , 'firstname' => $firstname , 'lastname' => $lastname , 'department' => $department , 'userlevel' => $userlevel, 'status' => $status, 'modified_by' => $modified_by, 'email' => $email, 'msisdn' => $msisdn, 'allowedip' => $allowedip)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function userChangePassword($user_id = '', $username = '' ,$oldpassword = '', $newpassword = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('userChangePassword', array('user_id' => $user_id, 'username' => $username , 'oldpassword' => $oldpassword , 'newpassword' => $newpassword)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function globalSearch($subscriber='', $skey='', $value='', $transtype='', $fromdate='', $todate=''){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('globalSearch', array('subscriber'=>$subscriber,'skey'=>$skey,'value'=>$value,'value'=>$value,'transtype'=>$transtype,'fromdate'=>$fromdate,'todate'=>$todate));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);
+			return $ret;
+		}
+		
+		public function globalSearchReferenceID($referenceid=''){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('globalSearchReferenceID', array('referenceid'=>$referenceid));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function getSystemInfo(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('getSystemInfo', array()); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function amlConfigType($type='',$accounttype='',$key=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('amlConfigType', array('type'=>$type,'accounttype'=>$accounttype,'key'=>$key));
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 		
+		
+		
+		public function getTransactionHistory($fromdate = '', $todate = ''){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionReportsAll', array('fromdate'=>$fromdate,'todate'=>$todate));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode($this->logger->checkEncoding(base64_decode($result)));
+					}
+				}
+			return $ret;
+		}
+		
+		public function getTransactionHistoryAll($fromdate = '', $todate = ''){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionHistoryDetails', array('fromdate'=>$fromdate,'todate'=>$todate));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function getTransactionReportsDetails($type='', $fromdate = '', $todate = ''){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionReportsDetails', array('transtype'=>$type , 'fromdate'=>$fromdate,'todate'=>$todate));
+			
+				
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function getTransactionReports($type='', $fromdate = '', $todate = ''){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionReports', array('transtype'=>$type , 'fromdate'=>$fromdate,'todate'=>$todate));
+			
+				
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = json_decode($this->logger->checkEncoding(base64_decode($result)));
+					}
+				}
+			return $ret;
+		}
+		
+		public function getSubscriberCount($assoc = false){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('subscriberCount', array());
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result),$assoc);
+					}
+				}
+			return $ret;
+		}
+		
+		public function getSubscriberList($accounttype='' , $assoc = false){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('subscriberList', array("type" => $accounttype));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result),$assoc);
+					}
+				}
+			return $ret;
+		}
+		
+		public function transactionSummary($fromdate='' ,  $todate = '' , $assoc = false){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionSummary', array("fromdate" => $fromdate, "todate" => $todate));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						//$ret = json_decode($this->logger->checkEncoding(base64_decode($result)),$assoc);
+						//$ret = base64_decode($result);
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			//print_r($ret);
+			return $ret;
+		}
+		
+		public function getAccountSummary($assoc = false){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('accountSummary', array());
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result),$assoc);
+					}
+				}
+			return $ret;
+		}
+		
+		public function subscriberPending($skey='', $value=''){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('subscriberPending', array('skey'=>$skey,'value'=>$value));
+	
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);				
+			return $ret;
+		}
+		 
+		 
+		 public function updateAmlConfigType($id='',$type='',$accounttype='',$key='',$priority='',$maxamount='',$maxcurrentamount='',$maxamountday='',$maxamountmonth='',$maxtransday='',$maxtransmonth=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('updateAmlConfigType', array('id'=>$id,'type'=>$type,'accounttype'=>$accounttype,'key'=>$key,'priority'=>$priority,'maxamount'=>$maxamount,'maxcurrentamount'=>$maxcurrentamount,'maxamountday'=>$maxamountday,'maxamountmonth'=>$maxamountmonth,'maxtransday'=>$maxtransday,'maxtransmonth'=>$maxtransmonth));
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getAuditTrail($userid='',$username='',$fromdate='',$todate=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getAuditTrail', array('userid'=>$userid,'username'=>$username,'fromdate'=>$fromdate,'todate'=>$todate));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+						//$ret = base64_decode($result);
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function addAuditTrail($userid = '', $username = '', $log = '', $ip = '127.0.0.1'){
+		 	$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addAuditTrail', array('userid'=>$userid,'username'=>$username,'log'=>$log,'ip'=>$ip));
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function getAllUsers(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('getAllUsers', array()); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function getAccountType(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+           
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('getAccountType', array()); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function getAllocationPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('getAllocationPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            
+			return $ret;
+		 }
+		 
+		 public function approveAllocation($username='',$msisdn='',$value='',$transactionid=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveAllocation', array('username'=>$username,'msisdn'=>$msisdn,'value'=>$value,'transactionid'=>$transactionid));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function call($method = '', $arr = array(), $assoc = false){
+		 	$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call($method, $arr);
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getSystemInfoPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getSystemInfoPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		  public function getUserlevelPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getUserLevelPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			//print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveSystemInfo($username='',$id='',$remarks=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveSystemInfo', array('username'=>$username,'id'=>$id,'remarks'=>$remarks));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function approveUserLevels($username='',$remarks='',$id='',$userlevel=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveUserLevels', array('username'=>$username,'remarks'=>$remarks,'id'=>$id,'userlevel'=>$userlevel));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getMessages(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getMessages', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = $this->logger->formatJson($result);
+						
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function requestMessages($id='',$message='',$description='',$type='',$language='',$username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+/*$message = mb_convert_encoding($message, 'HTML-ENTITIES', 'UTF-8');*/
+//echo htmlspecialchars($message);
+            $result = $client->call('requestMessages', array('msgid'=>$id,'message'=>$message,'description'=>$description,'type'=>$type,'language'=>$language,'username'=>$username));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getMessagesPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getMessagesPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function approveMessagesPndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveMessagesPndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function addAmlTypePndg($type='',$accounttype='',$key='',$priority='',$maxamount='',$maxcurrentamount='',$maxamountday='',$maxamountmonth='',$maxtransday='',$maxtransmonth='',$username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+            
+            $result = $client->call('addAmlTypePndg', array('type'=>$type,'accounttype'=>$accounttype,'key'=>$key,'priority'=>$priority,'maxamount'=>$maxamount,'maxcurrentamount'=>$maxcurrentamount,'maxamountday'=>$maxamountday,'maxamountmonth'=>$maxamountmonth,'maxtransday'=>$maxtransday,'maxtransmonth'=>$maxtransmonth,'username'=>$username));
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getAmlTypePndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getAmlTypePndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			//print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveAmlTypePndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveAmlTypePndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getKeyCostType(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getKeyCostType', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function updateKeyCostType($key='',$type='',$account='',$fixed='',$percent='',$priority='',$status='',$send='',$receive='',$username='',$amountfr='',$amountto='',$accountfr='',$accountto='',$typeid=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('updateKeyCostType', array('key'=>$key,'type'=>$type,'account'=>$account,'fixed'=>$fixed,'percent'=>$percent,'priority'=>$priority,'status'=>$status,'send'=>$send,'receive'=>$receive,'username'=>$username,'amountfr'=>$amountfr,'amountto'=>$amountto,'accountfr'=>$accountfr,'accountto'=>$accountto,'typeid'=>$typeid));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getKeyCostTypePndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getKeyCostTypePndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveKeyCostTypePndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveKeyCostTypePndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function addKeyCostType($key='',$type='',$account='',$fixed='',$percent='',$priority='',$send='',$receive='',$amountfr='',$amountto='',$accountfr='',$accountto=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addKeyCostType', array('key'=>$key,'type'=>$type,'account'=>$account,'fixed'=>$fixed,'percent'=>$percent,'priority'=>$priority,'send'=>$send,'receive'=>$receive,'amountfr'=>$amountfr,'amountto'=>$amountto,'accountfr'=>$accountfr,'accountto'=>$accountto));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 
+		 public function getTransceiver(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getTransceiver', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = $this->logger->formatJson($result);
+						
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function requestTransceiver($pndgid='', $systemid='', $password='', $ip='', $port='', $ton='', $npi='', $origton='', $orignpi='', $destton='', $destnpi='', $systype='', $status='', $hostip='', $shortcode='', $keepaliveinterval='', $responsetimeout='', $pinpattern='', $pinreplace='', $username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('requestTransceiver', array('pndgid'=>$pndgid,'systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'ton'=>$ton,'npi'=>$npi,'origton'=>$origton,'orignpi'=>$orignpi,'destton'=>$destton,'destnpi'=>$destnpi,'systype'=>$systype,'status'=>$status,'hostip'=>$hostip,'shortcode'=>$shortcode,'keepaliveinterval'=>$keepaliveinterval,'responsetimeout'=>$responsetimeout,'pinpattern'=>$pinpattern,'pinreplace'=>$pinreplace,'username'=>$username));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getTransceiverPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getTransceiverPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveTransceiverPndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveTransceiverPndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function getTransmitter(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getTransmitter', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = $this->logger->formatJson($result);
+						
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function requestTransmitter($pndgid='', $systemid='', $password='', $ip='', $port='', $ton='', $npi='', $origton='', $orignpi='', $destton='', $destnpi='', $systype='', $status='', $hostip='', $shortcode='', $keepaliveinterval='', $responsetimeout='', $pinpattern='', $pinreplace='', $username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('requestTransmitter', array('pndgid'=>$pndgid,'systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'ton'=>$ton,'npi'=>$npi,'origton'=>$origton,'orignpi'=>$orignpi,'destton'=>$destton,'destnpi'=>$destnpi,'systype'=>$systype,'status'=>$status,'hostip'=>$hostip,'shortcode'=>$shortcode,'keepaliveinterval'=>$keepaliveinterval,'responsetimeout'=>$responsetimeout,'pinpattern'=>$pinpattern,'pinreplace'=>$pinreplace,'username'=>$username));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getTransmitterPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getTransmitterPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveTransmitterPndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveTransmitterPndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function getReceiver(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getReceiver', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = $this->logger->formatJson($result);
+						
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function requestReceiver($pndgid='', $systemid='', $password='', $ip='', $port='', $ton='', $npi='', $systype='', $status='', $hostip='', $shortcode='', $keepaliveinterval='', $responsetimeout='', $secured='', $username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('requestReceiver', array('pndgid'=>$pndgid,'systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'ton'=>$ton,'npi'=>$npi,'systype'=>$systype,'status'=>$status,'hostip'=>$hostip,'shortcode'=>$shortcode,'keepaliveinterval'=>$keepaliveinterval,'responsetimeout'=>$responsetimeout,'secured'=>$secured,'username'=>$username));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getReceiverPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getReceiverPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveReceiverPndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveReceiverPndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function getServerConfig(){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getServerConfig', array());
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						
+						$ret = $this->logger->formatJson($result);
+						
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function requestServerConfig($pndgid='', $ip='', $function='', $status='', $username=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('requestServerConfig', array('pndgid'=>$pndgid,'ip'=>$ip,'function'=>$function,'status'=>$status,'username'=>$username));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getServerConfigPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getServerConfigPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveServerConfigPndg($username='',$remarks='',$id=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveServerConfigPndg', array('username'=>$username,'remarks'=>$remarks,'id'=>$id));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function addTransceiver($systemid='',$password='',$ip='',$port='',$systype='',$hostip='',$shortcode=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addTransceiver', array('systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'systype'=>$systype,'hostip'=>$hostip,'shortcode'=>$shortcode));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function addTransmitter($systemid='',$password='',$ip='',$port='',$systype='',$hostip='',$shortcode=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addTransmitter', array('systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'systype'=>$systype,'hostip'=>$hostip,'shortcode'=>$shortcode));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function addReceiver($systemid='',$password='',$ip='',$port='',$systype='',$hostip='',$shortcode=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addReceiver', array('systemid'=>$systemid,'password'=>$password,'ip'=>$ip,'port'=>$port,'systype'=>$systype,'hostip'=>$hostip,'shortcode'=>$shortcode));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function addServerConfig($ip=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('addServerConfig', array('ip'=>$ip));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function ReversalSearch($referenceid = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('ReversalSearch', array('referenceid' => $referenceid)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function requestReversal($referenceid='', $type='', $frmsisdn='', $tomsisdn='', $amount='', $extendeddata='', $remarks=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('requestReversal', array('referenceid'=>$referenceid,'type'=>$type,'frmsisdn'=>$frmsisdn,'tomsisdn'=>$tomsisdn,'amount'=>$amount,'extendeddata'=>$extendeddata,'remarks'=>$remarks));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+			return $ret;
+		 }
+		 
+		 public function getReversalPndg($username = ''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('getReversalPndg', array('username' => $username)); 
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+            //print_r($ret);
+			return $ret;
+		 }
+		 
+		 public function approveReversalPndg($username='',$frmsisdn='',$tomsisdn='',$value='',$referenceid=''){
+			$ret = new ServiceResponse();
+            $ret->Message = "System is Busy. Please try again later";
+            $ret->ResponseCode = 100;
+            
+            $client = new nusoap_client($this->_GUISERVICE['wsdl'],'WSDL');
+            $err = $client->getError();
+            
+            if($err){
+                $this->logger->WriteLog(var_export($err,true));
+            }
+
+            $result = $client->call('approveReversalPndg', array('username'=>$username,'frmsisdn'=>$frmsisdn,'tomsisdn'=>$tomsisdn,'value'=>$value,'referenceid'=>$referenceid));
+            
+            if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+            } else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+					   
+						$ret = json_decode(base64_decode($result));
+					}
+            }
+
+			return $ret;
+		 }
+		 
+		 public function validateMSISDN($inp, $option){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+            
+			$client = $client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('validateMSISDN', array('inp'=>$inp));
+					
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);
+			return $ret;
+		}
+		
+		public function validateNickname($inp, $option){
+            $ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+            
+			$client = $client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('validateNickname', array('inp'=>$inp));
+					
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+				//print_r($ret);
+			return $ret;
+		}
+		
+		public function approveKYC($MSISDN,$userID){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+					$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('approveKYC', array('MSISDN'=>$MSISDN,'userID'=>$userID));
+
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function rejectKYC($MSISDN,$userID){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+			$err = $client->getError();
+				if ($err) {
+					$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('rejectKYC', array('MSISDN'=>$MSISDN,'userID'=>$userID));
+
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function queryGlobal($query){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+			$err = $client->getError();
+				if ($err) {
+					$this->logger->WriteLog(var_export($err,true));
+				}
+				$result = $client->call('queryGlobal', array('query'=>$query));
+
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			
+			return $ret;
+		}
+		
+		public function transactionHistoryDetailsSearch($fromdate = '', $todate = '', $perpage = '15', $pagenum = '1', $rtype = 'page'){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionHistoryDetailsSearch', array('fromdate'=>$fromdate,'todate'=>$todate,'perpage'=>$perpage,'pagenum'=>$pagenum,'rtype'=>$rtype));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function transactionReportsDetailsSearch($transtype = '', $fromdate = '', $todate = '', $perpage = '15', $pagenum = '1', $rtype = 'page'){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('transactionReportsDetailsSearch', array('transtype'=>$transtype,'fromdate'=>$fromdate,'todate'=>$todate,'perpage'=>$perpage,'pagenum'=>$pagenum,'rtype'=>$rtype));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function accountSummarySearch($perpage = '15', $pagenum = '1', $rtype = 'page'){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('accountSummarySearch', array('perpage'=>$perpage,'pagenum'=>$pagenum,'rtype'=>$rtype));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+		
+		public function subscriberListSearch($type = '', $perpage = '15', $pagenum = '1', $rtype = 'page'){
+			$ret = new ServiceResponse();
+			$ret->Message = "System is Busy. Please try again later";
+			$ret->ResponseCode = 100;
+			
+			$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+				$err = $client->getError();
+				if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+				}
+                
+                
+				$result = $client->call('subscriberListSearch', array('type'=>$type,'perpage'=>$perpage,'pagenum'=>$pagenum,'rtype'=>$rtype));
+				//print_r($result);		
+				if ($client->fault) {
+					$this->logger->WriteLog(var_export($result,true));
+				} else {
+					$err = $client->getError();
+					if ($err) {
+						$this->logger->WriteLog(var_export($err,true));
+					} else {
+						$ret = json_decode(base64_decode($result));
+					}
+				}
+			return $ret;
+		}
+	}
+?>

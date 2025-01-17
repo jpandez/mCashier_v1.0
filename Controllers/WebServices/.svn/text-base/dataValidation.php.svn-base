@@ -1,0 +1,21 @@
+<?php
+	class dataValidation{
+		public function CheckAlpha($value = ''){
+			$validString = false;
+			if(filter_var($value, FILTER_VALIDATE_REGEXP, array('options' => array('regexp' => "/^[a-zA-Z0-9\s_.-]+$/")))){
+				$validString = true;
+			}
+			
+			return $validString;
+		}
+		
+		public function CheckNumeric($value = ''){
+			$validString = false;
+			if(filter_var($value, FILTER_VALIDATE_REGEXP, array('options' => array('regexp' => "/^[0-9,.]+$/")))){
+				$validString = true;
+			}
+			
+			return $validString;
+		}
+	}
+?>

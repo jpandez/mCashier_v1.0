@@ -1,0 +1,131 @@
+//ETISALAT MOBILE COMMERCE
+//TELCOM LIVE CONTENT, INC 2012
+//Author: Kira /Jinryu
+//March 19, 2012
+//Ajax Webservices Methods
+
+$(function(){
+	
+	$("#nickname").click(function(){
+		//$('#searchBox').removeAttr('onkeyup');
+             $("#searchBox").unbind('keydown');	
+	});
+	
+	$("#mobile_number").click(function(){
+		//$('#searchBox').attr("onkeyup","this.value=this.value.replace(/\\D/g,'');");
+	$("#searchBox").keydown(function(event) {
+        // Allow: backspace, delete, tab, escape, and enter
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 || 
+             // Allow: Ctrl+A
+            (event.keyCode == 65 && event.ctrlKey === true) || (event.keyCode == 86 && event.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (event.keyCode >= 35 && event.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        else {
+            // Ensure that it is a number and stop the keypress
+            if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault(); 
+            }   
+        }
+	});
+	});
+	
+	$("#account_id").click(function(){		
+		//$('#searchBox').attr("onkeyup","this.value=this.value.replace(/\\D/g,'');");
+		
+	$("#searchBox").keydown(function(event) {
+        // Allow: backspace, delete, tab, escape, and enter
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 || 
+             // Allow: Ctrl+A
+            (event.keyCode == 65 && event.ctrlKey === true) || (event.keyCode == 86 && event.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (event.keyCode >= 35 && event.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        else {
+            // Ensure that it is a number and stop the keypress
+            if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault(); 
+            }   
+        }
+    });
+	});
+	
+	
+    $("#btnLogin").click(function(){
+        $('.loading').fadeToggle(300);
+        
+        $.ajax({
+           type: "POST",
+           complete:function(res, status){
+            
+           },
+           data:$('#submit').closest('form').serialize(),
+           dataType: 'json' 
+        });
+        
+    });
+	
+	$("#btnSearchSubscriber").click(function(){
+		$('.sloading').fadeToggle(300);	
+	});
+	
+	
+		
+        
+        $("#btnUserSearch").click(function(){
+            $('.sloading').fadeToggle(300);
+        });
+        
+        $("#btnGlobalView").click(function(){
+			var params = {
+				subscriber:$("#subscriber").val(),
+				skey:$("#searchType").val(),
+				value:$("#searchValue").val(),
+				transtype:$("#lookUp").val(),
+				fromdate:$("#datefrom").val(),
+				todate:$("#dateto").val()
+			};
+			
+				$('.transloading').show();
+				$("#GlobalSearchContent").load(global_search_url,params,function(){
+					$('.transloading').hide();
+				});
+			
+        });
+        
+        $("#btnSearchRefID").click(function(){
+			var params = {
+				referenceid:$("#searchRefID").val()
+			};
+			$('.transloading').show();
+			$("#GlobalSearchContent").load(global_search_refid_url,params,function(){
+				$('.transloading').hide();
+			});
+			
+        });
+        
+        
+        
+        $("#btnTransLog").click(function(){
+        	
+			var params = {
+				fromdate:$("#TransLogsdatefrom").val(),
+				todate:$("#TransLogsdateto").val()
+			};
+			if($("#TransLogsdatefrom").val() != '' && $("#TransLogsdateto").val() != ''){
+				$('.transloading').show();
+				$("#containerTL1").load(trans_logs,params,function(){
+					$('.transloading').hide();
+				});
+			}else{
+				$("<p>Please input search value(s).</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
+			}
+			
+			
+        });
+
+});

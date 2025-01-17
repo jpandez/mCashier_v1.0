@@ -1,0 +1,306 @@
+
+<?php
+	class ViewController{
+		var $_master = "";
+		var $_headerFile;
+		var $_contents;
+		var $_data=null;
+		var $_viewPath;
+        public $roles = array();
+	
+		public function __construct(){
+			$this->_viewPath = $GLOBALS["VIEW_PATH"];
+			 
+            /* fix to redirect to login page if session not isset.             */
+            $url = $_SERVER["REQUEST_URI"];
+            $url = explode("/",$url);
+			if(!isset($_SESSION["currentUser"]) && $url[count($url) - 1] <> "index.php"){
+			     header("Location:index.php");
+			}
+            
+            /* populate session for roles if exists */
+            if(isset($_SESSION['roles'])){
+                $this->roles = $_SESSION['roles'];
+            }
+		}
+		
+		public function setViewPath($path){
+			$this->_viewPath = $path;
+		}
+		public function setContent($name,$path){
+			$this->_contents[$name] = $path;
+		}
+		public function setMaster($master){
+				$this->_master = $master;
+		}
+		
+		public function setHtmlHeaders($headerFile){
+			$this->_headerFile = $headerFile;
+		}
+		
+		
+		public function setData($name,$value){
+			$this->_data[$name] = $value;
+		}
+		
+		public function render(){
+			require_once($this->_viewPath . $this->_master);
+		}
+		
+		public function loadContent($name){
+		
+			include_once($this->_viewPath . $this->_contents[$name]);
+		}
+		
+		public function loadHtmlHeaders(){
+			include_once($this->_viewPath . $this->_headerFile);
+		}
+		
+		public function data($name){
+				if($this->_data==null)return null;
+				return array_key_exists($name,$this->_data)?$this->_data[$name]:null;
+			
+		}
+        
+        public function addRolesConfig($module = '' , $value = ''){
+            $this->roles[$module] = $value;
+            $_SESSION['roles'] = $this->roles;
+        }
+        
+        public function getRolesConfig($module = ''){
+            return ($this->roles[$module] == "YES") ? true : false;
+        }
+		
+		public function checkDateDiff($fromdate = '', $todate = ''){
+			$date1 = new DateTime($fromdate);
+			$date2 = new DateTime($todate);
+			$interval = $date1->diff($date2);
+			echo "";
+			return $interval->days;
+		 }
+		 
+		public function CheckAlpha($value = ''){
+			$validString = false;
+			if(filter_var($value, FILTER_VALIDATE_REGEXP, array('options' => array('regexp' => "/^[a-zA-Z0-9\s_.-]+$/")))){
+				$validString = true;
+			}
+			
+			return $validString;
+		}
+		
+		/* Reports Exports */
+		public function TRexportCSV($ret){
+			$header = "ID,REFERENCE ID,TYPE,DETAIL TYPE,SOURCE,DESTINATION,AMOUNT,SOURCE BALANCE BEFORE,SOURCE BALANCE AFTER,DEST BALANCE BEFORE,DEST BALANCE AFTER,TRANSACTION DATE\r\n";
+			$data = "";
+			foreach($ret->Value as $t){
+				$data = $data . $t->ID . "," . $t->REFERENCEID . "," . $t->TRANSTYPE . "," . $t->DETAILTYPE . "," . $t->SOURCE . "," . $t->DESTINATION . "," . $t->AMOUNT . "," . $t->SOURCEBALANCEBEFORE . "," . $t->SOURCEBALANCEAFTER . "," . $t->DESTINATIONBALANCEBEFORE . "," . $t->DESTINATIONBALANCEAFTER . "," . $t->TRANSACTIONDATE ."\r\n";
+			}
+			
+			$str = $header . $data;
+			return $str;
+		}
+		
+		public function TRexportEXCEL($ret){
+
+			$str = '<table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+						<thead>
+							<tr class="ui-widget-header">
+								<th>ID</th>
+								<th>REFERENCE ID</th>
+								<th>TYPE</th>
+								<th>DETAIL TYPE</th>
+								<th>SOURCE</th>
+								<th>DESTINATION</th>
+								<th>AMOUNT</th>
+								<th>SOURCE BALANCE BEFORE</th>
+								<th>SOURCE BALANCE AFTER</th>
+								<th>DEST BALANCE BEFORE</th>
+								<th>DEST BALANCE AFTER</th>
+								<th>TRANSACTION DATE</th>
+							</tr>
+						</thead>
+						<tbody>';
+							 $ctr=0; 
+							 foreach($ret->Value as $t): 
+							 $ctr++;
+									
+			$str = $str . "<tr>
+								<td>$t->ID</td>
+								<td>$t->REFERENCEID</td>
+								<td>$t->TRANSTYPE</td>
+								<td>$t->DETAILTYPE</td>
+								<td>$t->SOURCE</td>
+								<td>$t->DESTINATION</td>
+								<td>$t->AMOUNT</td>
+								<td>$t->SOURCEBALANCEBEFORE</td>
+								<td>$t->SOURCEBALANCEAFTER</td>
+								<td>$t->DESTINATIONBALANCEBEFORE</td>
+								<td>$t->DESTINATIONBALANCEAFTER</td>
+								<td>$t->TRANSACTIONDATE</td>
+							</tr>";
+							endforeach;
+			$str = $str . '</tbody>
+					</table>';
+
+			return $str;
+		}
+		
+		public function THexportCSV($ret){
+			$header = "ID,REFERENCE ID,TYPE,DETAIL TYPE,SOURCE,DESTINATION,AMOUNT,SOURCE BALANCE BEFORE,SOURCE BALANCE AFTER,DEST BALANCE BEFORE,DEST BALANCE AFTER,TRANSACTION DATE\r\n";
+			$data = "";
+			foreach($ret->Value as $t){
+				$data = $data . $t->ID . "," . $t->REFERENCEID . "," . $t->TRANSTYPE . "," . $t->DETAILTYPE . "," . $t->SOURCE . "," . $t->DESTINATION . "," . $t->AMOUNT . "," . $t->SOURCEBALANCEBEFORE . "," . $t->SOURCEBALANCEAFTER . "," . $t->DESTINATIONBALANCEBEFORE . "," . $t->DESTINATIONBALANCEAFTER . "," . $t->TRANSACTIONDATE ."\r\n";
+			}
+			
+			$str = $header . $data;
+			return $str;
+		}
+		
+		public function THexportEXCEL($ret){
+
+			$str = '<table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+						<thead>
+							<tr class="ui-widget-header">
+								<th>ID</th>
+								<th>REFERENCE ID</th>
+								<th>TYPE</th>
+								<th>DETAIL TYPE</th>
+								<th>SOURCE</th>
+								<th>DESTINATION</th>
+								<th>AMOUNT</th>
+								<th>SOURCE BALANCE BEFORE</th>
+								<th>SOURCE BALANCE AFTER</th>
+								<th>DEST BALANCE BEFORE</th>
+								<th>DEST BALANCE AFTER</th>
+								<th>TRANSACTION DATE</th>
+							</tr>
+						</thead>
+						<tbody>';
+							 $ctr=0; 
+							 foreach($ret->Value as $t): 
+							 $ctr++;
+									
+			$str = $str . "<tr>
+								<td>$t->ID</td>
+								<td>$t->REFERENCEID</td>
+								<td>$t->TRANSTYPE</td>
+								<td>$t->DETAILTYPE</td>
+								<td>$t->SOURCE</td>
+								<td>$t->DESTINATION</td>
+								<td>$t->AMOUNT</td>
+								<td>$t->SOURCEBALANCEBEFORE</td>
+								<td>$t->SOURCEBALANCEAFTER</td>
+								<td>$t->DESTINATIONBALANCEBEFORE</td>
+								<td>$t->DESTINATIONBALANCEAFTER</td>
+								<td>$t->TRANSACTIONDATE</td>
+							</tr>";
+							endforeach;
+			$str = $str . '</tbody>
+					</table>';
+
+			return $str;
+		}
+		
+		public function ASexportCSV($ret){
+			$header = "ID,FIRST NAME,LAST NAME,MSISDN,NICKNAME,STATUS,CURRENT AMOUNT,LAST TRANSACTION DATE,LOCKED,LOCKED DESCRIPTION\r\n";
+			$data = "";
+			foreach($ret->Value as $t){
+				$data = $data . $t->ID . "," . $t->FIRSTNAME . "," . $t->LASTNAME . "," . $t->MSISDN . "," . $t->NICKNAME . "," . $t->STATUS . "," . $t->CURRENTAMOUNT . "," . $t->LASTTRANSDATE . "," . $t->LOCKED . "," . $t->LOCKED_DESCRIPTION ."\r\n";
+			}
+			
+			$str = $header . $data;
+			return $str;
+		}
+		
+		public function ASexportEXCEL($ret){
+
+			$str = '<table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+						<thead>
+							<tr class="ui-widget-header">
+								<th>ID</th>
+								<th>FIRST NAME</th>
+								<th>LAST NAME</th>
+								<th>MSISDN</th>
+								<th>NICKNAME</th>
+								<th>STATUS</th>
+								<th>CURRENT AMOUNT</th>
+								<th>LAST TRANSACTION DATE</th>
+								<th>LOCKED</th>
+								<th>LOCKED DESCRIPTION</th>
+							</tr>
+						</thead>
+						<tbody>';
+							 $ctr=0; 
+							 foreach($ret->Value as $t): 
+							 $ctr++;
+									
+			$str = $str . "<tr>
+								<td>$t->ID</td>
+								<td>$t->FIRSTNAME</td>
+								<td>$t->LASTNAME</td>
+								<td>$t->MSISDN</td>
+								<td>$t->NICKNAME</td>
+								<td>$t->STATUS</td>
+								<td>$t->CURRENTAMOUNT</td>
+								<td>$t->LASTTRANSDATE</td>
+								<td>$t->LOCKED</td>
+								<td>$t->LOCKED_DESCRIPTION</td>
+							</tr>";
+							endforeach;
+			$str = $str . '</tbody>
+					</table>';
+
+			return $str;
+		}
+		
+		public function SubsexportCSV($ret){
+			$header = "ACCOUNT ID,TYPE,NICKNAME,FIRSTNAME,SECONDNAME,LASTNAME,MSISDN,STATUS,REGDATE,KYC\r\n";
+			$data = "";
+			foreach($ret->Value as $t){
+				$data = $data . $t->ID . "," . $t->TYPE . "," . $t->NICKNAME . "," . $t->FIRSTNAME . "," . $t->SECONDNAME . "," . $t->LASTNAME . "," . $t->MSISDN . "," . $t->STATUS . "," . $t->REGDATE . "," . $t->KYC ."\r\n";
+			}
+			
+			$str = $header . $data;
+			return $str;
+		}
+		
+		public function SubsexportEXCEL($ret){
+			$str = '<table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+						<thead>
+						<tr class="ui-widget-header">
+							<th>ACCOUNT ID</th>
+							<th>TYPE</th>
+							<th>NICKNAME</th>
+							<th>FIRSTNAME</th>
+							<th>SECONDNAME</th>
+							<th>LASTNAME</th>
+							<th>MSISDN</th>
+							<th>STATUS</th>
+							<th>REGDATE</th>
+							<th>KYC</th>
+						</tr>
+						</thead>
+						<tbody>';
+				 $ctr=0; 
+				 foreach($ret->Value as $t): 
+				 $ctr++;
+									
+			$str = $str . "<tr>
+								<td>$t->ID</td>
+								<td>$t->TYPE</td>
+								<td>$t->NICKNAME</td>
+								<td>$t->FIRSTNAME</td>
+								<td>$t->SECONDNAME</td>
+								<td>$t->LASTNAME</td>
+								<td>$t->MSISDN</td>
+								<td>$t->STATUS</td>
+								<td>$t->REGDATE</td>
+								<td>$t->KYC</td>
+							</tr>";
+							endforeach;
+					$str = $str . '</tbody>
+					</table>';
+			return $str;
+		}
+	}
+?>

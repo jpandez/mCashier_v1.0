@@ -1,0 +1,155 @@
+//ETISALAT MOBILE COMMERCE
+//TELCOM LIVE CONTENT, INC 2012
+//Author: Kira /Jinryu
+//March 19, 2012
+//Links,Buttons,Tabs,Dialogs
+
+$(function(){
+	// Tabs
+	//$('#tabs').tabs({ selected: "2" });
+	$('#tabs').tabs();
+	$('#SubscriberTab').tabs();
+	$('#dialogGSearch').tabs();
+
+	$("#dateTO, #pDOB, #pIDExpiry, #regExpiryDate, #REGCORPDATEOFINCORPORATION").datepicker({
+		//duration:''
+		showOn: 'button', buttonImage: window.imgPath + 'images/calendar.gif', buttonImageOnly: true, 
+		changeMonth:true, changeYear:true,
+		maxDate: '',
+		yearRange: '-100:+20',
+		dateFormat: 'yy-mm-dd'
+	});
+	
+	$("#regDob").datepicker({
+		//duration:''
+		showOn: 'button', buttonImage: window.imgPath + 'images/calendar.gif', buttonImageOnly: true, 
+		changeMonth:true, changeYear:true,
+		maxDate: new Date(),
+		dateFormat: 'yy-mm-dd'
+	});
+	
+	// Statement start
+	$("#historyFrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#historyTO" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#historyTO" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#historyFrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Statement end
+	
+	// Transaction History start
+	$("#TransHdatefrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransHdateto" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#TransHdateto" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransHdatefrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Transaction History end
+	
+	// Transaction Report start
+	$("#TransRdatefrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransRdateto" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#TransRdateto" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransRdatefrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Transaction Report end
+	
+	// Audit Trails - Global Search start
+	$("#datefrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#dateto" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#dateto" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#datefrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Audit Trails - Global Search end
+	
+	// Summary start
+	$("#Sumdatefrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#Sumdateto" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#Sumdateto" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#Sumdatefrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Summary end
+	
+	// Graphical Report start
+	$("#TransLogsdatefrom" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransLogsdateto" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$("#TransLogsdateto" ).datepicker({
+		changeMonth: true, changeYear:true,
+		dateFormat: 'yy-mm-dd',
+		onSelect: function( selectedDate ) {
+			$( "#TransLogsdatefrom" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+	// Graphical Report end
+	
+	// Dialog			
+	$('#dialog').dialog({
+		autoOpen: false,
+		width: 700,
+		buttons: {
+			"Ok": function() { 
+				$(this).dialog("close"); 
+			}
+		},
+		draggable: false,
+		resizable: false
+	});
+
+	// buttons/links
+	
+	$('.ui-button').hover(
+		function() { $(this).addClass('ui-state-hover'); }, 
+		function() { $(this).removeClass('ui-state-hover'); }
+	);
+	
+	$(".ui-button").button();
+	
+});

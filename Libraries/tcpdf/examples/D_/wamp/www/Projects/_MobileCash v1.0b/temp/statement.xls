@@ -1,0 +1,54 @@
+<h2 style="padding:0; margin:0;">Account Details</h2><table><tr><td>Account Statement : 639327058445</td><td rowspan="4" style="text-align:right;"></td></tr><tr><td>Terminal ID & Merchant ID : 88888844 || Test000000012</td></tr><tr><td>Account Number & Nick Name : 639327058445 || </td></tr><tr><td>Registered Name : TEST_FN TEST_FN</td></tr><tr><td>Bank Name  : </td></tr><tr><td>Date ranging from 2014-05-13 to 2014-05-13 </td></tr><tr><td>Date Created :  2014-07-15 </td><td style="text-align:right;">Current Balance : 0.00</td></tr></table><p><h2>Account Statement</h2></p><table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+				<tr>
+						<th>SNO</th>
+						<th>RefID</th>
+						<th>RRN</th>
+						<th>Batch No.</th>
+						<th>Batch Status</th>
+						<th>Batch Date</th>
+						<th>DATE</th>
+						<th>TYPE</th>
+						<th>S/D</th>
+						<th>CR</th>
+						<th>DR</th>
+						<th>BAL BEFORE</th>
+						<th>BAL AFTER</th>
+						<th>REF1</th>
+						<th>REF2</th>
+						<th>CURRENCY</th>
+				</tr>
+			<tbody><tr>
+							    <td>1</td>
+								<td>91405130000016</td>
+								<td>000000000220</td>
+								<td>1</td>
+								<td>PENDING</td>
+								<td></td>
+								<td>2014-05-13 03:41:14.0</td>
+								<td>PSales</td>
+								<td>FIRST592</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>156.00</td>
+								<td>157.00</td>
+								<td>Card PAN     : XXXX-XXXX-XXXX-0021 &lt;br/&gt;Expiry       : null &lt;br/&gt;Card Holder  : SAIF ELDIN AHMED &lt;br/&gt;Note  : Card PAN     : XXXX-XXXX-XXXX-0021 &lt;br/&gt;Expiry       : null &lt;br/&gt;Card Holder  : SAIF ELDIN AHMED &lt;br/&gt;Note  :  &lt;br/&gt; &lt;br/&gt;</td>
+								<td>SAIF ELDIN AHMED</td>
+								<td>EGP</td>
+							</tr><tr>
+							    <td>2</td>
+								<td>91405130000043</td>
+								<td>000000000223</td>
+								<td>1</td>
+								<td>PENDING</td>
+								<td></td>
+								<td>2014-05-13 10:56:02.0</td>
+								<td>ESales</td>
+								<td>FIRST592</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>157.00</td>
+								<td>158.00</td>
+								<td>Card PAN     : XXXX-XXXX-XXXX-2341 &lt;br/&gt;Expiry       : null &lt;br/&gt;Card Holder  : DXB/CP &lt;br/&gt;Note  : Card PAN     : XXXX-XXXX-XXXX-2341 &lt;br/&gt;Expiry       : null &lt;br/&gt;Card Holder  : DXB/CP &lt;br/&gt;Note  :  E &lt;br/&gt; &lt;br/&gt;</td>
+								<td>DXB/CP</td>
+								<td>EGP</td>
+							</tr></tbody></table>

@@ -1,0 +1,107 @@
+<?php session_start();?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class IndexController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			/*$this->setContent('main','user.subscriber.view.php');*/
+			
+			if(isset($_SESSION["currentUser"])){
+				$this->setData("pageTitle","Account Management");
+				$this->setData("currentUser",$_SESSION["currentUser"]);
+				$this->setMaster('user.master.php');
+				/*$this->setContent('main','user.subscriber.view.php');*/
+				if ($_SESSION["ISFIRSTLOGON"] == 1){
+					if ($_SESSION["USEREXPIRY"] < 1){
+						$this->setData("responseData",_("Your account's password has expired. please contact your system administrator"));
+						session_destroy();
+						$this->setMaster("index.master.php");
+					}else{
+						$this->setContent('main','user.management.view.php');
+						$this->setData("responseMessage",_("Please Change your PASSWORD."));
+					}					
+				}
+				else{
+					$this->setContent('main','user.subscriber.view.php');
+				}
+			}else{
+				if(isset($_REQUEST["Method"]) ){
+					if(!$this->CheckAlpha($_REQUEST['username'])){
+						$this->setData("responseData", "Please Enter valid username.");
+                        $this->setMaster("index.master.php");
+					}else{
+						$sessionid = session_id()  . "@" . $_SERVER['REMOTE_ADDR'];
+						$svc  = new SubscriberServices();
+						$user =strtoupper($_REQUEST['username']);
+						$ret = $svc->userLogin($user,$_REQUEST['password'], $sessionid, true);
+						$retMessage = $ret['Message'];
+						/*print_r($ret);*/
+		
+						if($ret['ResponseCode'] == 0){
+							$_SESSION['lang'] = $_REQUEST['lang'];
+							
+							$roles = $ret['Value']['ROLESCONFIG'];				   
+							$_SESSION["token"]=$ret['Token'];
+							
+							$_SESSION["currentUser"] = $user;
+							$_SESSION["currentPassword"] = $_REQUEST["password"];
+							$_SESSION["currentUserID"] = $ret['Value']['USERID'];
+							$_SESSION["currentUserIP"] = $ret['Value']['ALLOWEDIP'];
+							$_SESSION["sessionid"] = $sessionid;
+							$_SESSION["sessiontimeout"] = (isset($ret['Value']['SESSIONTIMEOUT'])) ? $ret['Value']['SESSIONTIMEOUT'] : 300;
+							$_SESSION["searchrange"] = (isset($ret['Value']['SEARCHRANGE'])) ? $ret['Value']['SEARCHRANGE'] : 120;
+							$_SESSION["currentUserLevel"] = (isset($ret['Value']['USERLEVEL'])) ? $ret['Value']['USERLEVEL'] : 'ADMIN';
+							$_SESSION["maxALLOC"] = (isset($ret['Value']['MAXALLOCUSER'])) ? $ret['Value']['MAXALLOCUSER'] : '1';
+							$_SESSION["LASTLOGIN"] = (isset($ret['Value']['LASTLOGIN'])) ? date_create($ret['Value']['LASTLOGIN']) : '1';
+							$_SESSION["ISFIRSTLOGON"] = (isset($ret['Value']['ISFIRSTLOGON'])) ? $ret['Value']['ISFIRSTLOGON'] : '1';
+							$_SESSION["USEREXPIRY"] = (isset($ret['Value']['USEREXPIRY'])) ? $ret['Value']['USEREXPIRY'] : '1';
+							$_SESSION["NEWPASSWORDEXPIRY"] = (isset($ret['Value']['NEWPASSWORDEXPIRY'])) ? $ret['Value']['NEWPASSWORDEXPIRY'] : '1';
+							/*set sessions*/
+							foreach($roles as $row){
+								
+								$key = array_keys($row);
+								$module =  str_replace(' ', '_' ,str_replace('-', '_' ,$key[0]));
+								 
+								$this->addRolesConfig($module,$row[$key[0]]);
+							}
+
+							$this->setData("pageTitle","Account Management");
+							$this->setData("currentUser",$_SESSION["currentUser"]);
+							$this->setMaster('user.master.php');
+							
+							if ($_SESSION["ISFIRSTLOGON"] == 1){
+								
+								$this->setContent('main','user.management.view.php');
+								$this->setData("responseMessage",_("Please Change your PASSWORD."));
+								$retMessage = $retMessage . " : Change password.";
+								
+							}
+							else{
+								$this->setContent('main','user.subscriber.view.php');
+							}
+															
+							/*$svc->addAuditTrail($_SESSION["currentUserID"], $_SESSION["currentUser"], "USERLOGIN", $_SERVER['REMOTE_ADDR'] );*/
+									  
+							
+							/*print_r($_SESSION["token"]);*/
+							
+						}else{
+							$this->setData("responseData",$ret['Message']);
+							$this->setMaster("index.master.php");
+						}
+						/* $svc->addAuditTrail($ret['Value']['USERID'], $user, "USERLOGIN : ". $retMessage, $_SERVER['REMOTE_ADDR'] ); */
+					}
+				}else{
+					$this->setMaster('index.master.php');
+				}
+				
+			}
+			
+			$this->render();
+		}
+		
+	}
+	$index = new IndexController();
+?>

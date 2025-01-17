@@ -1,0 +1,31 @@
+10
+
+dir
+721
+svn+ssh://tlc@119.92.82.188/var/svn/projects/mfino/_MobileCash%20v1.0b/locale/fr_FR
+svn+ssh://tlc@119.92.82.188/var/svn/projects
+
+
+
+2013-05-08T18:18:39.193650Z
+721
+tlc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e60e10b1-191a-44b1-bdc3-02bb7aaf7321
+
+LC_MESSAGES
+dir
+

@@ -1,0 +1,89 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class SubscriberController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			
+			$this->setMaster('user.subscriber.search.view.php');
+			$serv = new SubscriberServices();
+			if(isset($_REQUEST["Method"])){
+				
+				switch($_REQUEST["Method"]){
+					
+					case "Search":
+						if(!empty($_REQUEST["txtSearch"]) && $this->CheckAlpha($_REQUEST['txtSearch'])){
+							$ret = $serv->search(strtoupper($_REQUEST["txtSearch"]),$_REQUEST["rdoSearchOption"]);
+							
+							if($ret->ResponseCode == 0 ){
+								$_SESSION['searchmsisdn'] = $ret->AccountInformation->MobileNumber;
+								$_SESSION['searchalias'] =  $ret->AccountInformation->Alias;
+								$_SESSION['searchcurrentstock'] =  $ret->AccountInformation->CurrentStock;
+								$_SESSION['searchname'] =  $ret->AccountInformation->PersonalInformation->FirstName . ' ' . $ret->AccountInformation->PersonalInformation->LastName;
+							}
+							
+							$_SESSION["currentSearch"] = "";
+							$_SESSION["currentSearch"] = $ret;
+							
+							$_SESSION["EditAccount"] = false;
+							if($this->getRolesConfig('EDIT_ACCOUNT') == true){
+								switch($ret->AccountInformation->AccountType){
+									case "MCOM":
+										if($this->getRolesConfig('EDIT_MCOM') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "AGNT":
+										if($this->getRolesConfig('EDIT_AGNT') == true){$_SESSION['EditAccount'] = true;}
+									break;									    								      
+									case "DLER":
+										if($this->getRolesConfig('EDIT_DLER') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "MERC":
+									case "BILL":
+										if($this->getRolesConfig('EDIT_MERC_/_BILLER') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "CORP":
+										if($this->getRolesConfig('EDIT_CORP') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "BANK":
+										if($this->getRolesConfig('EDIT_BANK') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "TEMP":
+										if($this->getRolesConfig('EDIT_TEMP') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "WAGE":
+										if($this->getRolesConfig('EDIT_WAGE') == true){$_SESSION['EditAccount'] = true;}
+									break;
+									case "BLOC":
+										if($this->getRolesConfig('EDIT_BLOC') == true){$_SESSION['EditAccount'] = true;}
+									break;
+								}
+							}
+							
+							$this->setData("searchResult",$ret);
+							
+							if($ret->ResponseCode !=0){
+								
+								if(isset($ret->Token)){
+									$_SESSION["token"] = $ret->Token;
+								}
+								if($ret->ResponseCode == 14){
+									session_destroy();
+								}
+								$this->setData("responseMessage", $ret->Message);
+							}
+						}else{
+							$this->setData("responseMessage",_("Please input valid characters"));
+						}
+					break;
+					
+				}
+			}
+			
+			$this->render();
+		}
+	}
+	
+	$emp = new SubscriberController();
+?>

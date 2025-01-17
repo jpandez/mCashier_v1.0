@@ -1,0 +1,24 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php");?>
+<?php
+	class SubscriberController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			if(isset($_SESSION["currentUser"]) && !empty($_SESSION["currentUser"])){
+				$serv = new SubscriberServices();
+				$this->setData("currentUser",$_SESSION["currentUser"]);
+				$this->setData("pageTitle",_("User Management"));
+				$this->setContent('main','user.management.view.php');
+				$this->setMaster('user.master.php');
+				
+			}else{
+				$this->setMaster('index.master.php');
+			}
+			$this->render();
+		}
+	}
+	
+	$emp = new SubscriberController();
+?>

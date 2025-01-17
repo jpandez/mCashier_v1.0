@@ -1,0 +1,2500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobile Cash\n"
+"POT-Creation-Date: 2013-05-20 00:41+0800\n"
+"PO-Revision-Date: 2013-05-20 00:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: D:\\wamp\\www\\Projects\\_MobileCash v1.0b\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Controllers/ViewControllers/index.php:18
+msgid ""
+"Your account's password has expired. please contact your system administrator"
+msgstr ""
+"Le mot de passe de votre compte a expiré. s'il vous plaît contacter votre "
+"administrateur système."
+
+#: Controllers/ViewControllers/index.php:23
+#: Controllers/ViewControllers/index.php:77
+msgid "Please Change your PASSWORD."
+msgstr "S'il vous plaît changer votre mot."
+
+#: Controllers/ViewControllers/user.management.php:12
+msgid "User Management"
+msgstr "de User Management"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:23
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please select User Level."
+msgstr "Ajouter un nouveau niveau utilisateur"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:27
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid Email format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:31
+msgid "Invalid Username format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:35
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid Firstname/Lastname format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:40
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Invalid department format."
+msgstr ""
+
+#: Controllers/ViewControllers/user.management.userregistration.php:46
+#: Controllers/ViewControllers/user.reports.summary.php:40
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:38
+#: Controllers/ViewControllers/user.reports.transactionreports.php:38
+#: Controllers/ViewControllers/user.subscriber.globalsearch.php:13
+#: Controllers/ViewControllers/user.subscriber.register.php:20
+#: Controllers/ViewControllers/user.subscriber.transactions.php:10
+#: Controllers/ViewControllers/user.systemsettings.audittrail - Copy.php:15
+#: Controllers/ViewControllers/user.systemsettings.audittrail.php:21
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input all required fields."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/ViewControllers/user.management.userregistration.php:63
+msgid " has been successfully registered."
+msgstr " a été enregistré avec succès."
+
+#: Controllers/ViewControllers/user.management.usersearch.php:32
+msgid "Please input valid character"
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/ViewControllers/user.pendings.php:11
+msgid "Pendings Management"
+msgstr "Gestion des pendings"
+
+#: Controllers/ViewControllers/user.reports.accountsummary.php:41
+#: Controllers/ViewControllers/user.reports.subscribers.php:72
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:56
+#: Controllers/ViewControllers/user.reports.transactionreports.php:55
+msgid ""
+"Export in CSV is more than 10000 records. Please contact system "
+"administrator for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.reports.accountsummary.php:63
+#: Controllers/ViewControllers/user.reports.subscribers.php:94
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:78
+#: Controllers/ViewControllers/user.reports.transactionreports.php:77
+msgid ""
+"Export in EXCEL is more than 1500 records. Please contact system "
+"administrator for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.reports.accountsummary.php:81
+#: Controllers/ViewControllers/user.reports.subscribers.php:111
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:95
+#: Controllers/ViewControllers/user.reports.transactionreports.php:95
+msgid ""
+"Export in PDF is more than 1500 records. Please contact system administrator "
+"for scheduled reports."
+msgstr ""
+
+#: Controllers/ViewControllers/user.reports.php:14
+msgid "System Report"
+msgstr "Rapport du Système"
+
+#: Controllers/ViewControllers/user.reports.summary.php:34
+#: Controllers/ViewControllers/user.reports.summary.php:35
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:32
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:33
+#: Controllers/ViewControllers/user.reports.transactionreports.php:32
+#: Controllers/ViewControllers/user.reports.transactionreports.php:33
+#: Controllers/ViewControllers/user.subscriber.transactions.php:41
+#: Controllers/ViewControllers/user.subscriber.transactions.php:42
+msgid "Invalid Date Range your allowed date range is within : "
+msgstr "Date non valide Range votre gamme autorisée de date se trouve dans : "
+
+#: Controllers/ViewControllers/user.reports.summary.php:34
+#: Controllers/ViewControllers/user.reports.summary.php:35
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:32
+#: Controllers/ViewControllers/user.reports.transactionhistory.php:33
+#: Controllers/ViewControllers/user.reports.transactionreports.php:32
+#: Controllers/ViewControllers/user.reports.transactionreports.php:33
+#: Controllers/ViewControllers/user.subscriber.transactions.php:41
+#: Controllers/ViewControllers/user.subscriber.transactions.php:42
+msgid " Days"
+msgstr " jours"
+
+#: Controllers/ViewControllers/user.subscriber.globalsearchrefid.php:11
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:14
+msgid "Please input reference id."
+msgstr ""
+
+#: Controllers/ViewControllers/user.subscriber.php:11
+msgid "Account Management"
+msgstr "Gestion de compte"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:23
+#, fuzzy
+msgid "Please input valid format.."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:43
+msgid "You have successfully registered your account"
+msgstr "Vous avez enregistré avec succès votre compte"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:53
+msgid "Account already exist"
+msgstr "Compte existent déjà"
+
+#: Controllers/ViewControllers/user.subscriber.register.php:56
+msgid "Invalid Mobile Number!"
+msgstr "Invalide numéro de mobile!"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:22
+msgid "Sender KYC does not allowed for reversal"
+msgstr "Sender KYC n'a pas permis de retournement"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:25
+msgid "Sender Account Type does not allowed for reversal"
+msgstr "Sender Type de compte n'a pas permis de retournement"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:29
+msgid ""
+" - Merchant / Biller Recepient Account Type does not allowed for reversal"
+msgstr ""
+" - Merchant / Biller Recepient Type de compte n'a pas permis de retournement"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:33
+msgid "Recepient does not have enough balance for reversal"
+msgstr "Destinataire n'a pas assez d'équilibre pour l'inversion"
+
+#: Controllers/ViewControllers/user.subscriber.reversalresult.php:40
+msgid " Transaction Type not valid for reversal."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/ViewControllers/user.subscriber.search.php:77
+msgid "Please input valid characters"
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/ViewControllers/user.systemsettings.php:11
+msgid "System Configuration"
+msgstr "Configuration de système"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully activated."
+msgstr " a été activé avec success. "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for Activation!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully deactivated."
+msgstr " a été désactivé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for Deactivation!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully locked."
+msgstr " a été verrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input lock description"
+msgstr "verrouiller la description"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for lock!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid " has been successfully unlocked."
+msgstr " a été déverrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for unlock!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Reset Password"
+msgstr "Réinitialiser le mot de success"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for reset password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully saved your account"
+msgstr "Vous avez enregistré avec succès votre compte"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Account does not exist"
+msgstr "Compte n'existe pas"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Changed KYC Status"
+msgstr "Réussir changé de statut KYC"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for update KYC!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input your correct PASSWORD!"
+msgstr "S'il vous plaît entrer votre mot de passe corrects!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input your PASSWORD!"
+msgstr "S'il vous plaît entrer votre mot de passe!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input REMARKS!"
+msgstr "S'il vous plaît REMARQUES d'entrée!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input AMOUNT!"
+msgstr "S'il vous plaît MONTANT d'entrée!"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for allocation/deallocation."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Success, please wait for the approval"
+msgstr "Success, veuillez attendre l'approbation"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s module has been successfully set to "
+msgstr " : Module a été fixée avec succès : "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not Valid for update user module!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for User Level."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for session timeout / password change."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for password expiry / minimum password."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for password history / max allocation."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for search range."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "User level has been successfully added."
+msgstr "Niveau de l'utilisateur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully locked."
+msgstr " Le compte Web de 'a été verrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully unlocked."
+msgstr " Le compte Web de 'a été déverrouillé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for user lock."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Not valid for user reset password."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request user level updates has been successfully sent."
+msgstr ""
+"Demande de mise à jour de niveau utilisateur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please SELECT USER LEVEL."
+msgstr "NOUVEAU NIVEAU DE L'UTILISATEUR"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s web account has been successfully updated."
+msgstr " Le compte Web de 'a été mis à jour avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "'s password has been successfully changed."
+msgstr " 'mot de passe de a été changé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Passwords do not match! Please confirm your password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input and confirm your password!"
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max amount / max current amount."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max amount day / max amount month."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max trans day / max trans month."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocation / Deallocation not valid for approval!"
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Allocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Deallocate an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please enter you password."
+msgstr "réinitialiser mot de passe"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully allocated an amount of "
+msgstr "Vous avez success alloué un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully approved deallocation an amount of "
+msgstr "Vous avez approuvé success deallocation un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully Disapprove"
+msgstr "Désapprouver succès"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Deallocation have successfully Disapproved! Amount of "
+msgstr "Deallocation désapprouver avec success! montant de l' "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for default password."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid ""
+"Please input valid format for failed transfer count / invalid password count."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for RPRE day count / minimum alias."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for max alias / msisdn to alias."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for minimum alloc / max alloc."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request system info has been successfully sent."
+msgstr "Demande d'informations du système a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "System Info not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "User Level not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request message has been successfully sent."
+msgstr "Demande message a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Message not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request AML Type has been successfully sent."
+msgstr "Demande AML a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "AML Type not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for fixed / percent."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for priority / status."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for amount fr / amount to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for account fr / account to."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Key Cost Type has been successfully sent."
+msgstr "Type de demande clé des coûts a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "KeyCost Type not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for type / key."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for fixed / account."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for priority / percent."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Key Cost Type has been successfully added."
+msgstr "Type de coût Key a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for systemid / password."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip / port."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ton / npi."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for origton / orignpi."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for destton / destnpi."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for status."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for hostip / shortcode."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Please input valid format for keepaliveinterval / responsetimeout."
+msgstr ""
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Transceiver has been successfully sent."
+msgstr "Demande émetteur-récepteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Transceiver not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Transmitter has been successfully sent."
+msgstr "Demande émetteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Transmitter not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for secured."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Receiver has been successfully sent."
+msgstr "Demande récepteur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Receiver not valid for approval."
+msgstr " Type non valide pour l'inversion de la transaction."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for function."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip / status."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Request Server Config has been successfully sent."
+msgstr "Demande Config serveur a été envoyé avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Server Config not valid for approval."
+msgstr "Sender KYC n'a pas permis de retournement"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Transceiver has been successfully added."
+msgstr "Émetteur-récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Transmitter has been successfully added."
+msgstr "Émetteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Receiver has been successfully added."
+msgstr "Récepteur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for ip."
+msgstr "S'il vous plaît caractère d'entrée valide"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Server Config has been successfully added."
+msgstr "Config serveur a été ajouté avec success."
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+#, fuzzy
+msgid "Please input valid format for remarks."
+msgstr "S'il vous plaît entrer les caractères valides"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Cash reversal already exists"
+msgstr "Inversion de trésorerie existe déjà"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "You have successfully reverse an amount of "
+msgstr "Vous avez réussi à renverser un montant de "
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Successfully rejected"
+msgstr "avec succès rejeté"
+
+#: Controllers/WebServices/SubscriberWebServices.php:1
+msgid "Unauthorized Access!"
+msgstr "Accès non autorisé!"
+
+#: Views/index.master.php:51
+#: Views/user.management.userregistration.view.php:14
+#: Views/user.systemsettings.keycosttype.view.php:106
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Views/index.master.php:53
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Views/subscriber.globalsearch.view.php:22
+#: Views/subscriber.globalsearch.view.php:50
+#: Views/subscriber.globalsearch.view.php:103
+#: Views/subscriber.globalsearchrefid.view.php:10
+#: Views/user.pendings.accounts.view.php:30
+#: Views/user.pendings.amlsettings.view.php:9
+#: Views/user.pendings.keycosttypes.view.php:9
+#: Views/user.pendings.messages.view.php:9
+#: Views/user.pendings.systeminfo.view.php:9
+#: Views/user.pendings.userlevels.view.php:10 Views/user.pendings.view.php:189
+#: Views/user.pendings.view.php:238 Views/user.pendings.view.php:288
+#: Views/user.pendings.view.php:338
+#: Views/user.reports.transactionhistory.view.php:54
+#: Views/user.reports.transactionreports.view.php:59
+#: Views/user.reports.transactionreports.view.php:66
+#: Views/user.systemsettings.keycosttype.view.php:11
+#: Views/user.systemsettings.keycosttype.view.php:59
+#: Views/user.systemsettings.messages.view.php:11
+#: Views/user.systemsettings.messages.view.php:44
+#: Views/user.systemsettings.receiver.view.php:11
+#: Views/user.systemsettings.receiver.view.php:54
+#: Views/user.systemsettings.serverconfig.view.php:12
+#: Views/user.systemsettings.serverconfig.view.php:41
+#: Views/user.systemsettings.transceiver.view.php:12
+#: Views/user.systemsettings.transceiver.view.php:90
+#: Views/user.systemsettings.transmitter.view.php:11
+#: Views/user.systemsettings.transmitter.view.php:54
+msgid "ID"
+msgstr "ID"
+
+#: Views/subscriber.globalsearch.view.php:23
+#: Views/subscriber.globalsearch.view.php:51
+#: Views/subscriber.globalsearch.view.php:104
+#: Views/subscriber.globalsearchrefid.view.php:11
+#: Views/user.pendings.view.php:78 Views/user.pendings.view.php:145
+#: Views/user.reports.transactionhistory.view.php:55
+#: Views/user.reports.transactionreports.view.php:60
+#: Views/user.reports.transactionreports.view.php:67
+#: Views/user.subscriber.reversalresult.view.php:11
+msgid "REFERENCE ID"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/subscriber.globalsearch.view.php:24
+#: Views/subscriber.globalsearch.view.php:52
+#: Views/subscriber.globalsearch.view.php:105
+#: Views/subscriber.globalsearchrefid.view.php:12
+#: Views/subscriber.transactions.view.php:21 Views/user.pendings.view.php:84
+#: Views/user.pendings.view.php:193 Views/user.pendings.view.php:242
+#: Views/user.pendings.view.php:292 Views/user.pendings.view.php:342
+#: Views/user.reports.subscribers.view.php:65
+#: Views/user.reports.transactionhistory.view.php:56
+#: Views/user.reports.transactionreports.view.php:61
+#: Views/user.reports.transactionreports.view.php:68
+#: Views/user.subscriber.reversalresult.view.php:12
+#: Views/user.systemsettings.keycosttype.view.php:13
+#: Views/user.systemsettings.messages.view.php:14
+#: Views/user.systemsettings.messages.view.php:53
+msgid "TYPE"
+msgstr "TYPE"
+
+#: Views/subscriber.globalsearch.view.php:25
+#: Views/subscriber.globalsearch.view.php:106
+#: Views/user.pendings.accounts.view.php:32
+#: Views/user.reports.accountsummary.view.php:37
+#: Views/user.reports.subscribers.view.php:70
+#: Views/user.reports.transactionreports.view.php:62
+#: Views/user.subscriber.search.view.php:48
+#: Views/user.subscriber.search.view.php:59
+msgid "MSISDN"
+msgstr "numéro MSISDN"
+
+#: Views/subscriber.globalsearch.view.php:26
+#: Views/subscriber.globalsearch.view.php:107
+#: Views/subscriber.globalsearchrefid.view.php:15
+#: Views/user.pendings.messages.view.php:11
+#: Views/user.reports.transactionreports.view.php:63
+#: Views/user.systemsettings.messages.view.php:13
+#: Views/user.systemsettings.messages.view.php:50
+msgid "MESSAGE"
+msgstr "MESSAGE"
+
+#: Views/subscriber.globalsearch.view.php:27
+#: Views/subscriber.globalsearch.view.php:60
+#: Views/subscriber.globalsearch.view.php:108
+#: Views/subscriber.globalsearchrefid.view.php:17
+#: Views/user.reports.transactionhistory.view.php:65
+#: Views/user.reports.transactionreports.view.php:64
+#: Views/user.reports.transactionreports.view.php:77
+#: Views/user.subscriber.reversalresult.view.php:10
+#: Views/user.systemsettings.audittrail.view.php:15
+msgid "TRANSACTION DATE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/subscriber.globalsearch.view.php:53
+#: Views/subscriber.globalsearchrefid.view.php:13
+#: Views/user.reports.transactionhistory.view.php:58
+#: Views/user.reports.transactionreports.view.php:70
+#: Views/user.subscriber.reversalresult.view.php:15
+msgid "SOURCE"
+msgstr "SOURCE"
+
+#: Views/subscriber.globalsearch.view.php:54
+#: Views/subscriber.globalsearchrefid.view.php:14
+#: Views/user.reports.transactionhistory.view.php:59
+#: Views/user.reports.transactionreports.view.php:71
+#: Views/user.subscriber.reversalresult.view.php:16
+msgid "DESTINATION"
+msgstr "DESTINATION"
+
+#: Views/subscriber.globalsearch.view.php:55
+#: Views/subscriber.globalsearchrefid.view.php:16
+#: Views/user.pendings.allocations.view.php:12
+#: Views/user.pendings.reversal.view.php:13 Views/user.pendings.view.php:81
+#: Views/user.pendings.view.php:154
+#: Views/user.reports.transactionhistory.view.php:60
+#: Views/user.reports.transactionreports.view.php:72
+#: Views/user.subscriber.reversalresult.view.php:17
+msgid "AMOUNT"
+msgstr "MONTANT"
+
+#: Views/subscriber.globalsearch.view.php:56
+#: Views/user.reports.transactionhistory.view.php:61
+#: Views/user.reports.transactionreports.view.php:73
+#: Views/user.subscriber.reversalresult.view.php:20
+msgid "SOURCE BALANCE BEFORE"
+msgstr "SOURCE SOLDE AVANT"
+
+#: Views/subscriber.globalsearch.view.php:57
+#: Views/user.reports.transactionhistory.view.php:62
+#: Views/user.reports.transactionreports.view.php:74
+#: Views/user.subscriber.reversalresult.view.php:21
+msgid "SOURCE BALANCE AFTER"
+msgstr "SOURCE SOLDE APRÈS"
+
+#: Views/subscriber.globalsearch.view.php:58
+#: Views/user.reports.transactionhistory.view.php:63
+#: Views/user.reports.transactionreports.view.php:75
+#: Views/user.subscriber.reversalresult.view.php:24
+msgid "DEST BALANCE BEFORE"
+msgstr "DEST SOLDE AVANT"
+
+#: Views/subscriber.globalsearch.view.php:59
+#: Views/user.reports.transactionhistory.view.php:64
+#: Views/user.reports.transactionreports.view.php:76
+#: Views/user.subscriber.reversalresult.view.php:25
+msgid "DEST BALANCE AFTER"
+msgstr "DEST SOLDE APRÈS"
+
+#: Views/subscriber.transactions.view.php:12
+msgid "Email"
+msgstr "Email"
+
+#: Views/subscriber.transactions.view.php:18
+msgid "S.NO"
+msgstr "S.NO"
+
+#: Views/subscriber.transactions.view.php:19
+msgid "Tran/RefID"
+msgstr "Tran/RefID"
+
+#: Views/subscriber.transactions.view.php:20
+msgid "DATE TIMESTAMP"
+msgstr "TIMESTAMP DATE"
+
+#: Views/subscriber.transactions.view.php:22
+msgid "SENDER/DESTINATION"
+msgstr "EMETTEUR / DESTINATION"
+
+#: Views/subscriber.transactions.view.php:23
+msgid "CR"
+msgstr "CR"
+
+#: Views/subscriber.transactions.view.php:24
+msgid "DR"
+msgstr "DR"
+
+#: Views/subscriber.transactions.view.php:25
+msgid "BALANCE BEFORE"
+msgstr "SOLDE AVANT"
+
+#: Views/subscriber.transactions.view.php:26
+msgid "AVAILABLE BALANCE"
+msgstr "SOLDE DISPONIBLE"
+
+#: Views/subscriber.transactions.view.php:27
+msgid "REF1"
+msgstr "REF1"
+
+#: Views/subscriber.transactions.view.php:28
+msgid "REF2"
+msgstr "REF2"
+
+#: Views/subscriber.transactions.view.php:29
+msgid "CURRENCY"
+msgstr "DEVISE"
+
+#: Views/subscriber.transactions.view.php:58
+msgid "Email Statement"
+msgstr "Énoncé de courriel"
+
+#: Views/subscriber.transactions.view.php:66
+#: Views/user.management.userregistration.view.php:50
+#: Views/user.management.usersearch.view.php:143
+msgid "Email Address"
+msgstr "Adresse Email"
+
+#: Views/subscriber.transactions.view.php:77
+#: Views/user.management.usersearch.view.php:63
+#: Views/user.pendings.accounts.view.php:76
+#: Views/user.subscriber.reversalresult.view.php:66
+#: Views/user.subscriber.search.personaltab.view.php:12
+#: Views/user.systemsettings.amlsettings.view.php:126
+#: Views/user.systemsettings.amlsettings.view.php:171
+#: Views/user.systemsettings.keycosttype.view.php:100
+#: Views/user.systemsettings.keycosttype.view.php:144
+#: Views/user.systemsettings.messages.view.php:64
+#: Views/user.systemsettings.receiver.view.php:89
+#: Views/user.systemsettings.receiver.view.php:124
+#: Views/user.systemsettings.serverconfig.view.php:58
+#: Views/user.systemsettings.serverconfig.view.php:77
+#: Views/user.systemsettings.systeminfo.view.php:78
+#: Views/user.systemsettings.transceiver.view.php:81
+#: Views/user.systemsettings.transceiver.view.php:134
+#: Views/user.systemsettings.transmitter.view.php:98
+#: Views/user.systemsettings.transmitter.view.php:133
+msgid "cancel"
+msgstr "résilier"
+
+#: Views/subscriber.transactions.view.php:78
+#: Views/user.systemsettings.amlsettings.view.php:45
+#: Views/user.systemsettings.amlsettings.view.php:139
+msgid "Send"
+msgstr "Envoyer"
+
+#: Views/subscriber.transactions.view.php:155
+msgid "Email Address is required"
+msgstr "Adresse Email est requis"
+
+#: Views/user.management.changepassword.view.php:3
+#: Views/user.management.view.php:41
+msgid "Change Password"
+msgstr "changer mot de passe"
+
+#: Views/user.management.changepassword.view.php:7
+msgid ""
+"New Password should be minimum 6 characters long with at least 1 numeric and "
+"mixed case characters"
+msgstr ""
+"Nouveau mot de passe doit être au minimum de 6 caractères avec au moins 1 "
+"caractères minuscules numériques et mixtes"
+
+#: Views/user.management.changepassword.view.php:10
+msgid "Current Password"
+msgstr "Mot de passe actuel"
+
+#: Views/user.management.changepassword.view.php:14
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: Views/user.management.changepassword.view.php:18
+msgid "Confirm Password"
+msgstr "Confirmez mot de passe"
+
+#: Views/user.management.changepassword.view.php:24
+#: Views/user.management.userregistration.view.php:81
+#: Views/user.management.usersearch.view.php:62
+#: Views/user.subscriber.reversalresult.view.php:65
+msgid "Save"
+msgstr "sauver"
+
+#: Views/user.management.changepassword.view.php:25
+msgid "reset"
+msgstr "réinitialiser"
+
+#: Views/user.management.rolesconfiguration.view.php:14
+msgid "Get Roles"
+msgstr "Obtenez des rôles"
+
+#: Views/user.management.rolesconfiguration.view.php:49
+msgid "Change Access"
+msgstr "modifier l'accès"
+
+#: Views/user.management.userlevel.view.php:9
+msgid "Edit User Level"
+msgstr "Modifier le niveau de l'utilisateur"
+
+#: Views/user.management.userlevel.view.php:12
+#: Views/user.pendings.userlevels.view.php:12
+msgid "USER LEVEL"
+msgstr "NIVEAU DE L'UTILISATEUR"
+
+#: Views/user.management.userlevel.view.php:19
+#: Views/user.management.userlevel.view.php:72
+msgid "SESSION TIMEOUT"
+msgstr "EXPIRATION DE LA SESSION"
+
+#: Views/user.management.userlevel.view.php:25
+#: Views/user.management.userlevel.view.php:76
+msgid "PASSWORD CHANGE"
+msgstr "CHANGEMENT DE MOT DE PASSE"
+
+#: Views/user.management.userlevel.view.php:29
+#: Views/user.management.userlevel.view.php:80
+msgid "PASSWORD EXPIRY"
+msgstr "EXPIRATION DU MOT"
+
+#: Views/user.management.userlevel.view.php:33
+#: Views/user.management.userlevel.view.php:84
+msgid "MINIMUM PASSWORD"
+msgstr "MOT DE PASSE MINIMUM"
+
+#: Views/user.management.userlevel.view.php:37
+#: Views/user.management.userlevel.view.php:88
+msgid "PASSWORD HISTORY"
+msgstr "HISTOIRE DE PASSE"
+
+#: Views/user.management.userlevel.view.php:41
+#: Views/user.management.userlevel.view.php:92
+msgid "MAX ALLOCATION"
+msgstr "MAX ALLOCATION"
+
+#: Views/user.management.userlevel.view.php:45
+#: Views/user.management.userlevel.view.php:96
+msgid "SEARCH RANGE"
+msgstr "GAMME DE RECHERCHE"
+
+#: Views/user.management.userlevel.view.php:49
+msgid "NEW USER PASSWORD EXPIRY"
+msgstr "NOUVEAU MOT DE PASSE EXPIRATION"
+
+#: Views/user.management.userlevel.view.php:56
+#: Views/user.systemsettings.keycosttype.view.php:44
+#: Views/user.systemsettings.messages.view.php:27
+#: Views/user.systemsettings.receiver.view.php:39
+#: Views/user.systemsettings.serverconfig.view.php:26
+#: Views/user.systemsettings.systeminfo.view.php:34
+#: Views/user.systemsettings.transceiver.view.php:40
+#: Views/user.systemsettings.transmitter.view.php:39
+msgid "Request"
+msgstr "demander des"
+
+#: Views/user.management.userlevel.view.php:65
+msgid "Add New User Level"
+msgstr "Ajouter un nouveau niveau utilisateur"
+
+#: Views/user.management.userlevel.view.php:68
+msgid "NEW USER LEVEL"
+msgstr "NOUVEAU NIVEAU DE L'UTILISATEUR"
+
+#: Views/user.management.userlevel.view.php:103
+#: Views/user.systemsettings.keycosttype.view.php:141
+#: Views/user.systemsettings.receiver.view.php:121
+#: Views/user.systemsettings.serverconfig.view.php:74
+#: Views/user.systemsettings.transceiver.view.php:78
+#: Views/user.systemsettings.transmitter.view.php:130
+msgid "Add"
+msgstr "Ajouter"
+
+#: Views/user.management.userregistration.view.php:11
+msgid "Registration Details"
+msgstr "Détails sur l'inscription"
+
+#: Views/user.management.userregistration.view.php:18
+#: Views/user.management.userregistration.view.php:27
+#: Views/user.management.userregistration.view.php:36
+#: Views/user.management.userregistration.view.php:45
+#: Views/user.management.userregistration.view.php:54
+#: Views/user.subscriber.register.view.php:20
+#: Views/user.subscriber.register.view.php:50
+#: Views/user.subscriber.register.view.php:57
+#: Views/user.subscriber.register.view.php:68
+#: Views/user.subscriber.register.view.php:81
+#: Views/user.subscriber.register.view.php:105
+#: Views/user.subscriber.register.view.php:112
+#: Views/user.subscriber.register.view.php:135
+#: Views/user.subscriber.register.view.php:142
+#: Views/user.subscriber.register.view.php:151
+#: Views/user.subscriber.register.view.php:179
+#: Views/user.subscriber.register.view.php:186
+#: Views/user.subscriber.register.view.php:193
+#: Views/user.subscriber.register.view.php:202
+#: Views/user.subscriber.register.view.php:209
+#: Views/user.subscriber.register.view.php:216
+#: Views/user.subscriber.register.view.php:230
+#: Views/user.subscriber.register.view.php:237
+#: Views/user.subscriber.register.view.php:244
+#: Views/user.subscriber.register.view.php:253
+#: Views/user.subscriber.register.view.php:260
+msgid "Field required"
+msgstr "champ obligatoire"
+
+#: Views/user.management.userregistration.view.php:23
+#: Views/user.management.usersearch.view.php:92
+msgid "First Name"
+msgstr "Prénom"
+
+#: Views/user.management.userregistration.view.php:32
+#: Views/user.management.usersearch.view.php:96
+msgid "Last Name"
+msgstr "à Nom"
+
+#: Views/user.management.userregistration.view.php:41
+#: Views/user.management.usersearch.view.php:139
+msgid "Mobile Number"
+msgstr "numéro de mobile"
+
+#: Views/user.management.userregistration.view.php:59
+#: Views/user.management.usersearch.view.php:100
+msgid "Department"
+msgstr "Département"
+
+#: Views/user.management.userregistration.view.php:63
+#: Views/user.management.usersearch.view.php:104
+#: Views/user.management.view.php:40
+msgid "User Level"
+msgstr "Niveau de l'utilisateur"
+
+#: Views/user.management.userregistration.view.php:71
+#: Views/user.management.usersearch.view.php:117
+#: Views/user.systemsettings.keycosttype.view.php:80
+msgid "Status"
+msgstr "statut"
+
+#: Views/user.management.usersearch.view.php:41
+#: Views/user.management.usersearch.view.php:49
+#: Views/user.systemsettings.audittrail.view.php:11
+msgid "USER NAME"
+msgstr "NOM UTIL"
+
+#: Views/user.management.usersearch.view.php:44
+#: Views/user.subscriber.globalsearchview.view.php:45
+#: Views/user.subscriber.globalsearchview.view.php:58
+#: Views/user.subscriber.reversalsearch.view.php:8
+#: Views/user.subscriber.search.historytab.view.php:15
+#: Views/user.subscriber.search.view.php:64
+msgid "search"
+msgstr "rechercher"
+
+#: Views/user.management.usersearch.view.php:61
+msgid "Edit"
+msgstr "Editer"
+
+#: Views/user.management.usersearch.view.php:66
+msgid "Lock"
+msgstr "Verrouiller"
+
+#: Views/user.management.usersearch.view.php:69
+msgid "Unlock"
+msgstr "Déverrouillez"
+
+#: Views/user.management.usersearch.view.php:72
+msgid "Reset Password"
+msgstr "réinitialiser mot de passe"
+
+#: Views/user.management.usersearch.view.php:84
+msgid "User ID"
+msgstr "ID de l'utilisateur"
+
+#: Views/user.management.usersearch.view.php:88
+msgid "User Name"
+msgstr "Nom d'utilisateur"
+
+#: Views/user.management.usersearch.view.php:127
+msgid "Locked"
+msgstr "Verrouillée"
+
+#: Views/user.management.usersearch.view.php:131
+msgid "Date Created"
+msgstr "jour Date de création"
+
+#: Views/user.management.usersearch.view.php:135
+msgid "Date Modified"
+msgstr "Date de modification"
+
+#: Views/user.management.view.php:37
+msgid "User Search"
+msgstr "Recherche d'utilisateur"
+
+#: Views/user.management.view.php:38
+msgid "User Registration"
+msgstr "enregistrement de l'utilisateur"
+
+#: Views/user.management.view.php:39
+msgid "Roles Configuration"
+msgstr "Configuration des rôles"
+
+#: Views/user.master.php:104
+msgid "Welcome Back"
+msgstr "Bienvenue à nouveau"
+
+#: Views/user.master.php:105
+msgid "Last Login"
+msgstr "Dernier Login"
+
+#: Views/user.master.php:106
+msgid "Profile"
+msgstr "Profil"
+
+#: Views/user.master.php:120 Views/user.master.php:165
+#: Views/user.reports.view.php:38
+msgid "Subscribers"
+msgstr "Abonnés"
+
+#: Views/user.master.php:126 Views/user.master.php:168
+msgid "Pendings"
+msgstr "En attendant"
+
+#: Views/user.master.php:132 Views/user.master.php:171
+msgid "Web Users"
+msgstr "Compte Web"
+
+#: Views/user.master.php:138 Views/user.master.php:174
+msgid "Reports"
+msgstr "Rapports"
+
+#: Views/user.master.php:144 Views/user.master.php:177
+msgid "Settings"
+msgstr "Réglages"
+
+#: Views/user.pendings.accounts.view.php:29
+msgid "DATE REGISTERED"
+msgstr "DATE AINSI ENREGISTRÉE"
+
+#: Views/user.pendings.accounts.view.php:31
+#: Views/user.reports.accountsummary.view.php:38
+#: Views/user.reports.subscribers.view.php:66
+#: Views/user.subscriber.search.view.php:60
+msgid "NICKNAME"
+msgstr "PSEUDO"
+
+#: Views/user.pendings.accounts.view.php:33
+#: Views/user.reports.accountsummary.view.php:35
+#: Views/user.reports.subscribers.view.php:67
+msgid "FIRST NAME"
+msgstr "PRÉNOM"
+
+#: Views/user.pendings.accounts.view.php:34
+#: Views/user.reports.accountsummary.view.php:36
+#: Views/user.reports.subscribers.view.php:69
+msgid "LAST NAME"
+msgstr "NOM"
+
+#: Views/user.pendings.accounts.view.php:35
+msgid "ACCOUNT TYPE"
+msgstr "TYPE DE COMPTE"
+
+#: Views/user.pendings.accounts.view.php:36
+#: Views/user.pendings.serverconfig.view.php:13
+#: Views/user.pendings.view.php:87 Views/user.pendings.view.php:157
+#: Views/user.pendings.view.php:304 Views/user.pendings.view.php:354
+#: Views/user.reports.accountsummary.view.php:39
+#: Views/user.reports.subscribers.view.php:71
+#: Views/user.systemsettings.keycosttype.view.php:18
+#: Views/user.systemsettings.receiver.view.php:70
+#: Views/user.systemsettings.serverconfig.view.php:15
+#: Views/user.systemsettings.serverconfig.view.php:50
+#: Views/user.systemsettings.transceiver.view.php:114
+#: Views/user.systemsettings.transmitter.view.php:78
+msgid "STATUS"
+msgstr "STATUT"
+
+#: Views/user.pendings.accounts.view.php:37
+msgid "USER ID"
+msgstr "ID UTILISATEUR"
+
+#: Views/user.pendings.accounts.view.php:38
+#: Views/user.pendings.allocations.view.php:16
+#: Views/user.pendings.amlsettings.view.php:13
+#: Views/user.pendings.keycosttypes.view.php:13
+#: Views/user.pendings.messages.view.php:13
+#: Views/user.pendings.receiver.view.php:13
+#: Views/user.pendings.reversal.view.php:17
+#: Views/user.pendings.serverconfig.view.php:15
+#: Views/user.pendings.systeminfo.view.php:13
+#: Views/user.pendings.transceiver.view.php:13
+#: Views/user.pendings.transmitter.view.php:13
+#: Views/user.pendings.userlevels.view.php:14
+msgid "Approve/Reject"
+msgstr "Approuver / Rejeter"
+
+#: Views/user.pendings.accounts.view.php:72
+msgid "approve"
+msgstr "d'approuver"
+
+#: Views/user.pendings.accounts.view.php:73
+msgid "reject"
+msgstr "rejeter"
+
+#: Views/user.pendings.accounts.view.php:74
+#: Views/user.subscriber.search.personaltab.view.php:10
+msgid "edit"
+msgstr "éditer"
+
+#: Views/user.pendings.accounts.view.php:75
+#: Views/user.subscriber.search.personaltab.view.php:11
+msgid "save"
+msgstr "sauver"
+
+#: Views/user.pendings.accounts.view.php:83
+#: Views/user.subscriber.search.accounttab.view.php:21
+msgid "account id"
+msgstr "compte Identifiant du"
+
+#: Views/user.pendings.accounts.view.php:84
+#: Views/user.subscriber.register.view.php:28
+#: Views/user.subscriber.search.accounttab.view.php:27
+#: Views/user.subscriber.search.view.php:49
+msgid "account type"
+msgstr "type de compte"
+
+#: Views/user.pendings.accounts.view.php:85
+#: Views/user.subscriber.search.accounttab.view.php:35
+msgid "kyc"
+msgstr "kyc"
+
+#: Views/user.pendings.accounts.view.php:88
+#: Views/user.subscriber.register.view.php:12
+#: Views/user.subscriber.search.accounttab.view.php:22
+msgid "nickname"
+msgstr "Pseudo"
+
+#: Views/user.pendings.accounts.view.php:89
+#: Views/user.subscriber.register.view.php:16
+#: Views/user.subscriber.search.accounttab.view.php:23
+msgid "authorized mobile number"
+msgstr "numéro de mobile autorisé"
+
+#: Views/user.pendings.accounts.view.php:90
+#: Views/user.subscriber.search.accounttab.view.php:36
+msgid "reference account"
+msgstr "compte de référence"
+
+#: Views/user.pendings.accounts.view.php:93
+#: Views/user.subscriber.register.view.php:36
+#: Views/user.subscriber.search.accounttab.view.php:42
+msgid "account status"
+msgstr "l'état du compte"
+
+#: Views/user.pendings.accounts.view.php:94
+#: Views/user.subscriber.search.accounttab.view.php:47
+msgid "locked"
+msgstr "verrouillée"
+
+#: Views/user.pendings.accounts.view.php:103
+#: Views/user.subscriber.search.personaltab.view.php:17
+msgid "Personal information"
+msgstr "Les renseignements personnels"
+
+#: Views/user.pendings.accounts.view.php:105
+#: Views/user.subscriber.register.view.php:46
+#: Views/user.subscriber.register.view.php:249
+#: Views/user.subscriber.search.personaltab.view.php:23
+msgid "last name"
+msgstr "nom de famille"
+
+#: Views/user.pendings.accounts.view.php:106
+#: Views/user.subscriber.register.view.php:53
+#: Views/user.subscriber.register.view.php:256
+#: Views/user.subscriber.search.personaltab.view.php:24
+msgid "first name"
+msgstr "prénom"
+
+#: Views/user.pendings.accounts.view.php:107
+#: Views/user.subscriber.register.view.php:60
+#: Views/user.subscriber.search.personaltab.view.php:25
+msgid "second name"
+msgstr "deuxième nom"
+
+#: Views/user.pendings.accounts.view.php:108
+#: Views/user.subscriber.register.view.php:64
+#: Views/user.subscriber.register.view.php:233
+#: Views/user.subscriber.search.personaltab.view.php:26
+msgid "id number"
+msgstr "numéro d'identifiant"
+
+#: Views/user.pendings.accounts.view.php:109
+#: Views/user.subscriber.register.view.php:71
+#: Views/user.subscriber.register.view.php:240
+#: Views/user.subscriber.search.personaltab.view.php:27
+msgid "id description"
+msgstr "Description identifiant"
+
+#: Views/user.pendings.accounts.view.php:110
+#: Views/user.subscriber.register.view.php:77
+#: Views/user.subscriber.search.personaltab.view.php:28
+msgid "id expiry date"
+msgstr "Identifiant du date de péremption"
+
+#: Views/user.pendings.accounts.view.php:115
+#: Views/user.subscriber.register.view.php:93
+#: Views/user.subscriber.search.personaltab.view.php:33
+msgid "nationality"
+msgstr "nationalité"
+
+#: Views/user.pendings.accounts.view.php:117
+#: Views/user.subscriber.register.view.php:86
+#: Views/user.subscriber.search.personaltab.view.php:35
+msgid "gender"
+msgstr "sexe"
+
+#: Views/user.pendings.accounts.view.php:126
+#: Views/user.subscriber.register.view.php:101
+#: Views/user.subscriber.search.personaltab.view.php:43
+msgid "date of birth"
+msgstr "date de naissance"
+
+#: Views/user.pendings.accounts.view.php:127
+#: Views/user.subscriber.register.view.php:108
+#: Views/user.subscriber.search.personaltab.view.php:44
+msgid "place of birth"
+msgstr "lieu de naissance"
+
+#: Views/user.pendings.accounts.view.php:128
+#: Views/user.subscriber.register.view.php:123
+#: Views/user.subscriber.search.personaltab.view.php:45
+msgid "company"
+msgstr "société"
+
+#: Views/user.pendings.accounts.view.php:129
+#: Views/user.subscriber.register.view.php:125
+#: Views/user.subscriber.search.personaltab.view.php:46
+msgid "profession"
+msgstr "profession"
+
+#: Views/user.pendings.accounts.view.php:134
+#: Views/user.subscriber.register.view.php:129
+#: Views/user.subscriber.search.personaltab.view.php:51
+msgid "building name / location"
+msgstr "nom / emplacement bâtiment"
+
+#: Views/user.pendings.accounts.view.php:135
+#: Views/user.subscriber.register.view.php:131
+#: Views/user.subscriber.search.personaltab.view.php:52
+msgid "city / village"
+msgstr "ville / village"
+
+#: Views/user.pendings.accounts.view.php:136
+#: Views/user.subscriber.register.view.php:138
+#: Views/user.subscriber.search.personaltab.view.php:53
+msgid "street name"
+msgstr "nom de la rue"
+
+#: Views/user.pendings.accounts.view.php:137
+#: Views/user.subscriber.register.view.php:147
+#: Views/user.subscriber.search.personaltab.view.php:54
+msgid "region"
+msgstr "région"
+
+#: Views/user.pendings.accounts.view.php:138
+#: Views/user.subscriber.register.view.php:154
+#: Views/user.subscriber.search.personaltab.view.php:55
+msgid "country"
+msgstr "pays"
+
+#: Views/user.pendings.accounts.view.php:139
+#: Views/user.subscriber.register.view.php:162
+#: Views/user.subscriber.search.personaltab.view.php:56
+msgid "email address"
+msgstr "adresse e-mail"
+
+#: Views/user.pendings.accounts.view.php:140
+#: Views/user.subscriber.register.view.php:164
+#: Views/user.subscriber.search.personaltab.view.php:57
+msgid "alternate number"
+msgstr "autre numéro"
+
+#: Views/user.pendings.accounts.view.php:147
+#: Views/user.subscriber.register.view.php:175
+#: Views/user.subscriber.search.corptab.view.php:10
+msgid "business name"
+msgstr "Nom de l'entreprise"
+
+#: Views/user.pendings.accounts.view.php:148
+#: Views/user.subscriber.register.view.php:182
+#: Views/user.subscriber.search.corptab.view.php:11
+msgid "trade license number"
+msgstr "Numéro de licence commerciale"
+
+#: Views/user.pendings.accounts.view.php:149
+#: Views/user.subscriber.register.view.php:189
+#: Views/user.subscriber.search.corptab.view.php:12
+msgid "date of incorporation"
+msgstr "date de constitution"
+
+#: Views/user.pendings.accounts.view.php:152
+#: Views/user.subscriber.register.view.php:198
+#: Views/user.subscriber.search.corptab.view.php:13
+msgid "registered address"
+msgstr "adresse du siège social"
+
+#: Views/user.pendings.accounts.view.php:153
+#: Views/user.subscriber.register.view.php:205
+#: Views/user.subscriber.search.corptab.view.php:14
+msgid "type of business"
+msgstr "type d'entreprise"
+
+#: Views/user.pendings.accounts.view.php:154
+#: Views/user.subscriber.register.view.php:212
+#: Views/user.subscriber.search.corptab.view.php:15
+msgid "ownership information"
+msgstr "les informations de propriété"
+
+#: Views/user.pendings.allocations.view.php:9
+#: Views/user.pendings.amlsettings.view.php:10
+#: Views/user.pendings.keycosttypes.view.php:10
+#: Views/user.pendings.messages.view.php:10
+#: Views/user.pendings.receiver.view.php:10
+#: Views/user.pendings.reversal.view.php:9
+#: Views/user.pendings.serverconfig.view.php:10
+#: Views/user.pendings.systeminfo.view.php:10
+#: Views/user.pendings.transceiver.view.php:10
+#: Views/user.pendings.transmitter.view.php:10
+#: Views/user.pendings.userlevels.view.php:11 Views/user.pendings.view.php:190
+#: Views/user.pendings.view.php:239 Views/user.pendings.view.php:289
+#: Views/user.pendings.view.php:339
+msgid "CREATED TIMESTAMP"
+msgstr "TIMESTAMP CRÉÉ"
+
+#: Views/user.pendings.allocations.view.php:10
+#: Views/user.pendings.reversal.view.php:10
+msgid "REFERENCEID ID"
+msgstr "ID DE RÉFÉRENCE"
+
+#: Views/user.pendings.allocations.view.php:11
+msgid "AUTHORIZED MOBILE NUMBER"
+msgstr "NOMBRE MOBILES AUTORISÉS"
+
+#: Views/user.pendings.allocations.view.php:13
+#: Views/user.pendings.reversal.view.php:14 Views/user.pendings.view.php:90
+#: Views/user.pendings.view.php:160
+msgid "REMARKS"
+msgstr "REMARQUES"
+
+#: Views/user.pendings.allocations.view.php:14
+#: Views/user.pendings.reversal.view.php:15
+msgid "STATUS TYPE"
+msgstr "STATUT TYPE"
+
+#: Views/user.pendings.allocations.view.php:15
+#: Views/user.pendings.amlsettings.view.php:12
+#: Views/user.pendings.keycosttypes.view.php:12
+#: Views/user.pendings.messages.view.php:12
+#: Views/user.pendings.receiver.view.php:12
+#: Views/user.pendings.reversal.view.php:16
+#: Views/user.pendings.serverconfig.view.php:14
+#: Views/user.pendings.systeminfo.view.php:12
+#: Views/user.pendings.transceiver.view.php:12
+#: Views/user.pendings.transmitter.view.php:12
+#: Views/user.pendings.userlevels.view.php:13
+msgid "CREATED BY"
+msgstr "CRÉÉE PAR"
+
+#: Views/user.pendings.amlsettings.view.php:11
+#: Views/user.pendings.keycosttypes.view.php:11
+msgid "AML CONFIG"
+msgstr "AML CONFIG"
+
+#: Views/user.pendings.receiver.view.php:9
+#: Views/user.pendings.serverconfig.view.php:9
+#: Views/user.pendings.transceiver.view.php:9
+#: Views/user.pendings.transmitter.view.php:9
+msgid "PNDGID"
+msgstr "PNDGID"
+
+#: Views/user.pendings.receiver.view.php:11
+msgid "RECEIVER CONFIG"
+msgstr "CONFIG RÉCEPTEUR"
+
+#: Views/user.pendings.reversal.view.php:11
+msgid "SOURCE MOBILE"
+msgstr "SOURCE MOBILE"
+
+#: Views/user.pendings.reversal.view.php:12
+msgid "DEST NUMBER"
+msgstr "DEST NUMBER"
+
+#: Views/user.pendings.serverconfig.view.php:11
+#: Views/user.systemsettings.audittrail.view.php:14
+#: Views/user.systemsettings.receiver.view.php:61
+#: Views/user.systemsettings.receiver.view.php:104
+#: Views/user.systemsettings.serverconfig.view.php:13
+#: Views/user.systemsettings.serverconfig.view.php:44
+#: Views/user.systemsettings.serverconfig.view.php:68
+#: Views/user.systemsettings.transceiver.view.php:61
+#: Views/user.systemsettings.transceiver.view.php:97
+#: Views/user.systemsettings.transmitter.view.php:61
+#: Views/user.systemsettings.transmitter.view.php:113
+msgid "IP"
+msgstr "IP"
+
+#: Views/user.pendings.serverconfig.view.php:12
+#: Views/user.systemsettings.serverconfig.view.php:14
+#: Views/user.systemsettings.serverconfig.view.php:47
+msgid "FUNCTION"
+msgstr "FONCTION"
+
+#: Views/user.pendings.systeminfo.view.php:11
+#: Views/user.systemsettings.systeminfo.view.php:5
+msgid "SYSTEM INFO"
+msgstr "SYSTEM INFO"
+
+#: Views/user.pendings.transceiver.view.php:11
+msgid "TRANSCEIVER CONFIG"
+msgstr "EMETTEUR CONFIG"
+
+#: Views/user.pendings.transmitter.view.php:11
+msgid "TRANSMITTER CONFIG"
+msgstr "CONFIG DE L'EMETTEUR"
+
+#: Views/user.pendings.view.php:36
+msgid "Accounts"
+msgstr "Comptes"
+
+#: Views/user.pendings.view.php:37
+msgid "Allocations"
+msgstr "Allocations"
+
+#: Views/user.pendings.view.php:38
+msgid "Reversal"
+msgstr "retournement"
+
+#: Views/user.pendings.view.php:39 Views/user.systemsettings.view.php:38
+msgid "System Info"
+msgstr "System Info"
+
+#: Views/user.pendings.view.php:40
+msgid "User levels"
+msgstr "Les niveaux d'utilisateurs"
+
+#: Views/user.pendings.view.php:41 Views/user.systemsettings.view.php:40
+msgid "Messages"
+msgstr "des messages"
+
+#: Views/user.pendings.view.php:42 Views/user.systemsettings.view.php:37
+msgid "AML Settings"
+msgstr "Réglages AML"
+
+#: Views/user.pendings.view.php:43 Views/user.systemsettings.view.php:41
+msgid "Key Cost Types"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.view.php:44 Views/user.systemsettings.view.php:42
+msgid "Transceiver"
+msgstr "émetteur-récepteur"
+
+#: Views/user.pendings.view.php:45 Views/user.systemsettings.view.php:43
+msgid "Transmitter"
+msgstr "transmetteur"
+
+#: Views/user.pendings.view.php:46 Views/user.systemsettings.view.php:44
+msgid "Receiver"
+msgstr "récepteur"
+
+#: Views/user.pendings.view.php:47 Views/user.systemsettings.view.php:45
+msgid "Server Config"
+msgstr "Config Server"
+
+#: Views/user.pendings.view.php:67 Views/user.pendings.view.php:109
+msgid "Pending Allocation"
+msgstr "En attendant Allocation"
+
+#: Views/user.pendings.view.php:75
+msgid "MOBILE NUMBER"
+msgstr "NUMÉRO DE PORTABLE"
+
+#: Views/user.pendings.view.php:117 Views/user.pendings.view.php:163
+#: Views/user.subscriber.search.accounttab.view.php:69
+msgid "Your Password"
+msgstr "votre mot de passe"
+
+#: Views/user.pendings.view.php:138
+msgid "Pending Reversal"
+msgstr "En attendant Reversal"
+
+#: Views/user.pendings.view.php:148
+msgid "SOURCE MSISDN"
+msgstr "SOURCE MSISDN"
+
+#: Views/user.pendings.view.php:151
+msgid "DEST MSISDN"
+msgstr "DEST MSISDN"
+
+#: Views/user.pendings.view.php:182 Views/user.pendings.view.php:232
+#, fuzzy
+msgid "Pending AML"
+msgstr "En attendant"
+
+#: Views/user.pendings.view.php:194 Views/user.pendings.view.php:243
+#: Views/user.pendings.view.php:293 Views/user.pendings.view.php:343
+#: Views/user.systemsettings.keycosttype.view.php:12
+msgid "KEY"
+msgstr "KEY"
+
+#: Views/user.pendings.view.php:197 Views/user.pendings.view.php:246
+#: Views/user.pendings.view.php:301 Views/user.pendings.view.php:351
+#: Views/user.systemsettings.keycosttype.view.php:17
+msgid "PRIORITY"
+msgstr "PRIORITÉ"
+
+#: Views/user.pendings.view.php:198 Views/user.pendings.view.php:247
+#, fuzzy
+msgid "MAX AMOUNT"
+msgstr "MONTANT"
+
+#: Views/user.pendings.view.php:201 Views/user.pendings.view.php:250
+#, fuzzy
+msgid "MIN AMOUNT"
+msgstr "MONTANT"
+
+#: Views/user.pendings.view.php:202 Views/user.pendings.view.php:251
+#, fuzzy
+msgid "MAX CURRENT AMOUNT"
+msgstr "MONTANT ACTUEL"
+
+#: Views/user.pendings.view.php:205 Views/user.pendings.view.php:254
+#, fuzzy
+msgid "MAX AMOUNT DAY"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.view.php:206 Views/user.pendings.view.php:255
+#, fuzzy
+msgid "MAX AMOUNT MONTH"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.view.php:209 Views/user.pendings.view.php:258
+msgid "MAX TRANS DAY"
+msgstr ""
+
+#: Views/user.pendings.view.php:210 Views/user.pendings.view.php:259
+#, fuzzy
+msgid "MAX TRANS MONTH"
+msgstr "FAILED COMPTE DE TRANSFERT"
+
+#: Views/user.pendings.view.php:214 Views/user.pendings.view.php:263
+#, fuzzy
+msgid "TRANSACTION TYPE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/user.pendings.view.php:215 Views/user.pendings.view.php:264
+#: Views/user.pendings.view.php:314 Views/user.pendings.view.php:364
+#, fuzzy
+msgid "ACTION"
+msgstr "FONCTION"
+
+#: Views/user.pendings.view.php:281 Views/user.pendings.view.php:331
+#, fuzzy
+msgid "Pending Key Cost Types"
+msgstr "Types de coûts clés"
+
+#: Views/user.pendings.view.php:296 Views/user.pendings.view.php:346
+#: Views/user.systemsettings.keycosttype.view.php:14
+msgid "ACCOUNT"
+msgstr "COMPTE"
+
+#: Views/user.pendings.view.php:297 Views/user.pendings.view.php:347
+#: Views/user.systemsettings.keycosttype.view.php:15
+msgid "FIXED"
+msgstr "FIXE"
+
+#: Views/user.pendings.view.php:300 Views/user.pendings.view.php:350
+#: Views/user.systemsettings.keycosttype.view.php:16
+msgid "PERCENT"
+msgstr "CENT DE"
+
+#: Views/user.pendings.view.php:305 Views/user.pendings.view.php:355
+#, fuzzy
+msgid "AMOUNTFR"
+msgstr "MONTANT"
+
+#: Views/user.pendings.view.php:308 Views/user.pendings.view.php:358
+#, fuzzy
+msgid "AMOUNTTO"
+msgstr "MONTANT À"
+
+#: Views/user.pendings.view.php:309 Views/user.pendings.view.php:359
+#, fuzzy
+msgid "ACCOUNTFR"
+msgstr "COMPTE"
+
+#: Views/user.pendings.view.php:313 Views/user.pendings.view.php:363
+#, fuzzy
+msgid "ACCOUNTTO"
+msgstr "COMPTE A"
+
+#: Views/user.reports.accountsummary.view.php:34
+#: Views/user.reports.subscribers.view.php:64
+#: Views/user.subscriber.search.view.php:61
+msgid "ACCOUNT ID"
+msgstr "ID de compte"
+
+#: Views/user.reports.accountsummary.view.php:40
+msgid "CURRENT AMOUNT"
+msgstr "MONTANT ACTUEL"
+
+#: Views/user.reports.accountsummary.view.php:41
+#, fuzzy
+msgid "LAST TRANSACTION DATE"
+msgstr "DATE DE L'OPÉRATION"
+
+#: Views/user.reports.accountsummary.view.php:42
+msgid "LOCKED"
+msgstr ""
+
+#: Views/user.reports.accountsummary.view.php:43
+#, fuzzy
+msgid "LOCKED DESCRIPTION"
+msgstr "DESCRIPTION"
+
+#: Views/user.reports.graphicalreports.view.php:9
+#: Views/user.reports.summary.view.php:11
+#: Views/user.reports.transactionhistory.view.php:16
+#: Views/user.reports.transactionreports.view.php:21
+#: Views/user.subscriber.globalsearchview.view.php:40
+#: Views/user.subscriber.search.historytab.view.php:10
+#: Views/user.systemsettings.audittrailtab.view.php:11
+msgid "From"
+msgstr "à partir de"
+
+#: Views/user.reports.graphicalreports.view.php:11
+#: Views/user.reports.summary.view.php:13
+#: Views/user.reports.transactionhistory.view.php:18
+#: Views/user.reports.transactionreports.view.php:23
+#: Views/user.subscriber.globalsearchview.view.php:42
+#: Views/user.subscriber.search.historytab.view.php:12
+#: Views/user.systemsettings.audittrailtab.view.php:13
+msgid "To"
+msgstr "à"
+
+#: Views/user.reports.graphicalreports.view.php:14
+#: Views/user.reports.subscribers.view.php:32
+#: Views/user.reports.summary.view.php:16
+#: Views/user.reports.transactionhistory.view.php:21
+#: Views/user.reports.transactionreports.view.php:26
+#: Views/user.systemsettings.audittrailtab.view.php:16
+msgid "View"
+msgstr "Voir"
+
+#: Views/user.reports.subscribers.view.php:25
+#: Views/user.reports.transactionreports.view.php:15
+#: Views/user.subscriber.globalsearchview.view.php:28
+msgid "Lookup Table"
+msgstr "Table de recherche"
+
+#: Views/user.reports.subscribers.view.php:68
+msgid "SECOND NAME"
+msgstr "DEUXIÈME PRÉNOM"
+
+#: Views/user.reports.subscribers.view.php:72
+msgid "REGDATE"
+msgstr "DATE D'ENREGISTREMENT"
+
+#: Views/user.reports.subscribers.view.php:73
+msgid "KYC"
+msgstr "KYC"
+
+#: Views/user.reports.summary.view.php:40
+msgid "DATE"
+msgstr "DATE"
+
+#: Views/user.reports.summary.view.php:41
+msgid "SUMMARY"
+msgstr "SOMMAIRE"
+
+#: Views/user.reports.transactionhistory.view.php:57
+#: Views/user.reports.transactionreports.view.php:69
+msgid "DETAIL TYPE"
+msgstr "DETAIL TYPE"
+
+#: Views/user.reports.view.php:37
+msgid "Summary"
+msgstr "Sommaire"
+
+#: Views/user.reports.view.php:39
+msgid "Account Summary"
+msgstr "Résumé du compte"
+
+#: Views/user.reports.view.php:40
+msgid "Transaction History"
+msgstr "Historique des transactions"
+
+#: Views/user.reports.view.php:41
+msgid "Transaction Reports"
+msgstr "Rapports de Transactions"
+
+#: Views/user.reports.view.php:42
+msgid "Graphical Reports"
+msgstr "Rapports graphiques"
+
+#: Views/user.subscriber.globalsearchview.view.php:5
+msgid "Global Search Options"
+msgstr "Options de recherche globales"
+
+#: Views/user.subscriber.globalsearchview.view.php:9
+msgid "Subscriber"
+msgstr "Abonnés"
+
+#: Views/user.subscriber.globalsearchview.view.php:18
+msgid "Search Type"
+msgstr "Recherche Type"
+
+#: Views/user.subscriber.globalsearchview.view.php:38
+#: Views/user.subscriber.search.historytab.view.php:9
+msgid "Transaction Period"
+msgstr "Période Transaction"
+
+#: Views/user.subscriber.globalsearchview.view.php:52
+msgid "Search by Reference ID"
+msgstr "Recherche par référence ID"
+
+#: Views/user.subscriber.globalsearchview.view.php:55
+#: Views/user.subscriber.reversalsearch.view.php:5
+msgid "Reference ID"
+msgstr "ID de référence"
+
+#: Views/user.subscriber.register.view.php:9
+#: Views/user.subscriber.search.view.php:71
+msgid "Account Information"
+msgstr "Informations sur le compte"
+
+#: Views/user.subscriber.register.view.php:24
+msgid "Validity"
+msgstr "validité"
+
+#: Views/user.subscriber.register.view.php:43
+msgid "Personal Information"
+msgstr "des renseignements personnels"
+
+#: Views/user.subscriber.register.view.php:120
+msgid "Contact Information"
+msgstr "communiquer avec Info"
+
+#: Views/user.subscriber.register.view.php:172
+#: Views/user.subscriber.search.view.php:72
+msgid "Corporate Information"
+msgstr "Informations sur l'entreprise"
+
+#: Views/user.subscriber.register.view.php:223
+msgid "Next of Kin Details"
+msgstr "Prochaine de détails Kin"
+
+#: Views/user.subscriber.register.view.php:226
+msgid "mobile number"
+msgstr "numéro de mobile"
+
+#: Views/user.subscriber.reversalresult.view.php:32
+msgid "Sender MSISDN"
+msgstr "Sender MSISDN"
+
+#: Views/user.subscriber.reversalresult.view.php:33
+msgid "Sender Current Amount"
+msgstr "Sender Montant Actuel"
+
+#: Views/user.subscriber.reversalresult.view.php:34
+msgid "Recepient MSISDN"
+msgstr "Destinataire MSISDN"
+
+#: Views/user.subscriber.reversalresult.view.php:35
+msgid "Recepient Current Amount"
+msgstr "Destinataire Montant Actuel"
+
+#: Views/user.subscriber.reversalresult.view.php:52
+msgid "Cash Reversal Request"
+msgstr "Espèces Reprise Requête"
+
+#: Views/user.subscriber.reversalresult.view.php:55
+#: Views/user.subscriber.search.accounttab.view.php:59
+msgid "Amount"
+msgstr "montant"
+
+#: Views/user.subscriber.reversalresult.view.php:58
+#: Views/user.subscriber.search.accounttab.view.php:63
+msgid "Remarks"
+msgstr "Remarques"
+
+#: Views/user.subscriber.reversalresult.view.php:64
+msgid "Reverse"
+msgstr "Renverser"
+
+#: Views/user.subscriber.search.accounttab.view.php:9
+#: Views/user.subscriber.search.accounttab.view.php:77
+msgid "allocate"
+msgstr "répartir"
+
+#: Views/user.subscriber.search.accounttab.view.php:10
+msgid "activate"
+msgstr "activer"
+
+#: Views/user.subscriber.search.accounttab.view.php:11
+msgid "deactivate"
+msgstr "désactiver"
+
+#: Views/user.subscriber.search.accounttab.view.php:12
+msgid "reset mobile pin"
+msgstr "réinitialiser axe mobile"
+
+#: Views/user.subscriber.search.accounttab.view.php:13
+msgid "lock"
+msgstr "verrouiller"
+
+#: Views/user.subscriber.search.accounttab.view.php:14
+msgid "unlock"
+msgstr "déverrouiller"
+
+#: Views/user.subscriber.search.accounttab.view.php:24
+#: Views/user.subscriber.search.view.php:50
+msgid "current amount"
+msgstr "quantité de courant"
+
+#: Views/user.subscriber.search.accounttab.view.php:34
+msgid "date registered"
+msgstr "Date d'enregistrement"
+
+#: Views/user.subscriber.search.accounttab.view.php:45
+msgid "date modified"
+msgstr "date de modification"
+
+#: Views/user.subscriber.search.accounttab.view.php:46
+msgid "user id"
+msgstr "Identifiant du de l'utilisateur"
+
+#: Views/user.subscriber.search.accounttab.view.php:48
+#: Views/user.subscriber.search.accounttab.view.php:90
+msgid "lock description"
+msgstr "verrouiller la description"
+
+#: Views/user.subscriber.search.accounttab.view.php:55
+msgid "Allocate/De-Allocate"
+msgstr "Allouer / désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:78
+msgid "de-allocate"
+msgstr "désallouera"
+
+#: Views/user.subscriber.search.accounttab.view.php:86
+#: Views/user.subscriber.search.accounttab.view.php:98
+msgid "Lock Subscriber"
+msgstr "verrouiller abonné"
+
+#: Views/user.subscriber.search.view.php:73
+msgid "Personal Details"
+msgstr "Détails Personnels"
+
+#: Views/user.subscriber.search.view.php:74
+msgid "Statement"
+msgstr "Énoncé"
+
+#: Views/user.subscriber.view.php:9
+msgid "Search account"
+msgstr "Compte Recherche"
+
+#: Views/user.subscriber.view.php:12
+msgid "Register account"
+msgstr "Inscrivez-compte"
+
+#: Views/user.subscriber.view.php:15
+msgid "Global search"
+msgstr "la recherche globale"
+
+#: Views/user.subscriber.view.php:18
+msgid "Cash Reversal"
+msgstr "Reprise de trésorerie"
+
+#: Views/user.systemsettings.amlsettings.view.php:5
+msgid "Configurations"
+msgstr "Configurations"
+
+#: Views/user.systemsettings.amlsettings.view.php:8
+#: Views/user.systemsettings.amlsettings.view.php:88
+#: Views/user.systemsettings.amlsettings.view.php:133
+msgid "Account Type"
+msgstr "Type de compte"
+
+#: Views/user.systemsettings.amlsettings.view.php:14
+#: Views/user.systemsettings.amlsettings.view.php:91
+#: Views/user.systemsettings.amlsettings.view.php:136
+#: Views/user.systemsettings.keycosttype.view.php:62
+#: Views/user.systemsettings.keycosttype.view.php:109
+msgid "Key"
+msgstr "Key"
+
+#: Views/user.systemsettings.amlsettings.view.php:38
+#: Views/user.systemsettings.amlsettings.view.php:94
+msgid "Receive"
+msgstr "Recevoir"
+
+#: Views/user.systemsettings.amlsettings.view.php:57
+#: Views/user.systemsettings.amlsettings.view.php:103
+#: Views/user.systemsettings.amlsettings.view.php:148
+msgid "Max Amount/Trans"
+msgstr "Montant / Transaction Max"
+
+#: Views/user.systemsettings.amlsettings.view.php:60
+#: Views/user.systemsettings.amlsettings.view.php:106
+#: Views/user.systemsettings.amlsettings.view.php:151
+msgid "Max Amount/Day"
+msgstr "Montant / jour max"
+
+#: Views/user.systemsettings.amlsettings.view.php:63
+#: Views/user.systemsettings.amlsettings.view.php:109
+#: Views/user.systemsettings.amlsettings.view.php:154
+msgid "Max Transaction/Day"
+msgstr "Max Transaction / Jour"
+
+#: Views/user.systemsettings.amlsettings.view.php:66
+#: Views/user.systemsettings.amlsettings.view.php:112
+msgid "Max Current Amount"
+msgstr "Max Montant Actuel"
+
+#: Views/user.systemsettings.amlsettings.view.php:66
+#: Views/user.systemsettings.amlsettings.view.php:157
+msgid "Min Amount/Transaction"
+msgstr "Montant Minimum / Transaction"
+
+#: Views/user.systemsettings.amlsettings.view.php:69
+#: Views/user.systemsettings.amlsettings.view.php:115
+#: Views/user.systemsettings.amlsettings.view.php:160
+msgid "Max Amount/Month"
+msgstr "Montant / Mois Max"
+
+#: Views/user.systemsettings.amlsettings.view.php:72
+#: Views/user.systemsettings.amlsettings.view.php:118
+#: Views/user.systemsettings.amlsettings.view.php:163
+msgid "Max Transaction/Month"
+msgstr "Max Transaction / Mois"
+
+#: Views/user.systemsettings.amlsettings.view.php:76
+#: Views/user.systemsettings.amlsettings.view.php:85
+msgid "Request Account Type Receive"
+msgstr "Type de demande de compte Recevez"
+
+#: Views/user.systemsettings.amlsettings.view.php:79
+#: Views/user.systemsettings.amlsettings.view.php:130
+msgid "Request Account Type Send"
+msgstr "Type de demande de compte Envoyer"
+
+#: Views/user.systemsettings.amlsettings.view.php:123
+#: Views/user.systemsettings.amlsettings.view.php:168
+#: Views/user.systemsettings.keycosttype.view.php:97
+#: Views/user.systemsettings.messages.view.php:61
+#: Views/user.systemsettings.receiver.view.php:86
+#: Views/user.systemsettings.serverconfig.view.php:55
+#: Views/user.systemsettings.systeminfo.view.php:75
+#: Views/user.systemsettings.transceiver.view.php:131
+#: Views/user.systemsettings.transmitter.view.php:95
+msgid "Request For Approval"
+msgstr "Demande d'approbation"
+
+#: Views/user.systemsettings.audittrail.view.php:12
+msgid "MODULE"
+msgstr ""
+
+#: Views/user.systemsettings.audittrail.view.php:13
+msgid "LOG"
+msgstr "LOG"
+
+#: Views/user.systemsettings.audittrailtab.view.php:5
+msgid "Select User"
+msgstr "Sélectionnez l'utilisateur"
+
+#: Views/user.systemsettings.keycosttype.view.php:19
+msgid "AMOUNT FROM"
+msgstr "MONTANT DE"
+
+#: Views/user.systemsettings.keycosttype.view.php:20
+msgid "AMOUNT TO"
+msgstr "MONTANT À"
+
+#: Views/user.systemsettings.keycosttype.view.php:21
+msgid "ACCOUNT FROM"
+msgstr "COMPTE DE"
+
+#: Views/user.systemsettings.keycosttype.view.php:22
+msgid "ACCOUNT TO"
+msgstr "COMPTE A"
+
+#: Views/user.systemsettings.keycosttype.view.php:23
+#: Views/user.systemsettings.messages.view.php:16
+#: Views/user.systemsettings.receiver.view.php:13
+#: Views/user.systemsettings.serverconfig.view.php:16
+#: Views/user.systemsettings.transceiver.view.php:14
+#: Views/user.systemsettings.transmitter.view.php:13
+msgid "EDIT REQUEST"
+msgstr "DEMANDE DE MODIFICATION"
+
+#: Views/user.systemsettings.keycosttype.view.php:56
+msgid "Request Key Cost Type"
+msgstr "Type de demande clé des coûts"
+
+#: Views/user.systemsettings.keycosttype.view.php:65
+#: Views/user.systemsettings.keycosttype.view.php:112
+msgid "Type"
+msgstr "Type"
+
+#: Views/user.systemsettings.keycosttype.view.php:68
+#: Views/user.systemsettings.keycosttype.view.php:115
+msgid "Account"
+msgstr "Compte"
+
+#: Views/user.systemsettings.keycosttype.view.php:71
+#: Views/user.systemsettings.keycosttype.view.php:118
+msgid "Fixed"
+msgstr "Fixe"
+
+#: Views/user.systemsettings.keycosttype.view.php:74
+#: Views/user.systemsettings.keycosttype.view.php:121
+msgid "Percent"
+msgstr "pour cent"
+
+#: Views/user.systemsettings.keycosttype.view.php:77
+#: Views/user.systemsettings.keycosttype.view.php:124
+msgid "Priority"
+msgstr "Priorité"
+
+#: Views/user.systemsettings.keycosttype.view.php:83
+#: Views/user.systemsettings.keycosttype.view.php:127
+msgid "Amount From"
+msgstr "Montant de la"
+
+#: Views/user.systemsettings.keycosttype.view.php:86
+#: Views/user.systemsettings.keycosttype.view.php:130
+msgid "Amount To"
+msgstr "Montant à"
+
+#: Views/user.systemsettings.keycosttype.view.php:89
+#: Views/user.systemsettings.keycosttype.view.php:133
+msgid "Account From"
+msgstr "Compte à partir"
+
+#: Views/user.systemsettings.keycosttype.view.php:92
+#: Views/user.systemsettings.keycosttype.view.php:136
+msgid "Account To"
+msgstr "compte Vers"
+
+#: Views/user.systemsettings.messages.view.php:12
+#: Views/user.systemsettings.messages.view.php:47
+msgid "LANGUAGE"
+msgstr "LANGUE"
+
+#: Views/user.systemsettings.messages.view.php:15
+#: Views/user.systemsettings.messages.view.php:56
+msgid "DESCRIPTION"
+msgstr "DESCRIPTION"
+
+#: Views/user.systemsettings.messages.view.php:37
+msgid "Request Message"
+msgstr "Message de demande"
+
+#: Views/user.systemsettings.receiver.view.php:12
+#: Views/user.systemsettings.transceiver.view.php:13
+#: Views/user.systemsettings.transmitter.view.php:12
+msgid "CONFIGURATIONS"
+msgstr "CONFIGURATIONS"
+
+#: Views/user.systemsettings.receiver.view.php:51
+msgid "Request Receiver"
+msgstr "demande récepteur"
+
+#: Views/user.systemsettings.receiver.view.php:57
+#: Views/user.systemsettings.receiver.view.php:98
+#: Views/user.systemsettings.transceiver.view.php:55
+#: Views/user.systemsettings.transceiver.view.php:93
+#: Views/user.systemsettings.transmitter.view.php:57
+#: Views/user.systemsettings.transmitter.view.php:107
+msgid "SYSTEMID"
+msgstr "SYSTEMID"
+
+#: Views/user.systemsettings.receiver.view.php:58
+#: Views/user.systemsettings.receiver.view.php:101
+#: Views/user.systemsettings.transceiver.view.php:58
+#: Views/user.systemsettings.transceiver.view.php:94
+#: Views/user.systemsettings.transmitter.view.php:58
+#: Views/user.systemsettings.transmitter.view.php:110
+msgid "PASSWORD"
+msgstr "MOT DE PASSE"
+
+#: Views/user.systemsettings.receiver.view.php:62
+#: Views/user.systemsettings.receiver.view.php:107
+#: Views/user.systemsettings.transceiver.view.php:64
+#: Views/user.systemsettings.transceiver.view.php:98
+#: Views/user.systemsettings.transmitter.view.php:62
+#: Views/user.systemsettings.transmitter.view.php:116
+msgid "PORT"
+msgstr "PORT"
+
+#: Views/user.systemsettings.receiver.view.php:65
+#: Views/user.systemsettings.transceiver.view.php:101
+#: Views/user.systemsettings.transmitter.view.php:65
+msgid "TON"
+msgstr "TON"
+
+#: Views/user.systemsettings.receiver.view.php:66
+#: Views/user.systemsettings.transceiver.view.php:102
+#: Views/user.systemsettings.transmitter.view.php:66
+msgid "NPI"
+msgstr "NPI"
+
+#: Views/user.systemsettings.receiver.view.php:69
+#: Views/user.systemsettings.receiver.view.php:110
+#: Views/user.systemsettings.transceiver.view.php:67
+#: Views/user.systemsettings.transceiver.view.php:113
+#: Views/user.systemsettings.transmitter.view.php:77
+#: Views/user.systemsettings.transmitter.view.php:119
+msgid "SYSTYPE"
+msgstr "SYSTYPE"
+
+#: Views/user.systemsettings.receiver.view.php:73
+#: Views/user.systemsettings.receiver.view.php:113
+#: Views/user.systemsettings.transceiver.view.php:70
+#: Views/user.systemsettings.transceiver.view.php:117
+#: Views/user.systemsettings.transmitter.view.php:81
+#: Views/user.systemsettings.transmitter.view.php:122
+msgid "HOSTIP"
+msgstr "HOSTIP"
+
+#: Views/user.systemsettings.receiver.view.php:74
+#: Views/user.systemsettings.receiver.view.php:116
+#: Views/user.systemsettings.transceiver.view.php:73
+#: Views/user.systemsettings.transceiver.view.php:118
+#: Views/user.systemsettings.transmitter.view.php:82
+#: Views/user.systemsettings.transmitter.view.php:125
+msgid "SHORTCODE"
+msgstr "SHORTCODE"
+
+#: Views/user.systemsettings.receiver.view.php:77
+#: Views/user.systemsettings.transceiver.view.php:121
+#: Views/user.systemsettings.transmitter.view.php:85
+msgid "KEEPALIVEINTERVAL"
+msgstr "KEEPALIVEINTERVAL"
+
+#: Views/user.systemsettings.receiver.view.php:78
+#: Views/user.systemsettings.transceiver.view.php:122
+#: Views/user.systemsettings.transmitter.view.php:86
+msgid "RESPONSETIMEOUT"
+msgstr "RESPONSETIMEOUT"
+
+#: Views/user.systemsettings.receiver.view.php:81
+msgid "SECURED"
+msgstr "SECURED"
+
+#: Views/user.systemsettings.receiver.view.php:95
+msgid "Add Receiver"
+msgstr "Ajouter récepteur"
+
+#: Views/user.systemsettings.serverconfig.view.php:38
+msgid "Request Server Config"
+msgstr "Demander Config Server"
+
+#: Views/user.systemsettings.serverconfig.view.php:64
+msgid "Add Server Config"
+msgstr "Ajouter Config Server"
+
+#: Views/user.systemsettings.systeminfo.view.php:8
+#: Views/user.systemsettings.systeminfo.view.php:47
+msgid "CURRENCY TYPE"
+msgstr "TYPE DE DEVISES"
+
+#: Views/user.systemsettings.systeminfo.view.php:9
+#: Views/user.systemsettings.systeminfo.view.php:48
+msgid "COUNTRY CODE"
+msgstr "CODE PAYS"
+
+#: Views/user.systemsettings.systeminfo.view.php:10
+#: Views/user.systemsettings.systeminfo.view.php:49
+msgid "SYSTEM ACCOUNT NUMBER"
+msgstr "SYSTÈME DE NUMERO DE COMPTE"
+
+#: Views/user.systemsettings.systeminfo.view.php:13
+#: Views/user.systemsettings.systeminfo.view.php:52
+msgid "SENDER NUMBER"
+msgstr "NUMÉRO DE L'EXPÉDITEUR"
+
+#: Views/user.systemsettings.systeminfo.view.php:14
+#: Views/user.systemsettings.systeminfo.view.php:53
+msgid "ACCEPT DECIMAL"
+msgstr "ACCEPTER DECIMAL"
+
+#: Views/user.systemsettings.systeminfo.view.php:15
+#: Views/user.systemsettings.systeminfo.view.php:54
+msgid "FLOUS DEFAULT PASSWORD"
+msgstr "PASSE PAR DÉFAUT FLOUS"
+
+#: Views/user.systemsettings.systeminfo.view.php:18
+#: Views/user.systemsettings.systeminfo.view.php:57
+msgid "FAILED TRANSFER COUNT"
+msgstr "FAILED COMPTE DE TRANSFERT"
+
+#: Views/user.systemsettings.systeminfo.view.php:19
+#: Views/user.systemsettings.systeminfo.view.php:58
+msgid "INVALID PASSWORD COUNT"
+msgstr "INVALID COUNT MOT DE PASSE"
+
+#: Views/user.systemsettings.systeminfo.view.php:20
+#: Views/user.systemsettings.systeminfo.view.php:59
+msgid "RPRE DAY COUNT"
+msgstr "JOUR COMPTÉ RPRE"
+
+#: Views/user.systemsettings.systeminfo.view.php:23
+#: Views/user.systemsettings.systeminfo.view.php:62
+msgid "MIN ALIAS"
+msgstr "MIN ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:24
+#: Views/user.systemsettings.systeminfo.view.php:63
+msgid "MAX ALIAS"
+msgstr "MAX ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:25
+#: Views/user.systemsettings.systeminfo.view.php:64
+msgid "MSISDN TO ALIAS"
+msgstr "MSISDN À ALIAS"
+
+#: Views/user.systemsettings.systeminfo.view.php:28
+#: Views/user.systemsettings.systeminfo.view.php:67
+msgid "MIN ALLOC"
+msgstr "MIN ALLOC"
+
+#: Views/user.systemsettings.systeminfo.view.php:29
+#: Views/user.systemsettings.systeminfo.view.php:68
+msgid "MAX ALLOC"
+msgstr "MAX ALLOC"
+
+#: Views/user.systemsettings.systeminfo.view.php:30
+#: Views/user.systemsettings.systeminfo.view.php:69
+msgid "CRYPT"
+msgstr "CRYPTE"
+
+#: Views/user.systemsettings.systeminfo.view.php:39
+msgid "Request System Info"
+msgstr "La demande Info du système"
+
+#: Views/user.systemsettings.transceiver.view.php:52
+msgid "Add Transceiver"
+msgstr "Ajouter Transceiver"
+
+#: Views/user.systemsettings.transceiver.view.php:87
+msgid "Request Transceiver"
+msgstr "demande Transceiver"
+
+#: Views/user.systemsettings.transceiver.view.php:105
+#: Views/user.systemsettings.transmitter.view.php:69
+msgid "ORIGTON"
+msgstr "ORIGTON"
+
+#: Views/user.systemsettings.transceiver.view.php:106
+#: Views/user.systemsettings.transmitter.view.php:70
+msgid "ORIGNPI"
+msgstr "ORIGNPI"
+
+#: Views/user.systemsettings.transceiver.view.php:109
+#: Views/user.systemsettings.transmitter.view.php:73
+msgid "DESTTON"
+msgstr "DESTTON"
+
+#: Views/user.systemsettings.transceiver.view.php:110
+#: Views/user.systemsettings.transmitter.view.php:74
+msgid "DESTNPI"
+msgstr "DESTNPI"
+
+#: Views/user.systemsettings.transmitter.view.php:51
+msgid "Request Transmitter"
+msgstr "demande émetteur"
+
+#: Views/user.systemsettings.transmitter.view.php:104
+msgid "Add Transmitter"
+msgstr "Ajouter émetteur"
+
+#: Views/user.systemsettings.view.php:36
+msgid "Audit Trails"
+msgstr "Pistes de vérification"
+
+#: Views/user.systemsettings.view.php:39
+msgid "Air Config"
+msgstr "Air Config"
+
+#~ msgid "Username is not permitted to this IP:"
+#~ msgstr "Nom d'utilisateur n'est pas autorisé à cette IP:"
+
+#~ msgid "Sorry you're not allowed to VIEW ACCOUNT DETAILS"
+#~ msgstr "Désolé vous n'avez pas le droit de visualiser des détails COMPTE"
+
+#~ msgid "Sorry you're not allowed to APPROVE MCOM"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE MCOM"
+
+#~ msgid "Sorry you're not allowed to VIEW MCOM DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW MCOM DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE AGNT"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE AGNT"
+
+#~ msgid "Sorry you're not allowed to VIEW AGNT DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW AGNT DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE DLER"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE DLER"
+
+#~ msgid "Sorry you're not allowed to VIEW DLER DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW DLER DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE MERC / BILLER"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE MERC / BILLER"
+
+#~ msgid "Sorry you're not allowed to VIEW MERC / BILLER DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW MERC / BILLER DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE CORP"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE CORP"
+
+#~ msgid "Sorry you're not allowed to VIEW CORP DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW CORP DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE BANK"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE BANK"
+
+#~ msgid "Sorry you're not allowed to VIEW BANK DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW BANK DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE TEMP"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE TEMP"
+
+#~ msgid "Sorry you're not allowed to VIEW TEMP DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW TEMP DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE WAGE"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE WAGE"
+
+#~ msgid "Sorry you're not allowed to VIEW WAGE DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW WAGE DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE BLOC"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE BLOC"
+
+#~ msgid "Sorry you're not allowed to VIEW BLOC DETAILS"
+#~ msgstr "Désolé vous n'êtes pas autorisé à VIEW BLOC DETAILS"
+
+#~ msgid "Sorry you're not allowed to APPROVE NICKNAME"
+#~ msgstr "Désolé vous n'êtes pas autorisé à APPROVE NICKNAME"
+
+#~ msgid "Account does not Exist"
+#~ msgstr "Compte n'existe pas"
+
+#~ msgid "Sorry you're not allowed to REGISTER ACCOUNT!"
+#~ msgstr "Désolé vous n'êtes pas autorisé à REGISTER ACCOUNT!"
+
+#~ msgid "NVALID PASSWORD COUNT"
+#~ msgstr "INVALID COUNT MOT DE PASSE"
+
+#~ msgid "from"
+#~ msgstr "à partir de"
+
+#~ msgid "to"
+#~ msgstr "au"

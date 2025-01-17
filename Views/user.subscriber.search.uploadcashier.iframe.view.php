@@ -1,0 +1,1 @@
+<iframe src="user.subscriber.search.uploadcashier.php" style="width:100%;height:300px;" id="if_subscriber_search_uploadcashier"></iframe>

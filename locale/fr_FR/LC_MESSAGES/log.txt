@@ -1,0 +1,4 @@
+03:06:04: Entries in the catalog are probably incorrect.
+03:06:04: Updating the catalog failed. Click on 'Details >>' for details.
+17:20:20: D:\wamp\www\Projects\_MobileCash v1.0b\locale\fr_FR\LC_MESSAGES\messages.po:191:22: invalid control sequence
+17:20:20: C:\Program Files (x86)\Poedit\bin\msgfmt.exe: found 1 fatal error

@@ -1,0 +1,81 @@
+<h2 style="padding:0; margin:0;">Account Details</h2><table><tr><td>Account Statement : 971500000000</td><td rowspan="4" style="text-align:right;"></td></tr><tr><td>Account Number & Nick Name : 971500000000 || ETISALAT</td></tr><tr><td>Registered Name : John Paulo Marquez</td></tr><tr><td>Bank Name  : </td></tr><tr><td>Date ranging from 2013-04-24 to 2013-04-25 </td></tr><tr><td>Date Created :  2013-04-26 </td><td style="text-align:right;">Current Balance : 795475.71</td></tr></table><p><h2>Account Statement</h2></p><table cellpadding="0" cellspacing="0" border="1" width="100%" style="border-color:black;">
+				<tr>
+						<th>SNO</th>
+						<th>RefID</th>
+						<th>DATE</th>
+						<th>TYPE</th>
+						<th>S/D</th>
+						<th>CR</th>
+						<th>DR</th>
+						<th>BAL BEFORE</th>
+						<th>BAL AFTER</th>
+						<th>REF1</th>
+						<th>REF2</th>
+						<th>CURRENCY</th>
+				</tr>
+			<tbody><tr>
+							    <td>1</td>
+								<td>620130424000001</td>
+								<td>2013-04-24 13:44:18.0</td>
+								<td>DEALLOC</td>
+								<td>VENUS</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>795472.71</td>
+								<td>795473.71</td>
+								<td>KEN</td>
+								<td>test dealloc</td>
+								<td>AED</td>
+							</tr><tr>
+							    <td>2</td>
+								<td>620130424000002</td>
+								<td>2013-04-24 21:44:03.0</td>
+								<td>ALLOC</td>
+								<td>VENUS</td>
+								<td>0.00</td>
+								<td>2.00</td>
+								<td>795473.71</td>
+								<td>795471.71</td>
+								<td>PAU</td>
+								<td>test allocation</td>
+								<td>AED</td>
+							</tr><tr>
+							    <td>3</td>
+								<td>620130424000003</td>
+								<td>2013-04-24 21:46:16.0</td>
+								<td>DEALLOC</td>
+								<td>VENUS</td>
+								<td>4.00</td>
+								<td>0.00</td>
+								<td>795471.71</td>
+								<td>795475.71</td>
+								<td>PAU</td>
+								<td>deallocation pau</td>
+								<td>AED</td>
+							</tr><tr>
+							    <td>4</td>
+								<td>620130425000002</td>
+								<td>2013-04-25 16:17:55.0</td>
+								<td>ALLOC</td>
+								<td>VENUS</td>
+								<td>0.00</td>
+								<td>100.00</td>
+								<td>795475.71</td>
+								<td>795375.71</td>
+								<td>DIANA_</td>
+								<td>testloui</td>
+								<td>AED</td>
+							</tr><tr>
+							    <td>5</td>
+								<td>620130425000003</td>
+								<td>2013-04-25 16:24:08.0</td>
+								<td>DEALLOC</td>
+								<td>VENUS</td>
+								<td>100.00</td>
+								<td>0.00</td>
+								<td>795375.71</td>
+								<td>795475.71</td>
+								<td>KAISER</td>
+								<td>deallocloui</td>
+								<td>AED</td>
+							</tr></tbody></table>

@@ -1,0 +1,72 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class SubscriberController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			
+			$this->setMaster('user.subscriber.register.view.php');
+			$serv = new SubscriberServices();
+			if(isset($_REQUEST["Method"])){
+				
+				switch($_REQUEST["Method"]){
+					
+					case "Register":
+					
+						if($_REQUEST["MSISDN"] == '' || $_REQUEST["GENDER"] == '' || $_REQUEST["LASTNAME"] == '' || $_REQUEST["FIRSTNAME"] == '' || $_REQUEST["DOB"] == '' || $_REQUEST["IDNUMBER"] == '' || $_REQUEST["IDDESC"] == '' || $_REQUEST["NATIONALITY"] == '' || $_REQUEST["POB"] == '' || $_REQUEST["CITY"] == '' || $_REQUEST["REGION"] == '' || $_REQUEST["COUNTRY"] == '' || $_REQUEST["TYPE"] == '' || $_REQUEST["ACCOUNTSTATUS"] == '' || $_REQUEST["STREET"] == '' ){
+							$ret->ResponseCode = 99;
+							$ret->Message = _("Please input all required fields.");
+						}else if(!$this->CheckAlpha($_REQUEST['LASTNAME']) || !$this->CheckAlpha($_REQUEST['FIRSTNAME']) || !$this->CheckAlpha($_REQUEST['IDNUMBER']) || !$this->CheckAlpha($_REQUEST['IDDESC']) || !$this->CheckAlpha($_REQUEST['NATIONALITY']) || !$this->CheckAlpha($_REQUEST['POB']) || !$this->CheckAlpha($_REQUEST['CITY']) || !$this->CheckAlpha($_REQUEST['REGION']) || !$this->CheckAlpha($_REQUEST['COUNTRY']) || !$this->CheckAlpha($_REQUEST['STREET'])){
+							$ret->ResponseCode = 98;
+							$ret->Message = _("Please input valid format..");
+						
+						}else{
+						
+							$_REQUEST["REGCORPDATEOFINCORPORATION"] = $_REQUEST["REGCORPDATEOFINCORPORATION"] == "" ? "2012-01-01" : $_REQUEST["REGCORPDATEOFINCORPORATION"];						
+							$ret = $serv->registerAccount($_REQUEST["MSISDN"],$_REQUEST['ALIAS'],$_REQUEST["GENDER"],
+														$_REQUEST["LASTNAME"],$_REQUEST["MIDDLENAME"],$_REQUEST["FIRSTNAME"],
+														$_REQUEST["EMAIL"],$_REQUEST["DOB"],$_REQUEST["IDNUMBER"],
+														$_REQUEST["IDDESC"],$_REQUEST["EXPIRY"],$_REQUEST["NATIONALITY"],$_REQUEST["POB"],
+														$_REQUEST["CITY"],$_REQUEST["REGION"],$_REQUEST["COUNTRY"],
+														$_REQUEST["TYPE"],"FOR APPROVAL",$_REQUEST["ACCOUNTSTATUS"],
+														0 ,$_SESSION['currentUser'],$_REQUEST["BUILDING"],
+														$_REQUEST["STREET"],$_REQUEST["COMPANY"],$_REQUEST["PROFESSION"],"NO",
+														$_REQUEST["ALTNUMBER"],$_REQUEST["AUTHORIZINGLASTNAME"],$_REQUEST["AUTHORIZINGFIRSTNAME"],
+														$_REQUEST["AUTHORIZINGIDNUMBER"],$_REQUEST["AUTHORIZINGIDDESCRIPTION"],$_REQUEST["AUTHORIZINGMOBILENUMBER"],
+														$_REQUEST["REGCORPDATEOFINCORPORATION"],$_REQUEST["REGCORPBUSINESSNAME"],$_REQUEST["REGCORPTRADELICENSENUMBER"],
+														$_REQUEST["REGCORPREGISTREDADDRESS"],$_REQUEST["REGCORPTYPEOFBUSINESS"],$_REQUEST["REGCORPOWNERSHIPINFO"]);
+								
+								
+							if($ret->ResponseCode == 0){
+								$ret->Message = _("You have successfully registered your account");
+							}else{
+								
+								if(isset($ret->Token)){
+									$_SESSION["token"] = $ret->Token;
+								}
+								if($ret->ResponseCode == 14){
+									session_destroy();
+								}
+								if($ret->ResponseCode == 4){
+									$ret->Message = _("Account already exist");
+								}
+								if($ret->ResponseCode == 1){
+									$ret->Message = _("Invalid Mobile Number!");
+								}
+							}
+						}
+						$this->setData("responseMessage",$ret->Message);
+						$this->setData("response",$ret->ResponseCode);
+						
+					break;
+				}
+			}
+			
+			$this->render();
+		}
+	}
+	
+	$emp = new SubscriberController();
+?>

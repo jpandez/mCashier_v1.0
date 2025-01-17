@@ -1,0 +1,37 @@
+10
+
+dir
+397
+svn+ssh://tlc@119.92.82.188/var/svn/projects/mfino/_MobileCash%20v1.0b/Libraries
+svn+ssh://tlc@119.92.82.188/var/svn/projects
+
+
+
+2012-06-15T09:57:17.621039Z
+387
+tlc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e60e10b1-191a-44b1-bdc3-02bb7aaf7321
+
+Utils
+dir
+
+Wrappers
+dir
+
+tcpdf
+dir
+

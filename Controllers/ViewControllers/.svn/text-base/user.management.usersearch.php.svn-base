@@ -1,0 +1,43 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class SubscriberTransactionsController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			$serv = new SubscriberServices();
+			
+			if(isset($_REQUEST["Method"])){
+						
+				switch($_REQUEST["Method"]){
+					case "Search":
+						if(!empty($_REQUEST["txtSearch"]) && $this->CheckAlpha($_REQUEST['txtSearch'])){
+							$user =strtoupper($_REQUEST['txtSearch']);
+							$ret = $serv->userSearch($user,$_REQUEST["option"]);
+							
+							$this->setData("searchResult",$ret);
+							if($ret->ResponseCode !=0){
+								
+								if(isset($ret->Token)){
+									$_SESSION["token"] = $ret->Token;
+								}
+								if($ret->ResponseCode == 14){
+									session_destroy();
+								}
+								
+								$this->setData("responseMessage",$ret->Message);
+							}
+						}else{
+							$this->setData("responseMessage",_("Please input valid character"));
+						}
+					break;
+				}
+			}
+			
+			$this->setMaster("user.management.usersearch.view.php");
+			$this->render();
+		}
+	}
+$i = new SubscriberTransactionsController();
+?>

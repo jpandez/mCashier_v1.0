@@ -1,0 +1,29 @@
+<?php session_start(); ?>
+<?php require_once("viewcontrollers.config.properties.php"); ?>
+<?php require_once($GLOBALS["CONTROLLER_PATH"] . "BusinessControllers/bc.config.properties.php"); ?>
+<?php require_once("ViewController.php"); ?>
+<?php
+	class SubscriberTransactionsController extends ViewController{
+		public function __construct(){
+			parent::__construct();
+			$serv = new SubscriberServices();
+			
+			/*pending user level*/
+			if($this->getRolesConfig('VIEW_PENDING_USER_LEVEL')){
+				$pendinguserlevel = $serv->getUserlevelPndg($_SESSION["currentUser"]);
+				if(isset($pendinguserlevel->Token)){
+					$_SESSION["token"] = $pendinguserlevel->Token;
+				}
+				if($pendinguserlevel->ResponseCode == 13 || $pendinguserlevel->ResponseCode == 14){
+					session_destroy();
+				}
+				$this->setData("getUsersLevelPndg",$pendinguserlevel);
+				$this->setMaster("user.pendings.userlevels.view.php");
+				$this->render();
+			}	
+
+			
+		}
+	}
+		$i = new SubscriberTransactionsController();
+?>

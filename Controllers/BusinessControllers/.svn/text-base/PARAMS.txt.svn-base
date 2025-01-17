@@ -1,0 +1,15 @@
+'ret.activate(MSISDN AS STRING)
+'ret.allocate(MSISDN as string, Amount as string, UserID as string, Remarks as string)
+'ret.changePassword(MSISDN as string, oldPassword as string,newPassword as String)
+'ret.deactivate(MSISDN as string)
+'ret.lock(MSISDN as string, LockDescription as string)
+'ret.registerAccount(AccountID, AuthorizingFirstName, AuthorizingLastName,AuthorizingIDNumber,AuthorizingIDDesc,AuthorizingDateOfBirth,MSISDN,Alias,LastName,MiddleName,EmailAddress,DateOfBirth,IDNumber,IDDesc,Nationality,BirthPlace,CityID,StateID,RegionID,CountryID,Type,KYC,Status,Language,ReferenceAccount,UserID,FailedTransferCount,InvalidTransferCount,BuildingNumber,Password)
+'ret.resetPassword(MSISDN)
+'ret.search(inp,option)
+'ret.unlock(MSISDN)
+'ret.updateAccount(AccountID,AuthorizingFirstName,AuthorizingLastName,AuthorizingIDNumber,AuthorizingIDDesc,AuthorizingDateOfBirth,MSISDN,Alias,LastName,MiddleName,EmailAddress,DateOfBirth,IDNumber,IDDesc,Nationality,BirthPlace,CityID,StateID,RegionID,CountryID,Type,KYC,Status,Language,ReferenceAccount,UserID,FailedTransferCount,InvalidTransferCount,BuildingNumber,Password,Locked)
+'ret.updateKYC(MSISDN,kyc)
+'ret.getTransactions(MSISDN,DateFrom,DateTo)
+
+''NEW
+'ret.updateAccount(MSISDN,Alias,Gender,LastName,MiddleName,FirstName,EmailAddress,DateOfBirth,IDNumber,IDDesc,Nationality,BirthPlace,CityID,RegionID,CountryID,Type,KYC,Status,ReferenceAccount,UserID,BuildingName,StreetName,CompanyName,Profession,Locked)

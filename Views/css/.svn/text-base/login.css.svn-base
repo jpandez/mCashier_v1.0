@@ -1,0 +1,392 @@
+body
+{
+background: url(../images/login/bg.png) 50% 50% repeat; 
+background-color:black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+table
+{
+text-align:center;
+width: 270px;
+ height:295px;
+background-color: white;
+}
+
+form#login
+{
+font-family:Verdana;
+font-size:13px;
+font-weight:bold;
+text-align:left;
+margin-left:20px;
+}
+
+
+
+.zaplogo{
+	
+	background-image:url(../images/login/logo_etisalat.png);
+	height: 71px;
+	width: 196px;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin-left: 25px;
+	
+	}
+
+
+
+.textboxlogin
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+	background-color: #FFFFFF;
+	height: 35px;
+	width: 220px;
+	border: thin solid #CCCCCC;
+	margin-bottom: 10px;
+}
+.textboxpassword
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+	background-color: #FFFFFF;
+	height: 35px;
+	width: 220px;
+	border: thin solid #CCCCCC;
+	margin-bottom: 10px;
+}
+
+
+.otherbutton {
+	margin-left:55px;
+	display:block;
+	height: 40px;
+	width: 113px;
+	background:url(../images/login/loginbutton.png) no-repeat;
+	background-position: -1px -1px;
+	cursor: pointer;
+}	
+.otherbutton:hover {
+	background:url(../images/login/loginbutton.png) no-repeat;
+	background-position: -1px -34px;
+}
+
+hr{
+
+width:985px;
+size:1;
+
+
+align:center;
+}
+
+.forgotpassword{
+position:absolute;
+top:274px;
+color:gray;
+margin-left:48px;
+font-family:verdana;
+font-size:11px;
+font-style:normal;
+}
+
+.forgotpassword:hover{
+color:black;
+}
+
+
+
+.wrapper
+{
+ margin: 0px auto;
+ width: 950px;
+ text-align: center;
+
+}
+
+.header
+{
+
+ margin: 0px auto;
+ color: #333;
+ width: 1000px;
+ padding: 10px;
+ height: 70px;
+ margin: 10px 0px 5px 0px;
+
+}
+
+
+.container
+{
+ height:300px;
+ margin:0px auto;
+ overflow: auto; 
+ width: 995px;
+text-align:center;
+}
+
+#left
+{
+background: white;
+ display: inline;
+ color: #333;
+ padding: 0px;
+ width: 620px;
+ height:295px;
+ float: left;
+ margin-left:37px;
+ margin-top:3px;
+ 
+ /*Shadow*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+
+}
+
+.right
+{
+
+ float: left;
+ color: #333;
+ padding: 0px;
+ height:295px;
+ width: 270px;
+ display: inline;
+ position: relative;
+ margin-left:21px;
+
+ margin-top:3px;
+
+  /*Shadow*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.loginlogo
+{
+width:295px;
+height:100px;
+position:absolute;
+top:15px;
+left:-6px;
+z-index:1;
+background:url(../images/login/membersloginribbon.png);
+background-repeat: no-repeat;
+}
+
+
+.right #fm1
+{
+text-align: center;
+}
+
+
+.textbox-1a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+	background-color: #FFFFFF;
+	height: 35px;
+	width: 220px;
+	border: thin solid #CCCCCC;
+	margin-top: 20px;
+	
+}
+
+.textbox-2a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+	background-color: #FFFFFF;
+	height: 35px;
+	width: 220px;
+	border: thin solid #CCCCCC;
+	margin-top: 10px;
+	
+}
+
+
+
+
+.container2
+{
+height:210px;
+overflow: auto; 
+margin:0px auto;
+width: 995px;
+text-align:center;
+}
+
+.left2
+{
+background: white;
+ display: inline;
+ color: #333;
+ padding: 0px;
+ width: 302px;
+ height:195px;
+ float: left;
+ margin-left:37px;
+ margin-top:7px;
+ 
+  /*Shadow*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.left2image
+{
+background:url(../images/login/samsunggalaxy.png);
+
+background-repeat:no-repeat;
+width:110px;
+float:left;
+height:185px;
+margin-left:6px;
+margin-top:7px;
+
+}
+
+.left2text
+{
+width:155px;
+float:right;
+height:195px;
+padding-top:0px;
+padding-right:14px;
+padding-left:14px;
+text-align:left;
+}
+
+.middle2
+{
+background: white;
+ display: inline;
+ color: #333;
+ padding: 0px;
+ width: 302px;
+ height:195px;
+ float: left;
+ margin-left:1.6%;
+ margin-top:7px;
+ 
+  /*Shadow*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.middle2image
+{
+background:url(../images/login/samsunggalaxy.png);
+
+background-repeat:no-repeat;
+width:110px;
+float:left;
+height:185px;
+margin-left:6px;
+margin-top:7px;
+
+}
+
+.middle2text
+{
+
+width:155px;
+float:right;
+height:195px;
+padding-top:0px;
+padding-right:14px;
+padding-left:14px;
+text-align:left;
+}
+
+
+.right2
+{
+ float: left;
+ color: #333;
+ padding: 0px;
+ height:195px;
+ width: 270px;
+ display: inline;
+ position: relative;
+ background: white;
+ 
+ margin-top: 7px;
+margin-left:23px;
+  /*Shadow*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.right2image
+{
+background:url(../images/login/samsunggalaxy.png);
+background-size: 100px 185px;
+background-repeat:no-repeat;
+width:100px;
+float:left;
+height:185px;
+margin-left:6px;
+margin-top:4px;
+
+}
+
+.right2text
+{
+
+width:135px;
+float:right;
+height:195px;
+padding-top:0px;
+padding-right:14px;
+padding-left:14px;
+text-align:left;
+}
+
+#title
+{
+color:#0c56aa;
+margin-top:25px;
+margin-bottom: 6px;
+font-size:12px;
+font-weight:bold;
+}
+
+.footer
+{
+
+margin-left:20px;
+ margin-top:-10px;
+ width: 950px;
+ clear: both;
+ color: #333;
+ padding: 10px;
+ text-align:center;
+ font-family:verdana;
+ font-size:10px;
+ font-weight:bold;
+}

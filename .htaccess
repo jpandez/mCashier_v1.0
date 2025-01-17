@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Missing Anti-clickjacking Header
+    Header always set X-Frame-Options: SameOrigin
+
+    # Remove X-Powered-By header
+    Header unset X-Powered-By
+
+   # Cookie Security Flag
+    Header always edit Set-Cookie "(.*)" "$1; HttpOnly; Secure; SameSite=Strict"
+    
+    #Strict-Transport-Security Header 
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    #X-XSS-Protection Header 
+    Header set X-XSS-Protection "1; mode=block"
+
+    #php_value max_execution_time 300
+    
+</IfModule>
