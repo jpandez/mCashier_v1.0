@@ -13888,7 +13888,7 @@ class TCPDF {
 			}
 		}
 		$seed .= uniqid('', true);
-		$seed .= rand();
+		$seed .= random_int(9999, 99999);
 		$seed .= getmypid();
 		$seed .= __FILE__;
 		$seed .= $this->bufferlen;
@@ -13910,7 +13910,7 @@ class TCPDF {
 		if (isset($_SERVER['HTTP_ACCEPT_CHARSET'])) {
 			$seed .= $_SERVER['HTTP_ACCEPT_CHARSET'];
 		}
-		$seed .= rand();
+		$seed .= random_int(9999, 99999);
 		$seed .= uniqid('', true);
 		$seed .= microtime();
 		return $seed;

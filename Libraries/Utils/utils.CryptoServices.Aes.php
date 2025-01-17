@@ -13,11 +13,11 @@ class Aes {
    *              generated from the cipher key by keyExpansion()
    * @return      ciphertext as byte-array (16 bytes)
    */
-  public static function cipher($input, $w) {    // main cipher function [§5.1]
+  public static function cipher($input, $w) {    // main cipher function [ï¿½5.1]
     $Nb = 4;                 // block size (in words): no of columns in state (fixed at 4 for AES)
     $Nr = count($w)/$Nb - 1; // no of rounds: 10/12/14 for 128/192/256-bit keys
   
-    $state = array();  // initialise 4xNb byte-array 'state' with input [§3.4]
+    $state = array();  // initialise 4xNb byte-array 'state' with input [ï¿½3.4]
     for ($i=0; $i<4*$Nb; $i++) $state[$i%4][floor($i/4)] = $input[$i];
   
     $state = self::addRoundKey($state, $w, 0, $Nb);
@@ -33,27 +33,27 @@ class Aes {
     $state = self::shiftRows($state, $Nb);
     $state = self::addRoundKey($state, $w, $Nr, $Nb);
   
-    $output = array(4*$Nb);  // convert state to 1-d array before returning [§3.4]
+    $output = array(4*$Nb);  // convert state to 1-d array before returning [ï¿½3.4]
     for ($i=0; $i<4*$Nb; $i++) $output[$i] = $state[$i%4][floor($i/4)];
     return $output;
   }
   
   
-  private static function addRoundKey($state, $w, $rnd, $Nb) {  // xor Round Key into state S [§5.1.4]
+  private static function addRoundKey($state, $w, $rnd, $Nb) {  // xor Round Key into state S [ï¿½5.1.4]
     for ($r=0; $r<4; $r++) {
       for ($c=0; $c<$Nb; $c++) $state[$r][$c] ^= $w[$rnd*4+$c][$r];
     }
     return $state;
   }
   
-  private static function subBytes($s, $Nb) {    // apply SBox to state S [§5.1.1]
+  private static function subBytes($s, $Nb) {    // apply SBox to state S [ï¿½5.1.1]
     for ($r=0; $r<4; $r++) {
       for ($c=0; $c<$Nb; $c++) $s[$r][$c] = self::$sBox[$s[$r][$c]];
     }
     return $s;
   }
   
-  private static function shiftRows($s, $Nb) {    // shift row r of state S left by r bytes [§5.1.2]
+  private static function shiftRows($s, $Nb) {    // shift row r of state S left by r bytes [ï¿½5.1.2]
     $t = array(4);
     for ($r=1; $r<4; $r++) {
       for ($c=0; $c<4; $c++) $t[$c] = $s[$r][($c+$r)%$Nb];  // shift into temp copy
@@ -62,15 +62,15 @@ class Aes {
     return $s;  // see fp.gladman.plus.com/cryptography_technology/rijndael/aes.spec.311.pdf 
   }
   
-  private static function mixColumns($s, $Nb) {   // combine bytes of each col of state S [§5.1.3]
+  private static function mixColumns($s, $Nb) {   // combine bytes of each col of state S [ï¿½5.1.3]
     for ($c=0; $c<4; $c++) {
       $a = array(4);  // 'a' is a copy of the current column from 's'
-      $b = array(4);  // 'b' is a•{02} in GF(2^8)
+      $b = array(4);  // 'b' is aï¿½{02} in GF(2^8)
       for ($i=0; $i<4; $i++) {
         $a[$i] = $s[$i][$c];
         $b[$i] = $s[$i][$c]&0x80 ? $s[$i][$c]<<1 ^ 0x011b : $s[$i][$c]<<1;
       }
-      // a[n] ^ b[n] is a•{03} in GF(2^8)
+      // a[n] ^ b[n] is aï¿½{03} in GF(2^8)
       $s[0][$c] = $b[0] ^ $a[1] ^ $b[1] ^ $a[2] ^ $a[3]; // 2*a0 + 3*a1 + a2 + a3
       $s[1][$c] = $a[0] ^ $b[1] ^ $a[2] ^ $b[2] ^ $a[3]; // a0 * 2*a1 + 3*a2 + a3
       $s[2][$c] = $a[0] ^ $a[1] ^ $b[2] ^ $a[3] ^ $b[3]; // a0 + a1 + 2*a2 + 3*a3
@@ -86,7 +86,7 @@ class Aes {
    * @param key cipher key byte-array (16 bytes)
    * @return    key schedule as 2D byte-array (Nr+1 x Nb bytes)
    */
-  public static function keyExpansion($key) {  // generate Key Schedule from Cipher Key [§5.2]
+  public static function keyExpansion($key) {  // generate Key Schedule from Cipher Key [ï¿½5.2]
     $Nb = 4;              // block size (in words): no of columns in state (fixed at 4 for AES)
     $Nk = count($key)/4;  // key length (in words): 4/6/8 for 128/192/256-bit keys
     $Nr = $Nk + 6;        // no of rounds: 10/12/14 for 128/192/256-bit keys
@@ -125,7 +125,7 @@ class Aes {
     return $w;
   }
   
-  // sBox is pre-computed multiplicative inverse in GF(2^8) used in subBytes and keyExpansion [§5.1.1]
+  // sBox is pre-computed multiplicative inverse in GF(2^8) used in subBytes and keyExpansion [ï¿½5.1.1]
   private static $sBox = array(
     0x63,0x7c,0x77,0x7b,0xf2,0x6b,0x6f,0xc5,0x30,0x01,0x67,0x2b,0xfe,0xd7,0xab,0x76,
     0xca,0x82,0xc9,0x7d,0xfa,0x59,0x47,0xf0,0xad,0xd4,0xa2,0xaf,0x9c,0xa4,0x72,0xc0,
@@ -144,7 +144,7 @@ class Aes {
     0xe1,0xf8,0x98,0x11,0x69,0xd9,0x8e,0x94,0x9b,0x1e,0x87,0xe9,0xce,0x55,0x28,0xdf,
     0x8c,0xa1,0x89,0x0d,0xbf,0xe6,0x42,0x68,0x41,0x99,0x2d,0x0f,0xb0,0x54,0xbb,0x16);
   
-  // rCon is Round Constant used for the Key Expansion [1st col is 2^(r-1) in GF(2^8)] [§5.2]
+  // rCon is Round Constant used for the Key Expansion [1st col is 2^(r-1) in GF(2^8)] [ï¿½5.2]
   private static $rCon = array( 
     array(0x00, 0x00, 0x00, 0x00),
     array(0x01, 0x00, 0x00, 0x00),
@@ -196,13 +196,13 @@ class AesCtr extends Aes {
     $key = Aes::cipher($pwBytes, Aes::keyExpansion($pwBytes));
     $key = array_merge($key, array_slice($key, 0, $nBytes-16));  // expand key to 16/24/32 bytes long 
   
-    // initialise 1st 8 bytes of counter block with nonce (NIST SP800-38A §B.2): [0-1] = millisec, 
+    // initialise 1st 8 bytes of counter block with nonce (NIST SP800-38A ï¿½B.2): [0-1] = millisec, 
     // [2-3] = random, [4-7] = seconds, giving guaranteed sub-ms uniqueness up to Feb 2106
     $counterBlock = array();
     $nonce = floor(microtime(true)*1000);   // timestamp: milliseconds since 1-Jan-1970
     $nonceMs = $nonce%1000;
     $nonceSec = floor($nonce/1000);
-    $nonceRnd = floor(rand(0, 0xffff));
+    $nonceRnd = random_int(0, 0xffff);
     
     for ($i=0; $i<2; $i++) $counterBlock[$i]   = self::urs($nonceMs,  $i*8) & 0xff;
     for ($i=0; $i<2; $i++) $counterBlock[$i+2] = self::urs($nonceRnd, $i*8) & 0xff;
