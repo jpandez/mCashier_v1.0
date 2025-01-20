@@ -613,7 +613,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Image1" />
 													<input type="hidden" name="updateI1" id="updateI1" value="REG" />
-													<input type="file" name="photoimg" id="photoimg" />
+													<input type="file" name="photoimg" id="photoimg" accept="application/pdf,image/png, image/gif, image/jpeg" />
 
 												</form>
 											</td>
@@ -621,7 +621,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew1" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew1" />
 													<input type="hidden" name="updateI2" id="updateI2" value="REG" />
-													<input type="file" name="photoimgnew1" id="photoimgnew1" />
+													<input type="file" name="photoimgnew1" id="photoimgnew1" accept="application/pdf,image/png, image/gif, image/jpeg" />
 					 
 												</form>
 											</td>
@@ -630,7 +630,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew2" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew2" />
 													<input type="hidden" name="updateI3" id="updateI3" value="REG" />
-													<input type="file" name="photoimgnew2" id="photoimgnew2" />
+													<input type="file" name="photoimgnew2" id="photoimgnew2" accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>
@@ -639,7 +639,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew3" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew3" />
 													<input type="hidden" name="updateI4" id="updateI4" value="REG" />
-													<input type="file" name="photoimgnew3" id="photoimgnew3" />
+													<input type="file" name="photoimgnew3" id="photoimgnew3" accept="application/pdf,image/png, image/gif, image/jpeg" />
 					 
 												</form>
 											</td>
@@ -647,7 +647,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew4" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew4" />
 													<input type="hidden" name="updateI5" id="updateI5" value="REG" />
-													<input type="file" name="photoimgnew4" id="photoimgnew4" />
+													<input type="file" name="photoimgnew4" id="photoimgnew4" accept="application/pdf,image/png, image/gif, image/jpeg" />
 
 					 
 												</form>
@@ -656,7 +656,7 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew5" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew5" />
 													<input type="hidden" name="updateI6" id="updateI6" value="REG" />
-													<input type="file" name="photoimgnew5" id="photoimgnew5" />
+													<input type="file" name="photoimgnew5" id="photoimgnew5" accept="application/pdf,image/png, image/gif, image/jpeg" />
 					 
 												</form>
 											</td>
@@ -664,35 +664,35 @@ unset($_SESSION['sizeSend5']);
 												<form id="imageformnew6" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew6" />
 													<input type="hidden" name="updateI7" id="updateI7" value="REG" />
-													<input type="file" name="photoimgnew6" id="photoimgnew6" />
+													<input type="file" name="photoimgnew6" id="photoimgnew6"  accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>
 											<td>
 												<form id="imageformnew7" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew7" />
-													<input type="file" name="photoimgnew7" id="photoimgnew7" />
+													<input type="file" name="photoimgnew7" id="photoimgnew7"  accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>
 											<td>
 												<form id="imageformnew8" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew8" />
-													<input type="file" name="photoimgnew8" id="photoimgnew8" />
+													<input type="file" name="photoimgnew8" id="photoimgnew8" accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>
 											<td>
 												<form id="imageformnew9" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew9" />
-													<input type="file" name="photoimgnew9" id="photoimgnew9" />
+													<input type="file" name="photoimgnew9" id="photoimgnew9" accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>
 											<td>
 												<form id="imageformnew10" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew10" />
-													<input type="file" name="photoimgnew10" id="photoimgnew10" />
+													<input type="file" name="photoimgnew10" id="photoimgnew10" accept="application/pdf,image/png, image/gif, image/jpeg"/>
 					 
 												</form>
 											</td>

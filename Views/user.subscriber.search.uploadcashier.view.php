@@ -96,7 +96,7 @@ td {
 	<table>
 		<tr><td colspan="2" align="center"><h3>Upload File</h3></td></tr>
 		<tr><td colspan="2"><div id="uploadForm">		
-			<input type="file" id="inpCSV" name="inpCSV" accept=".csv"><span id="val"></span>
+			<input type="file" id="inpCSV" name="inpCSV" accept="application/csv"><span id="val"></span>
 			<span id="button">Select CSV File</span>	
 		</div></td></tr><tr><td><br /></td></tr>
 		<tr><td>

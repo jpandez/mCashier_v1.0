@@ -1244,7 +1244,7 @@ td {
 				<td>
 					<form id="imageformStore" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 						<input type="hidden" name="Method" id="Method" value="ImageStore" />
-						<input type="file" name="photoimgStore" id="photoimgStore" />
+						<input type="file" name="photoimgStore" id="photoimgStore" accept="application/pdf,image/png, image/gif, image/jpeg"/>
 						
 					</form>
 				</td>
