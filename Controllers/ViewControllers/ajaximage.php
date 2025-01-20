@@ -239,170 +239,195 @@ $path = "C:/xampp/htdocs/Projects/uploads/";
 									}else{
 										$name=$name;
 									}
-									if(isset($_REQUEST["Method"])){
-										switch($_REQUEST["Method"]){
+									//jayr
+									$allowed_methods = [
+										"Image1", "Image2", "Image3", "Image4", "Image5", "Image6", "Image7", "Image8", "Image9", "Image10",
+										"Imagenew1", "Imagenew2", "Imagenew3", "Imagenew4", "Imagenew5", "Imagenew6", "Imagenew7", "Imagenew8", "Imagenew9", "Imagenew10",
+										"ImageStore", "sendImage1", "sendImage2", "sendImage3", "delImageB2W"
+									];
+									
+									// Ensure the 'Method' is in the allowed list
+									if (isset($_REQUEST["Method"]) && in_array($_REQUEST["Method"], $allowed_methods)) {
+										// Sanitize file name using htmlspecialchars to prevent XSS
+										$name = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
+									
+										switch ($_REQUEST["Method"]) {
 											case "Image1":
 												$_SESSION['imageB2W'] = $base64image;
-												$_SESSION['urlBfile1'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo "$name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile1'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Image2":
 												$_SESSION['image2'] = $base64image;
-
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image3":
 												$_SESSION['image3'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image4":
 												$_SESSION['image4'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image5":
 												$_SESSION['image5'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image6":
 												$_SESSION['image6'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image7":
 												$_SESSION['image7'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image8":
 												$_SESSION['image8'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image9":
 												$_SESSION['image9'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
 											case "Image10":
 												$_SESSION['image10'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview2'>";
-											break;
-											
+												echo "<img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview2'>";
+												break;
+									
 											case "Imagenew1":
 												$_SESSION['imagenew1'] = $base64image;
-												$_SESSION['urlBfile2'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo "$name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile2'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew2":
 												$_SESSION['imagenew2'] = $base64image;
-												$_SESSION['urlBfile3'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile3'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew3":
 												$_SESSION['imagenew3'] = $base64image;
-												$_SESSION['urlBfile4'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile4'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew4":
 												$_SESSION['imagenew4'] = $base64image;
-												$_SESSION['urlBfile5'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile5'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew5":
 												$_SESSION['imagenew5'] = $base64image;
-												$_SESSION['urlBfile6'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile6'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew6":
 												$_SESSION['imagenew6'] = $base64image;
-												$_SESSION['urlBfile7'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile7'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew7":
 												$_SESSION['imagenew7'] = $base64image;
-												$_SESSION['urlBfile8'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile8'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew8":
 												$_SESSION['imagenew8'] = $base64image;
-												$_SESSION['urlBfile9'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile9'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew9":
 												$_SESSION['imagenew9'] = $base64image;
-												$_SESSION['urlBfile10'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile10'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
+												break;
 											case "Imagenew10":
 												$_SESSION['imagenew10'] = $base64image;
-												$_SESSION['urlBfile11'] = $path.$actual_image_name;
-												if($ext == 'pdf' || $ext == 'PDF'){echo " $name";}else{ 
-												//echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview2'></td></tr><tr><td>$name</td></tr></table>";
-												echo "<td>$name</td>";
+												$_SESSION['urlBfile11'] = $path . $actual_image_name;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "$name";
+												} else {
+													echo "<td>$name</td>";
 												}
-											break;
-
-											case "Image3":
-												$_SESSION['image3'] = $base64image;
-												echo "<img src='uploads/".$actual_image_name."'  class='preview3'>";
-											break;
+												break;
+									
 											case "ImageStore":
 												$_SESSION['imageStore'] = $base64image;
-												//echo "<img src='uploads/".$actual_image_name."'  class='previewStore'>";
 												echo "<td>$name</td>";
 												break;
+									
 											case "sendImage1":
 												$_SESSION['sendBackImage1'] = $base64image;
-												if($ext == 'pdf' || $ext == 'PDF'){echo "<h1>PDF</h1> . $name";}else{ 
-												echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview'></td></tr><tr><td>$name</td></tr></table>";}
-											break;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "<h1>PDF</h1> . $name";
+												} else {
+													echo "<table><tr><td><img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview'></td></tr><tr><td>$name</td></tr></table>";
+												}
+												break;
 											case "sendImage2":
 												$_SESSION['sendBackImage2'] = $base64image;
-												if($ext == 'pdf' || $ext == 'PDF'){echo "<h1>PDF</h1> . $name";}else{ 
-												echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview'></td></tr><tr><td>$name</td></tr></table>";}
-											break;
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "<h1>PDF</h1> . $name";
+												} else {
+													echo "<table><tr><td><img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview'></td></tr><tr><td>$name</td></tr></table>";
+												}
+												break;
 											case "sendImage3":
 												$_SESSION['sendBackImage3'] = $base64image;
-												if($ext == 'pdf' || $ext == 'PDF'){echo "<h1>PDF</h1> . $name";}else{ 
-												echo "<table><tr><td><img src='uploads/".$actual_image_name."'  class='preview'></td></tr><tr><td>$name</td></tr></table>";}
-											break;
-											
+												if ($ext == 'pdf' || $ext == 'PDF') {
+													echo "<h1>PDF</h1> . $name";
+												} else {
+													echo "<table><tr><td><img src='uploads/" . htmlspecialchars($actual_image_name, ENT_QUOTES, 'UTF-8') . "' class='preview'></td></tr><tr><td>$name</td></tr></table>";
+												}
+												break;
+									
 											case "delImageB2W":
 												$_SESSION['sendBackImage3'] = "";
-												echo "<script>console.log( 'HELLO DELETE' );</script>";
-											break;
+												echo "<script>console.log('HELLO DELETE');</script>";
+												break;
 										}
-
-									}else{
-										$_SESSION['imageB2W'] = $base64image;
-										echo "<img src='uploads/".$actual_image_name."'  class='preview'>";
+									} else {
+										echo "Invalid request method.";
 									}
+									
 									//$_SESSION['imageB2W'] = $base64image;
 									/* //$dAmn = new Model; 
 									//$dAmn->uploadImage($base64image); */
