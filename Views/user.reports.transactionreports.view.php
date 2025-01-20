@@ -184,14 +184,29 @@
 								<?php } ?>
 						</tbody>
 					</table>
-					<div style="margin-top:-45px";></div>
-					<input type="hidden" name="Method" value="TransactionReports" />
-					<input type="hidden" name="type" value="<?php echo $_REQUEST['type'];?>" />
-					<input type="hidden" name="TransRdatefrom" value="<?php echo $_REQUEST['TransRdatefrom'];?>" />
-					<input type="hidden" name="TransRdateto" value="<?php echo $_REQUEST['TransRdateto'];?>" />
-					<input type="hidden" name="selecttype" value="<?php echo $_REQUEST['selecttype'];?>" />
-					<input type="hidden" name="typeValue" value="<?php echo $_REQUEST['typeValue'];?>" />
-					<input type="hidden" name="pagenum" value="<?php echo $_REQUEST['pagenum'];?>" />
+					<?php
+					$valid_types = ['TransactionReports', 'OtherValidType']; 
+					$valid_selecttypes = ['Option1', 'Option2', 'Option3'];  
+
+				    //jayr
+					$method = in_array($_REQUEST['Method'], $valid_types) ? htmlspecialchars($_REQUEST['Method'], ENT_QUOTES, 'UTF-8') : '';
+					$type = htmlspecialchars($_REQUEST['type'], ENT_QUOTES, 'UTF-8');
+					$TransRdatefrom = htmlspecialchars($_REQUEST['TransRdatefrom'], ENT_QUOTES, 'UTF-8');
+					$TransRdateto = htmlspecialchars($_REQUEST['TransRdateto'], ENT_QUOTES, 'UTF-8');
+					$selecttype = in_array($_REQUEST['selecttype'], $valid_selecttypes) ? htmlspecialchars($_REQUEST['selecttype'], ENT_QUOTES, 'UTF-8') : '';
+					$typeValue = htmlspecialchars($_REQUEST['typeValue'], ENT_QUOTES, 'UTF-8');
+					$pagenum = filter_var($_REQUEST['pagenum'], FILTER_VALIDATE_INT) ? $_REQUEST['pagenum'] : '';
+					?>
+					<div style="margin-top:-45px;">
+					</div>
+					<input type="hidden" name="Method" value="<?php echo $method; ?>" />
+					<input type="hidden" name="type" value="<?php echo $type; ?>" />
+					<input type="hidden" name="TransRdatefrom" value="<?php echo $TransRdatefrom; ?>" />
+					<input type="hidden" name="TransRdateto" value="<?php echo $TransRdateto; ?>" />
+					<input type="hidden" name="selecttype" value="<?php echo $selecttype; ?>" />
+					<input type="hidden" name="typeValue" value="<?php echo $typeValue; ?>" />
+					<input type="hidden" name="pagenum" value="<?php echo $pagenum; ?>" />
+
 					
 					First <input type="submit" name="pagenum" value="1" class="ui-state-default ui-corner-all ui-button" <?php if(1 == $_REQUEST['pagenum']){ echo "disabled=true"; }?>><<
 										
