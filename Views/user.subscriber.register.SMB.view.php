@@ -48,6 +48,7 @@ unset($_SESSION['size3']);
 		</div>
 		<form id="registration_form" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.register.SMB.php" method="post">
 			<input type="hidden" name="Method" value="RegisterSMB" />
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<table border="0" cellspacing="5" id="tblRegister" class="tablet">
 				<tr>
 					<td colspan="6"><h3><?php echo _("Company Information"); ?></h3></td>
@@ -2508,15 +2509,7 @@ function changeDiscountRate(){
 			$(document).ready(function(){
 				$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h1><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "150" /> Just a moment...</h1>' });
 				setTimeout(function(){
-					$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-						type:"POST",
-						dataType: "text",
-						complete:function(res,status){
-							window.parent.pagetoken = res.responseText;
-							setTimeout($.unblockUI, 1000);
-						}
-					});
-
+					setTimeout($.unblockUI, 1000);
 				}, 3000);
 				$('#dialogUploadMpos').dialog({
 					autoOpen: false,

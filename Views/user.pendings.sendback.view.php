@@ -550,6 +550,7 @@ td {
 											<td>
 												<form id="imageform_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Image1" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimg" id="photoimg_sb" />
 
 												</form>
@@ -557,6 +558,7 @@ td {
 											<td>
 												<form id="imageformnew1_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew1" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew1" id="photoimgnew1_sb" />
 					 
 												</form>
@@ -565,6 +567,7 @@ td {
 											<td>
 												<form id="imageformnew2_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew2" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew2" id="photoimgnew2_sb" />
 					 
 												</form>
@@ -573,6 +576,7 @@ td {
 											<td>
 												<form id="imageformnew3_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew3" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew3" id="photoimgnew3_sb" />
 					 
 												</form>
@@ -580,6 +584,7 @@ td {
 											<td>
 												<form id="imageformnew4_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew4" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew4" id="photoimgnew4_sb" />
 					 
 												</form>
@@ -587,6 +592,7 @@ td {
 											<td>
 												<form id="imageformnew5_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew5" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew5" id="photoimgnew5_sb" />
 					 
 												</form>
@@ -594,6 +600,7 @@ td {
 											<td>
 												<form id="imageformnew6_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew6" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew6" id="photoimgnew6_sb" />
 					 
 												</form>
@@ -601,6 +608,7 @@ td {
 											<td>
 												<form id="imageformnew7_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew7" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew7" id="photoimgnew7_sb" />
 					 
 												</form>
@@ -608,6 +616,7 @@ td {
 											<td>
 												<form id="imageformnew8_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew8" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew8" id="photoimgnew8_sb" />
 					 
 												</form>
@@ -615,6 +624,7 @@ td {
 											<td>
 												<form id="imageformnew9_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew9" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew9" id="photoimgnew9_sb" />
 					 
 												</form>
@@ -622,6 +632,7 @@ td {
 											<td>
 												<form id="imageformnew10_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="Imagenew10" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="photoimgnew10" id="photoimgnew10_sb" />
 					 
 												</form>
@@ -665,51 +676,61 @@ td {
 							
 										<form id="repimageform1_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage1" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg1" id="repphotoimg1_sb" />
 
 												</form>
 												<form id="repimageform2_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage2" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg2" id="repphotoimg2_sb" />
 
 												</form>
 												<form id="repimageform3_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage1" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg3" id="repphotoimg3_sb" />
 
 												</form>
 												<form id="repimageform4_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage4" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg4" id="repphotoimg4_sb" />
 
 												</form>
 												<form id="repimageform5_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage5" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg5" id="repphotoimg5_sb" />
 
 												</form>
 												<form id="repimageform6_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage6" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg6" id="repphotoimg6_sb" />
 
 												</form>
 												<form id="repimageform7_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage7" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg7" id="repphotoimg7_sb" />
 
 												</form>
 												<form id="repimageform8_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage8" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg8" id="repphotoimg8_sb" />
 
 												</form>
 												<form id="repimageform9_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage9" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg9" id="repphotoimg9_sb" />
 
 												</form>
 												<form id="repimageform10_sb" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 													<input type="hidden" name="Method" id="Method" value="repImage10" />
+													<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 													<input type="file" name="repphotoimg10" id="repphotoimg10_sb" />
 
 												</form>
@@ -2615,13 +2636,7 @@ $("#btnApproveSMBSubscriber_sb").click(function(){
 				} 
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}else{
@@ -2645,13 +2660,7 @@ $("#btnApproveSMBSubscriber_sb").click(function(){
 				} 
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}
@@ -2691,13 +2700,7 @@ $("#btnDeclineSMBSubscriber_sb").click(function(){
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}else{
@@ -2718,13 +2721,7 @@ $("#btnDeclineSMBSubscriber_sb").click(function(){
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}
@@ -2810,13 +2807,7 @@ $("#btnSendbackToBank").click(function(){
 			}
 			$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}
 	});
 
@@ -2849,13 +2840,7 @@ $("#btnSendBackSMBSubscriber_sb").click(function(){
 			}
 			$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}
 	});
 
@@ -2879,13 +2864,7 @@ $("#btnSendBackSMBSubscriberApp_sb").click(function(){
 			}
 			$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}
 	});
 
@@ -2949,13 +2928,7 @@ $("#btnApproveSubscriber_sb").click(function(){
 				} 
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}else{
@@ -2978,13 +2951,7 @@ $("#btnApproveSubscriber_sb").click(function(){
 				} 
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}
@@ -3023,13 +2990,7 @@ $("#btnDeclineSubscriber_sb").click(function(){
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}else{
@@ -3050,13 +3011,7 @@ $("#btnDeclineSubscriber_sb").click(function(){
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}
 		});
 	}
@@ -3086,13 +3041,7 @@ $("#btnSendBackSubscriber_sb").click(function(){
 			}
 			$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}
 	});
 

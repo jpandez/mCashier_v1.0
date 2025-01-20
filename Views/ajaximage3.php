@@ -13,8 +13,8 @@ ini_set('max_execution_time', 300);*/
 $totalsize = 0;
 
 //$path = "uploads/";
-$path = "/var/www/html/Projects/uploads/"; 
-//$path = "C:/xampp/htdocs/Projects/uploads/";
+// $path = "/var/www/html/Projects/uploads/"; 
+$path = "C:/xampp/htdocs/Projects/uploads/";
 	$valid_formats = array("jpg", "pdf", "JPG", "PDF");
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 		$photoimg = "photoimg";

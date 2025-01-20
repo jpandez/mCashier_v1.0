@@ -7,6 +7,7 @@
 <div id="usermanagement_applicationRolesArea" class="usermanagement_applicationRoles" align="center" style="display:none;">
    <form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.management.rolesconfiguration.php" method="post">
 	    <input type="hidden" name="Method" value="Roles" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
         <table class="tablet">
             <tr>
                 <td><select id="userlevelroles" name="userlevelroles" style="width:200px;">
@@ -89,12 +90,12 @@
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/registerupdate.js"></script>
 
 <script>
-$.ajaxSetup({
-	data: {
-		t: window.parent.pagetoken
-	},
-	dataType: "jsonp"
-});
+// $.ajaxSetup({
+// 	data: {
+// 		t: window.parent.pagetoken
+// 	},
+// 	dataType: "jsonp"
+// });
 
 	loadUserRoles();
 		
@@ -224,14 +225,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 });
 	

@@ -20,6 +20,7 @@
 	<div id="reports_summary" style="width:40%">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.subscribers.php" method="post">
 		    <input type="hidden" name="Method" value="SubscriberList" />				
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<table class="tablet" width="85%">
 			<tr>
 			   <td class="td3"><?php echo _("Lookup Table"); ?>:</td>
@@ -53,6 +54,7 @@
 				</div>
 				<div style="margin-top:15px";></div>
 				<form id="searchPagination" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.subscribers.php" method="post">
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 					<select id="lookUp" name="perpage" style="width:20%;" onchange="this.form.submit()">
 						<option value="15" <?php echo ($_REQUEST['perpage']==15)?'selected':'';?>>15 Per Page</option>
 						<option value="25" <?php echo ($_REQUEST['perpage']==25)?'selected':'';?>>25 Per Page</option>

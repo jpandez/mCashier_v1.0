@@ -22,12 +22,12 @@
 					}else{
 						$this->setContent('main','user.management.view.php');
 						$this->setData("responseMessage",_("Please Change your PASSWORD."));
-						header("location: user.management.php?t=" . $_SESSION['pagetoken']);
+						header("location: user.management.php");
 					}					
 				}
 				else{
 					$this->setContent('main','user.subscriber.view.php');
-					header("location: user.subscriber.php?t=" . $_SESSION['pagetoken']);
+					header("location: user.subscriber.php");
 				}
 			}else{
 				if(isset($_REQUEST["Method"]) ){
@@ -137,21 +137,21 @@
 										$this->setContent('main','user.management.view.php');
 										$this->setData("responseMessage",_("Password Expired. Please Change your PASSWORD."));
 										$retMessage = $retMessage . " : Change password.";
-										header("location: user.management.php?t=" . $_SESSION['pagetoken']);
+										header("location: user.management.php");
 									}
 									else if ($_SESSION["ISFIRSTLOGON"] == 1){
 										
 										$this->setContent('main','user.management.view.php');
 										$this->setData("responseMessage",_("Please Change your PASSWORD."));
 										$retMessage = $retMessage . " : Change password.";
-										header("location: user.management.php?t=" . $_SESSION['pagetoken']);
+										header("location: user.management.php");
 									}
 									else{
 										if($ret['Value']['USEREXPIRYDAYS'] > 0){									
 											$this->setData("responseMessage",str_replace("xx",$ret['Value']['USEREXPIRYDAYS'],_("Your password will expire in xx day(s)")));
 										}
 										$this->setContent('main','user.subscriber.view.php');
-										header("location: user.subscriber.php?t=" . $_SESSION['pagetoken']);
+										header("location: user.subscriber.php");
 									}
 																								
 									/*$svc->addAuditTrail($_SESSION["currentUserID"], $_SESSION["currentUser"], "USERLOGIN", $_SERVER['REMOTE_ADDR'] );*/

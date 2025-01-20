@@ -7,6 +7,7 @@
 <div align="right" id="btnEditPImageForm" style="display:none;float:right;">Image Upload
 	<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 		<input type="file" name="photoimg" id="photoimg" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 	</form>
 	<div id='preview'>
 	</div>
@@ -438,13 +439,7 @@ if (doPrevent) {
 						$('.ploading').fadeToggle(300,'linear',function(){
 							$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 							
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 						});
 					}, error: function(e){
 						setTimeout($.unblockUI, 1000);
@@ -545,13 +540,7 @@ if (doPrevent) {
 						$('.ploading').fadeToggle(300,'linear',function(){
 							$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 						});
 					}, error: function(e){
 						setTimeout($.unblockUI, 1000);

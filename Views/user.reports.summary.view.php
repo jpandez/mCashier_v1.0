@@ -6,7 +6,8 @@
 <div id="reports_summaryBoxArea" class="reports_summaryBox"  style="display:none;">
 	<div id="reports_summary" >	
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.summary.php" method="post">
-			<input type="hidden" name="Method" value="TransactionSummary" />							
+			<input type="hidden" name="Method" value="TransactionSummary" />
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />							
 			<table class="tblRegisterUser" width="85%">
 			   <td class="td3"><?php echo _("From"); ?><span style="color:red">*</span>:</td>
 			   <td><input type="text" id="Sumdatefrom" name="Sumdatefrom" style="width:50%;" value="<?php echo sanitize_string($_REQUEST['Sumdatefrom']);?>" readonly="true"/></td>

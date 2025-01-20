@@ -1,0 +1,6 @@
+[1737:01] 'activate account Subscriber Services'
+[1737:04] 'activate account Subscriber Services Service call'
+[1737:04] array (
+  'id' => '4291',
+  'userID' => 'ADMIN_TEST6',
+)

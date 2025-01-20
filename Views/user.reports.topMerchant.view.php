@@ -8,6 +8,7 @@
 	<div id="reports_summary" style="float:left;">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.topMerchant.php" method="post">
 			<input type="hidden" name="Method" value="topmerchant" />
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<table class="tblRegisterUser" width="85%">
 			 <tr>
 				<td class="td3"><?php echo _("Filter"); ?><span style="color:red">*</span>:</td>
@@ -248,14 +249,7 @@
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 });
 	

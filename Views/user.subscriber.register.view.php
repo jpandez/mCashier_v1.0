@@ -20,6 +20,7 @@
 	</div>
 	<form id="registration_form" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.register.php" method="post">
 		<input type="hidden" name="Method" value="Register" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 		<table border="0" cellspacing="5" id="tblRegister" class="tablet">
 			<tr>
 				<td colspan="6"><h3><?php echo _("Company Information"); ?></h3></td>
@@ -800,6 +801,7 @@
 				<td>
 					<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 						<input type="hidden" name="Method" id="Method" value="Image1" />
+						<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 						<input type="file" name="photoimg" id="photoimg" />
 						<!--<input type="hidden" name="filename" id="filename" value="NewName" />-->
 					</form>
@@ -1520,15 +1522,7 @@ function validateMSISDNc(n){
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				dataType: "text",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 	$('#dialogUploadMpos').dialog({
 		autoOpen: false,

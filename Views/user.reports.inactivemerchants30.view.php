@@ -28,6 +28,7 @@
 					<div class="demo_jui">
 					<div style="margin-top:15px";></div>
 					<form id="searchPagination" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.inactivemerchants30.php" method="post">
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 					<select name="selecttype" style="width:11em;margin-right:10px" onchange="this.form.submit()">
 						<option value="ETISALAT" <?php if($_POST['selecttype']=='ETISALAT'){ echo 'selected="selected"';} ?>>Etisalat</option>                   
                       	<option value="NBAD" <?php if($_POST['selecttype']=='NBAD'){ echo 'selected="selected"';} ?>>NBAD</option>
@@ -194,14 +195,7 @@
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 });
 	

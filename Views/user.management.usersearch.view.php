@@ -38,6 +38,7 @@
 	<div id="radiosearch">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.management.usersearch.php" method="post">
 			<input type="hidden" name="Method" value="SearchList" />
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<table class="searchradio">
 				<td width="100px"><input type="radio" name="option" value="0" id="username" checked /><label for="username"><?php echo _("USER NAME"); ?></label></td>
 				<!--<td><input type="radio" name="option" value="1" id="userid"/><label for="userid">USER ID</label></td>!-->						
@@ -87,7 +88,14 @@
 							<td><?php echo $t->LASTNAME; ?></td>
 							<td><?php echo $t->USERSLEVEL; ?></td>										
 							<td><?php echo $t->STATUS; ?></td>
-							<td><a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.management.usersearch.php?Method=Search&txtSearch=<?php echo $t->USERNAME;?>">View User: <?php echo $t->USERNAME; ?></a></td>
+							<td>
+							<form id="userSearchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.management.usersearch.php" method="POST" style="display:none;">
+								<input type="hidden" name="Method" value="Search">
+								<input type="hidden" name="txtSearch" value="<?php echo $t->USERNAME; ?>" id="txtSearch">
+								<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken']); ?>">
+							</form>
+							<a href="#" class="view-user">View User: <?php echo $t->USERNAME; ?></a>
+							</td>
 						</tr>
 					<?php endforeach; ?>
 				</tbody>
@@ -222,6 +230,13 @@
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/registerupdate.js"></script>
 
 <script>
+
+	$(document).ready(function() {
+		$('.view-user').on('click', function() {
+			$('#userSearchForm').submit();
+		});
+	});
+
 	loadUserRoles();
 	<?php echo ($this->getRolesConfig('EDIT_USERS_LEVEL')) ? '' : 'var _0x5acc=["\x72\x65\x6D\x6F\x76\x65","\x23\x75\x73\x65\x72\x6D\x61\x6E\x61\x67\x65\x6D\x65\x6E\x74\x6C\x65\x76\x65\x6C\x65\x64\x69\x74\x5F\x73\x61\x76\x65\x2C\x20\x23\x75\x73\x65\x72\x6D\x61\x6E\x61\x67\x65\x6D\x65\x6E\x74\x5F\x75\x73\x65\x72\x6C\x65\x76\x65\x6C\x42\x6F\x78\x63\x6F\x6E\x74\x65\x6E\x74\x31"];$(_0x5acc[1])[_0x5acc[0]]();'; ?>
 	<?php echo ($this->getRolesConfig('ADD_USERS_LEVEL')) ? '' : 'var _0xdb24=["\x72\x65\x6D\x6F\x76\x65","\x23\x62\x74\x6E\x41\x64\x64\x55\x73\x65\x72\x4C\x65\x76\x65\x6C\x2C\x20\x23\x75\x73\x65\x72\x6D\x61\x6E\x61\x67\x65\x6D\x65\x6E\x74\x5F\x75\x73\x65\x72\x6C\x65\x76\x65\x6C\x42\x6F\x78\x63\x6F\x6E\x74\x65\x6E\x74\x32"];$(_0xdb24[1])[_0xdb24[0]]();'; ?>
@@ -348,14 +363,7 @@ $(document).ready(function(){
 					complete:function(res,status){
 						$('.rloading').fadeToggle(300,'linear',function(){
 							$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
-							
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 						});
 					}, error: function(e){
 						setTimeout($.unblockUI, 1000);
@@ -420,13 +428,7 @@ $(document).ready(function(){
 						
 						});
 						
-						$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-							type:"POST",
-							complete:function(res,status){
-								window.parent.pagetoken = res.responseText;
-								setTimeout($.unblockUI, 1000);
-							}
-						});
+						setTimeout($.unblockUI, 1000);
 						
 					}, error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -465,13 +467,7 @@ $(document).ready(function(){
 							}
 						});
 						
-						$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-							type:"POST",
-							complete:function(res,status){
-								window.parent.pagetoken = res.responseText;
-								setTimeout($.unblockUI, 1000);
-							}
-						});
+						setTimeout($.unblockUI, 1000);
 						//alert(res.responseText);
 					}, error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -502,13 +498,7 @@ $(document).ready(function(){
 						$('.loading').fadeToggle(300,'linear',function(){
 								$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 								
-								$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-									type:"POST",
-									complete:function(res,status){
-										window.parent.pagetoken = res.responseText;
-										setTimeout($.unblockUI, 1000);
-									}
-								});
+								setTimeout($.unblockUI, 1000);
 						});
 					}, error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -544,13 +534,7 @@ $(document).ready(function(){
 					$('.loading').fadeToggle(300,'linear',function(){
 							$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 							
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 					});
 				}, error: function(e){
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -571,14 +555,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 });
 

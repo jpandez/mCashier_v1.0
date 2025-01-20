@@ -153,13 +153,7 @@ $(document).ready(function() {
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close");} } });
 			
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-});
+		setTimeout($.unblockUI, 1000);
 	}, error: function(XMLHttpRequest, textStatus, errorThrown) {console.log('ERROR');}
 	});
 	
@@ -191,13 +185,7 @@ function activateAccount(id, type, checkrow){
 					$("#processorPending_sh" + id).css({display:'none'});
 			} } });
 			
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}, error: function(e){
 			setTimeout($.unblockUI, 1000);
 			$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
