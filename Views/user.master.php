@@ -59,7 +59,6 @@
 		@import "<?php echo $GLOBALS['VIEW_PATH'];?>media/css/demo_table.css";
 		@import "<?php echo $GLOBALS['VIEW_PATH'];?>media/css/demo_table_jui.css";
 	</style>
-	<script type="text/javascript" language="javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>media/js/jquery.dataTables.js"></script>
 	<script type="text/javascript" charset="utf-8" nonce="<?php echo $_SESSION['nonce'];?>">
 		$(document).ready(function() {
 			$('#transaction').dataTable();
