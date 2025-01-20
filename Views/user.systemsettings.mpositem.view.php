@@ -38,6 +38,7 @@
 	<div id="radiosearch">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.systemsettings.mpositem.php" method="post">
 			<input type="hidden" name="Method" value="SearchList" />
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<input type="submit" name="btnUserSearch" value="<?php echo _("View all mPOS items"); ?>" class="ui-state-default ui-corner-all ui-button" id="btnUserSearch">
 			<input type="button" name="btnUserSearch" value="<?php echo _("Add mPOS items"); ?>" class="ui-state-default ui-corner-all ui-button" id="btnAddMpos">
 				<div class="sloading"></div></td>

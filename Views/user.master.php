@@ -211,13 +211,7 @@
 	<?php endif;?>			
 </script>
 <!-- LOADING -->
-<script nonce="<?php echo $_SESSION['nonce'];?>">
-	// $(window).load(function(){
-	//     $("#loading").fadeOut(function(){
-	//         $(this).remove();
-	//         $('body').removeAttr('style');
-	//     });
-	// });    
+<script nonce="<?php echo $_SESSION['nonce'];?>"> 
 	$(document).ready(function() {
 		$("#loading").fadeOut(function() {
 			$(this).remove();
@@ -226,85 +220,15 @@
 	});
 
 </script>
-<!-- END LOADING -->
-<!-- Don't touch this! -->
-<!-- <script class="include" type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/jquery.jqplot.min.js"></script> -->
-<!--<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/shCore.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/shBrushJScript.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/shBrushXml.min.js"></script>-->
-<!-- End Don't touch this! -->
-<!-- Additional plugins go here -->
-<!-- <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.barRenderer.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.pointLabels.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.logAxisRenderer.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.enhancedLegendRenderer.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.highlighter.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.cursor.min.js"></script> 
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.pointLabels.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>  
-<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>jqplot/plugins/jqplot.pieRenderer.min.js"></script> -->
-<!-- End additional plugins -->
 <script type="text/javascript" nonce="<?php echo $_SESSION['nonce'];?>">
  $("#tabs ul li a").click(function(){
   var url = $(this).attr('url');
-  url = url + "?t=" + window.pagetoken;
   var div = $(this).attr('href');
   $($(this).attr('href')).load(url);
-  /* if( $(div).is(':empty') ){
-	$($(this).attr('href')).load(url);
-  } */
   
  });
  
-$("#navbarNav ul li a").click(function(){
-	var url_href = $(this).attr('href');
-	if(url_href !== undefined){
-		if(url_href.indexOf('?') === -1){
-			url_href = url_href + "?t=" + window.pagetoken;
-		}else{
-			url_href = url_href + "&t=" + window.pagetoken;
-		}
-		
-		$(this).attr('href',url_href);
-	}
-	
-	//alert(url_href);
-	
-});
-
-<?php //$_SESSION['pagetoken'] = uniqid(mt_rand(), true); ?>
 window.pagetoken = "<?php echo $_SESSION['pagetoken']; ?>";
-
-/* var tokenPath = "<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php";
-setInterval(function(){
-	$.ajax({url:tokenPath,
-			type:"POST",
-			complete:function(res,status){
-				window.pagetoken = res.responseText;
-			}
-	});
-
-}, 30000); */
-
-
-// $(document).ready(function() { 
-//     $.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "120" /> Just a moment...</h3>' });
-// 	setTimeout($.unblockUI, 1000);
-// 	}); 
-
-/*setTimeout(function(){
-	$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-			type:"POST",
-			complete:function(res,status){
-				window.parent.pagetoken = res.responseText;
-				window.pagetoken = res.responseText;
-				setTimeout($.unblockUI, 1000);
-			}
-	});
-}, 3000);*/
 </script>
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/jquery.blockUI.js" ></script>
 </body>

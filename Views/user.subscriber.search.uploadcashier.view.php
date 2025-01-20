@@ -94,6 +94,7 @@ td {
 <form method="post" enctype="multipart/form-data" action="<?php echo str_replace(' ','%20',$GLOBALS['CONTROLLER_PATH']);?>ViewControllers/user.subscriber.search.uploadcashier.php">
 <center>
 	<table>
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 		<tr><td colspan="2" align="center"><h3>Upload File</h3></td></tr>
 		<tr><td colspan="2"><div id="uploadForm">		
 			<input type="file" id="inpCSV" name="inpCSV" accept=".csv"><span id="val"></span>

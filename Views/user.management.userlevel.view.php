@@ -242,14 +242,7 @@ $(document).ready(function() {
 				complete:function(res,status){					
 					$('.rsloading').fadeToggle(300,'linear',function(){
 							$("<p>"+res.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
-							
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 					});
 				}, error: function(e){
 					setTimeout($.unblockUI, 1000);
@@ -286,13 +279,7 @@ $(document).ready(function() {
 							});
 							$('#tblAddUserLevel tr td input[type=text]').attr('value','');
 							//alert($res);
-							$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-								type:"POST",
-								complete:function(res,status){
-									window.parent.pagetoken = res.responseText;
-									setTimeout($.unblockUI, 1000);
-								}
-							});
+							setTimeout($.unblockUI, 1000);
 						}, error: function(e){
 							setTimeout($.unblockUI, 1000);
 			//$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });

@@ -8,7 +8,7 @@
 	<div id="reports_summary">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.transactionmpos.php" method="post">
 			<input type="hidden" name="Method" value="TransactionMpos" />
-			
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<input type="hidden" name="perpage" value="15" />
 			<input type="hidden" name="pagenum" value="1" />
 			<table class="tblRegisterUser" width="85%">
@@ -43,6 +43,7 @@
 					<div class="demo_jui">
 					<div style="margin-top:15px";></div>
 					<form id="searchPagination" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.transactionmpos.php" method="post">
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 					<select id="lookUp" name="perpage" style="width:20%;" onchange="this.form.submit()">
 						<option value="15" <?php echo ($_REQUEST['perpage']==15)?'selected':'';?>>15 Per Page</option>
 						<option value="25" <?php echo ($_REQUEST['perpage']==25)?'selected':'';?>>25 Per Page</option>

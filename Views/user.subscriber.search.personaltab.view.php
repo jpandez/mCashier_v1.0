@@ -17,6 +17,7 @@
 		<div align="right" id="btnEditPImageForm" style="display:none;">Image Upload
 				<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 					 <input type="file" name="photoimg" id="photoimg" />
+					 <input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 				</form>
 				<div id='preview'>
 				</div>

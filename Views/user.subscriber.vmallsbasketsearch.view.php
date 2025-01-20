@@ -56,6 +56,7 @@
 	<div id="searchArea" class="searchBox" align="left"  style="display:none;">
 	<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.vmallsbasketsearch.php" method="post">
 		<input type="hidden" name="Method" value="SearchTransList" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 		<table cellspacing="5" class="tablet" border="0">
 		   <td style="width:150px">
 				<select id="type" style="width:100%;font-size:1.2em;" name="type" onchange="typeOnChange()">
@@ -436,13 +437,7 @@ $(document).ready(function(){
 	<?php if(isset($searchListResult->ResponseCode)){ ?>
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 	<?php } ?>
 });

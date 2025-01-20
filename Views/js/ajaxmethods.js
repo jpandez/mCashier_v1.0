@@ -6,34 +6,34 @@
 
 $(function(){
 	//Start Token
-	$(".ahref").click(function(){
-		$(".ahref").attr("href",$(this).attr("href") + "&t=" + window.parent.pagetoken);
-	});
+	// $(".ahref").click(function(){
+	// 	$(".ahref").attr("href",$(this).attr("href") + "&t=" + window.parent.pagetoken);
+	// });
 	
-		$.ajaxSetup({
-			data: {
-				t: window.parent.pagetoken
-			},
-			dataType: "jsonp"
-		});
+	// 	$.ajaxSetup({
+	// 		data: {
+	// 			t: window.parent.pagetoken
+	// 		},
+	// 		dataType: "jsonp"
+	// 	});
 		
-	setInterval(function(){
-		$.ajaxSetup({
-			data: {
-				t: window.parent.pagetoken
-			},
-			dataType: "jsonp"
-		});
+	// setInterval(function(){
+	// 	$.ajaxSetup({
+	// 		data: {
+	// 			t: window.parent.pagetoken
+	// 		},
+	// 		dataType: "jsonp"
+	// 	});
 
-	}, 1000);
+	// }, 1000);
 	
-	$( "form" ).submit(function( event ) {
-		//alert(window.pho);
-		if(window.pho != "1"){
-			var action = $("form").attr("action")+"?t=" + window.parent.pagetoken;
-			$("form").attr("action",action);
-		}
-	});
+	// $( "form" ).submit(function( event ) {
+	// 	//alert(window.pho);
+	// 	if(window.pho != "1"){
+	// 		var action = $("form").attr("action")+"?t=" + window.parent.pagetoken;
+	// 		$("form").attr("action",action);
+	// 	}
+	// });
 	//End Token
 	
 	$("#nickname").click(function(){

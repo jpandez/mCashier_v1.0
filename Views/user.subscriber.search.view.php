@@ -66,6 +66,7 @@
 <div id="searchArea" class="searchBox d-none" align="left">
 	<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.php" method="post">
 		<input type="hidden" name="Method" value="SearchList" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 		<!--<input type="hidden" name="Method" value="Search" />-->
 		<table class="searchradio" border="1">
 			<td><input type="radio" name="rdoSearchOption" checked value="1" id="mobile_number" /><label for="mobile_number"><?php echo _("MSISDN"); ?></label></td>
@@ -112,17 +113,29 @@
 				<td><?php echo $t->NICK; ?></td>
 				<td><?php echo $t->TYPE; ?></td>							
 				<td>
-					<?php if($t->REFERENCEACCOUNT == '0' && $t->MSISDN == $t->ID){ ?>
-					<!-- <a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=searchListSubs&txtSearch=<?php echo $t->ID;?>">View Sublist: <?php echo $t->MSISDN; ?></a> -->
-					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->ID; ?></a>
+				<form id="viewAccountFormSMB" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.SMB.php" method="POST" class="_d-none">
+					<input type="hidden" name="Method" value="Search">
+					<input type="hidden" name="rdoSearchOption" value="1">
+					<input type="hidden" name="txtSearch" value="<?php echo $t->MSISDN; ?>">
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
+				</form>
+				<form id="viewAccountForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.php" method="POST" class="_d-none">
+					<input type="hidden" name="Method" value="Search">
+					<input type="hidden" name="rdoSearchOption" value="1">
+					<input type="hidden" name="txtSearch" value="<?php echo $t->MSISDN; ?>">
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
+				</form>
+
+				<?php if($t->REFERENCEACCOUNT == '0' && $t->MSISDN == $t->ID){ ?>
+					<a href="#" class="viewAccountLinkSMB">View Account: <?php echo $t->ID; ?></a>
 					<?php } else if( ($t->REFERENCEACCOUNT != '0' && $t->MSISDN == $t->ID) ){ ?>
-					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->ID; ?></a>
+					<a href="#" class="viewAccountLinkSMB">View Account: <?php echo $t->ID; ?></a>
 					<?php } else if($t->REFERENCEACCOUNT == '0' && $t->MSISDN != $t->ID){ ?>
-					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->ID; ?></a>
+					<a href="#" class="viewAccountLink">View Account: <?php echo $t->ID; ?></a>
 					<?php } else if($t->REFERENCEACCOUNT != '0' && $t->MSISDN != $t->ID){ ?>
-					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->ID; ?></a>
+					<a href="#" class="viewAccountLink">View Account: <?php echo $t->ID; ?></a>
 					<?php }else{ ?>
-					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->ID; ?></a>
+					<a href="#" class="viewAccountLinkSMB">View Account: <?php echo $t->ID; ?></a>
 					<?php } ?>
 				</td>
 			</tr>
@@ -159,21 +172,31 @@ else {
 			<td><?php echo $t->TYPE; ?></td>							
 			<td>
 
-				<!-- <a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a></td> -->
-
-
-				<?php if($t->REFERENCEACCOUNT == '0' && $t->MSISDN == $t->ID){ ?>
-				<!-- <a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=searchListSubs&txtSearch=<?php echo $t->ID;?>">View Sublist: <?php echo $t->MSISDN; ?></a> -->
-				<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a>
-				<?php } else if( ($t->REFERENCEACCOUNT != '0' && $t->MSISDN == $t->ID) ){ ?>
-				<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a>
-				<?php } else if($t->REFERENCEACCOUNT == '0' && $t->MSISDN != $t->ID){ ?>
-				<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a>
-				<?php } else if($t->REFERENCEACCOUNT != '0' && $t->MSISDN != $t->ID){ ?>
-				<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a>
-				<?php }else{ ?>
-				<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>">View Account: <?php echo $t->MSISDN; ?></a>
-				<?php } ?>
+			<form id="viewAccountFormMasterSubsSMB" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.SMB.php" method="POST" class="_d-none">
+				<input type="hidden" name="Method" value="Search">
+				<input type="hidden" name="rdoSearchOption" value="1">
+				<input type="hidden" name="txtSearch" value="<?php echo $t->MSISDN; ?>">
+				<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
+			</form>
+			<form id="viewAccountFormMasterSubs" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>ViewControllers/user.subscriber.search.php" method="POST" class="_d-none">
+				<input type="hidden" name="Method" value="Search">
+				<input type="hidden" name="rdoSearchOption" value="1">
+				<input type="hidden" name="txtSearch" value="<?php echo $t->MSISDN; ?>">
+				<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
+			</form>
+			<?php if($t->REFERENCEACCOUNT == '0' && $t->MSISDN == $t->ID){ ?>
+					<a href="#" class="viewAccountLinkMasterSubsSMB">View Account: <?php echo $t->MSISDN; ?></a>
+					<?php } else if( ($t->REFERENCEACCOUNT != '0' && $t->MSISDN == $t->ID) ){ ?>
+					<a class="ahref" href="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.subscriber.search.SMB.php?Method=Search&rdoSearchOption=1&txtSearch=<?php echo $t->MSISDN;?>&t=<?php echo htmlspecialchars($_SESSION['pagetoken'])?>">View Account: <?php echo $t->MSISDN; ?></a>
+					<a href="#" class="viewAccountLinkMasterSubsSMB">View Account: <?php echo $t->MSISDN; ?></a>
+					<?php } else if($t->REFERENCEACCOUNT == '0' && $t->MSISDN != $t->ID){ ?>
+					<a href="#" class="viewAccountLinkMasterSubs">View Account: <?php echo $t->MSISDN; ?></a>
+					<?php } else if($t->REFERENCEACCOUNT != '0' && $t->MSISDN != $t->ID){ ?>
+					<a href="#" class="viewAccountLinkMasterSubs">View Account: <?php echo $t->MSISDN; ?></a>
+					<?php }else{ ?>
+					<a href="#" class="viewAccountLinkMasterSubsSMB">View Account: <?php echo $t->MSISDN; ?></a>
+					<?php } ?>
+			<td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
@@ -304,6 +327,22 @@ else {
 		var ht = $("#searchArea").css('height');
 		ht = ht.replace("px","");
 		$("#ifsearch",window.parent.document).css('height',parseInt(ht)+150);
+
+		$('.viewAccountLinkSMB').on('click', function() {
+            $('#viewAccountFormSMB').submit();
+        });
+
+		$('.viewAccountLink').on('click', function() {
+            $('#viewAccountForm').submit();
+        });
+
+		$('.viewAccountLinkMasterSubsSMB').on('click', function() {
+            $('#viewAccountFormMasterSubsSMB').submit();
+        });
+
+		$('.viewAccountLinkMasterSubs').on('click', function() {
+            $('#viewAccountFormMasterSubs').submit();
+        });
 	});
 
 // Prevent the backspace key from navigating back.
@@ -428,13 +467,7 @@ $(document).ready(function(){
 	<?php if(isset($searchListResult->ResponseCode)){ ?>
 		$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 		setTimeout(function(){
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
 		}, 3000);
 		<?php } ?>
 	});

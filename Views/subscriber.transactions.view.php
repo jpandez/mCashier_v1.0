@@ -61,6 +61,7 @@
     <div id="app_result"></div>
     <form>
     	<input type="hidden" name="is_mail" value="RequestSystemInfo" />
+		<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 		<div class="dLock" align="center">
 			<table style="text-align:left;" class="tablet">
 				<tr>
@@ -117,13 +118,8 @@
 				modal:true
 			});
 			
-			$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-			});
+			setTimeout($.unblockUI, 1000);
+
 		}
 		$("#btnDownload").click(function(){
 					 $('#dialogDownload').dialog('open');			 	

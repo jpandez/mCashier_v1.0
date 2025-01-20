@@ -12,7 +12,7 @@
 	<div id="reports_summary" style="float:left;">
 		<form id="searchForm" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.transactionsummaryreport.php" method="post">
 			<input type="hidden" name="Method" value="Transactions" />
-			
+			<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 			<input type="hidden" name="perpage" value="15" />
 			<input type="hidden" name="pagenum" value="1" />
 			<table class="tblRegisterUser" width="85%">
@@ -37,7 +37,7 @@
 					<div class="demo_jui">
 					<div style="margin-top:15px";></div>
 					<form id="searchPagination" action="<?php echo $GLOBALS['CONTROLLER_PATH']; ?>/ViewControllers/user.reports.transactionsummaryreport.php" method="post">
-					
+					<input type="hidden" name="t" value="<?php echo htmlspecialchars($_SESSION['pagetoken'])?>" />
 					<table style="width: 100%; table-layout: fixed;" cellpadding="0" cellspacing="0" border="0" class="display" width="100%" id="reports_transactionsummaryreport">
 						<thead>
 						<tr class="ui-widget-header">
@@ -141,14 +141,7 @@
 $(document).ready(function(){
 	$.blockUI({css: {border: 'none', padding: '10px'}, message: '<h3><img src="<?php echo $GLOBALS['VIEW_PATH'];?>images/ajax-loader.gif" height = "20" /> Just a moment...</h3>' });
 	setTimeout(function(){
-		$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-				type:"POST",
-				complete:function(res,status){
-					window.parent.pagetoken = res.responseText;
-					setTimeout($.unblockUI, 1000);
-				}
-		});
-
+		setTimeout($.unblockUI, 1000);
 	}, 3000);
 });
 	

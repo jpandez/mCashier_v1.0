@@ -745,13 +745,7 @@ $("#btnProcessorApproveSubscriber_pr").click(function(){
 			}else{
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 			}
-			// $.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-			// 	type:"POST",
-			// 	complete:function(res,status){
-			// 		window.parent.pagetoken = res.responseText;
-			// 		setTimeout($.unblockUI, 1000);
-			// 	}
-			// });
+			setTimeout($.unblockUI, 1000);
 		}, error: function(e){
 			setTimeout($.unblockUI, 1000);
 			$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -815,13 +809,7 @@ function registerCashiers(thismsisdn){
 				} 
 				$("<p>"+thismsisdn + ", " + CIDs + " " + json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
-				$.ajax({url:"<?php echo $GLOBALS['CONTROLLER_PATH'];?>BusinessControllers/token.php",
-					type:"POST",
-					complete:function(res,status){
-						window.parent.pagetoken = res.responseText;
-						setTimeout($.unblockUI, 1000);
-					}
-				});
+				setTimeout($.unblockUI, 1000);
 			}, error: function(e){
 				setTimeout($.unblockUI, 1000);
 			$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
