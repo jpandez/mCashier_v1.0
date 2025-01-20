@@ -313,7 +313,7 @@ class phpmailer
 		$len = strlen($path);
 		
 		// Set $separator to win32 style
-		if(!ereg($separator, $path))
+		if(!preg_match($separator, $path))
 			$separator = "\\";
 		
 		// Get the filename from the path

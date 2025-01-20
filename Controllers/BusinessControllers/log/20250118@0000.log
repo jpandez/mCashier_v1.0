@@ -8,3 +8,13 @@
     'hostname' => 'server.softpos-tlcfzc.com',
   ),
 )
+[0002:05] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
