@@ -1,0 +1,162 @@
+[1702:02] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
+[1702:51] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
+[1702:53] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
+[1705:08] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
+[1705:11] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)
+[1705:12] array (
+  'faultcode' => 'soapenv:Server.userException',
+  'faultstring' => 'java.lang.ArrayIndexOutOfBoundsException: 0',
+  'detail' => 
+  array (
+    'stackTrace' => 'java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.tlc.guiservice.MobileCommerceService.checkSession(MobileCommerceService.java:8290)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+	at org.jSoapServer.SoapHandler.handleBinary(SoapHandler.java:588)
+	at org.quickserver.net.server.impl.BlockingClientHandler.processRead(BlockingClientHandler.java:366)
+	at org.quickserver.net.server.impl.BlockingClientHandler.run(BlockingClientHandler.java:193)
+	at org.quickserver.util.pool.thread.ClientThread.executeClient(ClientThread.java:107)
+	at org.quickserver.util.pool.thread.ClientThread.run(ClientThread.java:136)
+',
+    'hostname' => 'server.softpos-tlcfzc.com',
+  ),
+)

@@ -177,7 +177,13 @@ $('#fileupload').fileUpload({
 <script src="https://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>bootstrap/bootstrap5.2.3/js/bootstrap.bundle.min.js"></script>
-<!-- blueimp Gallery script -->
+<!-- blueimp Gallery script  -->
+ 
+<!-- Added by Val DelaCruz / 01/20/2025 -->
+<script src="https://cdn.rawgit.com/blueimp/jQuery-File-Upload/master/js/vendor/jquery.ui.widget.js"></script>
+<script src="https://cdn.rawgit.com/blueimp/jQuery-File-Upload/master/js/jquery.fileupload.js"></script>
+<!-- ----------- -->
+
 <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/jquery.iframe-transport.js"></script>
