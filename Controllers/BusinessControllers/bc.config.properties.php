@@ -12,7 +12,7 @@ $GLOBALS["BASE_URL"] = "http://localhost/Projects/mCashier_v1.0/";
 //$GLOBALS["BASE_URL"] = "http://localhost//Projects/mCashier_v1.0/";
 //$_GUISERVICE["wsdl"] ="http://localhost:9080/GUI?wsdl";
 //$_GUISERVICE["wsdl"] ="http://192.168.56.1:9080/GUI?wsdl";
-$_GUISERVICE["wsdl"] ="http://69.48.191.13:9001/GUI?wsdl";
+$_GUISERVICE["wsdl"] ="http://localhost:9001/GUI?wsdl";
 $GLOBALS["GUISERVICE"] = $_GUISERVICE;
 
 
