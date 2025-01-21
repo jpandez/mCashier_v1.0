@@ -228,7 +228,14 @@ $path = "C:/xampp/htdocs/Projects/uploads/";
 							$actual_image_name = date("YmdHis")."_UPLOAD_BANK_".$txt.".".$ext;
 							//$actual_image_name = $_REQUEST['filename'].".".$ext;
 							$tmp = $_FILES[$photoimg]['tmp_name'];
-							
+							$tmp = $_FILES['files']["tmp_name"][0];
+						
+							//var_dump($tmp);
+							$pdffile=$_FILES['files']["tmp_name"][0];
+							$filecontent = file_get_contents($pdffile);
+							if (preg_match('/JavaScript/', $filecontent)) {
+								echo "Failed, pdf file has xss script!";
+							} else
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
 									
