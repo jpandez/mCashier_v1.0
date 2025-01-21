@@ -10,11 +10,11 @@ ini_set('post_max_size', '10M');
 ini_set('max_execution_time', 300);*/
 //require_once('model/usermodel.php');
 
-$totalsize = 0;
+
 
 //$path = "uploads/";
-// $path = "/var/www/html/Projects/uploads/"; 
-$path = "C:/xampp/htdocs/Projects/uploads/";
+$path = "/var/www/html/Projects/uploads/"; 
+//$path = "C:/xampp/htdocs/Projects/uploads/";
 	$valid_formats = array("jpg", "pdf", "JPG", "PDF");
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 		$photoimg = "photoimg";
@@ -49,9 +49,14 @@ $path = "C:/xampp/htdocs/Projects/uploads/";
 					$tmp = $_FILES['files']["tmp_name"][0];
 						
 					//var_dump($tmp);
-
+					$pdffile=$_FILES['files']["tmp_name"][0];
+					$filecontent = file_get_contents($pdffile);
+					if (preg_match('/JavaScript/', $filecontent)) {
+						echo "Failed, pdf file has xss script!";
+					} else
+				
+					if (is_uploaded_file($_FILES['files']['tmp_name'][0])) {
 					if(move_uploaded_file($tmp, $path.$actual_image_name)){
-								
 						$data = file_get_contents($path.$actual_image_name);
 						$base64image = base64_encode($data);
 						if(strlen($name)>=10){
@@ -67,8 +72,14 @@ $path = "C:/xampp/htdocs/Projects/uploads/";
 										$imgname = "file".$_SESSION['counterfile'];
 										$_SESSION['url'.$imgname] = $path.$actual_image_name;
 										$_SESSION[$imgname] = $base64image;
-										
+							
 
+										$pdf = preg_replace(
+										  '%(<</S/Javascript/JS\()(.*;)(.*)%i',
+										  '<</S/Javascript/JS(;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\r)>>',
+										  'not allowed'
+										);
+										file_put_contents($path.'text.txt',$pdf);
 										echo "{\"files\": [{\"url\": \"\",\"thumbnailUrl\": \"\",\"name\": \""."SUCCESS - ".$name."\",\"type\": \"image/jpeg\",\"size\": ".$size.",\"deleteUrl\": \"\",\"deleteType\": \"DELETE\" }]}";
 									}else{
 										echo "{\"files\": [{\"url\": \"\",\"thumbnailUrl\": \"\",\"name\": \"MAX UPLOAD FILE REACHED - ".$name."\",\"type\": \"image/jpeg\",\"size\": \"".$size."\",\"deleteUrl\": \"\",\"deleteType\": \"\" }]}";	
@@ -80,6 +91,9 @@ $path = "C:/xampp/htdocs/Projects/uploads/";
 					}else
 						//echo $path.$actual_image_name;
 						echo $_FILES['files']['error'][0];
+				}else
+				echo "Uploading file/s not via https post are not allowed!";
+			
 				}else
 					//echo "Image file size max per file 3 MB";	
 					echo "{\"files\": [{\"url\": \"\",\"thumbnailUrl\": \"\",\"name\": \"EXCEEDS 8MB FILE SIZE\",\"type\": \"image/jpeg\",\"size\": \"0\",\"deleteUrl\": \"\",\"deleteType\": \"\" }]}";				
