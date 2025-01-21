@@ -1,41 +1,17 @@
 <?php
-//WINDOWS
-//DEFINE('TMP',"D:\\xampp\\htdocs\\Projects\\_MobileCash v1.0b\\temp\\");
 DEFINE('TMP',"D:\\wamp\\www\\Projects\\_MobileCash v1.0b\\temp\\");
-//DEFINE('BASE_URL',"http://localhost:8080/Projects/_MobileCash v1.0b");
 DEFINE('BASE_URL',"http://localhost/Projects/_MobileCash v1.0b");
-
 //LINUX
-//DEFINE('TMP',"/var/www/html/Projects/_MobileCash v1.0b/temp/");
 DEFINE('IMAGES_PATH', "/Projects/_MobileCash v1.0b/Views/images/");
-//DEFINE('BASE_URL',"https://tlcmobilemoney.ignorelist.com/Projects/_MobileCash%20v1.0b/");
-
-//TLC 
-/*DEFINE('SMTPHOST','smtp.tlc.com.ph');
-DEFINE('SMTPPORT','587');
-DEFINE('SMTPUSER','anthony.moreno@tlc.com.ph');
-DEFINE('SMTPPASSWORD','password');*/
-
-/* DEFINE('ISGMAIL',TRUE);
-DEFINE('SMTP_ALIAS','Etisalat mCashier');
-
-//GMAIL
-DEFINE('SMTPHOST','smtp.gmail.com');
-DEFINE('SMTPPORT','587');
-DEFINE('SMTPUSER','mobilemoney.etisalat@gmail.com');
-DEFINE('SMTPPASSWORD','t3lk0m123'); */
-
-
+$smtpuser=base64_decode("cmVwb3J0c0BtY2FzaGllci5hZQ==");
+$smtppass=base64_decode("OFRlVlhlN0U===");
 DEFINE('ISGMAIL',FALSE);
 DEFINE('SMTP_ALIAS','Etisalat mCashier');
 DEFINE('SMTPHOST','exmail.emirates.net.ae');
 DEFINE('SMTPPORT','25');
-DEFINE('SMTPUSER','reports@mcashier.ae');
-DEFINE('SMTPPASSWORD','8TeVXe7E');
-
-
+DEFINE('SMTPUSER',$smtpuser);
+DEFINE('SMTPPASSWORD',$smtppass);
 function createFile($path = '', $data = '', $name = ''){
-	
 		$handler = fopen($path . $name ,'wb');
 		if($handler){
 			fwrite($handler, $data);
