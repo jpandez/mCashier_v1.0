@@ -106,7 +106,7 @@
 
 	<!-- <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>bootstrapPILLS/js/bootstrap.js"></script> -->
 </head>
-<body class="overflow-hidden">
+<body>
 <div id="loading">
     <script type = "text/javascript" nonce="<?php echo $_SESSION['nonce'];?>"> 
         document.write("<div id='loading-container'><p id='loading-content'>" +
