@@ -58,7 +58,7 @@
 		                <span class="btn btn-success btn-sm fileinput-button" id="addButton">
 		                	<i class="fa-solid fa-plus"></i>
 		                    <span>Add files...</span>
-		                    <input type="file" name="files[]" id="files" multiple>
+		                    <input type="file" name="files[]" accept="application/pdf,image/png, image/gif, image/jpeg" id="files" multiple>
 		                </span>
 		                <button type="reset" class="btn btn-warning btn-sm cancel text-light">
 							<i class="fa-solid fa-ban"></i>
