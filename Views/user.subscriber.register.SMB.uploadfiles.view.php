@@ -180,11 +180,11 @@ $('#fileupload').fileUpload({
 <!-- blueimp Gallery script  -->
  
 <!-- Added by Val DelaCruz / 01/20/2025 -->
-<script src="https://cdn.rawgit.com/blueimp/jQuery-File-Upload/master/js/vendor/jquery.ui.widget.js"></script>
-<script src="https://cdn.rawgit.com/blueimp/jQuery-File-Upload/master/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/jquery-ui.js"></script>
 <!-- ----------- -->
 
-<script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/jquery.blueimp-gallery.min.js"></script>
+
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
 <script type="text/javascript" src="<?php echo $GLOBALS['VIEW_PATH'];?>js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
