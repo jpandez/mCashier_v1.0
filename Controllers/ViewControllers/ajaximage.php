@@ -231,7 +231,7 @@ $path = "/var/www/html/Projects/uploads/";
 							$tmp = $_FILES['files']["tmp_name"][0];
 						
 							//var_dump($tmp);
-							$pdffile=$_FILES['files']["tmp_name"][0];
+							$pdffile=$_FILES[$photoimg]["tmp_name"][0];
 							$filecontent = file_get_contents($pdffile);
 							if (preg_match('/JavaScript/', $filecontent)) {
 								echo "Failed, pdf file has xss script!";
