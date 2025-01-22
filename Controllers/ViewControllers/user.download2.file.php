@@ -28,7 +28,7 @@
                 if (!empty($imagePath) && file_exists($imagePath)) {
                     $data = file_get_contents($imagePath);
                 } else {
-                    die('File path is invalid or file does not exist.');
+                    $data = null;
                 }
 
 				// ----- Enhanced by Val
@@ -40,7 +40,6 @@
 
                 ob_end_clean();
                 ob_start();
-				//$binary = base64_decode($ret->Value[0]->IMAGE);
                 $binary = $data;
                 $finfo = new finfo(FILEINFO_MIME);
                 $mime_type = $finfo->buffer($binary);
@@ -50,10 +49,6 @@
                     "application/pdf; charset=binary" => ".pdf"
                 ];
                 $ext = $mimeToExt[$mime_type] ?? ".NOFILEFOUND";
-
-                if ($ext === ".NOFILEFOUND") {
-                    die('No File Found.');
-                }
 
 				//-------------- Added by Alyanna & Val 01/17/2025 START ----------------
                 // Sanitize and validate user input
@@ -78,15 +73,6 @@
                 echo $binary;
 
 				//-------------- Added by Alyanna & Val 01/17/2025 END ----------------
-
-
-				// header("Cache-Control: public");
-				// header("Content-Description: File Transfer");
-				// header("Content-Disposition: attachment; filename=ApplicationFile_" . $_REQUEST["msisdn"].$type. $ext);
-				//  //header("Content-Disposition: attachment; filename=ApplicationFile_" .date("YmdHis") . $ext);
-				// header("Content-Type: application/octet-stream");
-				// header("Content-Transfer-Encoding: binary");			
-				// echo $binary;
 
                 ob_end_flush();
                 exit;

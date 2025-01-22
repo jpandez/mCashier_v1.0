@@ -15,7 +15,7 @@
                 <td><input id="btnGetRoles" type="submit" value="<?php echo _("Get Roles"); ?>" class="ui-state-default ui-corner-all ui-button" /></td>
             </tr>
         </table>
-        <div style="margin-top:10px;"></div>
+        <div style="margin-top:55px;"></div>
         <div id="rolesTable">
         <?php
         if(isset($roles["Value"])){ ?>
