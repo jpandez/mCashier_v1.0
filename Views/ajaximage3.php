@@ -13,8 +13,8 @@ ini_set('max_execution_time', 300);*/
 
 
 //$path = "uploads/";
-$path = "/var/www/html/Projects/uploads/"; 
-//$path = "C:/xampp/htdocs/Projects/uploads/";
+//$path = "/var/www/html/Projects/uploads/"; 
+$path = "C:/xampp/htdocs/Projects/uploads/";
 	$valid_formats = array("jpg", "pdf", "JPG", "PDF");
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 		$photoimg = "photoimg";
@@ -42,6 +42,7 @@ $path = "/var/www/html/Projects/uploads/";
 			
 		if(strlen($name) >0 ){
 			list($txt, $ext) = explode(".", $name);
+			
 			if(in_array($ext,$valid_formats)){
 				if($size<=(8192000)){	
 					$addfilename = (int) $_SESSION['counterfile']+1;
