@@ -6,7 +6,7 @@
 <div class ="ploading"></div>
 <div align="right" id="btnEditPImageForm" style="display:none;float:right;">Image Upload
 	<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
-		<input type="file" name="photoimg" id="photoimg" accept="application/pdf,image/png, image/gif, image/jpeg"/>
+		<input type="file" name="photoimg" id="photoimg" accept="application/pdf, image/jpg, image/jpeg"/>
 	</form>
 	<div id='preview'>
 	</div>
