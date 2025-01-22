@@ -1014,6 +1014,10 @@
 			if (strpos($_REQUEST["Method"] ?? '', 'Export') !== false) {
 				 return TRUE; 
 			}
+
+			if (strpos($_REQUEST["Method"] ?? '', '1') !== false) {
+				return TRUE; 
+		   	}
 			
 			if (in_array($_REQUEST["Method"] ?? '', $methodlist)) {
 				if($_SESSION['pagetoken'] == $token){
