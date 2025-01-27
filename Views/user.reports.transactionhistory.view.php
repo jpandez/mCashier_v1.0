@@ -113,27 +113,29 @@
 									<?php } ?>
 								</tr>
 							<?php endforeach; ?>
-								<?php if($_REQUEST["type"] != "HITS_PULL") { ?>
-								<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-									<td></td><td></td><td></td><td></td><td></td><td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>								
-									<td><?php echo _("TOTAL"); $part = explode(":", $transactionhistorydata->QuerySum); ?></td>
-									<td><?php echo $part[0]; ?></td>
-									<td><?php echo $part[1]; ?></td>
-									<td><?php echo $part[2]; ?></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<?php } ?>
 						</tbody>
+						<?php if($_REQUEST["type"] != "HITS_PULL") { ?>
+						<tfoot>
+							<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+								<th></th><th></th><th></th><th></th><th></th><th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>								
+								<th><?php echo _("TOTAL"); $part = explode(":", $transactionhistorydata->QuerySum); ?></th>
+								<th><?php echo $part[0]; ?></th>
+								<th><?php echo $part[1]; ?></th>
+								<th><?php echo $part[2]; ?></th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</tfoot>
+						<?php } ?>
 					</table>
 					</div>
 					<div style="margin-top:-45px";></div>

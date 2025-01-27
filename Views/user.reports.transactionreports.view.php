@@ -144,45 +144,47 @@
 									<td><?php echo $t->NOTE; ?></td>
 								</tr>
 							<?php endforeach; ?>
-								<?php if($_REQUEST["type"] != "HITS_PULL") { ?>
-								<tr><td></td><td></td><td></td><td></td><td></td>
-									<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						</tbody>
+						<?php if($_REQUEST["type"] != "HITS_PULL") { ?>
+						<tfoot>
+    						<tr><th></th><th></th><th></th><th></th><th></th>
+									<th></th><th></th><th></th><th></th><th></th><th></th><th></th>
 									
 									<?php if($_REQUEST["type"] == "CARDS" || $_REQUEST["type"] == "PNOE" || $_REQUEST["type"] == "PNOM" || $_REQUEST["type"] == "PNCM") { ?>
-									<td></td><td></td>
+									<th></th><th></th>
 									<?php } ?>
 									
 									<?php if($_REQUEST["type"] == "PCSH") { ?>
-									<td></td>
+									<th></th>
 									<?php } ?>
-									<td></td>
+									<th></th>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>	
-									<td></td>
-									<td></td>								
-									<td><?php echo _("TOTAL"); $part = explode(":", $transactionreportsdata->QuerySum); ?></td>
-									<td><?php echo $part[0]; ?></td>
-									<td><?php echo $part[1]; ?></td>
-									<td><?php echo $part[2]; ?></td>
-									<td></td>
-									<td></td>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>	
+									<th></th>
+									<th></th>								
+									<th><?php echo _("TOTAL"); $part = explode(":", $transactionreportsdata->QuerySum); ?></th>
+									<th><?php echo $part[0]; ?></th>
+									<th><?php echo $part[1]; ?></th>
+									<th><?php echo $part[2]; ?></th>
+									<th></th>
+									<th></th>
 									
 									<?php if($_REQUEST["type"] == "CARDS" || $_REQUEST["type"] == "PNOE" || $_REQUEST["type"] == "PNOM" || $_REQUEST["type"] == "PNCM") { ?>
-									<td></td><td></td>
+									<th></th><th></th>
 									<?php } ?>
 									
 									<?php if($_REQUEST["type"] == "PCSH") { ?>
-									<td></td>
+									<th></th>
 									<?php } ?>
 									
-									<td></td>
-								</tr>	
-								<?php } ?>
-						</tbody>
+									<th></th>
+								</tr>
+    					</tfoot>		
+						<?php } ?>
 					</table>
 					<?php
 					$valid_types = ['TransactionReports', 'OtherValidType']; 
