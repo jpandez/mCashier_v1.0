@@ -82,23 +82,25 @@
 									<td><?php echo $t->REVENUE_SHARE; ?></td>
 								</tr>
 							<?php endforeach; ?>
-								<tr><td></td><td></td><td></td><td></td><td></td><td></td>
-									<td></td><td></td><td></td><td></td><td></td>
+						</tbody>
+						<tfoot>
+							<tr><th></th><th></th><th></th><th></th><th></th><th></th>
+									<th></th><th></th><th></th><th></th><th></th>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td><?php echo _("TOTAL"); $part = explode(":", $transactionhistorydata->QuerySum); ?></td>
-									<td><?php echo $part[0]; ?></td>
-									<td><?php echo $part[1]; ?></td>
-									<td><?php echo $part[2]; ?></td>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th><?php echo _("TOTAL"); $part = explode(":", $transactionhistorydata->QuerySum); ?></th>
+									<th><?php echo $part[0]; ?></th>
+									<th><?php echo $part[1]; ?></th>
+									<th><?php echo $part[2]; ?></th>
 								</tr>
-						</tbody>
+						</tfoot>
 					</table>
 					</div>
 					<div style="margin-top:-45px";></div>
