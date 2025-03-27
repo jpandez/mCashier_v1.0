@@ -7833,6 +7833,32 @@ class SubscriberServices{
         	}
         	return $ret;
         }
+
+		public function generateKSN($ksnCount){
+        	$ret = new ServiceResponse();
+        	$ret->Message = "System is Busy. Please try again later";
+        	$ret->ResponseCode = 100;
+        	
+        	$client = new nusoap_client($this->_GUISERVICE["wsdl"], 'WSDL');
+        	$err = $client->getError();
+        	if ($err) {
+        		$this->logger->WriteLog(var_export($err,true));
+        	}
+        	
+        	
+        	$result = $client->call('generateKSN', array('ksnCount'=>$ksnCount));	
+        	if ($client->fault) {
+        		$this->logger->WriteLog(var_export($result,true));
+        	} else {
+        		$err = $client->getError();
+        		if ($err) {
+        			$this->logger->WriteLog(var_export($err,true));
+        		} else {
+        			$ret = json_decode(base64_decode($result));
+        		}
+        	}
+        	return $ret;
+        }
         
     }
     ?>

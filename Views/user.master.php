@@ -144,7 +144,10 @@
         <li class="nav-item <?php if($_SESSION["ISFIRSTLOGON"] != 1){ echo ($this->getRolesConfig('SETTINGS')) ? '' : 'd-none'; }else{ echo ('d-none'); } ?>">
           <a class="nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'user.systemsettings.php'): ?>text-light active<?php endif; ?>" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.systemsettings.php"><?php echo _("Audit Trails"); ?></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if($_SESSION["ISFIRSTLOGON"] != 1){ echo ($this->getRolesConfig('TOOLS')) ? '' : 'd-none'; }else{ echo ('d-none'); } ?>">
+          <a class="nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'user.systemtools.php'): ?>text-light active<?php endif; ?>" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.systemtools.php"><?php echo _("Tools"); ?></a>
+        </li>
+		<li class="nav-item">
           <a class="nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'user.knowledgecenter.php'): ?>text-light active<?php endif; ?>" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.knowledgecenter.php"><?php echo _("Knowledge Center"); ?></a>
         </li>
       </ul>
@@ -192,6 +195,9 @@
 	<?php } ?>
 	<?php if ($this->getRolesConfig('SETTINGS') && $_SESSION["ISFIRSTLOGON"] == 0) { ?>
 		<a class = "eti-text-green text-decoration-none" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.systemsettings.php"><?php echo _("Settings"); ?></a> <span class = "eti-text-gray">| </span>
+	<?php } ?>
+	<?php if ($this->getRolesConfig('TOOLS') && $_SESSION["ISFIRSTLOGON"] == 0) { ?>
+		<a class = "eti-text-green text-decoration-none" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.systemtools.php"><?php echo _("Tools"); ?></a> <span class = "eti-text-gray">| </span>
 	<?php } ?>
 		<a class = "eti-text-green text-decoration-none" href="<?php echo $GLOBALS['CONTROLLER_PATH'];?>ViewControllers/user.knowledgecenter.php"><?php echo _("Knowledge Center"); ?></a>
 	<br class="clear" />

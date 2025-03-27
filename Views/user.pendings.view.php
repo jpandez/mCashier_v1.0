@@ -1426,8 +1426,8 @@
 	
 /*	$(document).ready(function(){$("#pendingAccountTabLink a").trigger('click')});
 	$(document).ready(function(){$("#pendingProcessorApprovedTabLink a").trigger('click')});
-	$(document).ready(function(){$("#pendingSharafDGApprovedTabLink a").trigger('click')});
 	$(document).ready(function(){$("#pendingAccountComplianceTabLink a").trigger('click')}); */
+	$(document).ready(function(){$("#pendingSharafDGApprovedTabLink a").trigger('click')});
 	$(document).ready(function(){$("#pendingStatusTabLink a").trigger('click')});
 
 </script>

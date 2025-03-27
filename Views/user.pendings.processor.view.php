@@ -736,16 +736,16 @@ $("#btnProcessorApproveSubscriber_pr").click(function(){
 			id: input,
 			FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')
 		},success: function(json){
-			setTimeout($.unblockUI, 1000);
+			// setTimeout($.unblockUI, 1000);
 			if(json.ResponseCode == 0){
-				$("#accountPending_" + $("#mmsisdn_pr").val()).css({display:'none'});
+				// $("#accountPending_" + $("#mmsisdn_pr").val()).css({display:'none'});
 				$("#pending_processor_view_pr").dialog('close');
 				$('#dialogProcessorApprove_pr').dialog('close');
 				registerCashiers(thismsisdn);
 			}else{
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 			}
-			setTimeout($.unblockUI, 1000);
+			// setTimeout($.unblockUI, 1000);
 		}, error: function(e){
 			setTimeout($.unblockUI, 1000);
 			$("<p>"+e.responseText+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
@@ -803,7 +803,7 @@ function registerCashiers(thismsisdn){
 				FToken:($('meta[name="csrf-token"]').attr('content')) ? $('meta[name="csrf-token"]').attr('content') : window.parent.$('meta[name="csrf-token"]').attr('content')
 			},success: function(json){
 				if(json.ResponseCode == 0){
-					$("#accountPending_" + $("#mmsisdn_pr").val()).css({display:'none'});
+					$("#processorPending_" + $("#tlcID_pr").val()).css({display:'none'});
 					$("#pending_processor_view_pr").dialog('close');
 					$('#dialogProcessorApprove_pr').dialog('close');	
 				} 

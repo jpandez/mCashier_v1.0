@@ -5143,7 +5143,23 @@ if(isset($_SESSION["currentUser"]) && !empty($_SESSION["currentUser"]) && $_SESS
 			
 			echo json_encode($ret);
 		break;
+
+		case "generateKSN":
+			if ($_REQUEST["ksnCount"] == '' || $_REQUEST["ksnCount"] == 0){
+				echo $ret->Message = _("Please enter KSN count.");
+				return;
+			}
+			$ret = $serv->generateKSN($_REQUEST["ksnCount"]);
 			
+			if(isset($ret->Token)){
+				$_SESSION["token"] = $ret->Token;
+			}
+			if($ret->ResponseCode == 13 || $ret->ResponseCode == 14){
+				session_destroy();
+			}
+			
+			echo json_encode($ret);
+		break;		
 			
 	}
 }

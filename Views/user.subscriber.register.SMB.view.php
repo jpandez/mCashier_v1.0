@@ -289,7 +289,7 @@ unset($_SESSION['size3']);
 						<span class="iferror"><?php echo _("Field required"); ?></span>
 					</div> -->
 					<div class="field required">
-						<input type="text" class="verifyText" name="CASHDISCOUNTRATE" id="CASHDISCOUNTRATE" value="0" onchange="changeDiscountRate()">
+						<input type="text" class="verifyText" name="CASHDISCOUNTRATE" id="CASHDISCOUNTRATE" value="0" onkeyup="this.value=numOnly1(this.value)">
 						<span class="iferror"><?php echo _("Field required"); ?></span>
 					</div>
 				</td>						

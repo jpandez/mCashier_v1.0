@@ -1007,7 +1007,7 @@ $("#btnDeclineSMBSubscriber_cp").click(function(){
 				if(json.ResponseCode == 0){
 					$("#accountPending_cp" + $("#authNumber_cp").val()).css({display:'none'});
 					$("#pending_acccount_view").dialog('close');
-					$("#dialogSMBDecline_cp").dialog('close');
+					$("#dialogSMBDecline_cp, #pending_compliance_view_cp").dialog('close');
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
@@ -1032,7 +1032,7 @@ $("#btnDeclineSMBSubscriber_cp").click(function(){
 				if(json.ResponseCode == 0){
 					$("#accountPending_cp" + $("#authNumber_cp").val()).css({display:'none'});
 					$("#pending_acccount_view").dialog('close');
-					$("#dialogSMBDecline_cp").dialog('close');
+					$("#dialogSMBDecline_cp, #pending_compliance_view_cp").dialog('close');
 				}
 				$("<p>"+json.Message+"</p>").dialog({resizable:false,modal:true, buttons: { "Ok": function() { $(this).dialog("close"); } } });
 				
