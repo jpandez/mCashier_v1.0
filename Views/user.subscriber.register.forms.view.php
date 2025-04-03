@@ -47,9 +47,11 @@
 				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/__MACOSX/._W9 form - To confirm US status.pdf" target="_blank" class="text-primary">._W9 form - To confirm US status.pdf</a>
 			</div>
 			<div id="Risk-Matric">
-				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx" target="_blank" class="text-primary">Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
+				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx" class="text-primary">
+Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
 				|
-				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx" target="_blank" class="text-primary">._Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
+				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx" class="text-primary">
+._Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
 			</div>
 			<div id="CheckList">
 				Windows/Mac OS:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/Check list-NBAD-ETISALAT final.docx" target="_blank" class="text-primary">Check list-NBAD-ETISALAT final.docx</a>
