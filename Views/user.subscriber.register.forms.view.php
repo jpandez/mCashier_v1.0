@@ -27,24 +27,24 @@
 		</td>
 		<td>
 			<div id="FATCA">
-				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/FATCA Test v1.doc" target="_blank" class="text-primary">FATCA Test v1.doc</a>
+				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=FATCA Test v1.doc" target="_blank" class="text-primary">FATCA Test v1.doc</a>
 				|
-				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/__MACOSX/._FATCA Test v1.doc" target="_blank" class="text-primary">._FATCA Test v1.doc</a>
+				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=__MACOSX/._FATCA Test v1.doc" target="_blank" class="text-primary">._FATCA Test v1.doc</a>
 			</div>
 			<div id="W-8Ben">
-				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/W-8BEN - Confirm non US status - for Individuals.pdf" target="_blank" class="text-primary">W-8BEN - Confirm non US status - for Individuals.pdf</a>
+				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=W-8BEN - Confirm non US status - for Individuals.pdf" target="_blank" class="text-primary">W-8BEN - Confirm non US status - for Individuals.pdf</a>
 				|
-				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/__MACOSX/._W-8BEN - Confirm non US status - for Individuals.pdf" target="_blank" class="text-primary">._W-8BEN - Confirm non US status - for Individuals.pdf</a>
+				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=__MACOSX/._W-8BEN - Confirm non US status - for Individuals.pdf" target="_blank" class="text-primary">._W-8BEN - Confirm non US status - for Individuals.pdf</a>
 			</div>
 			<div id="W8-Ben-EN">
-				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/W8 BEN-E -Confirm non US status - for Entities.pdf" target="_blank" class="text-primary">W8 BEN-E -Confirm non US status - for Entities.pdf</a>
+				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=W8 BEN-E -Confirm non US status - for Entities.pdf" target="_blank" class="text-primary">W8 BEN-E -Confirm non US status - for Entities.pdf</a>
 				|
-				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/__MACOSX/._W8 BEN-E -Confirm non US status - for Entities.pdf" target="_blank" class="text-primary">._W8 BEN-E -Confirm non US status - for Entities.pdf</a>
+				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=__MACOSX/._W8 BEN-E -Confirm non US status - for Entities.pdf" target="_blank" class="text-primary">._W8 BEN-E -Confirm non US status - for Entities.pdf</a>
 			</div>
 			<div id="W9">
-				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/W9 form - To confirm US status.pdf" target="_blank" class="text-primary">W9 form - To confirm US status.pdf</a>
+				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=W9 form - To confirm US status.pdf" target="_blank" class="text-primary">W9 form - To confirm US status.pdf</a>
 				|
-				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/__MACOSX/._W9 form - To confirm US status.pdf" target="_blank" class="text-primary">._W9 form - To confirm US status.pdf</a>
+				Mac OS X:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=__MACOSX/._W9 form - To confirm US status.pdf" target="_blank" class="text-primary">._W9 form - To confirm US status.pdf</a>
 			</div>
 			<div id="Risk-Matric">
 				Windows:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx" class="text-primary">
@@ -54,7 +54,7 @@ Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
 ._Risk Matrix for Merchants (Final Version Oct 2014) (5).xlsx</a>
 			</div>
 			<div id="CheckList">
-				Windows/Mac OS:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/Check list-NBAD-ETISALAT final.docx" target="_blank" class="text-primary">Check list-NBAD-ETISALAT final.docx</a>
+				Windows/Mac OS:<a href="<?php echo $GLOBALS['ROOT']; ?>Forms/download.php?file=Check list-NBAD-ETISALAT final.docx" target="_blank" class="text-primary">Check list-NBAD-ETISALAT final.docx</a>
 			</div>
 		</td>
 	</tr>
