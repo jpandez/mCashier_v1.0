@@ -1,6 +1,13 @@
 
 
-<?php require_once("views.config.properties.php"); ?>
+<?php 
+session_start(); 
+
+if (!isset($_SESSION["currentUser"])) {  
+	echo "Unauthorized Access.";
+    exit(); 
+}
+require_once("views.config.properties.php"); ?>
 
 <!DOCTYPE html>
 <html>

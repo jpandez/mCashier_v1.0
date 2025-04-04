@@ -15,7 +15,11 @@
             $url = $_SERVER["REQUEST_URI"];
             $url = explode("/",$url);
 			if(!isset($_SESSION["currentUser"]) && $url[count($url) - 1] <> "index.php"){
-			     header("Location:index.php");
+				if (!isset($_SESSION['reloaded'])) {
+					$_SESSION['reloaded'] = true;
+					echo "<script nonce=".$_SESSION['nonce'].">location.reload();</script>"; 
+					exit;
+				}
 			}
             
             /* populate session for roles if exists */
