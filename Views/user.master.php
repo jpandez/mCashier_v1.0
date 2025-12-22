@@ -157,7 +157,7 @@
             <?php echo _("Welcome Back"); ?> <?php echo $currentUser; ?>
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item"><?php echo _("Last Login"); ?>: <?php echo date_format($_SESSION["LASTLOGIN"], 'M/d/Y h:i A'); ?></a></li>
+            <li><a class="dropdown-item"><?php echo _("Last Login"); ?>: <?php if (!empty($_SESSION["LASTLOGIN"])) { echo date_format($_SESSION["LASTLOGIN"], 'M/d/Y h:i A'); } ?></a></li>
             <li><a class="dropdown-item"><?php echo _("Profile"); ?>: <?php echo $_SESSION["currentUserLevel"]; ?></a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item">Language:</a></li>

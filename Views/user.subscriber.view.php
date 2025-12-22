@@ -6,7 +6,7 @@
 	<div id="tabs">
 		<ul >
 			<?php if($this->getRolesConfig('SEARCH_ACCOUNT_&_VIEW')){ ?>
-				<!-- <li id="searchAccountTabLink"><a href="#searchAccountTab" url="<?php echo str_replace(' ','%20',$GLOBALS['CONTROLLER_PATH']);?>ViewControllers/user.subscriber.search.iframe.php"><?php echo _("Search account"); ?></a></li> -->
+				<li id="searchAccountTabLink"><a href="#searchAccountTab" url="<?php echo str_replace(' ','%20',$GLOBALS['CONTROLLER_PATH']);?>ViewControllers/user.subscriber.search.iframe.php"><?php echo _("Search account"); ?></a></li>
 			<?php } ?>
 			<?php if($this->getRolesConfig('GLOBAL_SEARCH_VIEW')){ ?>
 				<li id="GlobalSearchTabLink"><a href="#GlobalSearchTab" url="<?php echo str_replace(' ','%20',$GLOBALS['CONTROLLER_PATH']);?>ViewControllers/user.subscriber.globalsearchview.php"><?php echo _("Global search"); ?></a></li>

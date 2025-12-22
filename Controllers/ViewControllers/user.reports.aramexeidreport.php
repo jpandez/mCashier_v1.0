@@ -17,7 +17,7 @@
 								$datediff = $this->checkDateDiff($_REQUEST["TransHdatefrom"],$_REQUEST["TransHdateto"]);
 								if($_SESSION['searchrange'] > $datediff){
 									
-									$ret = $serv->aramexEIDReport($_REQUEST["TransHdatefrom"],$_REQUEST["TransHdateto"],$_REQUEST["perpage"],$_REQUEST["pagenum"],$_REQUEST["AWB"]);
+									$ret = $serv->aramexEIDReport($_REQUEST["TransHdatefrom"],$_REQUEST["TransHdateto"],$_REQUEST["perpage"],$_REQUEST["pagenum"]);
 									
 									$this->setData("transactionhistorydata",$ret);
 								if(isset($ret->Token)){
