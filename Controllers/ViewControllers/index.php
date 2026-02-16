@@ -75,8 +75,8 @@
 								$sessionid = session_id()  . "@" . $_SESSION['loginip'];
 								$svc  = new SubscriberServices();
 								//$user =strtoupper($_REQUEST['username']);
-								// $ret = $svc->userLoginOTP($logOTP,$user,$pass, $sessionid, true);
-								$ret = $svc->userLogin($user,$pass, $sessionid, true);
+								$ret = $svc->userLoginOTP($logOTP,$user,$pass, $sessionid, true);
+								// $ret = $svc->userLogin($user,$pass, $sessionid, true);
 								$retMessage = $ret['Message'];
 								/* print_r($ret); */
 					
